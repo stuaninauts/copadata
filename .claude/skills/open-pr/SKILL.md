@@ -1,8 +1,8 @@
 ---
 name: open-pr
-description: Publica a branch atual e prepara o PR para a main (título, descrição e link de compare para abrir no navegador).
+description: Publica a branch atual e abre no navegador o formulário de PR para a main, já com título e descrição preenchidos.
 disable-model-invocation: true
-allowed-tools: Bash(git status *), Bash(git log *), Bash(git fetch *), Bash(git remote get-url *), Bash(git rev-list *), Bash(git diff *), Bash(python -m pytest *)
+allowed-tools: Bash(git status *), Bash(git log *), Bash(git fetch *), Bash(git remote get-url *), Bash(git rev-list *), Bash(git diff *), Bash(python -m pytest *), Bash(xdg-open *)
 ---
 
 # Abrir PR para a main
@@ -20,8 +20,13 @@ O `gh` desta máquina está logado em outra conta, sem permissão neste repo: **
    - Atrás e **já publicada**: não faça rebase (exigiria force push, que é bloqueado). Avise o usuário.
 4. Se a mudança for grande, sugira rodar `/code-review` antes de publicar.
 5. `git push -u origin <branch>` (o hook pede aprovação).
-6. Monte o link a partir de `git remote get-url origin`: `https://github.com/<owner>/<repo>/compare/main...<branch>?expand=1`.
-7. Entregue ao usuário, prontos para colar:
+6. Escreva o título e a descrição (formatos abaixo). Grave a descrição num arquivo no scratchpad.
+7. Gere o link **já preenchido** e abra no navegador do usuário. O GitHub aceita `title` e `body` na URL de compare:
+   ```bash
+   python3 -c "import sys, urllib.parse as u; print('https://github.com/<owner>/<repo>/compare/main...<branch>?' + u.urlencode({'expand': 1, 'title': sys.argv[1], 'body': open(sys.argv[2]).read()}, quote_via=u.quote))" "<titulo>" <arquivo-da-descricao> > <arquivo-da-url>
+   xdg-open "$(cat <arquivo-da-url>)"
+   ```
+   `<owner>/<repo>` vem de `git remote get-url origin`. Se o `xdg-open` falhar, entregue a URL ao usuário.
    - **Título:** a mensagem do commit, se houver um só; senão, um resumo no mesmo formato Conventional Commits.
    - **Descrição:**
      ```markdown
@@ -39,4 +44,4 @@ O `gh` desta máquina está logado em outra conta, sem permissão neste repo: **
 
      🤖 Generated with [Claude Code](https://claude.com/claude-code)
      ```
-8. Lembre: fazer o merge com **Rebase and merge**.
+8. O usuário só confere e clica em **Create pull request**. Lembre: o merge é com **Rebase and merge**.
