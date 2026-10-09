@@ -13,3 +13,8 @@ IGNORE_prompts.md
 
 # test cache
 .pytest_cache/
+
+# Claude Code: personal files and worktrees
+CLAUDE.local.md
+.claude/settings.local.json
+.claude/worktrees/

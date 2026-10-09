@@ -1,0 +1,4 @@
+# gitignored files copied into every worktree Claude Code creates
+data/raw/
+notas/
+CLAUDE.local.md
