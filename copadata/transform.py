@@ -1,13 +1,14 @@
-"""transform.py — raw (OpenFootball JSON) -> data/processed/matches.parquet.
+"""transform.py: raw editions -> data/processed/{matches,goals}.parquet.
 
-One row per match (Match grain). Computes stage, score, margin, flags, and the match-level
-metrics — all defined in metrics.py.
+One row per match (Match grain) for every edition: 2026 from the OpenFootball JSON and
+1986-2022 from the Fjelstul CSVs, reshaped to the same format by fjelstul.py. Computes stage,
+score, margin, flags, and the match-level metrics, all defined in metrics.py.
 """
 from __future__ import annotations
 
 import pandas as pd
 
-from copadata import config, ingest, metrics
+from copadata import config, fjelstul, ingest, metrics
 
 _KNOCKOUT = {"Round of 32", "Round of 16", "Quarter-final", "Semi-final", "Final"}
 _THIRD_PLACE = {"Match for third place"}
@@ -23,14 +24,20 @@ def classify_stage(m: dict) -> str:
     return "other"
 
 
-def build_matches(data: dict) -> pd.DataFrame:
+def match_id(year: int, index: int) -> int:
+    """Unique across editions, so no join can mix World Cups: 2026, 7th match -> 2026006."""
+    return year * 1000 + index
+
+
+def build_matches(data: dict, year: int = config.SEASON) -> pd.DataFrame:
     rows = []
     for i, m in enumerate(data["matches"]):
         score = m.get("score")
         finished = bool(score and "ft" in score)
         stage = classify_stage(m)
         row = {
-            "match_id": i,
+            "year": year,
+            "match_id": match_id(year, i),
             "num": m.get("num"),
             "date": m.get("date"),
             "venue": m.get("ground"),
@@ -90,7 +97,7 @@ def build_matches(data: dict) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
-def build_goals(data: dict) -> pd.DataFrame:
+def build_goals(data: dict, year: int = config.SEASON) -> pd.DataFrame:
     """Goal grain: one row per goal (regulation + extra time; no shootout). Feeds the
     goal-minute distributions. Uses metrics.match_goals — no new definitions here.
     """
@@ -103,7 +110,8 @@ def build_goals(data: dict) -> pd.DataFrame:
         for g in metrics.match_goals(m):
             rows.append(
                 {
-                    "match_id": i,
+                    "year": year,
+                    "match_id": match_id(year, i),
                     "stage": stage,
                     "is_knockout": stage == "knockout",
                     "team": m[f"team{g.side}"],
@@ -119,16 +127,28 @@ def build_goals(data: dict) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
+def load_editions() -> dict[int, dict]:
+    """Every edition available in data/raw/, keyed by year."""
+    editions = {config.SEASON: ingest.load()}
+    history = ingest.load_history()
+    if history is None:
+        print("[transform] WARNING: no Fjelstul CSVs in data/raw/fjelstul/; processing 2026 only "
+              "(run the pipeline without --offline to download them)")
+    else:
+        editions |= fjelstul.to_editions(history["matches"], history["goals"])
+    return dict(sorted(editions.items()))
+
+
 def main() -> pd.DataFrame:
-    data = ingest.load()
-    df = build_matches(data)
+    editions = load_editions()
+    df = pd.concat([build_matches(d, y) for y, d in editions.items()], ignore_index=True)
+    goals = pd.concat([build_goals(d, y) for y, d in editions.items()], ignore_index=True)
     config.PROCESSED.mkdir(parents=True, exist_ok=True)
     df.to_parquet(config.MATCHES_PARQUET, index=False)
-    goals = build_goals(data)
     goals.to_parquet(config.GOALS_PARQUET, index=False)
     print(
-        f"[transform] {len(df)} matches ({int(df['finished'].sum())} finished), "
-        f"{len(goals)} goals -> {config.PROCESSED}"
+        f"[transform] {len(editions)} editions ({min(editions)}-{max(editions)}): {len(df)} matches "
+        f"({int(df['finished'].sum())} finished), {len(goals)} goals -> {config.PROCESSED}"
     )
     return df
 

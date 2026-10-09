@@ -28,6 +28,7 @@ def explode(matches: pd.DataFrame) -> pd.DataFrame:
             gf, ga = p.get(f"goals_team{side}"), p.get(f"goals_team{other}")
             rows.append(
                 {
+                    "year": p["year"],
                     "match_id": p["match_id"],
                     "stage": p["stage"],
                     "is_knockout": p["is_knockout"],
@@ -53,7 +54,8 @@ def group_situation(tm: pd.DataFrame) -> pd.DataFrame:
     vals: dict[str, dict] = {c: {} for c in cols}
     groups = tm[(tm["stage"] == "groups") & (tm["finished"])]
 
-    for _, gdf in groups.groupby("group"):
+    # group names repeat across editions ("Group A"), so a group is (year, group)
+    for _, gdf in groups.groupby(["year", "group"]):
         teams = gdf["team"].unique()
         # matchday + the team's own accumulated tally (matches with an earlier date)
         for _, tdf in gdf.groupby("team"):
