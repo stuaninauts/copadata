@@ -10,3 +10,6 @@ data/processed/
 # local analysis notes and scratch (not versioned)
 notas/
 IGNORE_prompts.md
+
+# test cache
+.pytest_cache/
