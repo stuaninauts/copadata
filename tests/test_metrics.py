@@ -195,7 +195,7 @@ def test_decisive_moment_regulation():
 
 def _rows(*ms):
     df = transform.build_matches({"matches": list(ms)})
-    return df.set_index("match_id")
+    return df  # positional index: row i is the i-th match given
 
 
 def test_build_matches_stage_classification():
@@ -211,7 +211,7 @@ def test_build_matches_stage_classification():
 
 def test_build_matches_shootout_row():
     df = _rows(match(goals1=[g("10")], goals2=[g("90+2")], et=[1, 1], p=[3, 4]))
-    r = df.loc[0]
+    r = df.iloc[0]
     assert r.decided_on_penalties and r.has_extra_time and r.draw_in_regulation
     assert (r.margin, r.pen1, r.pen2) == (0, 3, 4)
     assert pd.isna(r.winning_goal_min)
@@ -231,7 +231,14 @@ def test_build_matches_final_quarter_boundary():
 def test_build_matches_unfinished_match_has_no_metrics():
     m = match(round_="Final")
     del m["score"]
-    r = _rows(m).loc[0]
+    r = _rows(m).iloc[0]
     assert not r.finished
     assert "winning_goal_min" not in r or pd.isna(r.winning_goal_min)
 
+
+
+def test_build_matches_ids_are_unique_across_editions():
+    a = transform.build_matches({"matches": [match(), match()]}, year=1990)
+    b = transform.build_matches({"matches": [match()]}, year=2026)
+    assert a["match_id"].tolist() == [1990000, 1990001] and a["year"].eq(1990).all()
+    assert b["match_id"].tolist() == [2026000]

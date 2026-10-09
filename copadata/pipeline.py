@@ -1,7 +1,8 @@
 """Run the pipeline end to end: ingest -> transform -> derive.
 
-Cumulative re-run: downloads the current OpenFootball state and reprocesses. Idempotent —
-running again after new rounds simply incorporates the new matches.
+Cumulative re-run: downloads the current OpenFootball state (2026) and the pinned Fjelstul
+CSVs (1986-2022), then reprocesses every edition. Idempotent: running again simply
+incorporates new matches.
 
     python -m copadata.pipeline            # download and reprocess
     python -m copadata.pipeline --offline  # reprocess the snapshot already downloaded
@@ -16,6 +17,7 @@ from copadata import derive, ingest, transform
 def main(download: bool = True) -> None:
     if download:
         ingest.download()
+        ingest.download_history()
     transform.main()
     derive.main()
     print("[pipeline] done.")
