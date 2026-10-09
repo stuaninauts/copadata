@@ -1,21 +1,21 @@
 # CopaData
 
-Data-analysis engine for the 2026 World Cup, built on the public
-[OpenFootball](https://github.com/openfootball/worldcup.json) dataset, with **no API key**.
+Data-analysis engine for the FIFA Men's World Cup, **1986-2026**, built on public datasets
+with **no API key** (see [Data sources](#data-sources)).
 
 Downloads the matches, computes time and decision metrics (winning goal, late goal, extra-time
 goal, comeback, survival goal) and each team's situation within its group, and materializes
-everything to Parquet ready for analysis.
+every edition to Parquet ready for analysis and comparison across World Cups.
 
 ## Run
 
 ```bash
 pip install -r requirements.txt
-python -m copadata.pipeline            # download and reprocess
-python -m copadata.pipeline --offline  # reprocess the snapshot already downloaded
+python -m copadata.pipeline            # download both sources and reprocess every edition
+python -m copadata.pipeline --offline  # reprocess the raw files already downloaded
 ```
 
-Tests (metric definitions and git hooks):
+Tests (metric definitions, historical adapter and git hooks):
 
 ```bash
 python -m pytest
@@ -33,6 +33,8 @@ tournament progresses.
 
 ## Outputs (`data/processed/`)
 
+Every file carries a `year` column (one World Cup per value); `match_id` is unique across editions.
+
 | File | Grain | Contents |
 |---|---|---|
 | `matches.parquet` | 1 row/match | score, stage, margin, extra time / penalties, time & decision metrics |
@@ -42,13 +44,29 @@ tournament progresses.
 ## Structure
 
 ```
-copadata/   ingest · transform · derive · metrics · pipeline · config
-tests/      metric definitions and git hooks
+copadata/   ingest · fjelstul (historical adapter) · transform · derive · metrics · pipeline · config
+tests/      metric definitions, historical adapter and git hooks
 docs/adr/   architecture decision records (PT)
 data/       raw/ (raw snapshot)   ·   processed/ (parquets)
 ```
 
 Metric definitions are concentrated in `copadata/metrics.py`.
+
+## Data sources
+
+| Editions | Source | License |
+|---|---|---|
+| 2026 | [OpenFootball `worldcup.json`](https://github.com/openfootball/worldcup.json) | Public domain (CC0) |
+| 1986-2022 | [Fjelstul World Cup Database](https://github.com/jfjelstul/worldcup), pinned commit in `copadata/config.py` | [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode) |
+
+Both are downloaded at run time into `data/raw/` and are not redistributed by this repository.
+Why two sources: [ADR 0005](docs/adr/0005-fonte-historica-fjelstul.md).
+
+**Attribution (Fjelstul World Cup Database):** The Fjelstul World Cup Database © 2023 Joshua C. Fjelstul, Ph.D.,
+licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode),
+available at https://www.github.com/jfjelstul/worldcup. **Modifications:** only men's World Cups from 1986
+are used; matches and goals are reshaped into the OpenFootball format (`copadata/fjelstul.py`) to compute
+the metrics in this repository. Data derived from it is shared under the same license.
 
 ---
 
