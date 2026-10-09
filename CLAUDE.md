@@ -12,6 +12,8 @@ Engine de análise da Copa do Mundo (2026 + histórico) sobre dados públicos, s
 - Análise é descritiva: `n` sempre visível, sem bateria de testes de hipótese (ADR 0002).
 - Decisão de arquitetura nova vira ADR em `docs/adr/` (numeração sequencial, superar em vez de apagar).
 - `data/` é gerado pelo pipeline e não é versionado.
+- Os parquets têm **todas as edições** (coluna `year`, 1986-2026): análise de uma Copa só precisa filtrar `year`.
+- Dados de 1986-2022 vêm do Fjelstul (CC-BY-SA 4.0, ADR 0005): gráfico ou post que os use leva "Fonte: Fjelstul World Cup Database (CC-BY-SA 4.0)". Não versionar dados derivados dele sem a mesma licença.
 
 ## Git (GitHub Flow)
 - Todo trabalho numa branch `<tipo>/<descricao-kebab>` saída da `main`, que volta por PR (merge: rebase). Nunca commitar na `main`.
