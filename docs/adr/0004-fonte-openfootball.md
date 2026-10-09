@@ -1,5 +1,7 @@
 # Fonte de dados: OpenFootball (supera o ADR 0001)
 
+> ⚠️ **A parte histórica foi superada pelo [ADR 0005](./0005-fonte-historica-fjelstul.md):** o OpenFootball não tem os minutos de gol das Copas antigas. Ele continua sendo a fonte da Copa 2026.
+
 > Supera o [ADR 0001](./0001-ingestao-snapshot-acumulativo.md).
 
 A verificação da key mostrou que o **plano Free do API-Football bloqueia a season 2026** (erro literal: "try from 2022 to 2024"), e o **football-data.org free não entrega o minuto do gol**. A pesquisa de mercado achou o **[OpenFootball/worldcup.json](https://github.com/openfootball/worldcup.json)**: domínio público, **sem API key**, com 2026 atual (104 jogos, 95 concluídos até 2026-07-07), **minuto do gol** (ex.: `"90+2"`) e `score` fatiado em `ht/ft/et/p`: prorrogação e disputa de pênaltis distinguidas, com a disputa **fora** dos arrays de gol (nossa Regra 1 de graça, por construção).
