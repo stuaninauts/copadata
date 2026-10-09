@@ -1,7 +1,7 @@
 # CopaData
 
 Data-analysis engine for the 2026 World Cup, built on the public
-[OpenFootball](https://github.com/openfootball/worldcup.json) dataset — **no API key**.
+[OpenFootball](https://github.com/openfootball/worldcup.json) dataset, with **no API key**.
 
 Downloads the matches, computes time and decision metrics (winning goal, late goal, extra-time
 goal, comeback, survival goal) and each team's situation within its group, and materializes
@@ -13,6 +13,19 @@ everything to Parquet ready for analysis.
 pip install -r requirements.txt
 python -m copadata.pipeline            # download and reprocess
 python -m copadata.pipeline --offline  # reprocess the snapshot already downloaded
+```
+
+Tests (metric definitions and git hooks):
+
+```bash
+python -m pytest
+```
+
+Contributing: branches `<type>/<description>` off `main`, PRs merged by rebase, and
+[Conventional Commits](https://www.conventionalcommits.org/) enforced by a git hook. Enable it once per clone:
+
+```bash
+git config core.hooksPath .githooks
 ```
 
 The pipeline is **idempotent and cumulative**: re-running picks up new matches as the
@@ -30,6 +43,8 @@ tournament progresses.
 
 ```
 copadata/   ingest · transform · derive · metrics · pipeline · config
+tests/      metric definitions and git hooks
+docs/adr/   architecture decision records (PT)
 data/       raw/ (raw snapshot)   ·   processed/ (parquets)
 ```
 
