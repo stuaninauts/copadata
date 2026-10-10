@@ -141,9 +141,33 @@ def test_group_situation_does_not_mix_editions():
     tm = derive.group_situation(derive.explode(m))
 
     a_1990 = tm[(tm.year == 1990) & (tm.team == "A")].sort_values("date")
-    assert a_1990.matchday.tolist() == [1, 2] and a_1990.points_before.tolist() == [0, 3]
+    assert a_1990.matchday.tolist() == [1, 2] and a_1990.points_before.tolist() == [0, 2]  # 2 pts per win in 1990
     a_1994 = tm[(tm.year == 1994) & (tm.team == "A")]
     assert a_1994.matchday.tolist() == [1] and a_1994.points_before.tolist() == [0]
-    # before 1994's 2nd match, X (3 pts) leads; A's 6 pts from 1990 must not leak into 1994
+    # before 1994's 2nd match, X (3 pts) leads; A's 4 pts from 1990 must not leak into 1994
     x_1994 = tm[(tm.year == 1994) & (tm.team == "X")].sort_values("date")
     assert x_1994.points_before.tolist() == [0, 3] and x_1994.position_before.iloc[1] == 1
+
+
+def test_points_for_a_win_were_two_before_1994():
+    # A: win + heavy loss; B: two draws. 2 pts each until 1990 (B ahead on goal difference),
+    # 3 x 2 from 1994 on (A ahead). D leads in both.
+    def gm(t1, t2, s1, s2, day, year):
+        return {"round": "Group stage", "group": "Group A", "date": f"{year}-06-{day:02d}", "team1": t1, "team2": t2,
+                "score": {"ft": [s1, s2]}, "goals1": [{"minute": "10"}] * s1, "goals2": [{"minute": "20"}] * s2}
+
+    def table_before_md3(year):
+        ms = [gm("A", "C", 1, 0, 1, year), gm("B", "D", 0, 0, 1, year),
+              gm("A", "D", 0, 3, 5, year), gm("B", "C", 1, 1, 5, year),
+              gm("A", "B", 0, 0, 9, year), gm("C", "D", 0, 0, 9, year)]
+        tm = derive.group_situation(derive.explode(transform.build_matches({"matches": ms}, year)))
+        md3 = tm[tm.matchday == 3].set_index("team")
+        return md3.points_before.to_dict(), md3.position_before.to_dict()
+
+    pts, pos = table_before_md3(1990)
+    assert pts == {"A": 2, "B": 2, "C": 1, "D": 3}
+    assert pos == {"D": 1, "B": 2, "A": 3, "C": 4}
+
+    pts, pos = table_before_md3(1994)
+    assert pts == {"A": 3, "B": 2, "C": 1, "D": 4}
+    assert pos == {"D": 1, "A": 2, "B": 3, "C": 4}

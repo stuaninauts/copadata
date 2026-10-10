@@ -26,5 +26,8 @@ MATCHES_PARQUET = PROCESSED / "matches.parquet"
 TEAM_MATCHES_PARQUET = PROCESSED / "team_matches.parquet"
 GOALS_PARQUET = PROCESSED / "goals.parquet"
 
+# Points for a win in the group table: 2 until 1990, 3 from 1994 on.
+THREE_POINTS_FROM = 1994
+
 # Late goal: scored at minute 80 or later in regulation time.
 LATE_GOAL_MIN = 80
