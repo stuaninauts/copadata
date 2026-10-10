@@ -16,8 +16,9 @@ def _result(gf: int, ga: int) -> str:
     return "W" if gf > ga else ("L" if gf < ga else "D")
 
 
-def _points(res: str) -> int:
-    return 3 if res == "W" else (1 if res == "D" else 0)
+def _points(res: str, year: int) -> int:
+    win = 3 if year >= config.THREE_POINTS_FROM else 2
+    return win if res == "W" else (1 if res == "D" else 0)
 
 
 def explode(matches: pd.DataFrame) -> pd.DataFrame:
@@ -65,7 +66,7 @@ def group_situation(tm: pd.DataFrame) -> pd.DataFrame:
                 vals["matchday"][idx] = matchday
                 vals["is_opener"][idx] = matchday == 1
                 vals["games_left"][idx] = 3 - matchday
-                vals["points_before"][idx] = int(sum(_points(r["result"]) for _, r in prev.iterrows()))
+                vals["points_before"][idx] = int(sum(_points(r["result"], r["year"]) for _, r in prev.iterrows()))
                 vals["gd_before"][idx] = (
                     int((prev["goals_for"] - prev["goals_against"]).sum()) if len(prev) else 0
                 )
@@ -75,7 +76,7 @@ def group_situation(tm: pd.DataFrame) -> pd.DataFrame:
             table = {t: [0, 0, 0] for t in teams}  # points, goal difference, goals for
             for _, r in prev.iterrows():
                 e = table[r["team"]]
-                e[0] += _points(r["result"])
+                e[0] += _points(r["result"], r["year"])
                 e[1] += r["goals_for"] - r["goals_against"]
                 e[2] += r["goals_for"]
             ranking = sorted(table.items(), key=lambda kv: (-kv[1][0], -kv[1][1], -kv[1][2], kv[0]))
