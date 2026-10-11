@@ -1,0 +1,2 @@
+id,metric,scope,k,n,null_rate,null_scope,alternative,p_value
+knockout_final_quarter_vs_history,decided_final_quarter,2026,12,31,0.246667,1986-2022,greater,0.058911

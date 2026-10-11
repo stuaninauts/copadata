@@ -1,0 +1,3 @@
+[
+{"id": "knockout_final_quarter_vs_history", "metric": "decided_final_quarter", "scope": "2026", "k": 12, "n": 31, "null_rate": 0.246667, "null_scope": "1986-2022", "alternative": "greater", "p_value": 0.058911}
+]

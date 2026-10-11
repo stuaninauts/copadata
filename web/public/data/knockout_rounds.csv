@@ -1,0 +1,993 @@
+scope_type,scope,round,metric,k,n,value
+edition,1986,Final,goals_per_match,,1,5.0
+edition,1986,Final,goals_per_match_90,,1,5.0
+edition,1986,Final,one_goal_margin,1,1,1.0
+edition,1986,Final,one_goal_margin_90,1,1,1.0
+edition,1986,Final,big_margin,0,1,0.0
+edition,1986,Final,mean_margin,,1,1.0
+edition,1986,Final,draw_90,0,1,0.0
+edition,1986,Final,extra_time,0,1,0.0
+edition,1986,Final,penalties,0,1,0.0
+edition,1986,Final,winning_goal_min,,1,84.0
+edition,1986,Final,winning_goal_min_90,,1,84.0
+edition,1986,Final,decided_final_quarter,1,1,1.0
+edition,1986,Final,decisive_at_90,0,1,0.0
+edition,1986,Final,late_goal,1,1,1.0
+edition,1986,Final,comeback,0,1,0.0
+edition,1986,Final,survival_goal,0,1,0.0
+edition,1986,Quarter-final,goals_per_match,,4,1.75
+edition,1986,Quarter-final,goals_per_match_90,,4,1.75
+edition,1986,Quarter-final,one_goal_margin,1,1,1.0
+edition,1986,Quarter-final,one_goal_margin_90,1,1,1.0
+edition,1986,Quarter-final,big_margin,0,4,0.0
+edition,1986,Quarter-final,mean_margin,,4,0.25
+edition,1986,Quarter-final,draw_90,3,4,0.75
+edition,1986,Quarter-final,extra_time,3,4,0.75
+edition,1986,Quarter-final,penalties,3,4,0.75
+edition,1986,Quarter-final,winning_goal_min,,1,55.0
+edition,1986,Quarter-final,winning_goal_min_90,,1,55.0
+edition,1986,Quarter-final,decided_final_quarter,1,4,0.25
+edition,1986,Quarter-final,decisive_at_90,0,3,0.0
+edition,1986,Quarter-final,late_goal,2,4,0.5
+edition,1986,Quarter-final,comeback,0,4,0.0
+edition,1986,Quarter-final,survival_goal,2,4,0.5
+edition,1986,Round of 16,goals_per_match,,8,3.25
+edition,1986,Round of 16,goals_per_match_90,,8,2.875
+edition,1986,Round of 16,one_goal_margin,3,8,0.375
+edition,1986,Round of 16,one_goal_margin_90,2,7,0.285714
+edition,1986,Round of 16,big_margin,3,8,0.375
+edition,1986,Round of 16,mean_margin,,8,2.25
+edition,1986,Round of 16,draw_90,1,8,0.125
+edition,1986,Round of 16,extra_time,1,8,0.125
+edition,1986,Round of 16,penalties,0,8,0.0
+edition,1986,Round of 16,winning_goal_min,,8,50.625
+edition,1986,Round of 16,winning_goal_min_90,,7,42.142857
+edition,1986,Round of 16,decided_final_quarter,2,8,0.25
+edition,1986,Round of 16,decisive_at_90,0,8,0.0
+edition,1986,Round of 16,late_goal,3,8,0.375
+edition,1986,Round of 16,comeback,2,8,0.25
+edition,1986,Round of 16,survival_goal,1,8,0.125
+edition,1986,Semi-final,goals_per_match,,2,2.0
+edition,1986,Semi-final,goals_per_match_90,,2,2.0
+edition,1986,Semi-final,one_goal_margin,0,2,0.0
+edition,1986,Semi-final,one_goal_margin_90,0,2,0.0
+edition,1986,Semi-final,big_margin,0,2,0.0
+edition,1986,Semi-final,mean_margin,,2,2.0
+edition,1986,Semi-final,draw_90,0,2,0.0
+edition,1986,Semi-final,extra_time,0,2,0.0
+edition,1986,Semi-final,penalties,0,2,0.0
+edition,1986,Semi-final,winning_goal_min,,2,30.0
+edition,1986,Semi-final,winning_goal_min_90,,2,30.0
+edition,1986,Semi-final,decided_final_quarter,0,2,0.0
+edition,1986,Semi-final,decisive_at_90,0,2,0.0
+edition,1986,Semi-final,late_goal,1,2,0.5
+edition,1986,Semi-final,comeback,0,2,0.0
+edition,1986,Semi-final,survival_goal,0,2,0.0
+edition,1990,Final,goals_per_match,,1,1.0
+edition,1990,Final,goals_per_match_90,,1,1.0
+edition,1990,Final,one_goal_margin,1,1,1.0
+edition,1990,Final,one_goal_margin_90,1,1,1.0
+edition,1990,Final,big_margin,0,1,0.0
+edition,1990,Final,mean_margin,,1,1.0
+edition,1990,Final,draw_90,0,1,0.0
+edition,1990,Final,extra_time,0,1,0.0
+edition,1990,Final,penalties,0,1,0.0
+edition,1990,Final,winning_goal_min,,1,85.0
+edition,1990,Final,winning_goal_min_90,,1,85.0
+edition,1990,Final,decided_final_quarter,1,1,1.0
+edition,1990,Final,decisive_at_90,0,1,0.0
+edition,1990,Final,late_goal,1,1,1.0
+edition,1990,Final,comeback,0,1,0.0
+edition,1990,Final,survival_goal,0,1,0.0
+edition,1990,Quarter-final,goals_per_match,,4,1.75
+edition,1990,Quarter-final,goals_per_match_90,,4,1.5
+edition,1990,Quarter-final,one_goal_margin,3,3,1.0
+edition,1990,Quarter-final,one_goal_margin_90,2,2,1.0
+edition,1990,Quarter-final,big_margin,0,4,0.0
+edition,1990,Quarter-final,mean_margin,,4,0.75
+edition,1990,Quarter-final,draw_90,2,4,0.5
+edition,1990,Quarter-final,extra_time,2,4,0.5
+edition,1990,Quarter-final,penalties,1,4,0.25
+edition,1990,Quarter-final,winning_goal_min,,3,56.0
+edition,1990,Quarter-final,winning_goal_min_90,,2,31.5
+edition,1990,Quarter-final,decided_final_quarter,1,4,0.25
+edition,1990,Quarter-final,decisive_at_90,0,3,0.0
+edition,1990,Quarter-final,late_goal,1,4,0.25
+edition,1990,Quarter-final,comeback,1,4,0.25
+edition,1990,Quarter-final,survival_goal,1,4,0.25
+edition,1990,Round of 16,goals_per_match,,8,2.25
+edition,1990,Round of 16,goals_per_match_90,,8,1.625
+edition,1990,Round of 16,one_goal_margin,5,7,0.714286
+edition,1990,Round of 16,one_goal_margin_90,2,4,0.5
+edition,1990,Round of 16,big_margin,1,8,0.125
+edition,1990,Round of 16,mean_margin,,8,1.25
+edition,1990,Round of 16,draw_90,4,8,0.5
+edition,1990,Round of 16,extra_time,4,8,0.5
+edition,1990,Round of 16,penalties,1,8,0.125
+edition,1990,Round of 16,winning_goal_min,,7,87.714286
+edition,1990,Round of 16,winning_goal_min_90,,4,73.5
+edition,1990,Round of 16,decided_final_quarter,3,8,0.375
+edition,1990,Round of 16,decisive_at_90,0,5,0.0
+edition,1990,Round of 16,late_goal,5,8,0.625
+edition,1990,Round of 16,comeback,0,8,0.0
+edition,1990,Round of 16,survival_goal,1,8,0.125
+edition,1990,Semi-final,goals_per_match,,2,2.0
+edition,1990,Semi-final,goals_per_match_90,,2,2.0
+edition,1990,Semi-final,one_goal_margin,0,0,
+edition,1990,Semi-final,one_goal_margin_90,0,0,
+edition,1990,Semi-final,big_margin,0,2,0.0
+edition,1990,Semi-final,mean_margin,,2,0.0
+edition,1990,Semi-final,draw_90,2,2,1.0
+edition,1990,Semi-final,extra_time,2,2,1.0
+edition,1990,Semi-final,penalties,2,2,1.0
+edition,1990,Semi-final,winning_goal_min,,0,
+edition,1990,Semi-final,winning_goal_min_90,,0,
+edition,1990,Semi-final,decided_final_quarter,1,2,0.5
+edition,1990,Semi-final,decisive_at_90,0,2,0.0
+edition,1990,Semi-final,late_goal,1,2,0.5
+edition,1990,Semi-final,comeback,0,2,0.0
+edition,1990,Semi-final,survival_goal,2,2,1.0
+edition,1994,Final,goals_per_match,,1,0.0
+edition,1994,Final,goals_per_match_90,,1,0.0
+edition,1994,Final,one_goal_margin,0,0,
+edition,1994,Final,one_goal_margin_90,0,0,
+edition,1994,Final,big_margin,0,1,0.0
+edition,1994,Final,mean_margin,,1,0.0
+edition,1994,Final,draw_90,1,1,1.0
+edition,1994,Final,extra_time,1,1,1.0
+edition,1994,Final,penalties,1,1,1.0
+edition,1994,Final,winning_goal_min,,0,
+edition,1994,Final,winning_goal_min_90,,0,
+edition,1994,Final,decided_final_quarter,0,1,0.0
+edition,1994,Final,decisive_at_90,0,0,
+edition,1994,Final,late_goal,0,1,0.0
+edition,1994,Final,comeback,0,1,0.0
+edition,1994,Final,survival_goal,0,1,0.0
+edition,1994,Quarter-final,goals_per_match,,4,3.75
+edition,1994,Quarter-final,goals_per_match_90,,4,3.25
+edition,1994,Quarter-final,one_goal_margin,3,3,1.0
+edition,1994,Quarter-final,one_goal_margin_90,3,3,1.0
+edition,1994,Quarter-final,big_margin,0,4,0.0
+edition,1994,Quarter-final,mean_margin,,4,0.75
+edition,1994,Quarter-final,draw_90,1,4,0.25
+edition,1994,Quarter-final,extra_time,1,4,0.25
+edition,1994,Quarter-final,penalties,1,4,0.25
+edition,1994,Quarter-final,winning_goal_min,,3,82.333333
+edition,1994,Quarter-final,winning_goal_min_90,,3,82.333333
+edition,1994,Quarter-final,decided_final_quarter,4,4,1.0
+edition,1994,Quarter-final,decisive_at_90,0,4,0.0
+edition,1994,Quarter-final,late_goal,3,4,0.75
+edition,1994,Quarter-final,comeback,2,4,0.5
+edition,1994,Quarter-final,survival_goal,1,4,0.25
+edition,1994,Round of 16,goals_per_match,,8,3.125
+edition,1994,Round of 16,goals_per_match_90,,8,3.0
+edition,1994,Round of 16,one_goal_margin,4,7,0.571429
+edition,1994,Round of 16,one_goal_margin_90,3,6,0.5
+edition,1994,Round of 16,big_margin,1,8,0.125
+edition,1994,Round of 16,mean_margin,,8,1.375
+edition,1994,Round of 16,draw_90,2,8,0.25
+edition,1994,Round of 16,extra_time,2,8,0.25
+edition,1994,Round of 16,penalties,1,8,0.125
+edition,1994,Round of 16,winning_goal_min,,7,49.571429
+edition,1994,Round of 16,winning_goal_min_90,,6,40.833333
+edition,1994,Round of 16,decided_final_quarter,1,8,0.125
+edition,1994,Round of 16,decisive_at_90,0,8,0.0
+edition,1994,Round of 16,late_goal,4,8,0.5
+edition,1994,Round of 16,comeback,1,8,0.125
+edition,1994,Round of 16,survival_goal,2,8,0.25
+edition,1994,Semi-final,goals_per_match,,2,2.0
+edition,1994,Semi-final,goals_per_match_90,,2,2.0
+edition,1994,Semi-final,one_goal_margin,2,2,1.0
+edition,1994,Semi-final,one_goal_margin_90,2,2,1.0
+edition,1994,Semi-final,big_margin,0,2,0.0
+edition,1994,Semi-final,mean_margin,,2,1.0
+edition,1994,Semi-final,draw_90,0,2,0.0
+edition,1994,Semi-final,extra_time,0,2,0.0
+edition,1994,Semi-final,penalties,0,2,0.0
+edition,1994,Semi-final,winning_goal_min,,2,52.5
+edition,1994,Semi-final,winning_goal_min_90,,2,52.5
+edition,1994,Semi-final,decided_final_quarter,1,2,0.5
+edition,1994,Semi-final,decisive_at_90,0,2,0.0
+edition,1994,Semi-final,late_goal,1,2,0.5
+edition,1994,Semi-final,comeback,0,2,0.0
+edition,1994,Semi-final,survival_goal,0,2,0.0
+edition,1998,Final,goals_per_match,,1,3.0
+edition,1998,Final,goals_per_match_90,,1,3.0
+edition,1998,Final,one_goal_margin,0,1,0.0
+edition,1998,Final,one_goal_margin_90,0,1,0.0
+edition,1998,Final,big_margin,1,1,1.0
+edition,1998,Final,mean_margin,,1,3.0
+edition,1998,Final,draw_90,0,1,0.0
+edition,1998,Final,extra_time,0,1,0.0
+edition,1998,Final,penalties,0,1,0.0
+edition,1998,Final,winning_goal_min,,1,27.0
+edition,1998,Final,winning_goal_min_90,,1,27.0
+edition,1998,Final,decided_final_quarter,0,1,0.0
+edition,1998,Final,decisive_at_90,0,1,0.0
+edition,1998,Final,late_goal,1,1,1.0
+edition,1998,Final,comeback,0,1,0.0
+edition,1998,Final,survival_goal,0,1,0.0
+edition,1998,Quarter-final,goals_per_match,,4,2.75
+edition,1998,Quarter-final,goals_per_match_90,,4,2.75
+edition,1998,Quarter-final,one_goal_margin,2,3,0.666667
+edition,1998,Quarter-final,one_goal_margin_90,2,3,0.666667
+edition,1998,Quarter-final,big_margin,1,4,0.25
+edition,1998,Quarter-final,mean_margin,,4,1.25
+edition,1998,Quarter-final,draw_90,1,4,0.25
+edition,1998,Quarter-final,extra_time,1,4,0.25
+edition,1998,Quarter-final,penalties,1,4,0.25
+edition,1998,Quarter-final,winning_goal_min,,3,64.666667
+edition,1998,Quarter-final,winning_goal_min_90,,3,64.666667
+edition,1998,Quarter-final,decided_final_quarter,1,4,0.25
+edition,1998,Quarter-final,decisive_at_90,1,3,0.333333
+edition,1998,Quarter-final,late_goal,2,4,0.5
+edition,1998,Quarter-final,comeback,1,4,0.25
+edition,1998,Quarter-final,survival_goal,0,4,0.0
+edition,1998,Round of 16,goals_per_match,,8,2.875
+edition,1998,Round of 16,goals_per_match_90,,8,2.75
+edition,1998,Round of 16,one_goal_margin,5,7,0.714286
+edition,1998,Round of 16,one_goal_margin_90,4,6,0.666667
+edition,1998,Round of 16,big_margin,2,8,0.25
+edition,1998,Round of 16,mean_margin,,8,1.375
+edition,1998,Round of 16,draw_90,2,8,0.25
+edition,1998,Round of 16,extra_time,2,8,0.25
+edition,1998,Round of 16,penalties,1,8,0.125
+edition,1998,Round of 16,winning_goal_min,,7,55.857143
+edition,1998,Round of 16,winning_goal_min_90,,6,46.166667
+edition,1998,Round of 16,decided_final_quarter,2,8,0.25
+edition,1998,Round of 16,decisive_at_90,1,7,0.142857
+edition,1998,Round of 16,late_goal,2,8,0.25
+edition,1998,Round of 16,comeback,2,8,0.25
+edition,1998,Round of 16,survival_goal,1,8,0.125
+edition,1998,Semi-final,goals_per_match,,2,2.5
+edition,1998,Semi-final,goals_per_match_90,,2,2.5
+edition,1998,Semi-final,one_goal_margin,1,1,1.0
+edition,1998,Semi-final,one_goal_margin_90,1,1,1.0
+edition,1998,Semi-final,big_margin,0,2,0.0
+edition,1998,Semi-final,mean_margin,,2,0.5
+edition,1998,Semi-final,draw_90,1,2,0.5
+edition,1998,Semi-final,extra_time,1,2,0.5
+edition,1998,Semi-final,penalties,1,2,0.5
+edition,1998,Semi-final,winning_goal_min,,1,70.0
+edition,1998,Semi-final,winning_goal_min_90,,1,70.0
+edition,1998,Semi-final,decided_final_quarter,1,2,0.5
+edition,1998,Semi-final,decisive_at_90,0,2,0.0
+edition,1998,Semi-final,late_goal,1,2,0.5
+edition,1998,Semi-final,comeback,1,2,0.5
+edition,1998,Semi-final,survival_goal,1,2,0.5
+edition,2002,Final,goals_per_match,,1,2.0
+edition,2002,Final,goals_per_match_90,,1,2.0
+edition,2002,Final,one_goal_margin,0,1,0.0
+edition,2002,Final,one_goal_margin_90,0,1,0.0
+edition,2002,Final,big_margin,0,1,0.0
+edition,2002,Final,mean_margin,,1,2.0
+edition,2002,Final,draw_90,0,1,0.0
+edition,2002,Final,extra_time,0,1,0.0
+edition,2002,Final,penalties,0,1,0.0
+edition,2002,Final,winning_goal_min,,1,67.0
+edition,2002,Final,winning_goal_min_90,,1,67.0
+edition,2002,Final,decided_final_quarter,0,1,0.0
+edition,2002,Final,decisive_at_90,0,1,0.0
+edition,2002,Final,late_goal,0,1,0.0
+edition,2002,Final,comeback,0,1,0.0
+edition,2002,Final,survival_goal,0,1,0.0
+edition,2002,Quarter-final,goals_per_match,,4,1.25
+edition,2002,Quarter-final,goals_per_match_90,,4,1.0
+edition,2002,Quarter-final,one_goal_margin,3,3,1.0
+edition,2002,Quarter-final,one_goal_margin_90,2,2,1.0
+edition,2002,Quarter-final,big_margin,0,4,0.0
+edition,2002,Quarter-final,mean_margin,,4,0.75
+edition,2002,Quarter-final,draw_90,2,4,0.5
+edition,2002,Quarter-final,extra_time,2,4,0.5
+edition,2002,Quarter-final,penalties,1,4,0.25
+edition,2002,Quarter-final,winning_goal_min,,3,61.0
+edition,2002,Quarter-final,winning_goal_min_90,,2,44.5
+edition,2002,Quarter-final,decided_final_quarter,0,4,0.0
+edition,2002,Quarter-final,decisive_at_90,0,2,0.0
+edition,2002,Quarter-final,late_goal,0,4,0.0
+edition,2002,Quarter-final,comeback,1,4,0.25
+edition,2002,Quarter-final,survival_goal,0,4,0.0
+edition,2002,Round of 16,goals_per_match,,8,2.125
+edition,2002,Round of 16,goals_per_match_90,,8,1.875
+edition,2002,Round of 16,one_goal_margin,4,7,0.571429
+edition,2002,Round of 16,one_goal_margin_90,2,5,0.4
+edition,2002,Round of 16,big_margin,1,8,0.125
+edition,2002,Round of 16,mean_margin,,8,1.375
+edition,2002,Round of 16,draw_90,3,8,0.375
+edition,2002,Round of 16,extra_time,3,8,0.375
+edition,2002,Round of 16,penalties,1,8,0.125
+edition,2002,Round of 16,winning_goal_min,,7,57.285714
+edition,2002,Round of 16,winning_goal_min_90,,5,36.0
+edition,2002,Round of 16,decided_final_quarter,3,8,0.375
+edition,2002,Round of 16,decisive_at_90,1,8,0.125
+edition,2002,Round of 16,late_goal,4,8,0.5
+edition,2002,Round of 16,comeback,2,8,0.25
+edition,2002,Round of 16,survival_goal,3,8,0.375
+edition,2002,Semi-final,goals_per_match,,2,1.0
+edition,2002,Semi-final,goals_per_match_90,,2,1.0
+edition,2002,Semi-final,one_goal_margin,2,2,1.0
+edition,2002,Semi-final,one_goal_margin_90,2,2,1.0
+edition,2002,Semi-final,big_margin,0,2,0.0
+edition,2002,Semi-final,mean_margin,,2,1.0
+edition,2002,Semi-final,draw_90,0,2,0.0
+edition,2002,Semi-final,extra_time,0,2,0.0
+edition,2002,Semi-final,penalties,0,2,0.0
+edition,2002,Semi-final,winning_goal_min,,2,62.0
+edition,2002,Semi-final,winning_goal_min_90,,2,62.0
+edition,2002,Semi-final,decided_final_quarter,0,2,0.0
+edition,2002,Semi-final,decisive_at_90,0,2,0.0
+edition,2002,Semi-final,late_goal,0,2,0.0
+edition,2002,Semi-final,comeback,0,2,0.0
+edition,2002,Semi-final,survival_goal,0,2,0.0
+edition,2006,Final,goals_per_match,,1,2.0
+edition,2006,Final,goals_per_match_90,,1,2.0
+edition,2006,Final,one_goal_margin,0,0,
+edition,2006,Final,one_goal_margin_90,0,0,
+edition,2006,Final,big_margin,0,1,0.0
+edition,2006,Final,mean_margin,,1,0.0
+edition,2006,Final,draw_90,1,1,1.0
+edition,2006,Final,extra_time,1,1,1.0
+edition,2006,Final,penalties,1,1,1.0
+edition,2006,Final,winning_goal_min,,0,
+edition,2006,Final,winning_goal_min_90,,0,
+edition,2006,Final,decided_final_quarter,0,1,0.0
+edition,2006,Final,decisive_at_90,0,1,0.0
+edition,2006,Final,late_goal,0,1,0.0
+edition,2006,Final,comeback,0,1,0.0
+edition,2006,Final,survival_goal,1,1,1.0
+edition,2006,Quarter-final,goals_per_match,,4,1.5
+edition,2006,Quarter-final,goals_per_match_90,,4,1.5
+edition,2006,Quarter-final,one_goal_margin,1,2,0.5
+edition,2006,Quarter-final,one_goal_margin_90,1,2,0.5
+edition,2006,Quarter-final,big_margin,1,4,0.25
+edition,2006,Quarter-final,mean_margin,,4,1.0
+edition,2006,Quarter-final,draw_90,2,4,0.5
+edition,2006,Quarter-final,extra_time,2,4,0.5
+edition,2006,Quarter-final,penalties,2,4,0.5
+edition,2006,Quarter-final,winning_goal_min,,2,31.5
+edition,2006,Quarter-final,winning_goal_min_90,,2,31.5
+edition,2006,Quarter-final,decided_final_quarter,1,4,0.25
+edition,2006,Quarter-final,decisive_at_90,0,3,0.0
+edition,2006,Quarter-final,late_goal,1,4,0.25
+edition,2006,Quarter-final,comeback,0,4,0.0
+edition,2006,Quarter-final,survival_goal,1,4,0.25
+edition,2006,Round of 16,goals_per_match,,8,1.875
+edition,2006,Round of 16,goals_per_match_90,,8,1.75
+edition,2006,Round of 16,one_goal_margin,4,7,0.571429
+edition,2006,Round of 16,one_goal_margin_90,3,6,0.5
+edition,2006,Round of 16,big_margin,1,8,0.125
+edition,2006,Round of 16,mean_margin,,8,1.375
+edition,2006,Round of 16,draw_90,2,8,0.25
+edition,2006,Round of 16,extra_time,2,8,0.25
+edition,2006,Round of 16,penalties,1,8,0.125
+edition,2006,Round of 16,winning_goal_min,,7,51.857143
+edition,2006,Round of 16,winning_goal_min_90,,6,44.166667
+edition,2006,Round of 16,decided_final_quarter,2,8,0.25
+edition,2006,Round of 16,decisive_at_90,1,7,0.142857
+edition,2006,Round of 16,late_goal,3,8,0.375
+edition,2006,Round of 16,comeback,2,8,0.25
+edition,2006,Round of 16,survival_goal,1,8,0.125
+edition,2006,Semi-final,goals_per_match,,2,1.5
+edition,2006,Semi-final,goals_per_match_90,,2,0.5
+edition,2006,Semi-final,one_goal_margin,1,2,0.5
+edition,2006,Semi-final,one_goal_margin_90,1,1,1.0
+edition,2006,Semi-final,big_margin,0,2,0.0
+edition,2006,Semi-final,mean_margin,,2,1.5
+edition,2006,Semi-final,draw_90,1,2,0.5
+edition,2006,Semi-final,extra_time,1,2,0.5
+edition,2006,Semi-final,penalties,0,2,0.0
+edition,2006,Semi-final,winning_goal_min,,2,76.0
+edition,2006,Semi-final,winning_goal_min_90,,1,33.0
+edition,2006,Semi-final,decided_final_quarter,0,2,0.0
+edition,2006,Semi-final,decisive_at_90,0,1,0.0
+edition,2006,Semi-final,late_goal,0,2,0.0
+edition,2006,Semi-final,comeback,0,2,0.0
+edition,2006,Semi-final,survival_goal,0,2,0.0
+edition,2010,Final,goals_per_match,,1,1.0
+edition,2010,Final,goals_per_match_90,,1,0.0
+edition,2010,Final,one_goal_margin,1,1,1.0
+edition,2010,Final,one_goal_margin_90,0,0,
+edition,2010,Final,big_margin,0,1,0.0
+edition,2010,Final,mean_margin,,1,1.0
+edition,2010,Final,draw_90,1,1,1.0
+edition,2010,Final,extra_time,1,1,1.0
+edition,2010,Final,penalties,0,1,0.0
+edition,2010,Final,winning_goal_min,,1,116.0
+edition,2010,Final,winning_goal_min_90,,0,
+edition,2010,Final,decided_final_quarter,0,1,0.0
+edition,2010,Final,decisive_at_90,0,0,
+edition,2010,Final,late_goal,0,1,0.0
+edition,2010,Final,comeback,0,1,0.0
+edition,2010,Final,survival_goal,0,1,0.0
+edition,2010,Quarter-final,goals_per_match,,4,2.5
+edition,2010,Quarter-final,goals_per_match_90,,4,2.5
+edition,2010,Quarter-final,one_goal_margin,2,3,0.666667
+edition,2010,Quarter-final,one_goal_margin_90,2,3,0.666667
+edition,2010,Quarter-final,big_margin,1,4,0.25
+edition,2010,Quarter-final,mean_margin,,4,1.5
+edition,2010,Quarter-final,draw_90,1,4,0.25
+edition,2010,Quarter-final,extra_time,1,4,0.25
+edition,2010,Quarter-final,penalties,1,4,0.25
+edition,2010,Quarter-final,winning_goal_min,,3,51.333333
+edition,2010,Quarter-final,winning_goal_min_90,,3,51.333333
+edition,2010,Quarter-final,decided_final_quarter,1,4,0.25
+edition,2010,Quarter-final,decisive_at_90,0,4,0.0
+edition,2010,Quarter-final,late_goal,2,4,0.5
+edition,2010,Quarter-final,comeback,1,4,0.25
+edition,2010,Quarter-final,survival_goal,1,4,0.25
+edition,2010,Round of 16,goals_per_match,,8,2.75
+edition,2010,Round of 16,goals_per_match_90,,8,2.625
+edition,2010,Round of 16,one_goal_margin,4,7,0.571429
+edition,2010,Round of 16,one_goal_margin_90,3,6,0.5
+edition,2010,Round of 16,big_margin,2,8,0.25
+edition,2010,Round of 16,mean_margin,,8,1.5
+edition,2010,Round of 16,draw_90,2,8,0.25
+edition,2010,Round of 16,extra_time,2,8,0.25
+edition,2010,Round of 16,penalties,1,8,0.125
+edition,2010,Round of 16,winning_goal_min,,7,60.0
+edition,2010,Round of 16,winning_goal_min_90,,6,54.5
+edition,2010,Round of 16,decided_final_quarter,2,8,0.25
+edition,2010,Round of 16,decisive_at_90,0,7,0.0
+edition,2010,Round of 16,late_goal,2,8,0.25
+edition,2010,Round of 16,comeback,0,8,0.0
+edition,2010,Round of 16,survival_goal,1,8,0.125
+edition,2010,Semi-final,goals_per_match,,2,3.0
+edition,2010,Semi-final,goals_per_match_90,,2,3.0
+edition,2010,Semi-final,one_goal_margin,2,2,1.0
+edition,2010,Semi-final,one_goal_margin_90,2,2,1.0
+edition,2010,Semi-final,big_margin,0,2,0.0
+edition,2010,Semi-final,mean_margin,,2,1.0
+edition,2010,Semi-final,draw_90,0,2,0.0
+edition,2010,Semi-final,extra_time,0,2,0.0
+edition,2010,Semi-final,penalties,0,2,0.0
+edition,2010,Semi-final,winning_goal_min,,2,73.0
+edition,2010,Semi-final,winning_goal_min_90,,2,73.0
+edition,2010,Semi-final,decided_final_quarter,0,2,0.0
+edition,2010,Semi-final,decisive_at_90,0,2,0.0
+edition,2010,Semi-final,late_goal,1,2,0.5
+edition,2010,Semi-final,comeback,0,2,0.0
+edition,2010,Semi-final,survival_goal,0,2,0.0
+edition,2014,Final,goals_per_match,,1,1.0
+edition,2014,Final,goals_per_match_90,,1,0.0
+edition,2014,Final,one_goal_margin,1,1,1.0
+edition,2014,Final,one_goal_margin_90,0,0,
+edition,2014,Final,big_margin,0,1,0.0
+edition,2014,Final,mean_margin,,1,1.0
+edition,2014,Final,draw_90,1,1,1.0
+edition,2014,Final,extra_time,1,1,1.0
+edition,2014,Final,penalties,0,1,0.0
+edition,2014,Final,winning_goal_min,,1,113.0
+edition,2014,Final,winning_goal_min_90,,0,
+edition,2014,Final,decided_final_quarter,0,1,0.0
+edition,2014,Final,decisive_at_90,0,0,
+edition,2014,Final,late_goal,0,1,0.0
+edition,2014,Final,comeback,0,1,0.0
+edition,2014,Final,survival_goal,0,1,0.0
+edition,2014,Quarter-final,goals_per_match,,4,1.25
+edition,2014,Quarter-final,goals_per_match_90,,4,1.25
+edition,2014,Quarter-final,one_goal_margin,3,3,1.0
+edition,2014,Quarter-final,one_goal_margin_90,3,3,1.0
+edition,2014,Quarter-final,big_margin,0,4,0.0
+edition,2014,Quarter-final,mean_margin,,4,0.75
+edition,2014,Quarter-final,draw_90,1,4,0.25
+edition,2014,Quarter-final,extra_time,1,4,0.25
+edition,2014,Quarter-final,penalties,1,4,0.25
+edition,2014,Quarter-final,winning_goal_min,,3,30.0
+edition,2014,Quarter-final,winning_goal_min_90,,3,30.0
+edition,2014,Quarter-final,decided_final_quarter,0,4,0.0
+edition,2014,Quarter-final,decisive_at_90,0,3,0.0
+edition,2014,Quarter-final,late_goal,1,4,0.25
+edition,2014,Quarter-final,comeback,0,4,0.0
+edition,2014,Quarter-final,survival_goal,0,4,0.0
+edition,2014,Round of 16,goals_per_match,,8,2.25
+edition,2014,Round of 16,goals_per_match_90,,8,1.375
+edition,2014,Round of 16,one_goal_margin,4,6,0.666667
+edition,2014,Round of 16,one_goal_margin_90,1,3,0.333333
+edition,2014,Round of 16,big_margin,0,8,0.0
+edition,2014,Round of 16,mean_margin,,8,1.0
+edition,2014,Round of 16,draw_90,5,8,0.625
+edition,2014,Round of 16,extra_time,5,8,0.625
+edition,2014,Round of 16,penalties,2,8,0.25
+edition,2014,Round of 16,winning_goal_min,,6,90.0
+edition,2014,Round of 16,winning_goal_min_90,,3,65.666667
+edition,2014,Round of 16,decided_final_quarter,3,8,0.375
+edition,2014,Round of 16,decisive_at_90,2,5,0.4
+edition,2014,Round of 16,late_goal,3,8,0.375
+edition,2014,Round of 16,comeback,1,8,0.125
+edition,2014,Round of 16,survival_goal,2,8,0.25
+edition,2014,Semi-final,goals_per_match,,2,4.0
+edition,2014,Semi-final,goals_per_match_90,,2,4.0
+edition,2014,Semi-final,one_goal_margin,0,1,0.0
+edition,2014,Semi-final,one_goal_margin_90,0,1,0.0
+edition,2014,Semi-final,big_margin,1,2,0.5
+edition,2014,Semi-final,mean_margin,,2,3.0
+edition,2014,Semi-final,draw_90,1,2,0.5
+edition,2014,Semi-final,extra_time,1,2,0.5
+edition,2014,Semi-final,penalties,1,2,0.5
+edition,2014,Semi-final,winning_goal_min,,1,23.0
+edition,2014,Semi-final,winning_goal_min_90,,1,23.0
+edition,2014,Semi-final,decided_final_quarter,0,2,0.0
+edition,2014,Semi-final,decisive_at_90,0,1,0.0
+edition,2014,Semi-final,late_goal,1,2,0.5
+edition,2014,Semi-final,comeback,0,2,0.0
+edition,2014,Semi-final,survival_goal,0,2,0.0
+edition,2018,Final,goals_per_match,,1,6.0
+edition,2018,Final,goals_per_match_90,,1,6.0
+edition,2018,Final,one_goal_margin,0,1,0.0
+edition,2018,Final,one_goal_margin_90,0,1,0.0
+edition,2018,Final,big_margin,0,1,0.0
+edition,2018,Final,mean_margin,,1,2.0
+edition,2018,Final,draw_90,0,1,0.0
+edition,2018,Final,extra_time,0,1,0.0
+edition,2018,Final,penalties,0,1,0.0
+edition,2018,Final,winning_goal_min,,1,59.0
+edition,2018,Final,winning_goal_min_90,,1,59.0
+edition,2018,Final,decided_final_quarter,0,1,0.0
+edition,2018,Final,decisive_at_90,0,1,0.0
+edition,2018,Final,late_goal,0,1,0.0
+edition,2018,Final,comeback,0,1,0.0
+edition,2018,Final,survival_goal,0,1,0.0
+edition,2018,Quarter-final,goals_per_match,,4,2.75
+edition,2018,Quarter-final,goals_per_match_90,,4,2.25
+edition,2018,Quarter-final,one_goal_margin,1,3,0.333333
+edition,2018,Quarter-final,one_goal_margin_90,1,3,0.333333
+edition,2018,Quarter-final,big_margin,0,4,0.0
+edition,2018,Quarter-final,mean_margin,,4,1.25
+edition,2018,Quarter-final,draw_90,1,4,0.25
+edition,2018,Quarter-final,extra_time,1,4,0.25
+edition,2018,Quarter-final,penalties,1,4,0.25
+edition,2018,Quarter-final,winning_goal_min,,3,33.666667
+edition,2018,Quarter-final,winning_goal_min_90,,3,33.666667
+edition,2018,Quarter-final,decided_final_quarter,0,4,0.0
+edition,2018,Quarter-final,decisive_at_90,0,4,0.0
+edition,2018,Quarter-final,late_goal,0,4,0.0
+edition,2018,Quarter-final,comeback,1,4,0.25
+edition,2018,Quarter-final,survival_goal,1,4,0.25
+edition,2018,Round of 16,goals_per_match,,8,3.0
+edition,2018,Round of 16,goals_per_match_90,,8,3.0
+edition,2018,Round of 16,one_goal_margin,4,5,0.8
+edition,2018,Round of 16,one_goal_margin_90,4,5,0.8
+edition,2018,Round of 16,big_margin,0,8,0.0
+edition,2018,Round of 16,mean_margin,,8,0.75
+edition,2018,Round of 16,draw_90,3,8,0.375
+edition,2018,Round of 16,extra_time,3,8,0.375
+edition,2018,Round of 16,penalties,3,8,0.375
+edition,2018,Round of 16,winning_goal_min,,5,67.4
+edition,2018,Round of 16,winning_goal_min_90,,5,67.4
+edition,2018,Round of 16,decided_final_quarter,2,8,0.25
+edition,2018,Round of 16,decisive_at_90,2,8,0.25
+edition,2018,Round of 16,late_goal,4,8,0.5
+edition,2018,Round of 16,comeback,2,8,0.25
+edition,2018,Round of 16,survival_goal,3,8,0.375
+edition,2018,Semi-final,goals_per_match,,2,2.0
+edition,2018,Semi-final,goals_per_match_90,,2,1.5
+edition,2018,Semi-final,one_goal_margin,2,2,1.0
+edition,2018,Semi-final,one_goal_margin_90,1,1,1.0
+edition,2018,Semi-final,big_margin,0,2,0.0
+edition,2018,Semi-final,mean_margin,,2,1.0
+edition,2018,Semi-final,draw_90,1,2,0.5
+edition,2018,Semi-final,extra_time,1,2,0.5
+edition,2018,Semi-final,penalties,0,2,0.0
+edition,2018,Semi-final,winning_goal_min,,2,80.0
+edition,2018,Semi-final,winning_goal_min_90,,1,51.0
+edition,2018,Semi-final,decided_final_quarter,0,2,0.0
+edition,2018,Semi-final,decisive_at_90,0,2,0.0
+edition,2018,Semi-final,late_goal,0,2,0.0
+edition,2018,Semi-final,comeback,1,2,0.5
+edition,2018,Semi-final,survival_goal,1,2,0.5
+edition,2022,Final,goals_per_match,,1,6.0
+edition,2022,Final,goals_per_match_90,,1,4.0
+edition,2022,Final,one_goal_margin,0,0,
+edition,2022,Final,one_goal_margin_90,0,0,
+edition,2022,Final,big_margin,0,1,0.0
+edition,2022,Final,mean_margin,,1,0.0
+edition,2022,Final,draw_90,1,1,1.0
+edition,2022,Final,extra_time,1,1,1.0
+edition,2022,Final,penalties,1,1,1.0
+edition,2022,Final,winning_goal_min,,0,
+edition,2022,Final,winning_goal_min_90,,0,
+edition,2022,Final,decided_final_quarter,1,1,1.0
+edition,2022,Final,decisive_at_90,0,1,0.0
+edition,2022,Final,late_goal,1,1,1.0
+edition,2022,Final,comeback,0,1,0.0
+edition,2022,Final,survival_goal,1,1,1.0
+edition,2022,Quarter-final,goals_per_match,,4,2.5
+edition,2022,Quarter-final,goals_per_match_90,,4,2.0
+edition,2022,Quarter-final,one_goal_margin,2,2,1.0
+edition,2022,Quarter-final,one_goal_margin_90,2,2,1.0
+edition,2022,Quarter-final,big_margin,0,4,0.0
+edition,2022,Quarter-final,mean_margin,,4,0.5
+edition,2022,Quarter-final,draw_90,2,4,0.5
+edition,2022,Quarter-final,extra_time,2,4,0.5
+edition,2022,Quarter-final,penalties,2,4,0.5
+edition,2022,Quarter-final,winning_goal_min,,2,60.0
+edition,2022,Quarter-final,winning_goal_min_90,,2,60.0
+edition,2022,Quarter-final,decided_final_quarter,2,4,0.5
+edition,2022,Quarter-final,decisive_at_90,1,3,0.333333
+edition,2022,Quarter-final,late_goal,1,4,0.25
+edition,2022,Quarter-final,comeback,0,4,0.0
+edition,2022,Quarter-final,survival_goal,1,4,0.25
+edition,2022,Round of 16,goals_per_match,,8,3.5
+edition,2022,Round of 16,goals_per_match_90,,8,3.5
+edition,2022,Round of 16,one_goal_margin,1,6,0.166667
+edition,2022,Round of 16,one_goal_margin_90,1,6,0.166667
+edition,2022,Round of 16,big_margin,3,8,0.375
+edition,2022,Round of 16,mean_margin,,8,2.0
+edition,2022,Round of 16,draw_90,2,8,0.25
+edition,2022,Round of 16,extra_time,2,8,0.25
+edition,2022,Round of 16,penalties,2,8,0.25
+edition,2022,Round of 16,winning_goal_min,,6,43.333333
+edition,2022,Round of 16,winning_goal_min_90,,6,43.333333
+edition,2022,Round of 16,decided_final_quarter,0,8,0.0
+edition,2022,Round of 16,decisive_at_90,0,7,0.0
+edition,2022,Round of 16,late_goal,3,8,0.375
+edition,2022,Round of 16,comeback,0,8,0.0
+edition,2022,Round of 16,survival_goal,1,8,0.125
+edition,2022,Semi-final,goals_per_match,,2,2.5
+edition,2022,Semi-final,goals_per_match_90,,2,2.5
+edition,2022,Semi-final,one_goal_margin,0,2,0.0
+edition,2022,Semi-final,one_goal_margin_90,0,2,0.0
+edition,2022,Semi-final,big_margin,1,2,0.5
+edition,2022,Semi-final,mean_margin,,2,2.5
+edition,2022,Semi-final,draw_90,0,2,0.0
+edition,2022,Semi-final,extra_time,0,2,0.0
+edition,2022,Semi-final,penalties,0,2,0.0
+edition,2022,Semi-final,winning_goal_min,,2,19.5
+edition,2022,Semi-final,winning_goal_min_90,,2,19.5
+edition,2022,Semi-final,decided_final_quarter,0,2,0.0
+edition,2022,Semi-final,decisive_at_90,0,2,0.0
+edition,2022,Semi-final,late_goal,0,2,0.0
+edition,2022,Semi-final,comeback,0,2,0.0
+edition,2022,Semi-final,survival_goal,0,2,0.0
+edition,2026,Final,goals_per_match,,1,1.0
+edition,2026,Final,goals_per_match_90,,1,0.0
+edition,2026,Final,one_goal_margin,1,1,1.0
+edition,2026,Final,one_goal_margin_90,0,0,
+edition,2026,Final,big_margin,0,1,0.0
+edition,2026,Final,mean_margin,,1,1.0
+edition,2026,Final,draw_90,1,1,1.0
+edition,2026,Final,extra_time,1,1,1.0
+edition,2026,Final,penalties,0,1,0.0
+edition,2026,Final,winning_goal_min,,1,106.0
+edition,2026,Final,winning_goal_min_90,,0,
+edition,2026,Final,decided_final_quarter,0,1,0.0
+edition,2026,Final,decisive_at_90,0,0,
+edition,2026,Final,late_goal,0,1,0.0
+edition,2026,Final,comeback,0,1,0.0
+edition,2026,Final,survival_goal,0,1,0.0
+edition,2026,Quarter-final,goals_per_match,,4,3.0
+edition,2026,Quarter-final,goals_per_match_90,,4,2.25
+edition,2026,Quarter-final,one_goal_margin,2,4,0.5
+edition,2026,Quarter-final,one_goal_margin_90,1,2,0.5
+edition,2026,Quarter-final,big_margin,0,4,0.0
+edition,2026,Quarter-final,mean_margin,,4,1.5
+edition,2026,Quarter-final,draw_90,2,4,0.5
+edition,2026,Quarter-final,extra_time,2,4,0.5
+edition,2026,Quarter-final,penalties,0,4,0.0
+edition,2026,Quarter-final,winning_goal_min,,4,88.25
+edition,2026,Quarter-final,winning_goal_min_90,,2,74.0
+edition,2026,Quarter-final,decided_final_quarter,1,4,0.25
+edition,2026,Quarter-final,decisive_at_90,0,4,0.0
+edition,2026,Quarter-final,late_goal,1,4,0.25
+edition,2026,Quarter-final,comeback,1,4,0.25
+edition,2026,Quarter-final,survival_goal,2,4,0.5
+edition,2026,Round of 16,goals_per_match,,8,2.875
+edition,2026,Round of 16,goals_per_match_90,,8,2.875
+edition,2026,Round of 16,one_goal_margin,5,7,0.714286
+edition,2026,Round of 16,one_goal_margin_90,5,7,0.714286
+edition,2026,Round of 16,big_margin,2,8,0.25
+edition,2026,Round of 16,mean_margin,,8,1.375
+edition,2026,Round of 16,draw_90,1,8,0.125
+edition,2026,Round of 16,extra_time,1,8,0.125
+edition,2026,Round of 16,penalties,1,8,0.125
+edition,2026,Round of 16,winning_goal_min,,7,69.0
+edition,2026,Round of 16,winning_goal_min_90,,7,69.0
+edition,2026,Round of 16,decided_final_quarter,3,8,0.375
+edition,2026,Round of 16,decisive_at_90,3,7,0.428571
+edition,2026,Round of 16,late_goal,5,8,0.625
+edition,2026,Round of 16,comeback,1,8,0.125
+edition,2026,Round of 16,survival_goal,0,8,0.0
+edition,2026,Round of 32,goals_per_match,,16,2.625
+edition,2026,Round of 32,goals_per_match_90,,16,2.375
+edition,2026,Round of 32,one_goal_margin,8,13,0.615385
+edition,2026,Round of 32,one_goal_margin_90,6,11,0.545455
+edition,2026,Round of 32,big_margin,2,16,0.125
+edition,2026,Round of 32,mean_margin,,16,1.25
+edition,2026,Round of 32,draw_90,5,16,0.3125
+edition,2026,Round of 32,extra_time,5,16,0.3125
+edition,2026,Round of 32,penalties,3,16,0.1875
+edition,2026,Round of 32,winning_goal_min,,13,65.692308
+edition,2026,Round of 32,winning_goal_min_90,,11,56.636364
+edition,2026,Round of 32,decided_final_quarter,7,16,0.4375
+edition,2026,Round of 32,decisive_at_90,4,16,0.25
+edition,2026,Round of 32,late_goal,9,16,0.5625
+edition,2026,Round of 32,comeback,4,16,0.25
+edition,2026,Round of 32,survival_goal,5,16,0.3125
+edition,2026,Semi-final,goals_per_match,,2,2.5
+edition,2026,Semi-final,goals_per_match_90,,2,2.5
+edition,2026,Semi-final,one_goal_margin,1,2,0.5
+edition,2026,Semi-final,one_goal_margin_90,1,2,0.5
+edition,2026,Semi-final,big_margin,0,2,0.0
+edition,2026,Semi-final,mean_margin,,2,1.5
+edition,2026,Semi-final,draw_90,0,2,0.0
+edition,2026,Semi-final,extra_time,0,2,0.0
+edition,2026,Semi-final,penalties,0,2,0.0
+edition,2026,Semi-final,winning_goal_min,,2,56.0
+edition,2026,Semi-final,winning_goal_min_90,,2,56.0
+edition,2026,Semi-final,decided_final_quarter,1,2,0.5
+edition,2026,Semi-final,decisive_at_90,1,2,0.5
+edition,2026,Semi-final,late_goal,1,2,0.5
+edition,2026,Semi-final,comeback,1,2,0.5
+edition,2026,Semi-final,survival_goal,0,2,0.0
+era,24-teams,Final,goals_per_match,,3,2.0
+era,24-teams,Final,goals_per_match_90,,3,2.0
+era,24-teams,Final,one_goal_margin,2,2,1.0
+era,24-teams,Final,one_goal_margin_90,2,2,1.0
+era,24-teams,Final,big_margin,0,3,0.0
+era,24-teams,Final,mean_margin,,3,0.666667
+era,24-teams,Final,draw_90,1,3,0.333333
+era,24-teams,Final,extra_time,1,3,0.333333
+era,24-teams,Final,penalties,1,3,0.333333
+era,24-teams,Final,winning_goal_min,,2,84.5
+era,24-teams,Final,winning_goal_min_90,,2,84.5
+era,24-teams,Final,decided_final_quarter,2,3,0.666667
+era,24-teams,Final,decisive_at_90,0,2,0.0
+era,24-teams,Final,late_goal,2,3,0.666667
+era,24-teams,Final,comeback,0,3,0.0
+era,24-teams,Final,survival_goal,0,3,0.0
+era,24-teams,Quarter-final,goals_per_match,,12,2.416667
+era,24-teams,Quarter-final,goals_per_match_90,,12,2.166667
+era,24-teams,Quarter-final,one_goal_margin,7,7,1.0
+era,24-teams,Quarter-final,one_goal_margin_90,6,6,1.0
+era,24-teams,Quarter-final,big_margin,0,12,0.0
+era,24-teams,Quarter-final,mean_margin,,12,0.583333
+era,24-teams,Quarter-final,draw_90,6,12,0.5
+era,24-teams,Quarter-final,extra_time,6,12,0.5
+era,24-teams,Quarter-final,penalties,5,12,0.416667
+era,24-teams,Quarter-final,winning_goal_min,,7,67.142857
+era,24-teams,Quarter-final,winning_goal_min_90,,6,60.833333
+era,24-teams,Quarter-final,decided_final_quarter,6,12,0.5
+era,24-teams,Quarter-final,decisive_at_90,0,10,0.0
+era,24-teams,Quarter-final,late_goal,6,12,0.5
+era,24-teams,Quarter-final,comeback,3,12,0.25
+era,24-teams,Quarter-final,survival_goal,4,12,0.333333
+era,24-teams,Round of 16,goals_per_match,,24,2.875
+era,24-teams,Round of 16,goals_per_match_90,,24,2.5
+era,24-teams,Round of 16,one_goal_margin,12,22,0.545455
+era,24-teams,Round of 16,one_goal_margin_90,7,17,0.411765
+era,24-teams,Round of 16,big_margin,5,24,0.208333
+era,24-teams,Round of 16,mean_margin,,24,1.625
+era,24-teams,Round of 16,draw_90,7,24,0.291667
+era,24-teams,Round of 16,extra_time,7,24,0.291667
+era,24-teams,Round of 16,penalties,2,24,0.083333
+era,24-teams,Round of 16,winning_goal_min,,22,62.090909
+era,24-teams,Round of 16,winning_goal_min_90,,17,49.058824
+era,24-teams,Round of 16,decided_final_quarter,6,24,0.25
+era,24-teams,Round of 16,decisive_at_90,0,21,0.0
+era,24-teams,Round of 16,late_goal,12,24,0.5
+era,24-teams,Round of 16,comeback,3,24,0.125
+era,24-teams,Round of 16,survival_goal,4,24,0.166667
+era,24-teams,Semi-final,goals_per_match,,6,2.0
+era,24-teams,Semi-final,goals_per_match_90,,6,2.0
+era,24-teams,Semi-final,one_goal_margin,2,4,0.5
+era,24-teams,Semi-final,one_goal_margin_90,2,4,0.5
+era,24-teams,Semi-final,big_margin,0,6,0.0
+era,24-teams,Semi-final,mean_margin,,6,1.0
+era,24-teams,Semi-final,draw_90,2,6,0.333333
+era,24-teams,Semi-final,extra_time,2,6,0.333333
+era,24-teams,Semi-final,penalties,2,6,0.333333
+era,24-teams,Semi-final,winning_goal_min,,4,41.25
+era,24-teams,Semi-final,winning_goal_min_90,,4,41.25
+era,24-teams,Semi-final,decided_final_quarter,2,6,0.333333
+era,24-teams,Semi-final,decisive_at_90,0,6,0.0
+era,24-teams,Semi-final,late_goal,3,6,0.5
+era,24-teams,Semi-final,comeback,0,6,0.0
+era,24-teams,Semi-final,survival_goal,2,6,0.333333
+era,32-teams,Final,goals_per_match,,7,3.0
+era,32-teams,Final,goals_per_match_90,,7,2.428571
+era,32-teams,Final,one_goal_margin,2,5,0.4
+era,32-teams,Final,one_goal_margin_90,0,3,0.0
+era,32-teams,Final,big_margin,1,7,0.142857
+era,32-teams,Final,mean_margin,,7,1.285714
+era,32-teams,Final,draw_90,4,7,0.571429
+era,32-teams,Final,extra_time,4,7,0.571429
+era,32-teams,Final,penalties,2,7,0.285714
+era,32-teams,Final,winning_goal_min,,5,76.4
+era,32-teams,Final,winning_goal_min_90,,3,51.0
+era,32-teams,Final,decided_final_quarter,1,7,0.142857
+era,32-teams,Final,decisive_at_90,0,5,0.0
+era,32-teams,Final,late_goal,2,7,0.285714
+era,32-teams,Final,comeback,0,7,0.0
+era,32-teams,Final,survival_goal,2,7,0.285714
+era,32-teams,Quarter-final,goals_per_match,,28,2.071429
+era,32-teams,Quarter-final,goals_per_match_90,,28,1.892857
+era,32-teams,Quarter-final,one_goal_margin,14,19,0.736842
+era,32-teams,Quarter-final,one_goal_margin_90,13,18,0.722222
+era,32-teams,Quarter-final,big_margin,3,28,0.107143
+era,32-teams,Quarter-final,mean_margin,,28,1.0
+era,32-teams,Quarter-final,draw_90,10,28,0.357143
+era,32-teams,Quarter-final,extra_time,10,28,0.357143
+era,32-teams,Quarter-final,penalties,9,28,0.321429
+era,32-teams,Quarter-final,winning_goal_min,,19,47.631579
+era,32-teams,Quarter-final,winning_goal_min_90,,18,45.055556
+era,32-teams,Quarter-final,decided_final_quarter,5,28,0.178571
+era,32-teams,Quarter-final,decisive_at_90,2,22,0.090909
+era,32-teams,Quarter-final,late_goal,7,28,0.25
+era,32-teams,Quarter-final,comeback,4,28,0.142857
+era,32-teams,Quarter-final,survival_goal,4,28,0.142857
+era,32-teams,Round of 16,goals_per_match,,56,2.625
+era,32-teams,Round of 16,goals_per_match_90,,56,2.410714
+era,32-teams,Round of 16,one_goal_margin,26,45,0.577778
+era,32-teams,Round of 16,one_goal_margin_90,18,37,0.486486
+era,32-teams,Round of 16,big_margin,9,56,0.160714
+era,32-teams,Round of 16,mean_margin,,56,1.339286
+era,32-teams,Round of 16,draw_90,19,56,0.339286
+era,32-teams,Round of 16,extra_time,19,56,0.339286
+era,32-teams,Round of 16,penalties,11,56,0.196429
+era,32-teams,Round of 16,winning_goal_min,,45,60.266667
+era,32-teams,Round of 16,winning_goal_min_90,,37,49.810811
+era,32-teams,Round of 16,decided_final_quarter,14,56,0.25
+era,32-teams,Round of 16,decisive_at_90,7,49,0.142857
+era,32-teams,Round of 16,late_goal,21,56,0.375
+era,32-teams,Round of 16,comeback,9,56,0.160714
+era,32-teams,Round of 16,survival_goal,12,56,0.214286
+era,32-teams,Semi-final,goals_per_match,,14,2.357143
+era,32-teams,Semi-final,goals_per_match_90,,14,2.142857
+era,32-teams,Semi-final,one_goal_margin,8,12,0.666667
+era,32-teams,Semi-final,one_goal_margin_90,7,10,0.7
+era,32-teams,Semi-final,big_margin,2,14,0.142857
+era,32-teams,Semi-final,mean_margin,,14,1.5
+era,32-teams,Semi-final,draw_90,4,14,0.285714
+era,32-teams,Semi-final,extra_time,4,14,0.285714
+era,32-teams,Semi-final,penalties,2,14,0.142857
+era,32-teams,Semi-final,winning_goal_min,,12,59.5
+era,32-teams,Semi-final,winning_goal_min_90,,10,48.6
+era,32-teams,Semi-final,decided_final_quarter,1,14,0.071429
+era,32-teams,Semi-final,decisive_at_90,0,12,0.0
+era,32-teams,Semi-final,late_goal,3,14,0.214286
+era,32-teams,Semi-final,comeback,2,14,0.142857
+era,32-teams,Semi-final,survival_goal,2,14,0.142857
+era,48-teams,Final,goals_per_match,,1,1.0
+era,48-teams,Final,goals_per_match_90,,1,0.0
+era,48-teams,Final,one_goal_margin,1,1,1.0
+era,48-teams,Final,one_goal_margin_90,0,0,
+era,48-teams,Final,big_margin,0,1,0.0
+era,48-teams,Final,mean_margin,,1,1.0
+era,48-teams,Final,draw_90,1,1,1.0
+era,48-teams,Final,extra_time,1,1,1.0
+era,48-teams,Final,penalties,0,1,0.0
+era,48-teams,Final,winning_goal_min,,1,106.0
+era,48-teams,Final,winning_goal_min_90,,0,
+era,48-teams,Final,decided_final_quarter,0,1,0.0
+era,48-teams,Final,decisive_at_90,0,0,
+era,48-teams,Final,late_goal,0,1,0.0
+era,48-teams,Final,comeback,0,1,0.0
+era,48-teams,Final,survival_goal,0,1,0.0
+era,48-teams,Quarter-final,goals_per_match,,4,3.0
+era,48-teams,Quarter-final,goals_per_match_90,,4,2.25
+era,48-teams,Quarter-final,one_goal_margin,2,4,0.5
+era,48-teams,Quarter-final,one_goal_margin_90,1,2,0.5
+era,48-teams,Quarter-final,big_margin,0,4,0.0
+era,48-teams,Quarter-final,mean_margin,,4,1.5
+era,48-teams,Quarter-final,draw_90,2,4,0.5
+era,48-teams,Quarter-final,extra_time,2,4,0.5
+era,48-teams,Quarter-final,penalties,0,4,0.0
+era,48-teams,Quarter-final,winning_goal_min,,4,88.25
+era,48-teams,Quarter-final,winning_goal_min_90,,2,74.0
+era,48-teams,Quarter-final,decided_final_quarter,1,4,0.25
+era,48-teams,Quarter-final,decisive_at_90,0,4,0.0
+era,48-teams,Quarter-final,late_goal,1,4,0.25
+era,48-teams,Quarter-final,comeback,1,4,0.25
+era,48-teams,Quarter-final,survival_goal,2,4,0.5
+era,48-teams,Round of 16,goals_per_match,,8,2.875
+era,48-teams,Round of 16,goals_per_match_90,,8,2.875
+era,48-teams,Round of 16,one_goal_margin,5,7,0.714286
+era,48-teams,Round of 16,one_goal_margin_90,5,7,0.714286
+era,48-teams,Round of 16,big_margin,2,8,0.25
+era,48-teams,Round of 16,mean_margin,,8,1.375
+era,48-teams,Round of 16,draw_90,1,8,0.125
+era,48-teams,Round of 16,extra_time,1,8,0.125
+era,48-teams,Round of 16,penalties,1,8,0.125
+era,48-teams,Round of 16,winning_goal_min,,7,69.0
+era,48-teams,Round of 16,winning_goal_min_90,,7,69.0
+era,48-teams,Round of 16,decided_final_quarter,3,8,0.375
+era,48-teams,Round of 16,decisive_at_90,3,7,0.428571
+era,48-teams,Round of 16,late_goal,5,8,0.625
+era,48-teams,Round of 16,comeback,1,8,0.125
+era,48-teams,Round of 16,survival_goal,0,8,0.0
+era,48-teams,Round of 32,goals_per_match,,16,2.625
+era,48-teams,Round of 32,goals_per_match_90,,16,2.375
+era,48-teams,Round of 32,one_goal_margin,8,13,0.615385
+era,48-teams,Round of 32,one_goal_margin_90,6,11,0.545455
+era,48-teams,Round of 32,big_margin,2,16,0.125
+era,48-teams,Round of 32,mean_margin,,16,1.25
+era,48-teams,Round of 32,draw_90,5,16,0.3125
+era,48-teams,Round of 32,extra_time,5,16,0.3125
+era,48-teams,Round of 32,penalties,3,16,0.1875
+era,48-teams,Round of 32,winning_goal_min,,13,65.692308
+era,48-teams,Round of 32,winning_goal_min_90,,11,56.636364
+era,48-teams,Round of 32,decided_final_quarter,7,16,0.4375
+era,48-teams,Round of 32,decisive_at_90,4,16,0.25
+era,48-teams,Round of 32,late_goal,9,16,0.5625
+era,48-teams,Round of 32,comeback,4,16,0.25
+era,48-teams,Round of 32,survival_goal,5,16,0.3125
+era,48-teams,Semi-final,goals_per_match,,2,2.5
+era,48-teams,Semi-final,goals_per_match_90,,2,2.5
+era,48-teams,Semi-final,one_goal_margin,1,2,0.5
+era,48-teams,Semi-final,one_goal_margin_90,1,2,0.5
+era,48-teams,Semi-final,big_margin,0,2,0.0
+era,48-teams,Semi-final,mean_margin,,2,1.5
+era,48-teams,Semi-final,draw_90,0,2,0.0
+era,48-teams,Semi-final,extra_time,0,2,0.0
+era,48-teams,Semi-final,penalties,0,2,0.0
+era,48-teams,Semi-final,winning_goal_min,,2,56.0
+era,48-teams,Semi-final,winning_goal_min_90,,2,56.0
+era,48-teams,Semi-final,decided_final_quarter,1,2,0.5
+era,48-teams,Semi-final,decisive_at_90,1,2,0.5
+era,48-teams,Semi-final,late_goal,1,2,0.5
+era,48-teams,Semi-final,comeback,1,2,0.5
+era,48-teams,Semi-final,survival_goal,0,2,0.0
+history,1986-2022,Final,goals_per_match,,10,2.7
+history,1986-2022,Final,goals_per_match_90,,10,2.3
+history,1986-2022,Final,one_goal_margin,4,7,0.571429
+history,1986-2022,Final,one_goal_margin_90,2,5,0.4
+history,1986-2022,Final,big_margin,1,10,0.1
+history,1986-2022,Final,mean_margin,,10,1.1
+history,1986-2022,Final,draw_90,5,10,0.5
+history,1986-2022,Final,extra_time,5,10,0.5
+history,1986-2022,Final,penalties,3,10,0.3
+history,1986-2022,Final,winning_goal_min,,7,78.714286
+history,1986-2022,Final,winning_goal_min_90,,5,64.4
+history,1986-2022,Final,decided_final_quarter,3,10,0.3
+history,1986-2022,Final,decisive_at_90,0,7,0.0
+history,1986-2022,Final,late_goal,4,10,0.4
+history,1986-2022,Final,comeback,0,10,0.0
+history,1986-2022,Final,survival_goal,2,10,0.2
+history,1986-2022,Quarter-final,goals_per_match,,40,2.175
+history,1986-2022,Quarter-final,goals_per_match_90,,40,1.975
+history,1986-2022,Quarter-final,one_goal_margin,21,26,0.807692
+history,1986-2022,Quarter-final,one_goal_margin_90,19,24,0.791667
+history,1986-2022,Quarter-final,big_margin,3,40,0.075
+history,1986-2022,Quarter-final,mean_margin,,40,0.875
+history,1986-2022,Quarter-final,draw_90,16,40,0.4
+history,1986-2022,Quarter-final,extra_time,16,40,0.4
+history,1986-2022,Quarter-final,penalties,14,40,0.35
+history,1986-2022,Quarter-final,winning_goal_min,,26,52.884615
+history,1986-2022,Quarter-final,winning_goal_min_90,,24,49.0
+history,1986-2022,Quarter-final,decided_final_quarter,11,40,0.275
+history,1986-2022,Quarter-final,decisive_at_90,2,32,0.0625
+history,1986-2022,Quarter-final,late_goal,13,40,0.325
+history,1986-2022,Quarter-final,comeback,7,40,0.175
+history,1986-2022,Quarter-final,survival_goal,8,40,0.2
+history,1986-2022,Round of 16,goals_per_match,,80,2.7
+history,1986-2022,Round of 16,goals_per_match_90,,80,2.4375
+history,1986-2022,Round of 16,one_goal_margin,38,67,0.567164
+history,1986-2022,Round of 16,one_goal_margin_90,25,54,0.462963
+history,1986-2022,Round of 16,big_margin,14,80,0.175
+history,1986-2022,Round of 16,mean_margin,,80,1.425
+history,1986-2022,Round of 16,draw_90,26,80,0.325
+history,1986-2022,Round of 16,extra_time,26,80,0.325
+history,1986-2022,Round of 16,penalties,13,80,0.1625
+history,1986-2022,Round of 16,winning_goal_min,,67,60.865672
+history,1986-2022,Round of 16,winning_goal_min_90,,54,49.574074
+history,1986-2022,Round of 16,decided_final_quarter,20,80,0.25
+history,1986-2022,Round of 16,decisive_at_90,7,70,0.1
+history,1986-2022,Round of 16,late_goal,33,80,0.4125
+history,1986-2022,Round of 16,comeback,12,80,0.15
+history,1986-2022,Round of 16,survival_goal,16,80,0.2
+history,1986-2022,Semi-final,goals_per_match,,20,2.25
+history,1986-2022,Semi-final,goals_per_match_90,,20,2.1
+history,1986-2022,Semi-final,one_goal_margin,10,16,0.625
+history,1986-2022,Semi-final,one_goal_margin_90,9,14,0.642857
+history,1986-2022,Semi-final,big_margin,2,20,0.1
+history,1986-2022,Semi-final,mean_margin,,20,1.35
+history,1986-2022,Semi-final,draw_90,6,20,0.3
+history,1986-2022,Semi-final,extra_time,6,20,0.3
+history,1986-2022,Semi-final,penalties,4,20,0.2
+history,1986-2022,Semi-final,winning_goal_min,,16,54.9375
+history,1986-2022,Semi-final,winning_goal_min_90,,14,46.5
+history,1986-2022,Semi-final,decided_final_quarter,3,20,0.15
+history,1986-2022,Semi-final,decisive_at_90,0,18,0.0
+history,1986-2022,Semi-final,late_goal,6,20,0.3
+history,1986-2022,Semi-final,comeback,2,20,0.1
+history,1986-2022,Semi-final,survival_goal,4,20,0.2

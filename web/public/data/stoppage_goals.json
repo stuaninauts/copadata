@@ -1,0 +1,17 @@
+[
+{"scope_type": "edition", "scope": "1986", "k": 0, "n": 52, "value": 0.0},
+{"scope_type": "edition", "scope": "1990", "k": 4, "n": 52, "value": 0.076923},
+{"scope_type": "edition", "scope": "1994", "k": 2, "n": 52, "value": 0.038462},
+{"scope_type": "edition", "scope": "1998", "k": 9, "n": 64, "value": 0.140625},
+{"scope_type": "edition", "scope": "2002", "k": 4, "n": 64, "value": 0.0625},
+{"scope_type": "edition", "scope": "2006", "k": 8, "n": 64, "value": 0.125},
+{"scope_type": "edition", "scope": "2010", "k": 6, "n": 64, "value": 0.09375},
+{"scope_type": "edition", "scope": "2014", "k": 12, "n": 64, "value": 0.1875},
+{"scope_type": "edition", "scope": "2018", "k": 19, "n": 64, "value": 0.296875},
+{"scope_type": "edition", "scope": "2022", "k": 15, "n": 64, "value": 0.234375},
+{"scope_type": "edition", "scope": "2026", "k": 34, "n": 104, "value": 0.326923},
+{"scope_type": "era", "scope": "24-teams", "k": 6, "n": 156, "value": 0.038462},
+{"scope_type": "era", "scope": "32-teams", "k": 73, "n": 448, "value": 0.162946},
+{"scope_type": "era", "scope": "48-teams", "k": 34, "n": 104, "value": 0.326923},
+{"scope_type": "history", "scope": "1986-2022", "k": 79, "n": 604, "value": 0.130795}
+]

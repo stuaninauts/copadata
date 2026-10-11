@@ -6,7 +6,7 @@ import json
 import pandas as pd
 import pytest
 
-from copadata import derive, export, transform
+from copadata import config, derive, export, transform
 
 
 def gm(t1, t2, s1, s2, day, year, round_="Group stage", group="Group A", et=None, p=None):
@@ -93,3 +93,7 @@ def test_export_is_deterministic(data, tmp_path):
         if p.suffix != ".parquet":
             assert p.read_bytes() == (tmp_path / "b" / p.name).read_bytes(), p.name
 
+
+@pytest.mark.skipif(not config.MATCHES_PARQUET.exists(), reason="run the pipeline first")
+def test_committed_export_is_up_to_date():
+    assert export.check(export.load(), config.EXPORT) == [], "run `python -m copadata.export`"
