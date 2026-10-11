@@ -34,3 +34,10 @@ LATE_GOAL_MIN = 80
 
 # Group zone before the match (in-group proxy): positions 1-2 qualification, 3-4 danger.
 ZONE_QUALIFICATION_MAX = 2
+
+# Format eras (number of teams), for comparisons across editions: (label, first year, last year).
+FORMAT_ERAS = (("24-teams", 1986, 1994), ("32-teams", 1998, 2022), ("48-teams", 2026, 2026))
+# Lopsided match: won by this many goals or more.
+BIG_MARGIN = 3
+# Goal-minute bands in regulation (upper bounds; the last one includes stoppage time).
+GOAL_BANDS = (15, 30, 45, 60, 75, 90)
