@@ -4,6 +4,7 @@ Engine de análise da Copa do Mundo (2026 + histórico) sobre dados públicos, s
 
 ## Comandos
 - `python -m copadata.pipeline`: baixa e reprocessa (`--offline` reprocessa o snapshot já baixado).
+- `python -m copadata.export`: regrava o export público em `web/public/data/` (`--check` só confere se está em dia).
 - `python -m pytest`: testes. Rodar depois de mexer em `copadata/`.
 
 ## Convenções
@@ -14,7 +15,8 @@ Engine de análise da Copa do Mundo (2026 + histórico) sobre dados públicos, s
 - Decisão de arquitetura nova vira ADR em `docs/adr/` (numeração sequencial, superar em vez de apagar).
 - `data/` é gerado pelo pipeline e não é versionado.
 - Os parquets têm **todas as edições** (coluna `year`, 1986-2026): análise de uma Copa só precisa filtrar `year`.
-- Dados de 1986-2022 vêm do Fjelstul (CC-BY-SA 4.0, ADR 0005): gráfico ou post que os use leva "Fonte: Fjelstul World Cup Database (CC-BY-SA 4.0)". Não versionar dados derivados dele sem a mesma licença.
+- Dados de 1986-2022 vêm do Fjelstul (CC-BY-SA 4.0, ADR 0005): gráfico ou post que os use leva "Fonte: Fjelstul World Cup Database (CC-BY-SA 4.0)". Dado derivado dele só é versionado em `web/public/data/`, que é CC-BY-SA (`REUSE.toml`).
+- O export (`web/public/data/`) é commitado e gerado só por `copadata/export.py`, nunca editado à mão. Mudou métrica ou agregado: rode `python -m copadata.export` e commite junto; `tests/test_export.py` falha se ele estiver desatualizado.
 
 ## Git (GitHub Flow)
 - Todo trabalho numa branch `<tipo>/<descricao-kebab>` saída da `main`, que volta por PR (merge: rebase). Nunca commitar na `main`.

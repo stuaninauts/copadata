@@ -40,13 +40,25 @@ Every file carries a `year` column (one World Cup per value); `match_id` is uniq
 | `team_matches.parquet` | 2 rows/match | each team's perspective + group situation (matchday, points/position/zone before the match) |
 | `goals.parquet` | 1 row/goal | minute, extra time, late goal, stoppage-time goal, own goal, penalty |
 
+## Public data export (`web/public/data/`)
+
+```bash
+python -m copadata.export          # write the aggregates (JSON + CSV) and full tables (CSV + Parquet)
+python -m copadata.export --check  # fail if the committed export is out of date
+```
+
+The export is versioned and is what the web site reads: aggregate tables by edition, era and the pooled
+1986-2022 history, every rate with `k` and `n`; tables, columns and source commits in `manifest.json`.
+It is derived from the Fjelstul data, so it is licensed **CC-BY-SA 4.0** (attribution in its `README.md`).
+
 ## Structure
 
 ```
-copadata/   ingest · fjelstul (historical adapter) · transform · derive · metrics · aggregate · pipeline · config
+copadata/   ingest · fjelstul (historical adapter) · transform · derive · metrics · aggregate · export · pipeline · config
 tests/      metric definitions, aggregates (incl. golden findings), historical adapter and git hooks
 docs/adr/   architecture decision records (PT)
 data/       raw/ (raw snapshot)   ·   processed/ (parquets)
+web/        public/data/ (versioned export, CC-BY-SA 4.0)
 ```
 
 Metric definitions are concentrated in `copadata/metrics.py`; the aggregates behind the findings
@@ -59,7 +71,7 @@ Metric definitions are concentrated in `copadata/metrics.py`; the aggregates beh
 | 2026 | [OpenFootball `worldcup.json`](https://github.com/openfootball/worldcup.json), pinned commit in `copadata/config.py` | Public domain (CC0) |
 | 1986-2022 | [Fjelstul World Cup Database](https://github.com/jfjelstul/worldcup), pinned commit in `copadata/config.py` | [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode) |
 
-Both are downloaded at run time into `data/raw/` and are not redistributed by this repository.
+Both are downloaded at run time into `data/raw/`; the raw files are not redistributed by this repository.
 Why two sources: [ADR 0005](docs/adr/0005-fonte-historica-fjelstul.md).
 
 **Attribution (Fjelstul World Cup Database):** The Fjelstul World Cup Database © 2023 Joshua C. Fjelstul, Ph.D.,
