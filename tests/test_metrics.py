@@ -75,6 +75,19 @@ def test_shootout_is_not_a_goal():
     assert metrics.final_score(goals_of(m)) == (1, 1)
 
 
+def test_minute_past_90_without_extra_time_is_stoppage():
+    # OpenFootball writes some stoppage goals as "92"; with no extra time played it is "90+2"
+    (goal,) = goals_of(match(goals1=[g("92")]))
+    assert (goal.minute, goal.extra_time) == (90, False) and goal.order == pytest.approx(90.02)
+    (goal,) = goals_of(match(goals1=[g("92")], et=[1, 0]))
+    assert (goal.minute, goal.extra_time) == (92, True)
+
+
+def _et_if_needed(minute: str):
+    """Extra-time minutes only exist in matches that played extra time."""
+    return [1, 0] if metrics.parse_minute(minute)[2] else None
+
+
 # --- late goal ---------------------------------------------------------------------
 
 @pytest.mark.parametrize(
@@ -82,7 +95,7 @@ def test_shootout_is_not_a_goal():
     [("79", False), ("80", True), ("89", True), ("90", True), ("90+7", True), ("91", False), ("118", False)],
 )
 def test_is_late_goal(minute, late):
-    (goal,) = goals_of(match(goals1=[g(minute)]))
+    (goal,) = goals_of(match(goals1=[g(minute)], et=_et_if_needed(minute)))
     assert metrics.is_late_goal(goal) is late
 
 

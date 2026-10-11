@@ -42,11 +42,18 @@ def parse_minute(minute) -> tuple[int, float, bool]:
 
 
 def match_goals(match: dict) -> list["Goal"]:
-    """All goals (regulation + extra time), ordered. Excludes the penalty shootout."""
+    """All goals (regulation + extra time), ordered. Excludes the penalty shootout.
+
+    Without extra time, a minute past 90 is second-half stoppage time: some sources write
+    "92" for "90+2".
+    """
+    played_et = "et" in (match.get("score") or {})
     goals: list[Goal] = []
     for side, key in ((1, "goals1"), (2, "goals2")):
         for g in match.get(key) or []:
             base, order, et = parse_minute(g["minute"])
+            if et and not played_et:
+                base, order, et = 90, 90 + (base - 90) / 100.0, False
             goals.append(
                 Goal(side, base, order, et, bool(g.get("owngoal")), bool(g.get("penalty")), g.get("name", ""))
             )
