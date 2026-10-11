@@ -1,8 +1,7 @@
 """Run the pipeline end to end: ingest -> transform -> derive.
 
-Cumulative re-run: downloads the current OpenFootball state (2026) and the pinned Fjelstul
-CSVs (1986-2022), then reprocesses every edition. Idempotent: running again simply
-incorporates new matches.
+Downloads the pinned OpenFootball JSON (2026) and the pinned Fjelstul CSVs (1986-2022), then
+reprocesses every edition. Idempotent: the same commits always give the same tables.
 
     python -m copadata.pipeline            # download and reprocess
     python -m copadata.pipeline --offline  # reprocess the snapshot already downloaded

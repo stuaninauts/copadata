@@ -7,9 +7,11 @@ RAW = DATA / "raw"
 PROCESSED = DATA / "processed"
 
 SEASON = 2026
-# OpenFootball: public World Cup data, no API key.
+# OpenFootball: public World Cup data, no API key. Pinned to the last commit of the finished
+# 2026 file (ADR 0006), so a re-run always reads the same data.
+OPENFOOTBALL_COMMIT = "0c4b73b3c1fbb877e8274eb321b1ec4d9220a3a4"
 OPENFOOTBALL_URL = (
-    "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json"
+    "https://raw.githubusercontent.com/openfootball/worldcup.json/{commit}/2026/worldcup.json"
 )
 RAW_JSON = RAW / f"worldcup-{SEASON}.json"
 
