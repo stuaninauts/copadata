@@ -171,3 +171,12 @@ def test_points_for_a_win_were_two_before_1994():
     pts, pos = table_before_md3(1994)
     assert pts == {"A": 3, "B": 2, "C": 1, "D": 4}
     assert pos == {"D": 1, "A": 2, "B": 3, "C": 4}
+
+
+def test_zone_before_follows_position():
+    ms = [{"round": "Group stage", "group": "Group A", "date": f"2026-06-{d:02d}", "team1": t1, "team2": t2,
+           "score": {"ft": [s1, s2]}, "goals1": [{"minute": "10"}] * s1, "goals2": [{"minute": "20"}] * s2}
+          for d, t1, t2, s1, s2 in [(1, "A", "B", 2, 0), (1, "C", "D", 1, 0), (5, "A", "C", 0, 0), (5, "B", "D", 0, 0)]]
+    tm = derive.group_situation(derive.explode(transform.build_matches({"matches": ms}, 2026)))
+    md2 = tm[tm.matchday == 2].set_index("team")
+    assert md2.zone_before.to_dict() == {"A": "qualification", "C": "qualification", "B": "danger", "D": "danger"}

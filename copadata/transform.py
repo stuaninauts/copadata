@@ -120,6 +120,7 @@ def build_goals(data: dict, year: int = config.SEASON) -> pd.DataFrame:
                     "order": g.order,
                     "extra_time": g.extra_time,
                     "late": metrics.is_late_goal(g),
+                    "stoppage": metrics.is_stoppage_goal(g),
                     "own_goal": g.own_goal,
                     "penalty": g.penalty,
                 }
