@@ -68,6 +68,9 @@ available at https://www.github.com/jfjelstul/worldcup. **Modifications:** only 
 are used; matches and goals are reshaped into the OpenFootball format (`copadata/fjelstul.py`) to compute
 the metrics in this repository. Data derived from it is shared under the same license.
 
+**License:** code and docs are MIT; the data export in `web/public/data/` is CC-BY-SA 4.0
+(per-path licensing in `REUSE.toml`, texts in `LICENSES/`).
+
 ## Next
 
 A public, bilingual (EN/PT) web version is planned at `copa.stuaninauts.com`: one page per question

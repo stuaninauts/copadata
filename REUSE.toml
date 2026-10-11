@@ -1,0 +1,15 @@
+version = 1
+
+# Code and docs: MIT.
+[[annotations]]
+path = "**"
+precedence = "closest"
+SPDX-FileCopyrightText = "2026 Eduardo Stuani"
+SPDX-License-Identifier = "MIT"
+
+# Public data export: derived from the Fjelstul World Cup Database, so CC-BY-SA 4.0 (ADR 0005, 0006).
+[[annotations]]
+path = "web/public/data/**"
+precedence = "override"
+SPDX-FileCopyrightText = ["2023 Joshua C. Fjelstul", "2026 Eduardo Stuani"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
