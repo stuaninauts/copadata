@@ -38,19 +38,20 @@ Every file carries a `year` column (one World Cup per value); `match_id` is uniq
 | File | Grain | Contents |
 |---|---|---|
 | `matches.parquet` | 1 row/match | score, stage, margin, extra time / penalties, time & decision metrics |
-| `team_matches.parquet` | 2 rows/match | each team's perspective + group situation (matchday, points/position before the match) |
-| `goals.parquet` | 1 row/goal | minute, extra time, late goal, own goal, penalty |
+| `team_matches.parquet` | 2 rows/match | each team's perspective + group situation (matchday, points/position/zone before the match) |
+| `goals.parquet` | 1 row/goal | minute, extra time, late goal, stoppage-time goal, own goal, penalty |
 
 ## Structure
 
 ```
-copadata/   ingest · fjelstul (historical adapter) · transform · derive · metrics · pipeline · config
-tests/      metric definitions, historical adapter and git hooks
+copadata/   ingest · fjelstul (historical adapter) · transform · derive · metrics · aggregate · pipeline · config
+tests/      metric definitions, aggregates (incl. golden findings), historical adapter and git hooks
 docs/adr/   architecture decision records (PT)
 data/       raw/ (raw snapshot)   ·   processed/ (parquets)
 ```
 
-Metric definitions are concentrated in `copadata/metrics.py`.
+Metric definitions are concentrated in `copadata/metrics.py`; the aggregates behind the findings
+(rates and means by edition, era, stage, with `k` and `n`) in `copadata/aggregate.py`.
 
 ## Data sources
 

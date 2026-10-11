@@ -9,6 +9,7 @@ Engine de análise da Copa do Mundo (2026 + histórico) sobre dados públicos, s
 ## Convenções
 - Código, nomes de colunas e docstrings em **inglês**; documentação (`docs/adr/`) em **português**.
 - `copadata/metrics.py` é o **único** lugar onde se define métrica. `transform`/`derive` só consomem; notebooks só leem `data/processed/` (ADR 0003). Toda mudança de definição vem com teste em `tests/test_metrics.py`.
+- Agregações que viram achado (taxas e médias por edição, era, fase, sempre com `k` e `n`) ficam em `copadata/aggregate.py` (ADR 0006), não em notebook. Os testes golden em `tests/test_aggregate.py` reproduzem os números publicados: número que muda, teste que muda junto.
 - Análise é descritiva: `n` sempre visível, sem bateria de testes de hipótese (ADR 0002).
 - Decisão de arquitetura nova vira ADR em `docs/adr/` (numeração sequencial, superar em vez de apagar).
 - `data/` é gerado pelo pipeline e não é versionado.
