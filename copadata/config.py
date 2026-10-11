@@ -31,3 +31,6 @@ THREE_POINTS_FROM = 1994
 
 # Late goal: scored at minute 80 or later in regulation time.
 LATE_GOAL_MIN = 80
+
+# Group zone before the match (in-group proxy): positions 1-2 qualification, 3-4 danger.
+ZONE_QUALIFICATION_MAX = 2

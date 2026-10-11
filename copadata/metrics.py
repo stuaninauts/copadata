@@ -71,6 +71,11 @@ def is_late_goal(g: "Goal") -> bool:
     return (not g.extra_time) and g.minute >= config.LATE_GOAL_MIN
 
 
+def is_stoppage_goal(g: "Goal") -> bool:
+    """Second-half stoppage time ("90+X"). Extra time doesn't count."""
+    return not g.extra_time and g.minute == 90 and g.order > 90
+
+
 def winning_goal(goals: list["Goal"]):
     """The goal that gave the winner the lead they kept to the end (game-winner).
 

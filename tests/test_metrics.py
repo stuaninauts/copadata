@@ -99,6 +99,15 @@ def test_is_late_goal(minute, late):
     assert metrics.is_late_goal(goal) is late
 
 
+@pytest.mark.parametrize(
+    "minute, stoppage",
+    [("45+2", False), ("89", False), ("90", False), ("90+", False), ("90+1", True), ("90+7", True), ("105+1", False)],
+)
+def test_is_stoppage_goal(minute, stoppage):
+    (goal,) = goals_of(match(goals1=[g(minute)], et=_et_if_needed(minute)))
+    assert metrics.is_stoppage_goal(goal) is stoppage
+
+
 # --- winning goal ------------------------------------------------------------------
 
 def test_winning_goal_is_winners_goal_number_loser_plus_one():

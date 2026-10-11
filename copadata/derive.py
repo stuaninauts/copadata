@@ -1,8 +1,8 @@
 """derive.py — matches -> data/processed/team_matches.parquet.
 
 Two rows per match (Team-match grain): each team's perspective. This is where the group
-situation lives — an in-group proxy: matchday, opener, points/GD/position BEFORE the match,
-and games left. (The exact qualification math, which depends on other groups, is out of scope.)
+situation lives — an in-group proxy: matchday, opener, points/GD/position/zone BEFORE the
+match, and games left. (The exact qualification math, which depends on other groups, is out of scope.)
 """
 from __future__ import annotations
 
@@ -19,6 +19,11 @@ def _result(gf: int, ga: int) -> str:
 def _points(res: str, year: int) -> int:
     win = 3 if year >= config.THREE_POINTS_FROM else 2
     return win if res == "W" else (1 if res == "D" else 0)
+
+
+def _zone(position: int) -> str:
+    """Qualification (1st-2nd) or danger (3rd-4th) zone: an in-group proxy, not the exact math."""
+    return "qualification" if position <= config.ZONE_QUALIFICATION_MAX else "danger"
 
 
 def explode(matches: pd.DataFrame) -> pd.DataFrame:
@@ -86,6 +91,7 @@ def group_situation(tm: pd.DataFrame) -> pd.DataFrame:
     for c, dic in vals.items():
         s = pd.Series(dic).reindex(tm.index)
         tm[c] = s.astype("boolean") if c == "is_opener" else s.astype("Int64")
+    tm["zone_before"] = tm["position_before"].map(_zone, na_action="ignore")
     return tm
 
 
