@@ -1,7 +1,6 @@
 """Ingest: download the raw sources into data/raw/.
 
-- 2026: the OpenFootball World Cup JSON (~40KB). No key, no quota. Idempotent: re-running
-  overwrites with the latest state, picking up new matches (cumulative snapshot).
+- 2026: the OpenFootball World Cup JSON (~40KB), pinned to a commit (ADR 0006). No key, no quota.
 - 1986-2022: the Fjelstul World Cup Database CSVs, pinned to a commit (see ADR 0005).
 """
 from __future__ import annotations
@@ -15,13 +14,13 @@ from copadata import config
 
 
 def download() -> dict:
-    """Download the current OpenFootball snapshot and save it into data/raw/."""
+    """Download the pinned OpenFootball snapshot and save it into data/raw/."""
     config.RAW.mkdir(parents=True, exist_ok=True)
-    resp = requests.get(config.OPENFOOTBALL_URL, timeout=30)
+    resp = requests.get(config.OPENFOOTBALL_URL.format(commit=config.OPENFOOTBALL_COMMIT), timeout=30)
     resp.raise_for_status()
     data = resp.json()
     config.RAW_JSON.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"[ingest] downloaded: {len(data.get('matches', []))} matches -> {config.RAW_JSON}")
+    print(f"[ingest] downloaded: {len(data.get('matches', []))} matches @ {config.OPENFOOTBALL_COMMIT[:7]} -> {config.RAW_JSON}")
     return data
 
 

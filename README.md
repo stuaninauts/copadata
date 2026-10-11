@@ -28,8 +28,7 @@ Contributing: branches `<type>/<description>` off `main`, PRs merged by rebase, 
 git config core.hooksPath .githooks
 ```
 
-The pipeline is **idempotent and cumulative**: re-running picks up new matches as the
-tournament progresses.
+The pipeline is **idempotent**: both sources are pinned to a commit, so every run gives the same tables.
 
 ## Outputs (`data/processed/`)
 
@@ -57,7 +56,7 @@ Metric definitions are concentrated in `copadata/metrics.py`; the aggregates beh
 
 | Editions | Source | License |
 |---|---|---|
-| 2026 | [OpenFootball `worldcup.json`](https://github.com/openfootball/worldcup.json) | Public domain (CC0) |
+| 2026 | [OpenFootball `worldcup.json`](https://github.com/openfootball/worldcup.json), pinned commit in `copadata/config.py` | Public domain (CC0) |
 | 1986-2022 | [Fjelstul World Cup Database](https://github.com/jfjelstul/worldcup), pinned commit in `copadata/config.py` | [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode) |
 
 Both are downloaded at run time into `data/raw/` and are not redistributed by this repository.
