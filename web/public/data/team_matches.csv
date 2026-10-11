@@ -1,0 +1,1417 @@
+year,match_id,stage,is_knockout,group,date,round_raw,finished,team,opponent,home,goals_for,goals_against,result,matchday,is_opener,points_before,gd_before,position_before,games_left,zone_before
+1986,1986000,groups,False,Group A,1986-05-31,Group stage,True,Bulgaria,Italy,True,1,1,D,1,True,0,0,2,2,qualification
+1986,1986000,groups,False,Group A,1986-05-31,Group stage,True,Italy,Bulgaria,False,1,1,D,1,True,0,0,3,2,danger
+1986,1986001,groups,False,Group D,1986-06-01,Group stage,True,Spain,Brazil,True,0,1,L,1,True,0,0,4,2,danger
+1986,1986001,groups,False,Group D,1986-06-01,Group stage,True,Brazil,Spain,False,1,0,W,1,True,0,0,2,2,qualification
+1986,1986002,groups,False,Group C,1986-06-01,Group stage,True,Canada,France,True,0,1,L,1,True,0,0,1,2,qualification
+1986,1986002,groups,False,Group C,1986-06-01,Group stage,True,France,Canada,False,1,0,W,1,True,0,0,2,2,qualification
+1986,1986003,groups,False,Group A,1986-06-02,Group stage,True,Argentina,South Korea,True,3,1,W,1,True,0,0,3,2,danger
+1986,1986003,groups,False,Group A,1986-06-02,Group stage,True,South Korea,Argentina,False,1,3,L,1,True,0,0,4,2,danger
+1986,1986004,groups,False,Group C,1986-06-02,Group stage,True,Soviet Union,Hungary,True,6,0,W,1,True,0,0,3,2,danger
+1986,1986004,groups,False,Group C,1986-06-02,Group stage,True,Hungary,Soviet Union,False,0,6,L,1,True,0,0,2,2,qualification
+1986,1986005,groups,False,Group F,1986-06-02,Group stage,True,Morocco,Poland,True,0,0,D,1,True,0,0,2,2,qualification
+1986,1986005,groups,False,Group F,1986-06-02,Group stage,True,Poland,Morocco,False,0,0,D,1,True,0,0,3,2,danger
+1986,1986006,groups,False,Group B,1986-06-03,Group stage,True,Belgium,Mexico,True,1,2,L,1,True,0,0,1,2,qualification
+1986,1986006,groups,False,Group B,1986-06-03,Group stage,True,Mexico,Belgium,False,2,1,W,1,True,0,0,3,2,danger
+1986,1986007,groups,False,Group D,1986-06-03,Group stage,True,Algeria,Northern Ireland,True,1,1,D,1,True,0,0,2,2,qualification
+1986,1986007,groups,False,Group D,1986-06-03,Group stage,True,Northern Ireland,Algeria,False,1,1,D,1,True,0,0,3,2,danger
+1986,1986008,groups,False,Group F,1986-06-03,Group stage,True,Portugal,England,True,1,0,W,1,True,0,0,4,2,danger
+1986,1986008,groups,False,Group F,1986-06-03,Group stage,True,England,Portugal,False,0,1,L,1,True,0,0,3,2,danger
+1986,1986009,groups,False,Group B,1986-06-04,Group stage,True,Paraguay,Iraq,True,1,0,W,1,True,0,0,3,2,danger
+1986,1986009,groups,False,Group B,1986-06-04,Group stage,True,Iraq,Paraguay,False,0,1,L,1,True,0,0,2,2,qualification
+1986,1986010,groups,False,Group E,1986-06-04,Group stage,True,Uruguay,West Germany,True,1,1,D,1,True,0,0,3,2,danger
+1986,1986010,groups,False,Group E,1986-06-04,Group stage,True,West Germany,Uruguay,False,1,1,D,1,True,0,0,4,2,danger
+1986,1986011,groups,False,Group E,1986-06-04,Group stage,True,Scotland,Denmark,True,0,1,L,1,True,0,0,2,2,qualification
+1986,1986011,groups,False,Group E,1986-06-04,Group stage,True,Denmark,Scotland,False,1,0,W,1,True,0,0,1,2,qualification
+1986,1986012,groups,False,Group A,1986-06-05,Group stage,True,Italy,Argentina,True,1,1,D,2,False,1,0,3,1,danger
+1986,1986012,groups,False,Group A,1986-06-05,Group stage,True,Argentina,Italy,False,1,1,D,2,False,2,2,1,1,qualification
+1986,1986013,groups,False,Group C,1986-06-05,Group stage,True,France,Soviet Union,True,1,1,D,2,False,2,1,2,1,qualification
+1986,1986013,groups,False,Group C,1986-06-05,Group stage,True,Soviet Union,France,False,1,1,D,2,False,2,6,1,1,qualification
+1986,1986014,groups,False,Group A,1986-06-05,Group stage,True,South Korea,Bulgaria,True,1,1,D,2,False,0,-2,4,1,danger
+1986,1986014,groups,False,Group A,1986-06-05,Group stage,True,Bulgaria,South Korea,False,1,1,D,2,False,1,0,2,1,qualification
+1986,1986015,groups,False,Group C,1986-06-06,Group stage,True,Hungary,Canada,True,2,0,W,2,False,0,-6,4,1,danger
+1986,1986015,groups,False,Group C,1986-06-06,Group stage,True,Canada,Hungary,False,0,2,L,2,False,0,-1,3,1,danger
+1986,1986016,groups,False,Group D,1986-06-06,Group stage,True,Brazil,Algeria,True,1,0,W,2,False,2,1,1,1,qualification
+1986,1986016,groups,False,Group D,1986-06-06,Group stage,True,Algeria,Brazil,False,0,1,L,2,False,1,0,2,1,qualification
+1986,1986017,groups,False,Group F,1986-06-06,Group stage,True,England,Morocco,True,0,0,D,2,False,0,-1,4,1,danger
+1986,1986017,groups,False,Group F,1986-06-06,Group stage,True,Morocco,England,False,0,0,D,2,False,1,0,2,1,qualification
+1986,1986018,groups,False,Group B,1986-06-07,Group stage,True,Mexico,Paraguay,True,1,1,D,2,False,2,1,1,1,qualification
+1986,1986018,groups,False,Group B,1986-06-07,Group stage,True,Paraguay,Mexico,False,1,1,D,2,False,2,1,2,1,qualification
+1986,1986019,groups,False,Group D,1986-06-07,Group stage,True,Northern Ireland,Spain,True,1,2,L,2,False,1,0,2,1,qualification
+1986,1986019,groups,False,Group D,1986-06-07,Group stage,True,Spain,Northern Ireland,False,2,1,W,2,False,0,-1,4,1,danger
+1986,1986020,groups,False,Group F,1986-06-07,Group stage,True,Poland,Portugal,True,1,0,W,2,False,1,0,3,1,danger
+1986,1986020,groups,False,Group F,1986-06-07,Group stage,True,Portugal,Poland,False,0,1,L,2,False,2,1,1,1,qualification
+1986,1986021,groups,False,Group B,1986-06-08,Group stage,True,Iraq,Belgium,True,1,2,L,2,False,0,-1,4,1,danger
+1986,1986021,groups,False,Group B,1986-06-08,Group stage,True,Belgium,Iraq,False,2,1,W,2,False,0,-1,3,1,danger
+1986,1986022,groups,False,Group E,1986-06-08,Group stage,True,West Germany,Scotland,True,2,1,W,2,False,1,0,3,1,danger
+1986,1986022,groups,False,Group E,1986-06-08,Group stage,True,Scotland,West Germany,False,1,2,L,2,False,0,-1,4,1,danger
+1986,1986023,groups,False,Group E,1986-06-08,Group stage,True,Denmark,Uruguay,True,6,1,W,2,False,2,1,1,1,qualification
+1986,1986023,groups,False,Group E,1986-06-08,Group stage,True,Uruguay,Denmark,False,1,6,L,2,False,1,0,2,1,qualification
+1986,1986024,groups,False,Group C,1986-06-09,Group stage,True,Hungary,France,True,0,3,L,3,False,2,-4,3,0,danger
+1986,1986024,groups,False,Group C,1986-06-09,Group stage,True,France,Hungary,False,3,0,W,3,False,3,1,2,0,qualification
+1986,1986025,groups,False,Group C,1986-06-09,Group stage,True,Soviet Union,Canada,True,2,0,W,3,False,3,6,1,0,qualification
+1986,1986025,groups,False,Group C,1986-06-09,Group stage,True,Canada,Soviet Union,False,0,2,L,3,False,0,-3,4,0,danger
+1986,1986026,groups,False,Group A,1986-06-10,Group stage,True,Argentina,Bulgaria,True,2,0,W,3,False,3,2,1,0,qualification
+1986,1986026,groups,False,Group A,1986-06-10,Group stage,True,Bulgaria,Argentina,False,0,2,L,3,False,2,0,2,0,qualification
+1986,1986027,groups,False,Group A,1986-06-10,Group stage,True,South Korea,Italy,True,2,3,L,3,False,1,-2,4,0,danger
+1986,1986027,groups,False,Group A,1986-06-10,Group stage,True,Italy,South Korea,False,3,2,W,3,False,2,0,3,0,danger
+1986,1986028,groups,False,Group B,1986-06-11,Group stage,True,Iraq,Mexico,True,0,1,L,3,False,0,-2,4,0,danger
+1986,1986028,groups,False,Group B,1986-06-11,Group stage,True,Mexico,Iraq,False,1,0,W,3,False,3,1,1,0,qualification
+1986,1986029,groups,False,Group B,1986-06-11,Group stage,True,Paraguay,Belgium,True,2,2,D,3,False,3,1,2,0,qualification
+1986,1986029,groups,False,Group B,1986-06-11,Group stage,True,Belgium,Paraguay,False,2,2,D,3,False,2,0,3,0,danger
+1986,1986030,groups,False,Group F,1986-06-11,Group stage,True,England,Poland,True,3,0,W,3,False,1,-1,4,0,danger
+1986,1986030,groups,False,Group F,1986-06-11,Group stage,True,Poland,England,False,0,3,L,3,False,3,1,1,0,qualification
+1986,1986031,groups,False,Group F,1986-06-11,Group stage,True,Portugal,Morocco,True,1,3,L,3,False,2,0,2,0,qualification
+1986,1986031,groups,False,Group F,1986-06-11,Group stage,True,Morocco,Portugal,False,3,1,W,3,False,2,0,3,0,danger
+1986,1986032,groups,False,Group D,1986-06-12,Group stage,True,Algeria,Spain,True,0,3,L,3,False,1,-1,4,0,danger
+1986,1986032,groups,False,Group D,1986-06-12,Group stage,True,Spain,Algeria,False,3,0,W,3,False,2,0,2,0,qualification
+1986,1986033,groups,False,Group D,1986-06-12,Group stage,True,Northern Ireland,Brazil,True,0,3,L,3,False,1,-1,3,0,danger
+1986,1986033,groups,False,Group D,1986-06-12,Group stage,True,Brazil,Northern Ireland,False,3,0,W,3,False,4,2,1,0,qualification
+1986,1986034,groups,False,Group E,1986-06-13,Group stage,True,Denmark,West Germany,True,2,0,W,3,False,4,6,1,0,qualification
+1986,1986034,groups,False,Group E,1986-06-13,Group stage,True,West Germany,Denmark,False,0,2,L,3,False,3,1,2,0,qualification
+1986,1986035,groups,False,Group E,1986-06-13,Group stage,True,Scotland,Uruguay,True,0,0,D,3,False,0,-2,4,0,danger
+1986,1986035,groups,False,Group E,1986-06-13,Group stage,True,Uruguay,Scotland,False,0,0,D,3,False,1,-5,3,0,danger
+1986,1986036,knockout,True,,1986-06-15,Round of 16,True,Mexico,Bulgaria,True,2,0,W,,,,,,,
+1986,1986036,knockout,True,,1986-06-15,Round of 16,True,Bulgaria,Mexico,False,0,2,L,,,,,,,
+1986,1986037,knockout,True,,1986-06-15,Round of 16,True,Soviet Union,Belgium,True,3,4,L,,,,,,,
+1986,1986037,knockout,True,,1986-06-15,Round of 16,True,Belgium,Soviet Union,False,4,3,W,,,,,,,
+1986,1986038,knockout,True,,1986-06-16,Round of 16,True,Brazil,Poland,True,4,0,W,,,,,,,
+1986,1986038,knockout,True,,1986-06-16,Round of 16,True,Poland,Brazil,False,0,4,L,,,,,,,
+1986,1986039,knockout,True,,1986-06-16,Round of 16,True,Argentina,Uruguay,True,1,0,W,,,,,,,
+1986,1986039,knockout,True,,1986-06-16,Round of 16,True,Uruguay,Argentina,False,0,1,L,,,,,,,
+1986,1986040,knockout,True,,1986-06-17,Round of 16,True,Italy,France,True,0,2,L,,,,,,,
+1986,1986040,knockout,True,,1986-06-17,Round of 16,True,France,Italy,False,2,0,W,,,,,,,
+1986,1986041,knockout,True,,1986-06-17,Round of 16,True,Morocco,West Germany,True,0,1,L,,,,,,,
+1986,1986041,knockout,True,,1986-06-17,Round of 16,True,West Germany,Morocco,False,1,0,W,,,,,,,
+1986,1986042,knockout,True,,1986-06-18,Round of 16,True,England,Paraguay,True,3,0,W,,,,,,,
+1986,1986042,knockout,True,,1986-06-18,Round of 16,True,Paraguay,England,False,0,3,L,,,,,,,
+1986,1986043,knockout,True,,1986-06-18,Round of 16,True,Denmark,Spain,True,1,5,L,,,,,,,
+1986,1986043,knockout,True,,1986-06-18,Round of 16,True,Spain,Denmark,False,5,1,W,,,,,,,
+1986,1986044,knockout,True,,1986-06-21,Quarter-final,True,Brazil,France,True,1,1,D,,,,,,,
+1986,1986044,knockout,True,,1986-06-21,Quarter-final,True,France,Brazil,False,1,1,D,,,,,,,
+1986,1986045,knockout,True,,1986-06-21,Quarter-final,True,West Germany,Mexico,True,0,0,D,,,,,,,
+1986,1986045,knockout,True,,1986-06-21,Quarter-final,True,Mexico,West Germany,False,0,0,D,,,,,,,
+1986,1986046,knockout,True,,1986-06-22,Quarter-final,True,Argentina,England,True,2,1,W,,,,,,,
+1986,1986046,knockout,True,,1986-06-22,Quarter-final,True,England,Argentina,False,1,2,L,,,,,,,
+1986,1986047,knockout,True,,1986-06-22,Quarter-final,True,Spain,Belgium,True,1,1,D,,,,,,,
+1986,1986047,knockout,True,,1986-06-22,Quarter-final,True,Belgium,Spain,False,1,1,D,,,,,,,
+1986,1986048,knockout,True,,1986-06-25,Semi-final,True,France,West Germany,True,0,2,L,,,,,,,
+1986,1986048,knockout,True,,1986-06-25,Semi-final,True,West Germany,France,False,2,0,W,,,,,,,
+1986,1986049,knockout,True,,1986-06-25,Semi-final,True,Argentina,Belgium,True,2,0,W,,,,,,,
+1986,1986049,knockout,True,,1986-06-25,Semi-final,True,Belgium,Argentina,False,0,2,L,,,,,,,
+1986,1986050,third_place,False,,1986-06-28,Match for third place,True,Belgium,France,True,2,4,L,,,,,,,
+1986,1986050,third_place,False,,1986-06-28,Match for third place,True,France,Belgium,False,4,2,W,,,,,,,
+1986,1986051,knockout,True,,1986-06-29,Final,True,Argentina,West Germany,True,3,2,W,,,,,,,
+1986,1986051,knockout,True,,1986-06-29,Final,True,West Germany,Argentina,False,2,3,L,,,,,,,
+1990,1990000,groups,False,Group B,1990-06-08,Group stage,True,Argentina,Cameroon,True,0,1,L,1,True,0,0,1,2,qualification
+1990,1990000,groups,False,Group B,1990-06-08,Group stage,True,Cameroon,Argentina,False,1,0,W,1,True,0,0,2,2,qualification
+1990,1990001,groups,False,Group B,1990-06-09,Group stage,True,Soviet Union,Romania,True,0,2,L,1,True,0,0,3,2,danger
+1990,1990001,groups,False,Group B,1990-06-09,Group stage,True,Romania,Soviet Union,False,2,0,W,1,True,0,0,2,2,qualification
+1990,1990002,groups,False,Group D,1990-06-09,Group stage,True,United Arab Emirates,Colombia,True,0,2,L,1,True,0,0,2,2,qualification
+1990,1990002,groups,False,Group D,1990-06-09,Group stage,True,Colombia,United Arab Emirates,False,2,0,W,1,True,0,0,1,2,qualification
+1990,1990003,groups,False,Group A,1990-06-09,Group stage,True,Italy,Austria,True,1,0,W,1,True,0,0,3,2,danger
+1990,1990003,groups,False,Group A,1990-06-09,Group stage,True,Austria,Italy,False,0,1,L,1,True,0,0,1,2,qualification
+1990,1990004,groups,False,Group A,1990-06-10,Group stage,True,United States,Czechoslovakia,True,1,5,L,1,True,0,0,3,2,danger
+1990,1990004,groups,False,Group A,1990-06-10,Group stage,True,Czechoslovakia,United States,False,5,1,W,1,True,0,0,2,2,qualification
+1990,1990005,groups,False,Group C,1990-06-10,Group stage,True,Brazil,Sweden,True,2,1,W,1,True,0,0,1,2,qualification
+1990,1990005,groups,False,Group C,1990-06-10,Group stage,True,Sweden,Brazil,False,1,2,L,1,True,0,0,4,2,danger
+1990,1990006,groups,False,Group D,1990-06-10,Group stage,True,West Germany,Yugoslavia,True,4,1,W,1,True,0,0,2,2,qualification
+1990,1990006,groups,False,Group D,1990-06-10,Group stage,True,Yugoslavia,West Germany,False,1,4,L,1,True,0,0,3,2,danger
+1990,1990007,groups,False,Group C,1990-06-11,Group stage,True,Costa Rica,Scotland,True,1,0,W,1,True,0,0,2,2,qualification
+1990,1990007,groups,False,Group C,1990-06-11,Group stage,True,Scotland,Costa Rica,False,0,1,L,1,True,0,0,3,2,danger
+1990,1990008,groups,False,Group F,1990-06-11,Group stage,True,England,Republic of Ireland,True,1,1,D,1,True,0,0,2,2,qualification
+1990,1990008,groups,False,Group F,1990-06-11,Group stage,True,Republic of Ireland,England,False,1,1,D,1,True,0,0,4,2,danger
+1990,1990009,groups,False,Group E,1990-06-12,Group stage,True,Belgium,South Korea,True,2,0,W,1,True,0,0,1,2,qualification
+1990,1990009,groups,False,Group E,1990-06-12,Group stage,True,South Korea,Belgium,False,0,2,L,1,True,0,0,2,2,qualification
+1990,1990010,groups,False,Group F,1990-06-12,Group stage,True,Netherlands,Egypt,True,1,1,D,1,True,0,0,4,2,danger
+1990,1990010,groups,False,Group F,1990-06-12,Group stage,True,Egypt,Netherlands,False,1,1,D,1,True,0,0,3,2,danger
+1990,1990011,groups,False,Group E,1990-06-13,Group stage,True,Uruguay,Spain,True,0,0,D,1,True,0,0,3,2,danger
+1990,1990011,groups,False,Group E,1990-06-13,Group stage,True,Spain,Uruguay,False,0,0,D,1,True,0,0,2,2,qualification
+1990,1990012,groups,False,Group B,1990-06-13,Group stage,True,Argentina,Soviet Union,True,2,0,W,2,False,0,-1,3,1,danger
+1990,1990012,groups,False,Group B,1990-06-13,Group stage,True,Soviet Union,Argentina,False,0,2,L,2,False,0,-2,4,1,danger
+1990,1990013,groups,False,Group B,1990-06-14,Group stage,True,Cameroon,Romania,True,2,1,W,2,False,2,1,3,1,danger
+1990,1990013,groups,False,Group B,1990-06-14,Group stage,True,Romania,Cameroon,False,1,2,L,2,False,2,2,1,1,qualification
+1990,1990014,groups,False,Group D,1990-06-14,Group stage,True,Yugoslavia,Colombia,True,1,0,W,2,False,0,-3,4,1,danger
+1990,1990014,groups,False,Group D,1990-06-14,Group stage,True,Colombia,Yugoslavia,False,0,1,L,2,False,2,2,2,1,qualification
+1990,1990015,groups,False,Group A,1990-06-14,Group stage,True,Italy,United States,True,1,0,W,2,False,2,1,2,1,qualification
+1990,1990015,groups,False,Group A,1990-06-14,Group stage,True,United States,Italy,False,0,1,L,2,False,0,-4,4,1,danger
+1990,1990016,groups,False,Group A,1990-06-15,Group stage,True,Austria,Czechoslovakia,True,0,1,L,2,False,0,-1,3,1,danger
+1990,1990016,groups,False,Group A,1990-06-15,Group stage,True,Czechoslovakia,Austria,False,1,0,W,2,False,2,4,2,1,qualification
+1990,1990017,groups,False,Group D,1990-06-15,Group stage,True,West Germany,United Arab Emirates,True,5,1,W,2,False,2,3,1,1,qualification
+1990,1990017,groups,False,Group D,1990-06-15,Group stage,True,United Arab Emirates,West Germany,False,1,5,L,2,False,0,-2,4,1,danger
+1990,1990018,groups,False,Group C,1990-06-16,Group stage,True,Brazil,Costa Rica,True,1,0,W,2,False,2,1,1,1,qualification
+1990,1990018,groups,False,Group C,1990-06-16,Group stage,True,Costa Rica,Brazil,False,0,1,L,2,False,2,1,2,1,qualification
+1990,1990019,groups,False,Group C,1990-06-16,Group stage,True,Sweden,Scotland,True,1,2,L,2,False,0,-1,3,1,danger
+1990,1990019,groups,False,Group C,1990-06-16,Group stage,True,Scotland,Sweden,False,2,1,W,2,False,0,-1,4,1,danger
+1990,1990020,groups,False,Group F,1990-06-16,Group stage,True,England,Netherlands,True,0,0,D,2,False,1,0,2,1,qualification
+1990,1990020,groups,False,Group F,1990-06-16,Group stage,True,Netherlands,England,False,0,0,D,2,False,1,0,3,1,danger
+1990,1990021,groups,False,Group F,1990-06-17,Group stage,True,Republic of Ireland,Egypt,True,0,0,D,2,False,1,0,4,1,danger
+1990,1990021,groups,False,Group F,1990-06-17,Group stage,True,Egypt,Republic of Ireland,False,0,0,D,2,False,1,0,3,1,danger
+1990,1990022,groups,False,Group E,1990-06-17,Group stage,True,Belgium,Uruguay,True,3,1,W,2,False,2,2,1,1,qualification
+1990,1990022,groups,False,Group E,1990-06-17,Group stage,True,Uruguay,Belgium,False,1,3,L,2,False,1,0,3,1,danger
+1990,1990023,groups,False,Group E,1990-06-17,Group stage,True,South Korea,Spain,True,1,3,L,2,False,0,-2,4,1,danger
+1990,1990023,groups,False,Group E,1990-06-17,Group stage,True,Spain,South Korea,False,3,1,W,2,False,1,0,2,1,qualification
+1990,1990024,groups,False,Group B,1990-06-18,Group stage,True,Argentina,Romania,True,1,1,D,3,False,2,1,3,0,danger
+1990,1990024,groups,False,Group B,1990-06-18,Group stage,True,Romania,Argentina,False,1,1,D,3,False,2,1,2,0,qualification
+1990,1990025,groups,False,Group B,1990-06-18,Group stage,True,Cameroon,Soviet Union,True,0,4,L,3,False,4,2,1,0,qualification
+1990,1990025,groups,False,Group B,1990-06-18,Group stage,True,Soviet Union,Cameroon,False,4,0,W,3,False,0,-4,4,0,danger
+1990,1990026,groups,False,Group D,1990-06-19,Group stage,True,West Germany,Colombia,True,1,1,D,3,False,4,7,1,0,qualification
+1990,1990026,groups,False,Group D,1990-06-19,Group stage,True,Colombia,West Germany,False,1,1,D,3,False,2,1,2,0,qualification
+1990,1990027,groups,False,Group D,1990-06-19,Group stage,True,Yugoslavia,United Arab Emirates,True,4,1,W,3,False,2,-2,3,0,danger
+1990,1990027,groups,False,Group D,1990-06-19,Group stage,True,United Arab Emirates,Yugoslavia,False,1,4,L,3,False,0,-6,4,0,danger
+1990,1990028,groups,False,Group A,1990-06-19,Group stage,True,Austria,United States,True,2,1,W,3,False,0,-2,3,0,danger
+1990,1990028,groups,False,Group A,1990-06-19,Group stage,True,United States,Austria,False,1,2,L,3,False,0,-5,4,0,danger
+1990,1990029,groups,False,Group A,1990-06-19,Group stage,True,Italy,Czechoslovakia,True,2,0,W,3,False,4,2,2,0,qualification
+1990,1990029,groups,False,Group A,1990-06-19,Group stage,True,Czechoslovakia,Italy,False,0,2,L,3,False,4,5,1,0,qualification
+1990,1990030,groups,False,Group C,1990-06-20,Group stage,True,Brazil,Scotland,True,1,0,W,3,False,4,2,1,0,qualification
+1990,1990030,groups,False,Group C,1990-06-20,Group stage,True,Scotland,Brazil,False,0,1,L,3,False,2,0,2,0,qualification
+1990,1990031,groups,False,Group C,1990-06-20,Group stage,True,Sweden,Costa Rica,True,1,2,L,3,False,0,-2,4,0,danger
+1990,1990031,groups,False,Group C,1990-06-20,Group stage,True,Costa Rica,Sweden,False,2,1,W,3,False,2,0,3,0,danger
+1990,1990032,groups,False,Group E,1990-06-21,Group stage,True,Belgium,Spain,True,1,2,L,3,False,4,4,1,0,qualification
+1990,1990032,groups,False,Group E,1990-06-21,Group stage,True,Spain,Belgium,False,2,1,W,3,False,3,2,2,0,qualification
+1990,1990033,groups,False,Group E,1990-06-21,Group stage,True,South Korea,Uruguay,True,0,1,L,3,False,0,-4,4,0,danger
+1990,1990033,groups,False,Group E,1990-06-21,Group stage,True,Uruguay,South Korea,False,1,0,W,3,False,1,-2,3,0,danger
+1990,1990034,groups,False,Group F,1990-06-21,Group stage,True,England,Egypt,True,1,0,W,3,False,2,0,2,0,qualification
+1990,1990034,groups,False,Group F,1990-06-21,Group stage,True,Egypt,England,False,0,1,L,3,False,2,0,1,0,qualification
+1990,1990035,groups,False,Group F,1990-06-21,Group stage,True,Republic of Ireland,Netherlands,True,1,1,D,3,False,2,0,4,0,danger
+1990,1990035,groups,False,Group F,1990-06-21,Group stage,True,Netherlands,Republic of Ireland,False,1,1,D,3,False,2,0,3,0,danger
+1990,1990036,knockout,True,,1990-06-23,Round of 16,True,Cameroon,Colombia,True,2,1,W,,,,,,,
+1990,1990036,knockout,True,,1990-06-23,Round of 16,True,Colombia,Cameroon,False,1,2,L,,,,,,,
+1990,1990037,knockout,True,,1990-06-23,Round of 16,True,Czechoslovakia,Costa Rica,True,4,1,W,,,,,,,
+1990,1990037,knockout,True,,1990-06-23,Round of 16,True,Costa Rica,Czechoslovakia,False,1,4,L,,,,,,,
+1990,1990038,knockout,True,,1990-06-24,Round of 16,True,Brazil,Argentina,True,0,1,L,,,,,,,
+1990,1990038,knockout,True,,1990-06-24,Round of 16,True,Argentina,Brazil,False,1,0,W,,,,,,,
+1990,1990039,knockout,True,,1990-06-24,Round of 16,True,West Germany,Netherlands,True,2,1,W,,,,,,,
+1990,1990039,knockout,True,,1990-06-24,Round of 16,True,Netherlands,West Germany,False,1,2,L,,,,,,,
+1990,1990040,knockout,True,,1990-06-25,Round of 16,True,Republic of Ireland,Romania,True,0,0,D,,,,,,,
+1990,1990040,knockout,True,,1990-06-25,Round of 16,True,Romania,Republic of Ireland,False,0,0,D,,,,,,,
+1990,1990041,knockout,True,,1990-06-25,Round of 16,True,Italy,Uruguay,True,2,0,W,,,,,,,
+1990,1990041,knockout,True,,1990-06-25,Round of 16,True,Uruguay,Italy,False,0,2,L,,,,,,,
+1990,1990042,knockout,True,,1990-06-26,Round of 16,True,Spain,Yugoslavia,True,1,2,L,,,,,,,
+1990,1990042,knockout,True,,1990-06-26,Round of 16,True,Yugoslavia,Spain,False,2,1,W,,,,,,,
+1990,1990043,knockout,True,,1990-06-26,Round of 16,True,England,Belgium,True,1,0,W,,,,,,,
+1990,1990043,knockout,True,,1990-06-26,Round of 16,True,Belgium,England,False,0,1,L,,,,,,,
+1990,1990044,knockout,True,,1990-06-30,Quarter-final,True,Argentina,Yugoslavia,True,0,0,D,,,,,,,
+1990,1990044,knockout,True,,1990-06-30,Quarter-final,True,Yugoslavia,Argentina,False,0,0,D,,,,,,,
+1990,1990045,knockout,True,,1990-06-30,Quarter-final,True,Republic of Ireland,Italy,True,0,1,L,,,,,,,
+1990,1990045,knockout,True,,1990-06-30,Quarter-final,True,Italy,Republic of Ireland,False,1,0,W,,,,,,,
+1990,1990046,knockout,True,,1990-07-01,Quarter-final,True,Czechoslovakia,West Germany,True,0,1,L,,,,,,,
+1990,1990046,knockout,True,,1990-07-01,Quarter-final,True,West Germany,Czechoslovakia,False,1,0,W,,,,,,,
+1990,1990047,knockout,True,,1990-07-01,Quarter-final,True,Cameroon,England,True,2,3,L,,,,,,,
+1990,1990047,knockout,True,,1990-07-01,Quarter-final,True,England,Cameroon,False,3,2,W,,,,,,,
+1990,1990048,knockout,True,,1990-07-03,Semi-final,True,Argentina,Italy,True,1,1,D,,,,,,,
+1990,1990048,knockout,True,,1990-07-03,Semi-final,True,Italy,Argentina,False,1,1,D,,,,,,,
+1990,1990049,knockout,True,,1990-07-04,Semi-final,True,West Germany,England,True,1,1,D,,,,,,,
+1990,1990049,knockout,True,,1990-07-04,Semi-final,True,England,West Germany,False,1,1,D,,,,,,,
+1990,1990050,third_place,False,,1990-07-07,Match for third place,True,Italy,England,True,2,1,W,,,,,,,
+1990,1990050,third_place,False,,1990-07-07,Match for third place,True,England,Italy,False,1,2,L,,,,,,,
+1990,1990051,knockout,True,,1990-07-08,Final,True,West Germany,Argentina,True,1,0,W,,,,,,,
+1990,1990051,knockout,True,,1990-07-08,Final,True,Argentina,West Germany,False,0,1,L,,,,,,,
+1994,1994000,groups,False,Group C,1994-06-17,Group stage,True,Germany,Bolivia,True,1,0,W,1,True,0,0,2,2,qualification
+1994,1994000,groups,False,Group C,1994-06-17,Group stage,True,Bolivia,Germany,False,0,1,L,1,True,0,0,1,2,qualification
+1994,1994001,groups,False,Group C,1994-06-17,Group stage,True,Spain,South Korea,True,2,2,D,1,True,0,0,4,2,danger
+1994,1994001,groups,False,Group C,1994-06-17,Group stage,True,South Korea,Spain,False,2,2,D,1,True,0,0,3,2,danger
+1994,1994002,groups,False,Group A,1994-06-18,Group stage,True,United States,Switzerland,True,1,1,D,1,True,0,0,4,2,danger
+1994,1994002,groups,False,Group A,1994-06-18,Group stage,True,Switzerland,United States,False,1,1,D,1,True,0,0,3,2,danger
+1994,1994003,groups,False,Group E,1994-06-18,Group stage,True,Italy,Republic of Ireland,True,0,1,L,1,True,0,0,1,2,qualification
+1994,1994003,groups,False,Group E,1994-06-18,Group stage,True,Republic of Ireland,Italy,False,1,0,W,1,True,0,0,4,2,danger
+1994,1994004,groups,False,Group A,1994-06-18,Group stage,True,Colombia,Romania,True,1,3,L,1,True,0,0,1,2,qualification
+1994,1994004,groups,False,Group A,1994-06-18,Group stage,True,Romania,Colombia,False,3,1,W,1,True,0,0,2,2,qualification
+1994,1994005,groups,False,Group F,1994-06-19,Group stage,True,Belgium,Morocco,True,1,0,W,1,True,0,0,1,2,qualification
+1994,1994005,groups,False,Group F,1994-06-19,Group stage,True,Morocco,Belgium,False,0,1,L,1,True,0,0,2,2,qualification
+1994,1994006,groups,False,Group E,1994-06-19,Group stage,True,Norway,Mexico,True,1,0,W,1,True,0,0,3,2,danger
+1994,1994006,groups,False,Group E,1994-06-19,Group stage,True,Mexico,Norway,False,0,1,L,1,True,0,0,2,2,qualification
+1994,1994007,groups,False,Group B,1994-06-19,Group stage,True,Cameroon,Sweden,True,2,2,D,1,True,0,0,2,2,qualification
+1994,1994007,groups,False,Group B,1994-06-19,Group stage,True,Sweden,Cameroon,False,2,2,D,1,True,0,0,4,2,danger
+1994,1994008,groups,False,Group B,1994-06-20,Group stage,True,Brazil,Russia,True,2,0,W,1,True,0,0,3,2,danger
+1994,1994008,groups,False,Group B,1994-06-20,Group stage,True,Russia,Brazil,False,0,2,L,1,True,0,0,4,2,danger
+1994,1994009,groups,False,Group F,1994-06-20,Group stage,True,Netherlands,Saudi Arabia,True,2,1,W,1,True,0,0,2,2,qualification
+1994,1994009,groups,False,Group F,1994-06-20,Group stage,True,Saudi Arabia,Netherlands,False,1,2,L,1,True,0,0,3,2,danger
+1994,1994010,groups,False,Group D,1994-06-21,Group stage,True,Argentina,Greece,True,4,0,W,1,True,0,0,1,2,qualification
+1994,1994010,groups,False,Group D,1994-06-21,Group stage,True,Greece,Argentina,False,0,4,L,1,True,0,0,3,2,danger
+1994,1994011,groups,False,Group C,1994-06-21,Group stage,True,Germany,Spain,True,1,1,D,2,False,3,1,1,1,qualification
+1994,1994011,groups,False,Group C,1994-06-21,Group stage,True,Spain,Germany,False,1,1,D,2,False,1,0,3,1,danger
+1994,1994012,groups,False,Group D,1994-06-21,Group stage,True,Nigeria,Bulgaria,True,3,0,W,1,True,0,0,4,2,danger
+1994,1994012,groups,False,Group D,1994-06-21,Group stage,True,Bulgaria,Nigeria,False,0,3,L,1,True,0,0,2,2,qualification
+1994,1994013,groups,False,Group A,1994-06-22,Group stage,True,Romania,Switzerland,True,1,4,L,2,False,3,2,1,1,qualification
+1994,1994013,groups,False,Group A,1994-06-22,Group stage,True,Switzerland,Romania,False,4,1,W,2,False,1,0,2,1,qualification
+1994,1994014,groups,False,Group A,1994-06-22,Group stage,True,United States,Colombia,True,2,1,W,2,False,1,0,3,1,danger
+1994,1994014,groups,False,Group A,1994-06-22,Group stage,True,Colombia,United States,False,1,2,L,2,False,0,-2,4,1,danger
+1994,1994015,groups,False,Group E,1994-06-23,Group stage,True,Italy,Norway,True,1,0,W,2,False,0,-1,3,1,danger
+1994,1994015,groups,False,Group E,1994-06-23,Group stage,True,Norway,Italy,False,0,1,L,2,False,3,1,1,1,qualification
+1994,1994016,groups,False,Group C,1994-06-23,Group stage,True,South Korea,Bolivia,True,0,0,D,2,False,1,0,3,1,danger
+1994,1994016,groups,False,Group C,1994-06-23,Group stage,True,Bolivia,South Korea,False,0,0,D,2,False,0,-1,4,1,danger
+1994,1994017,groups,False,Group E,1994-06-24,Group stage,True,Mexico,Republic of Ireland,True,2,1,W,2,False,0,-1,4,1,danger
+1994,1994017,groups,False,Group E,1994-06-24,Group stage,True,Republic of Ireland,Mexico,False,1,2,L,2,False,3,1,1,1,qualification
+1994,1994018,groups,False,Group B,1994-06-24,Group stage,True,Brazil,Cameroon,True,3,0,W,2,False,3,2,1,1,qualification
+1994,1994018,groups,False,Group B,1994-06-24,Group stage,True,Cameroon,Brazil,False,0,3,L,2,False,1,0,2,1,qualification
+1994,1994019,groups,False,Group B,1994-06-24,Group stage,True,Sweden,Russia,True,3,1,W,2,False,1,0,3,1,danger
+1994,1994019,groups,False,Group B,1994-06-24,Group stage,True,Russia,Sweden,False,1,3,L,2,False,0,-2,4,1,danger
+1994,1994020,groups,False,Group F,1994-06-25,Group stage,True,Belgium,Netherlands,True,1,0,W,2,False,3,1,2,1,qualification
+1994,1994020,groups,False,Group F,1994-06-25,Group stage,True,Netherlands,Belgium,False,0,1,L,2,False,3,1,1,1,qualification
+1994,1994021,groups,False,Group F,1994-06-25,Group stage,True,Saudi Arabia,Morocco,True,2,1,W,2,False,0,-1,3,1,danger
+1994,1994021,groups,False,Group F,1994-06-25,Group stage,True,Morocco,Saudi Arabia,False,1,2,L,2,False,0,-1,4,1,danger
+1994,1994022,groups,False,Group D,1994-06-25,Group stage,True,Argentina,Nigeria,True,2,1,W,2,False,3,4,1,1,qualification
+1994,1994022,groups,False,Group D,1994-06-25,Group stage,True,Nigeria,Argentina,False,1,2,L,2,False,3,3,2,1,qualification
+1994,1994023,groups,False,Group D,1994-06-26,Group stage,True,Bulgaria,Greece,True,4,0,W,2,False,0,-3,3,1,danger
+1994,1994023,groups,False,Group D,1994-06-26,Group stage,True,Greece,Bulgaria,False,0,4,L,2,False,0,-4,4,1,danger
+1994,1994024,groups,False,Group A,1994-06-26,Group stage,True,Switzerland,Colombia,True,0,2,L,3,False,4,3,1,0,qualification
+1994,1994024,groups,False,Group A,1994-06-26,Group stage,True,Colombia,Switzerland,False,2,0,W,3,False,0,-3,4,0,danger
+1994,1994025,groups,False,Group A,1994-06-26,Group stage,True,United States,Romania,True,0,1,L,3,False,4,1,2,0,qualification
+1994,1994025,groups,False,Group A,1994-06-26,Group stage,True,Romania,United States,False,1,0,W,3,False,3,-1,3,0,danger
+1994,1994026,groups,False,Group C,1994-06-27,Group stage,True,Bolivia,Spain,True,1,3,L,3,False,1,-1,4,0,danger
+1994,1994026,groups,False,Group C,1994-06-27,Group stage,True,Spain,Bolivia,False,3,1,W,3,False,2,0,2,0,qualification
+1994,1994027,groups,False,Group C,1994-06-27,Group stage,True,Germany,South Korea,True,3,2,W,3,False,4,1,1,0,qualification
+1994,1994027,groups,False,Group C,1994-06-27,Group stage,True,South Korea,Germany,False,2,3,L,3,False,2,0,3,0,danger
+1994,1994028,groups,False,Group E,1994-06-28,Group stage,True,Italy,Mexico,True,1,1,D,3,False,3,0,3,0,danger
+1994,1994028,groups,False,Group E,1994-06-28,Group stage,True,Mexico,Italy,False,1,1,D,3,False,3,0,1,0,qualification
+1994,1994029,groups,False,Group E,1994-06-28,Group stage,True,Republic of Ireland,Norway,True,0,0,D,3,False,3,0,2,0,qualification
+1994,1994029,groups,False,Group E,1994-06-28,Group stage,True,Norway,Republic of Ireland,False,0,0,D,3,False,3,0,4,0,danger
+1994,1994030,groups,False,Group B,1994-06-28,Group stage,True,Russia,Cameroon,True,6,1,W,3,False,0,-4,4,0,danger
+1994,1994030,groups,False,Group B,1994-06-28,Group stage,True,Cameroon,Russia,False,1,6,L,3,False,1,-3,3,0,danger
+1994,1994031,groups,False,Group B,1994-06-28,Group stage,True,Brazil,Sweden,True,1,1,D,3,False,6,5,1,0,qualification
+1994,1994031,groups,False,Group B,1994-06-28,Group stage,True,Sweden,Brazil,False,1,1,D,3,False,4,2,2,0,qualification
+1994,1994032,groups,False,Group F,1994-06-29,Group stage,True,Belgium,Saudi Arabia,True,0,1,L,3,False,6,2,1,0,qualification
+1994,1994032,groups,False,Group F,1994-06-29,Group stage,True,Saudi Arabia,Belgium,False,1,0,W,3,False,3,0,2,0,qualification
+1994,1994033,groups,False,Group F,1994-06-29,Group stage,True,Morocco,Netherlands,True,1,2,L,3,False,0,-2,4,0,danger
+1994,1994033,groups,False,Group F,1994-06-29,Group stage,True,Netherlands,Morocco,False,2,1,W,3,False,3,0,3,0,danger
+1994,1994034,groups,False,Group D,1994-06-30,Group stage,True,Argentina,Bulgaria,True,0,2,L,3,False,6,5,1,0,qualification
+1994,1994034,groups,False,Group D,1994-06-30,Group stage,True,Bulgaria,Argentina,False,2,0,W,3,False,3,1,3,0,danger
+1994,1994035,groups,False,Group D,1994-06-30,Group stage,True,Greece,Nigeria,True,0,2,L,3,False,0,-8,4,0,danger
+1994,1994035,groups,False,Group D,1994-06-30,Group stage,True,Nigeria,Greece,False,2,0,W,3,False,3,2,2,0,qualification
+1994,1994036,knockout,True,,1994-07-02,Round of 16,True,Germany,Belgium,True,3,2,W,,,,,,,
+1994,1994036,knockout,True,,1994-07-02,Round of 16,True,Belgium,Germany,False,2,3,L,,,,,,,
+1994,1994037,knockout,True,,1994-07-02,Round of 16,True,Spain,Switzerland,True,3,0,W,,,,,,,
+1994,1994037,knockout,True,,1994-07-02,Round of 16,True,Switzerland,Spain,False,0,3,L,,,,,,,
+1994,1994038,knockout,True,,1994-07-03,Round of 16,True,Saudi Arabia,Sweden,True,1,3,L,,,,,,,
+1994,1994038,knockout,True,,1994-07-03,Round of 16,True,Sweden,Saudi Arabia,False,3,1,W,,,,,,,
+1994,1994039,knockout,True,,1994-07-03,Round of 16,True,Romania,Argentina,True,3,2,W,,,,,,,
+1994,1994039,knockout,True,,1994-07-03,Round of 16,True,Argentina,Romania,False,2,3,L,,,,,,,
+1994,1994040,knockout,True,,1994-07-04,Round of 16,True,Netherlands,Republic of Ireland,True,2,0,W,,,,,,,
+1994,1994040,knockout,True,,1994-07-04,Round of 16,True,Republic of Ireland,Netherlands,False,0,2,L,,,,,,,
+1994,1994041,knockout,True,,1994-07-04,Round of 16,True,Brazil,United States,True,1,0,W,,,,,,,
+1994,1994041,knockout,True,,1994-07-04,Round of 16,True,United States,Brazil,False,0,1,L,,,,,,,
+1994,1994042,knockout,True,,1994-07-05,Round of 16,True,Nigeria,Italy,True,1,2,L,,,,,,,
+1994,1994042,knockout,True,,1994-07-05,Round of 16,True,Italy,Nigeria,False,2,1,W,,,,,,,
+1994,1994043,knockout,True,,1994-07-05,Round of 16,True,Mexico,Bulgaria,True,1,1,D,,,,,,,
+1994,1994043,knockout,True,,1994-07-05,Round of 16,True,Bulgaria,Mexico,False,1,1,D,,,,,,,
+1994,1994044,knockout,True,,1994-07-09,Quarter-final,True,Italy,Spain,True,2,1,W,,,,,,,
+1994,1994044,knockout,True,,1994-07-09,Quarter-final,True,Spain,Italy,False,1,2,L,,,,,,,
+1994,1994045,knockout,True,,1994-07-09,Quarter-final,True,Netherlands,Brazil,True,2,3,L,,,,,,,
+1994,1994045,knockout,True,,1994-07-09,Quarter-final,True,Brazil,Netherlands,False,3,2,W,,,,,,,
+1994,1994046,knockout,True,,1994-07-10,Quarter-final,True,Bulgaria,Germany,True,2,1,W,,,,,,,
+1994,1994046,knockout,True,,1994-07-10,Quarter-final,True,Germany,Bulgaria,False,1,2,L,,,,,,,
+1994,1994047,knockout,True,,1994-07-10,Quarter-final,True,Romania,Sweden,True,2,2,D,,,,,,,
+1994,1994047,knockout,True,,1994-07-10,Quarter-final,True,Sweden,Romania,False,2,2,D,,,,,,,
+1994,1994048,knockout,True,,1994-07-13,Semi-final,True,Bulgaria,Italy,True,1,2,L,,,,,,,
+1994,1994048,knockout,True,,1994-07-13,Semi-final,True,Italy,Bulgaria,False,2,1,W,,,,,,,
+1994,1994049,knockout,True,,1994-07-13,Semi-final,True,Sweden,Brazil,True,0,1,L,,,,,,,
+1994,1994049,knockout,True,,1994-07-13,Semi-final,True,Brazil,Sweden,False,1,0,W,,,,,,,
+1994,1994050,third_place,False,,1994-07-16,Match for third place,True,Sweden,Bulgaria,True,4,0,W,,,,,,,
+1994,1994050,third_place,False,,1994-07-16,Match for third place,True,Bulgaria,Sweden,False,0,4,L,,,,,,,
+1994,1994051,knockout,True,,1994-07-17,Final,True,Brazil,Italy,True,0,0,D,,,,,,,
+1994,1994051,knockout,True,,1994-07-17,Final,True,Italy,Brazil,False,0,0,D,,,,,,,
+1998,1998000,groups,False,Group A,1998-06-10,Group stage,True,Brazil,Scotland,True,2,1,W,1,True,0,0,1,2,qualification
+1998,1998000,groups,False,Group A,1998-06-10,Group stage,True,Scotland,Brazil,False,1,2,L,1,True,0,0,4,2,danger
+1998,1998001,groups,False,Group A,1998-06-10,Group stage,True,Morocco,Norway,True,2,2,D,1,True,0,0,2,2,qualification
+1998,1998001,groups,False,Group A,1998-06-10,Group stage,True,Norway,Morocco,False,2,2,D,1,True,0,0,3,2,danger
+1998,1998002,groups,False,Group B,1998-06-11,Group stage,True,Italy,Chile,True,2,2,D,1,True,0,0,4,2,danger
+1998,1998002,groups,False,Group B,1998-06-11,Group stage,True,Chile,Italy,False,2,2,D,1,True,0,0,3,2,danger
+1998,1998003,groups,False,Group B,1998-06-11,Group stage,True,Cameroon,Austria,True,1,1,D,1,True,0,0,2,2,qualification
+1998,1998003,groups,False,Group B,1998-06-11,Group stage,True,Austria,Cameroon,False,1,1,D,1,True,0,0,1,2,qualification
+1998,1998004,groups,False,Group D,1998-06-12,Group stage,True,Paraguay,Bulgaria,True,0,0,D,1,True,0,0,3,2,danger
+1998,1998004,groups,False,Group D,1998-06-12,Group stage,True,Bulgaria,Paraguay,False,0,0,D,1,True,0,0,1,2,qualification
+1998,1998005,groups,False,Group C,1998-06-12,Group stage,True,Saudi Arabia,Denmark,True,0,1,L,1,True,0,0,3,2,danger
+1998,1998005,groups,False,Group C,1998-06-12,Group stage,True,Denmark,Saudi Arabia,False,1,0,W,1,True,0,0,1,2,qualification
+1998,1998006,groups,False,Group C,1998-06-12,Group stage,True,France,South Africa,True,3,0,W,1,True,0,0,2,2,qualification
+1998,1998006,groups,False,Group C,1998-06-12,Group stage,True,South Africa,France,False,0,3,L,1,True,0,0,4,2,danger
+1998,1998007,groups,False,Group D,1998-06-13,Group stage,True,Spain,Nigeria,True,2,3,L,1,True,0,0,4,2,danger
+1998,1998007,groups,False,Group D,1998-06-13,Group stage,True,Nigeria,Spain,False,3,2,W,1,True,0,0,3,2,danger
+1998,1998008,groups,False,Group E,1998-06-13,Group stage,True,South Korea,Mexico,True,1,3,L,1,True,0,0,4,2,danger
+1998,1998008,groups,False,Group E,1998-06-13,Group stage,True,Mexico,South Korea,False,3,1,W,1,True,0,0,2,2,qualification
+1998,1998009,groups,False,Group E,1998-06-13,Group stage,True,Netherlands,Belgium,True,0,0,D,1,True,0,0,3,2,danger
+1998,1998009,groups,False,Group E,1998-06-13,Group stage,True,Belgium,Netherlands,False,0,0,D,1,True,0,0,1,2,qualification
+1998,1998010,groups,False,Group H,1998-06-14,Group stage,True,Argentina,Japan,True,1,0,W,1,True,0,0,1,2,qualification
+1998,1998010,groups,False,Group H,1998-06-14,Group stage,True,Japan,Argentina,False,0,1,L,1,True,0,0,4,2,danger
+1998,1998011,groups,False,Group F,1998-06-14,Group stage,True,Yugoslavia,Iran,True,1,0,W,1,True,0,0,4,2,danger
+1998,1998011,groups,False,Group F,1998-06-14,Group stage,True,Iran,Yugoslavia,False,0,1,L,1,True,0,0,2,2,qualification
+1998,1998012,groups,False,Group H,1998-06-14,Group stage,True,Jamaica,Croatia,True,1,3,L,1,True,0,0,3,2,danger
+1998,1998012,groups,False,Group H,1998-06-14,Group stage,True,Croatia,Jamaica,False,3,1,W,1,True,0,0,2,2,qualification
+1998,1998013,groups,False,Group G,1998-06-15,Group stage,True,England,Tunisia,True,2,0,W,1,True,0,0,2,2,qualification
+1998,1998013,groups,False,Group G,1998-06-15,Group stage,True,Tunisia,England,False,0,2,L,1,True,0,0,4,2,danger
+1998,1998014,groups,False,Group G,1998-06-15,Group stage,True,Romania,Colombia,True,1,0,W,1,True,0,0,3,2,danger
+1998,1998014,groups,False,Group G,1998-06-15,Group stage,True,Colombia,Romania,False,0,1,L,1,True,0,0,1,2,qualification
+1998,1998015,groups,False,Group F,1998-06-15,Group stage,True,Germany,United States,True,2,0,W,1,True,0,0,2,2,qualification
+1998,1998015,groups,False,Group F,1998-06-15,Group stage,True,United States,Germany,False,0,2,L,1,True,0,0,3,2,danger
+1998,1998016,groups,False,Group A,1998-06-16,Group stage,True,Scotland,Norway,True,1,1,D,2,False,0,-1,4,1,danger
+1998,1998016,groups,False,Group A,1998-06-16,Group stage,True,Norway,Scotland,False,1,1,D,2,False,1,0,3,1,danger
+1998,1998017,groups,False,Group A,1998-06-16,Group stage,True,Brazil,Morocco,True,3,0,W,2,False,3,1,1,1,qualification
+1998,1998017,groups,False,Group A,1998-06-16,Group stage,True,Morocco,Brazil,False,0,3,L,2,False,1,0,2,1,qualification
+1998,1998018,groups,False,Group B,1998-06-17,Group stage,True,Chile,Austria,True,1,1,D,2,False,1,0,1,1,qualification
+1998,1998018,groups,False,Group B,1998-06-17,Group stage,True,Austria,Chile,False,1,1,D,2,False,1,0,3,1,danger
+1998,1998019,groups,False,Group B,1998-06-17,Group stage,True,Italy,Cameroon,True,3,0,W,2,False,1,0,2,1,qualification
+1998,1998019,groups,False,Group B,1998-06-17,Group stage,True,Cameroon,Italy,False,0,3,L,2,False,1,0,4,1,danger
+1998,1998020,groups,False,Group C,1998-06-18,Group stage,True,South Africa,Denmark,True,1,1,D,2,False,0,-3,4,1,danger
+1998,1998020,groups,False,Group C,1998-06-18,Group stage,True,Denmark,South Africa,False,1,1,D,2,False,3,1,2,1,qualification
+1998,1998021,groups,False,Group C,1998-06-18,Group stage,True,France,Saudi Arabia,True,4,0,W,2,False,3,3,1,1,qualification
+1998,1998021,groups,False,Group C,1998-06-18,Group stage,True,Saudi Arabia,France,False,0,4,L,2,False,0,-1,3,1,danger
+1998,1998022,groups,False,Group D,1998-06-19,Group stage,True,Nigeria,Bulgaria,True,1,0,W,2,False,3,1,1,1,qualification
+1998,1998022,groups,False,Group D,1998-06-19,Group stage,True,Bulgaria,Nigeria,False,0,1,L,2,False,1,0,2,1,qualification
+1998,1998023,groups,False,Group D,1998-06-19,Group stage,True,Spain,Paraguay,True,0,0,D,2,False,0,-1,4,1,danger
+1998,1998023,groups,False,Group D,1998-06-19,Group stage,True,Paraguay,Spain,False,0,0,D,2,False,1,0,3,1,danger
+1998,1998024,groups,False,Group H,1998-06-20,Group stage,True,Japan,Croatia,True,0,1,L,2,False,0,-1,3,1,danger
+1998,1998024,groups,False,Group H,1998-06-20,Group stage,True,Croatia,Japan,False,1,0,W,2,False,3,2,1,1,qualification
+1998,1998025,groups,False,Group E,1998-06-20,Group stage,True,Belgium,Mexico,True,2,2,D,2,False,1,0,2,1,qualification
+1998,1998025,groups,False,Group E,1998-06-20,Group stage,True,Mexico,Belgium,False,2,2,D,2,False,3,2,1,1,qualification
+1998,1998026,groups,False,Group E,1998-06-20,Group stage,True,Netherlands,South Korea,True,5,0,W,2,False,1,0,3,1,danger
+1998,1998026,groups,False,Group E,1998-06-20,Group stage,True,South Korea,Netherlands,False,0,5,L,2,False,0,-2,4,1,danger
+1998,1998027,groups,False,Group F,1998-06-21,Group stage,True,Germany,Yugoslavia,True,2,2,D,2,False,3,2,1,1,qualification
+1998,1998027,groups,False,Group F,1998-06-21,Group stage,True,Yugoslavia,Germany,False,2,2,D,2,False,3,1,2,1,qualification
+1998,1998028,groups,False,Group H,1998-06-21,Group stage,True,Argentina,Jamaica,True,5,0,W,2,False,3,1,2,1,qualification
+1998,1998028,groups,False,Group H,1998-06-21,Group stage,True,Jamaica,Argentina,False,0,5,L,2,False,0,-2,3,1,danger
+1998,1998029,groups,False,Group F,1998-06-21,Group stage,True,United States,Iran,True,1,2,L,2,False,0,-2,4,1,danger
+1998,1998029,groups,False,Group F,1998-06-21,Group stage,True,Iran,United States,False,2,1,W,2,False,0,-1,3,1,danger
+1998,1998030,groups,False,Group G,1998-06-22,Group stage,True,Colombia,Tunisia,True,1,0,W,2,False,0,-1,3,1,danger
+1998,1998030,groups,False,Group G,1998-06-22,Group stage,True,Tunisia,Colombia,False,0,1,L,2,False,0,-2,4,1,danger
+1998,1998031,groups,False,Group G,1998-06-22,Group stage,True,Romania,England,True,2,1,W,2,False,3,1,2,1,qualification
+1998,1998031,groups,False,Group G,1998-06-22,Group stage,True,England,Romania,False,1,2,L,2,False,3,2,1,1,qualification
+1998,1998032,groups,False,Group B,1998-06-23,Group stage,True,Chile,Cameroon,True,1,1,D,3,False,2,0,2,0,qualification
+1998,1998032,groups,False,Group B,1998-06-23,Group stage,True,Cameroon,Chile,False,1,1,D,3,False,1,-3,4,0,danger
+1998,1998033,groups,False,Group B,1998-06-23,Group stage,True,Italy,Austria,True,2,1,W,3,False,4,3,1,0,qualification
+1998,1998033,groups,False,Group B,1998-06-23,Group stage,True,Austria,Italy,False,1,2,L,3,False,2,0,3,0,danger
+1998,1998034,groups,False,Group A,1998-06-23,Group stage,True,Brazil,Norway,True,1,2,L,3,False,6,4,1,0,qualification
+1998,1998034,groups,False,Group A,1998-06-23,Group stage,True,Norway,Brazil,False,2,1,W,3,False,2,0,2,0,qualification
+1998,1998035,groups,False,Group A,1998-06-23,Group stage,True,Scotland,Morocco,True,0,3,L,3,False,1,-1,3,0,danger
+1998,1998035,groups,False,Group A,1998-06-23,Group stage,True,Morocco,Scotland,False,3,0,W,3,False,1,-3,4,0,danger
+1998,1998036,groups,False,Group C,1998-06-24,Group stage,True,France,Denmark,True,2,1,W,3,False,6,7,1,0,qualification
+1998,1998036,groups,False,Group C,1998-06-24,Group stage,True,Denmark,France,False,1,2,L,3,False,4,1,2,0,qualification
+1998,1998037,groups,False,Group C,1998-06-24,Group stage,True,South Africa,Saudi Arabia,True,2,2,D,3,False,1,-3,3,0,danger
+1998,1998037,groups,False,Group C,1998-06-24,Group stage,True,Saudi Arabia,South Africa,False,2,2,D,3,False,0,-5,4,0,danger
+1998,1998038,groups,False,Group D,1998-06-24,Group stage,True,Nigeria,Paraguay,True,1,3,L,3,False,6,2,1,0,qualification
+1998,1998038,groups,False,Group D,1998-06-24,Group stage,True,Paraguay,Nigeria,False,3,1,W,3,False,2,0,2,0,qualification
+1998,1998039,groups,False,Group D,1998-06-24,Group stage,True,Spain,Bulgaria,True,6,1,W,3,False,1,-1,3,0,danger
+1998,1998039,groups,False,Group D,1998-06-24,Group stage,True,Bulgaria,Spain,False,1,6,L,3,False,1,-1,4,0,danger
+1998,1998040,groups,False,Group E,1998-06-25,Group stage,True,Belgium,South Korea,True,1,1,D,3,False,2,0,3,0,danger
+1998,1998040,groups,False,Group E,1998-06-25,Group stage,True,South Korea,Belgium,False,1,1,D,3,False,0,-7,4,0,danger
+1998,1998041,groups,False,Group E,1998-06-25,Group stage,True,Netherlands,Mexico,True,2,2,D,3,False,4,5,1,0,qualification
+1998,1998041,groups,False,Group E,1998-06-25,Group stage,True,Mexico,Netherlands,False,2,2,D,3,False,4,2,2,0,qualification
+1998,1998042,groups,False,Group F,1998-06-25,Group stage,True,Germany,Iran,True,2,0,W,3,False,4,2,1,0,qualification
+1998,1998042,groups,False,Group F,1998-06-25,Group stage,True,Iran,Germany,False,0,2,L,3,False,3,0,3,0,danger
+1998,1998043,groups,False,Group F,1998-06-25,Group stage,True,United States,Yugoslavia,True,0,1,L,3,False,0,-3,4,0,danger
+1998,1998043,groups,False,Group F,1998-06-25,Group stage,True,Yugoslavia,United States,False,1,0,W,3,False,4,1,2,0,qualification
+1998,1998044,groups,False,Group H,1998-06-26,Group stage,True,Argentina,Croatia,True,1,0,W,3,False,6,6,1,0,qualification
+1998,1998044,groups,False,Group H,1998-06-26,Group stage,True,Croatia,Argentina,False,0,1,L,3,False,6,3,2,0,qualification
+1998,1998045,groups,False,Group H,1998-06-26,Group stage,True,Japan,Jamaica,True,1,2,L,3,False,0,-2,3,0,danger
+1998,1998045,groups,False,Group H,1998-06-26,Group stage,True,Jamaica,Japan,False,2,1,W,3,False,0,-7,4,0,danger
+1998,1998046,groups,False,Group G,1998-06-26,Group stage,True,Colombia,England,True,0,2,L,3,False,3,0,3,0,danger
+1998,1998046,groups,False,Group G,1998-06-26,Group stage,True,England,Colombia,False,2,0,W,3,False,3,1,2,0,qualification
+1998,1998047,groups,False,Group G,1998-06-26,Group stage,True,Romania,Tunisia,True,1,1,D,3,False,6,2,1,0,qualification
+1998,1998047,groups,False,Group G,1998-06-26,Group stage,True,Tunisia,Romania,False,1,1,D,3,False,0,-3,4,0,danger
+1998,1998048,knockout,True,,1998-06-27,Round of 16,True,Italy,Norway,True,1,0,W,,,,,,,
+1998,1998048,knockout,True,,1998-06-27,Round of 16,True,Norway,Italy,False,0,1,L,,,,,,,
+1998,1998049,knockout,True,,1998-06-27,Round of 16,True,Brazil,Chile,True,4,1,W,,,,,,,
+1998,1998049,knockout,True,,1998-06-27,Round of 16,True,Chile,Brazil,False,1,4,L,,,,,,,
+1998,1998050,knockout,True,,1998-06-28,Round of 16,True,France,Paraguay,True,1,0,W,,,,,,,
+1998,1998050,knockout,True,,1998-06-28,Round of 16,True,Paraguay,France,False,0,1,L,,,,,,,
+1998,1998051,knockout,True,,1998-06-28,Round of 16,True,Nigeria,Denmark,True,1,4,L,,,,,,,
+1998,1998051,knockout,True,,1998-06-28,Round of 16,True,Denmark,Nigeria,False,4,1,W,,,,,,,
+1998,1998052,knockout,True,,1998-06-29,Round of 16,True,Germany,Mexico,True,2,1,W,,,,,,,
+1998,1998052,knockout,True,,1998-06-29,Round of 16,True,Mexico,Germany,False,1,2,L,,,,,,,
+1998,1998053,knockout,True,,1998-06-29,Round of 16,True,Netherlands,Yugoslavia,True,2,1,W,,,,,,,
+1998,1998053,knockout,True,,1998-06-29,Round of 16,True,Yugoslavia,Netherlands,False,1,2,L,,,,,,,
+1998,1998054,knockout,True,,1998-06-30,Round of 16,True,Romania,Croatia,True,0,1,L,,,,,,,
+1998,1998054,knockout,True,,1998-06-30,Round of 16,True,Croatia,Romania,False,1,0,W,,,,,,,
+1998,1998055,knockout,True,,1998-06-30,Round of 16,True,Argentina,England,True,2,2,D,,,,,,,
+1998,1998055,knockout,True,,1998-06-30,Round of 16,True,England,Argentina,False,2,2,D,,,,,,,
+1998,1998056,knockout,True,,1998-07-03,Quarter-final,True,Italy,France,True,0,0,D,,,,,,,
+1998,1998056,knockout,True,,1998-07-03,Quarter-final,True,France,Italy,False,0,0,D,,,,,,,
+1998,1998057,knockout,True,,1998-07-03,Quarter-final,True,Brazil,Denmark,True,3,2,W,,,,,,,
+1998,1998057,knockout,True,,1998-07-03,Quarter-final,True,Denmark,Brazil,False,2,3,L,,,,,,,
+1998,1998058,knockout,True,,1998-07-04,Quarter-final,True,Netherlands,Argentina,True,2,1,W,,,,,,,
+1998,1998058,knockout,True,,1998-07-04,Quarter-final,True,Argentina,Netherlands,False,1,2,L,,,,,,,
+1998,1998059,knockout,True,,1998-07-04,Quarter-final,True,Germany,Croatia,True,0,3,L,,,,,,,
+1998,1998059,knockout,True,,1998-07-04,Quarter-final,True,Croatia,Germany,False,3,0,W,,,,,,,
+1998,1998060,knockout,True,,1998-07-07,Semi-final,True,Brazil,Netherlands,True,1,1,D,,,,,,,
+1998,1998060,knockout,True,,1998-07-07,Semi-final,True,Netherlands,Brazil,False,1,1,D,,,,,,,
+1998,1998061,knockout,True,,1998-07-08,Semi-final,True,France,Croatia,True,2,1,W,,,,,,,
+1998,1998061,knockout,True,,1998-07-08,Semi-final,True,Croatia,France,False,1,2,L,,,,,,,
+1998,1998062,third_place,False,,1998-07-11,Match for third place,True,Netherlands,Croatia,True,1,2,L,,,,,,,
+1998,1998062,third_place,False,,1998-07-11,Match for third place,True,Croatia,Netherlands,False,2,1,W,,,,,,,
+1998,1998063,knockout,True,,1998-07-12,Final,True,Brazil,France,True,0,3,L,,,,,,,
+1998,1998063,knockout,True,,1998-07-12,Final,True,France,Brazil,False,3,0,W,,,,,,,
+2002,2002000,groups,False,Group A,2002-05-31,Group stage,True,France,Senegal,True,0,1,L,1,True,0,0,2,2,qualification
+2002,2002000,groups,False,Group A,2002-05-31,Group stage,True,Senegal,France,False,1,0,W,1,True,0,0,3,2,danger
+2002,2002001,groups,False,Group E,2002-06-01,Group stage,True,Republic of Ireland,Cameroon,True,1,1,D,1,True,0,0,3,2,danger
+2002,2002001,groups,False,Group E,2002-06-01,Group stage,True,Cameroon,Republic of Ireland,False,1,1,D,1,True,0,0,1,2,qualification
+2002,2002002,groups,False,Group A,2002-06-01,Group stage,True,Uruguay,Denmark,True,1,2,L,1,True,0,0,3,2,danger
+2002,2002002,groups,False,Group A,2002-06-01,Group stage,True,Denmark,Uruguay,False,2,1,W,1,True,0,0,2,2,qualification
+2002,2002003,groups,False,Group E,2002-06-01,Group stage,True,Germany,Saudi Arabia,True,8,0,W,1,True,0,0,2,2,qualification
+2002,2002003,groups,False,Group E,2002-06-01,Group stage,True,Saudi Arabia,Germany,False,0,8,L,1,True,0,0,4,2,danger
+2002,2002004,groups,False,Group F,2002-06-02,Group stage,True,Argentina,Nigeria,True,1,0,W,1,True,0,0,1,2,qualification
+2002,2002004,groups,False,Group F,2002-06-02,Group stage,True,Nigeria,Argentina,False,0,1,L,1,True,0,0,3,2,danger
+2002,2002005,groups,False,Group B,2002-06-02,Group stage,True,Paraguay,South Africa,True,2,2,D,1,True,0,0,1,2,qualification
+2002,2002005,groups,False,Group B,2002-06-02,Group stage,True,South Africa,Paraguay,False,2,2,D,1,True,0,0,3,2,danger
+2002,2002006,groups,False,Group F,2002-06-02,Group stage,True,England,Sweden,True,1,1,D,1,True,0,0,2,2,qualification
+2002,2002006,groups,False,Group F,2002-06-02,Group stage,True,Sweden,England,False,1,1,D,1,True,0,0,4,2,danger
+2002,2002007,groups,False,Group B,2002-06-02,Group stage,True,Spain,Slovenia,True,3,1,W,1,True,0,0,4,2,danger
+2002,2002007,groups,False,Group B,2002-06-02,Group stage,True,Slovenia,Spain,False,1,3,L,1,True,0,0,2,2,qualification
+2002,2002008,groups,False,Group G,2002-06-03,Group stage,True,Croatia,Mexico,True,0,1,L,1,True,0,0,1,2,qualification
+2002,2002008,groups,False,Group G,2002-06-03,Group stage,True,Mexico,Croatia,False,1,0,W,1,True,0,0,4,2,danger
+2002,2002009,groups,False,Group C,2002-06-03,Group stage,True,Brazil,Turkey,True,2,1,W,1,True,0,0,1,2,qualification
+2002,2002009,groups,False,Group C,2002-06-03,Group stage,True,Turkey,Brazil,False,1,2,L,1,True,0,0,4,2,danger
+2002,2002010,groups,False,Group G,2002-06-03,Group stage,True,Italy,Ecuador,True,2,0,W,1,True,0,0,3,2,danger
+2002,2002010,groups,False,Group G,2002-06-03,Group stage,True,Ecuador,Italy,False,0,2,L,1,True,0,0,2,2,qualification
+2002,2002011,groups,False,Group C,2002-06-04,Group stage,True,China,Costa Rica,True,0,2,L,1,True,0,0,2,2,qualification
+2002,2002011,groups,False,Group C,2002-06-04,Group stage,True,Costa Rica,China,False,2,0,W,1,True,0,0,3,2,danger
+2002,2002012,groups,False,Group H,2002-06-04,Group stage,True,Japan,Belgium,True,2,2,D,1,True,0,0,2,2,qualification
+2002,2002012,groups,False,Group H,2002-06-04,Group stage,True,Belgium,Japan,False,2,2,D,1,True,0,0,1,2,qualification
+2002,2002013,groups,False,Group D,2002-06-04,Group stage,True,South Korea,Poland,True,2,0,W,1,True,0,0,3,2,danger
+2002,2002013,groups,False,Group D,2002-06-04,Group stage,True,Poland,South Korea,False,0,2,L,1,True,0,0,1,2,qualification
+2002,2002014,groups,False,Group H,2002-06-05,Group stage,True,Russia,Tunisia,True,2,0,W,1,True,0,0,3,2,danger
+2002,2002014,groups,False,Group H,2002-06-05,Group stage,True,Tunisia,Russia,False,0,2,L,1,True,0,0,4,2,danger
+2002,2002015,groups,False,Group D,2002-06-05,Group stage,True,United States,Portugal,True,3,2,W,1,True,0,0,3,2,danger
+2002,2002015,groups,False,Group D,2002-06-05,Group stage,True,Portugal,United States,False,2,3,L,1,True,0,0,2,2,qualification
+2002,2002016,groups,False,Group E,2002-06-05,Group stage,True,Germany,Republic of Ireland,True,1,1,D,2,False,3,8,1,1,qualification
+2002,2002016,groups,False,Group E,2002-06-05,Group stage,True,Republic of Ireland,Germany,False,1,1,D,2,False,1,0,3,1,danger
+2002,2002017,groups,False,Group A,2002-06-06,Group stage,True,Denmark,Senegal,True,1,1,D,2,False,3,1,1,1,qualification
+2002,2002017,groups,False,Group A,2002-06-06,Group stage,True,Senegal,Denmark,False,1,1,D,2,False,3,1,2,1,qualification
+2002,2002018,groups,False,Group E,2002-06-06,Group stage,True,Cameroon,Saudi Arabia,True,1,0,W,2,False,1,0,3,1,danger
+2002,2002018,groups,False,Group E,2002-06-06,Group stage,True,Saudi Arabia,Cameroon,False,0,1,L,2,False,0,-8,4,1,danger
+2002,2002019,groups,False,Group A,2002-06-06,Group stage,True,France,Uruguay,True,0,0,D,2,False,0,-1,4,1,danger
+2002,2002019,groups,False,Group A,2002-06-06,Group stage,True,Uruguay,France,False,0,0,D,2,False,0,-1,3,1,danger
+2002,2002020,groups,False,Group F,2002-06-07,Group stage,True,Sweden,Nigeria,True,2,1,W,2,False,1,0,3,1,danger
+2002,2002020,groups,False,Group F,2002-06-07,Group stage,True,Nigeria,Sweden,False,1,2,L,2,False,0,-1,4,1,danger
+2002,2002021,groups,False,Group B,2002-06-07,Group stage,True,Spain,Paraguay,True,3,1,W,2,False,3,2,1,1,qualification
+2002,2002021,groups,False,Group B,2002-06-07,Group stage,True,Paraguay,Spain,False,1,3,L,2,False,1,0,2,1,qualification
+2002,2002022,groups,False,Group F,2002-06-07,Group stage,True,Argentina,England,True,0,1,L,2,False,3,1,1,1,qualification
+2002,2002022,groups,False,Group F,2002-06-07,Group stage,True,England,Argentina,False,1,0,W,2,False,1,0,2,1,qualification
+2002,2002023,groups,False,Group B,2002-06-08,Group stage,True,South Africa,Slovenia,True,1,0,W,2,False,1,0,2,1,qualification
+2002,2002023,groups,False,Group B,2002-06-08,Group stage,True,Slovenia,South Africa,False,0,1,L,2,False,0,-2,4,1,danger
+2002,2002024,groups,False,Group G,2002-06-08,Group stage,True,Italy,Croatia,True,1,2,L,2,False,3,2,1,1,qualification
+2002,2002024,groups,False,Group G,2002-06-08,Group stage,True,Croatia,Italy,False,2,1,W,2,False,0,-1,3,1,danger
+2002,2002025,groups,False,Group C,2002-06-08,Group stage,True,Brazil,China,True,4,0,W,2,False,3,1,2,1,qualification
+2002,2002025,groups,False,Group C,2002-06-08,Group stage,True,China,Brazil,False,0,4,L,2,False,0,-2,4,1,danger
+2002,2002026,groups,False,Group G,2002-06-09,Group stage,True,Mexico,Ecuador,True,2,1,W,2,False,3,1,2,1,qualification
+2002,2002026,groups,False,Group G,2002-06-09,Group stage,True,Ecuador,Mexico,False,1,2,L,2,False,0,-2,4,1,danger
+2002,2002027,groups,False,Group C,2002-06-09,Group stage,True,Costa Rica,Turkey,True,1,1,D,2,False,3,2,2,1,qualification
+2002,2002027,groups,False,Group C,2002-06-09,Group stage,True,Turkey,Costa Rica,False,1,1,D,2,False,0,-1,3,1,danger
+2002,2002028,groups,False,Group H,2002-06-09,Group stage,True,Japan,Russia,True,1,0,W,2,False,1,0,3,1,danger
+2002,2002028,groups,False,Group H,2002-06-09,Group stage,True,Russia,Japan,False,0,1,L,2,False,3,2,1,1,qualification
+2002,2002029,groups,False,Group D,2002-06-10,Group stage,True,South Korea,United States,True,1,1,D,2,False,3,2,1,1,qualification
+2002,2002029,groups,False,Group D,2002-06-10,Group stage,True,United States,South Korea,False,1,1,D,2,False,3,1,2,1,qualification
+2002,2002030,groups,False,Group H,2002-06-10,Group stage,True,Tunisia,Belgium,True,1,1,D,2,False,0,-2,4,1,danger
+2002,2002030,groups,False,Group H,2002-06-10,Group stage,True,Belgium,Tunisia,False,1,1,D,2,False,1,0,3,1,danger
+2002,2002031,groups,False,Group D,2002-06-10,Group stage,True,Portugal,Poland,True,4,0,W,2,False,0,-1,3,1,danger
+2002,2002031,groups,False,Group D,2002-06-10,Group stage,True,Poland,Portugal,False,0,4,L,2,False,0,-2,4,1,danger
+2002,2002032,groups,False,Group A,2002-06-11,Group stage,True,Denmark,France,True,2,0,W,3,False,4,1,1,0,qualification
+2002,2002032,groups,False,Group A,2002-06-11,Group stage,True,France,Denmark,False,0,2,L,3,False,1,-1,4,0,danger
+2002,2002033,groups,False,Group A,2002-06-11,Group stage,True,Senegal,Uruguay,True,3,3,D,3,False,4,1,2,0,qualification
+2002,2002033,groups,False,Group A,2002-06-11,Group stage,True,Uruguay,Senegal,False,3,3,D,3,False,1,-1,3,0,danger
+2002,2002034,groups,False,Group E,2002-06-11,Group stage,True,Cameroon,Germany,True,0,2,L,3,False,4,1,2,0,qualification
+2002,2002034,groups,False,Group E,2002-06-11,Group stage,True,Germany,Cameroon,False,2,0,W,3,False,4,8,1,0,qualification
+2002,2002035,groups,False,Group E,2002-06-11,Group stage,True,Saudi Arabia,Republic of Ireland,True,0,3,L,3,False,0,-9,4,0,danger
+2002,2002035,groups,False,Group E,2002-06-11,Group stage,True,Republic of Ireland,Saudi Arabia,False,3,0,W,3,False,2,0,3,0,danger
+2002,2002036,groups,False,Group F,2002-06-12,Group stage,True,Nigeria,England,True,0,0,D,3,False,0,-2,4,0,danger
+2002,2002036,groups,False,Group F,2002-06-12,Group stage,True,England,Nigeria,False,0,0,D,3,False,4,1,2,0,qualification
+2002,2002037,groups,False,Group F,2002-06-12,Group stage,True,Sweden,Argentina,True,1,1,D,3,False,4,1,1,0,qualification
+2002,2002037,groups,False,Group F,2002-06-12,Group stage,True,Argentina,Sweden,False,1,1,D,3,False,3,0,3,0,danger
+2002,2002038,groups,False,Group B,2002-06-12,Group stage,True,Slovenia,Paraguay,True,1,3,L,3,False,0,-3,4,0,danger
+2002,2002038,groups,False,Group B,2002-06-12,Group stage,True,Paraguay,Slovenia,False,3,1,W,3,False,1,-2,3,0,danger
+2002,2002039,groups,False,Group B,2002-06-12,Group stage,True,South Africa,Spain,True,2,3,L,3,False,4,1,2,0,qualification
+2002,2002039,groups,False,Group B,2002-06-12,Group stage,True,Spain,South Africa,False,3,2,W,3,False,6,4,1,0,qualification
+2002,2002040,groups,False,Group C,2002-06-13,Group stage,True,Costa Rica,Brazil,True,2,5,L,3,False,4,2,2,0,qualification
+2002,2002040,groups,False,Group C,2002-06-13,Group stage,True,Brazil,Costa Rica,False,5,2,W,3,False,6,5,1,0,qualification
+2002,2002041,groups,False,Group C,2002-06-13,Group stage,True,Turkey,China,True,3,0,W,3,False,1,-1,3,0,danger
+2002,2002041,groups,False,Group C,2002-06-13,Group stage,True,China,Turkey,False,0,3,L,3,False,0,-6,4,0,danger
+2002,2002042,groups,False,Group G,2002-06-13,Group stage,True,Ecuador,Croatia,True,1,0,W,3,False,0,-3,4,0,danger
+2002,2002042,groups,False,Group G,2002-06-13,Group stage,True,Croatia,Ecuador,False,0,1,L,3,False,3,0,3,0,danger
+2002,2002043,groups,False,Group G,2002-06-13,Group stage,True,Mexico,Italy,True,1,1,D,3,False,6,2,1,0,qualification
+2002,2002043,groups,False,Group G,2002-06-13,Group stage,True,Italy,Mexico,False,1,1,D,3,False,3,1,2,0,qualification
+2002,2002044,groups,False,Group H,2002-06-14,Group stage,True,Belgium,Russia,True,3,2,W,3,False,2,0,3,0,danger
+2002,2002044,groups,False,Group H,2002-06-14,Group stage,True,Russia,Belgium,False,2,3,L,3,False,3,1,2,0,qualification
+2002,2002045,groups,False,Group H,2002-06-14,Group stage,True,Tunisia,Japan,True,0,2,L,3,False,1,-2,4,0,danger
+2002,2002045,groups,False,Group H,2002-06-14,Group stage,True,Japan,Tunisia,False,2,0,W,3,False,4,1,1,0,qualification
+2002,2002046,groups,False,Group D,2002-06-14,Group stage,True,Poland,United States,True,3,1,W,3,False,0,-6,4,0,danger
+2002,2002046,groups,False,Group D,2002-06-14,Group stage,True,United States,Poland,False,1,3,L,3,False,4,1,2,0,qualification
+2002,2002047,groups,False,Group D,2002-06-14,Group stage,True,Portugal,South Korea,True,0,1,L,3,False,3,3,3,0,danger
+2002,2002047,groups,False,Group D,2002-06-14,Group stage,True,South Korea,Portugal,False,1,0,W,3,False,4,2,1,0,qualification
+2002,2002048,knockout,True,,2002-06-15,Round of 16,True,Germany,Paraguay,True,1,0,W,,,,,,,
+2002,2002048,knockout,True,,2002-06-15,Round of 16,True,Paraguay,Germany,False,0,1,L,,,,,,,
+2002,2002049,knockout,True,,2002-06-15,Round of 16,True,Denmark,England,True,0,3,L,,,,,,,
+2002,2002049,knockout,True,,2002-06-15,Round of 16,True,England,Denmark,False,3,0,W,,,,,,,
+2002,2002050,knockout,True,,2002-06-16,Round of 16,True,Sweden,Senegal,True,1,2,L,,,,,,,
+2002,2002050,knockout,True,,2002-06-16,Round of 16,True,Senegal,Sweden,False,2,1,W,,,,,,,
+2002,2002051,knockout,True,,2002-06-16,Round of 16,True,Spain,Republic of Ireland,True,1,1,D,,,,,,,
+2002,2002051,knockout,True,,2002-06-16,Round of 16,True,Republic of Ireland,Spain,False,1,1,D,,,,,,,
+2002,2002052,knockout,True,,2002-06-17,Round of 16,True,Mexico,United States,True,0,2,L,,,,,,,
+2002,2002052,knockout,True,,2002-06-17,Round of 16,True,United States,Mexico,False,2,0,W,,,,,,,
+2002,2002053,knockout,True,,2002-06-17,Round of 16,True,Brazil,Belgium,True,2,0,W,,,,,,,
+2002,2002053,knockout,True,,2002-06-17,Round of 16,True,Belgium,Brazil,False,0,2,L,,,,,,,
+2002,2002054,knockout,True,,2002-06-18,Round of 16,True,Japan,Turkey,True,0,1,L,,,,,,,
+2002,2002054,knockout,True,,2002-06-18,Round of 16,True,Turkey,Japan,False,1,0,W,,,,,,,
+2002,2002055,knockout,True,,2002-06-18,Round of 16,True,South Korea,Italy,True,2,1,W,,,,,,,
+2002,2002055,knockout,True,,2002-06-18,Round of 16,True,Italy,South Korea,False,1,2,L,,,,,,,
+2002,2002056,knockout,True,,2002-06-21,Quarter-final,True,England,Brazil,True,1,2,L,,,,,,,
+2002,2002056,knockout,True,,2002-06-21,Quarter-final,True,Brazil,England,False,2,1,W,,,,,,,
+2002,2002057,knockout,True,,2002-06-21,Quarter-final,True,Germany,United States,True,1,0,W,,,,,,,
+2002,2002057,knockout,True,,2002-06-21,Quarter-final,True,United States,Germany,False,0,1,L,,,,,,,
+2002,2002058,knockout,True,,2002-06-22,Quarter-final,True,Spain,South Korea,True,0,0,D,,,,,,,
+2002,2002058,knockout,True,,2002-06-22,Quarter-final,True,South Korea,Spain,False,0,0,D,,,,,,,
+2002,2002059,knockout,True,,2002-06-22,Quarter-final,True,Senegal,Turkey,True,0,1,L,,,,,,,
+2002,2002059,knockout,True,,2002-06-22,Quarter-final,True,Turkey,Senegal,False,1,0,W,,,,,,,
+2002,2002060,knockout,True,,2002-06-25,Semi-final,True,Germany,South Korea,True,1,0,W,,,,,,,
+2002,2002060,knockout,True,,2002-06-25,Semi-final,True,South Korea,Germany,False,0,1,L,,,,,,,
+2002,2002061,knockout,True,,2002-06-26,Semi-final,True,Brazil,Turkey,True,1,0,W,,,,,,,
+2002,2002061,knockout,True,,2002-06-26,Semi-final,True,Turkey,Brazil,False,0,1,L,,,,,,,
+2002,2002062,third_place,False,,2002-06-29,Match for third place,True,South Korea,Turkey,True,2,3,L,,,,,,,
+2002,2002062,third_place,False,,2002-06-29,Match for third place,True,Turkey,South Korea,False,3,2,W,,,,,,,
+2002,2002063,knockout,True,,2002-06-30,Final,True,Germany,Brazil,True,0,2,L,,,,,,,
+2002,2002063,knockout,True,,2002-06-30,Final,True,Brazil,Germany,False,2,0,W,,,,,,,
+2006,2006000,groups,False,Group A,2006-06-09,Group stage,True,Germany,Costa Rica,True,4,2,W,1,True,0,0,3,2,danger
+2006,2006000,groups,False,Group A,2006-06-09,Group stage,True,Costa Rica,Germany,False,2,4,L,1,True,0,0,1,2,qualification
+2006,2006001,groups,False,Group A,2006-06-09,Group stage,True,Poland,Ecuador,True,0,2,L,1,True,0,0,4,2,danger
+2006,2006001,groups,False,Group A,2006-06-09,Group stage,True,Ecuador,Poland,False,2,0,W,1,True,0,0,2,2,qualification
+2006,2006002,groups,False,Group B,2006-06-10,Group stage,True,England,Paraguay,True,1,0,W,1,True,0,0,1,2,qualification
+2006,2006002,groups,False,Group B,2006-06-10,Group stage,True,Paraguay,England,False,0,1,L,1,True,0,0,2,2,qualification
+2006,2006003,groups,False,Group B,2006-06-10,Group stage,True,Trinidad and Tobago,Sweden,True,0,0,D,1,True,0,0,4,2,danger
+2006,2006003,groups,False,Group B,2006-06-10,Group stage,True,Sweden,Trinidad and Tobago,False,0,0,D,1,True,0,0,3,2,danger
+2006,2006004,groups,False,Group C,2006-06-10,Group stage,True,Argentina,Ivory Coast,True,2,1,W,1,True,0,0,1,2,qualification
+2006,2006004,groups,False,Group C,2006-06-10,Group stage,True,Ivory Coast,Argentina,False,1,2,L,1,True,0,0,2,2,qualification
+2006,2006005,groups,False,Group C,2006-06-11,Group stage,True,Serbia and Montenegro,Netherlands,True,0,1,L,1,True,0,0,3,2,danger
+2006,2006005,groups,False,Group C,2006-06-11,Group stage,True,Netherlands,Serbia and Montenegro,False,1,0,W,1,True,0,0,2,2,qualification
+2006,2006006,groups,False,Group D,2006-06-11,Group stage,True,Mexico,Iran,True,3,1,W,1,True,0,0,3,2,danger
+2006,2006006,groups,False,Group D,2006-06-11,Group stage,True,Iran,Mexico,False,1,3,L,1,True,0,0,2,2,qualification
+2006,2006007,groups,False,Group D,2006-06-11,Group stage,True,Angola,Portugal,True,0,1,L,1,True,0,0,1,2,qualification
+2006,2006007,groups,False,Group D,2006-06-11,Group stage,True,Portugal,Angola,False,1,0,W,1,True,0,0,4,2,danger
+2006,2006008,groups,False,Group F,2006-06-12,Group stage,True,Australia,Japan,True,3,1,W,1,True,0,0,1,2,qualification
+2006,2006008,groups,False,Group F,2006-06-12,Group stage,True,Japan,Australia,False,1,3,L,1,True,0,0,4,2,danger
+2006,2006009,groups,False,Group E,2006-06-12,Group stage,True,United States,Czech Republic,True,0,3,L,1,True,0,0,4,2,danger
+2006,2006009,groups,False,Group E,2006-06-12,Group stage,True,Czech Republic,United States,False,3,0,W,1,True,0,0,1,2,qualification
+2006,2006010,groups,False,Group E,2006-06-12,Group stage,True,Italy,Ghana,True,2,0,W,1,True,0,0,3,2,danger
+2006,2006010,groups,False,Group E,2006-06-12,Group stage,True,Ghana,Italy,False,0,2,L,1,True,0,0,2,2,qualification
+2006,2006011,groups,False,Group G,2006-06-13,Group stage,True,South Korea,Togo,True,2,1,W,1,True,0,0,2,2,qualification
+2006,2006011,groups,False,Group G,2006-06-13,Group stage,True,Togo,South Korea,False,1,2,L,1,True,0,0,4,2,danger
+2006,2006012,groups,False,Group G,2006-06-13,Group stage,True,France,Switzerland,True,0,0,D,1,True,0,0,1,2,qualification
+2006,2006012,groups,False,Group G,2006-06-13,Group stage,True,Switzerland,France,False,0,0,D,1,True,0,0,3,2,danger
+2006,2006013,groups,False,Group F,2006-06-13,Group stage,True,Brazil,Croatia,True,1,0,W,1,True,0,0,2,2,qualification
+2006,2006013,groups,False,Group F,2006-06-13,Group stage,True,Croatia,Brazil,False,0,1,L,1,True,0,0,3,2,danger
+2006,2006014,groups,False,Group H,2006-06-14,Group stage,True,Spain,Ukraine,True,4,0,W,1,True,0,0,2,2,qualification
+2006,2006014,groups,False,Group H,2006-06-14,Group stage,True,Ukraine,Spain,False,0,4,L,1,True,0,0,4,2,danger
+2006,2006015,groups,False,Group H,2006-06-14,Group stage,True,Tunisia,Saudi Arabia,True,2,2,D,1,True,0,0,3,2,danger
+2006,2006015,groups,False,Group H,2006-06-14,Group stage,True,Saudi Arabia,Tunisia,False,2,2,D,1,True,0,0,1,2,qualification
+2006,2006016,groups,False,Group A,2006-06-14,Group stage,True,Germany,Poland,True,1,0,W,2,False,3,2,1,1,qualification
+2006,2006016,groups,False,Group A,2006-06-14,Group stage,True,Poland,Germany,False,0,1,L,2,False,0,-2,4,1,danger
+2006,2006017,groups,False,Group A,2006-06-15,Group stage,True,Ecuador,Costa Rica,True,3,0,W,2,False,3,2,2,1,qualification
+2006,2006017,groups,False,Group A,2006-06-15,Group stage,True,Costa Rica,Ecuador,False,0,3,L,2,False,0,-2,3,1,danger
+2006,2006018,groups,False,Group B,2006-06-15,Group stage,True,England,Trinidad and Tobago,True,2,0,W,2,False,3,1,1,1,qualification
+2006,2006018,groups,False,Group B,2006-06-15,Group stage,True,Trinidad and Tobago,England,False,0,2,L,2,False,1,0,3,1,danger
+2006,2006019,groups,False,Group B,2006-06-15,Group stage,True,Sweden,Paraguay,True,1,0,W,2,False,1,0,2,1,qualification
+2006,2006019,groups,False,Group B,2006-06-15,Group stage,True,Paraguay,Sweden,False,0,1,L,2,False,0,-1,4,1,danger
+2006,2006020,groups,False,Group C,2006-06-16,Group stage,True,Argentina,Serbia and Montenegro,True,6,0,W,2,False,3,1,1,1,qualification
+2006,2006020,groups,False,Group C,2006-06-16,Group stage,True,Serbia and Montenegro,Argentina,False,0,6,L,2,False,0,-1,4,1,danger
+2006,2006021,groups,False,Group C,2006-06-16,Group stage,True,Netherlands,Ivory Coast,True,2,1,W,2,False,3,1,2,1,qualification
+2006,2006021,groups,False,Group C,2006-06-16,Group stage,True,Ivory Coast,Netherlands,False,1,2,L,2,False,0,-1,3,1,danger
+2006,2006022,groups,False,Group D,2006-06-16,Group stage,True,Mexico,Angola,True,0,0,D,2,False,3,2,1,1,qualification
+2006,2006022,groups,False,Group D,2006-06-16,Group stage,True,Angola,Mexico,False,0,0,D,2,False,0,-1,3,1,danger
+2006,2006023,groups,False,Group D,2006-06-17,Group stage,True,Portugal,Iran,True,2,0,W,2,False,3,1,2,1,qualification
+2006,2006023,groups,False,Group D,2006-06-17,Group stage,True,Iran,Portugal,False,0,2,L,2,False,0,-2,4,1,danger
+2006,2006024,groups,False,Group E,2006-06-17,Group stage,True,Czech Republic,Ghana,True,0,2,L,2,False,3,3,1,1,qualification
+2006,2006024,groups,False,Group E,2006-06-17,Group stage,True,Ghana,Czech Republic,False,2,0,W,2,False,0,-2,3,1,danger
+2006,2006025,groups,False,Group E,2006-06-17,Group stage,True,Italy,United States,True,1,1,D,2,False,3,2,2,1,qualification
+2006,2006025,groups,False,Group E,2006-06-17,Group stage,True,United States,Italy,False,1,1,D,2,False,0,-3,4,1,danger
+2006,2006026,groups,False,Group F,2006-06-18,Group stage,True,Japan,Croatia,True,0,0,D,2,False,0,-2,4,1,danger
+2006,2006026,groups,False,Group F,2006-06-18,Group stage,True,Croatia,Japan,False,0,0,D,2,False,0,-1,3,1,danger
+2006,2006027,groups,False,Group F,2006-06-18,Group stage,True,Brazil,Australia,True,2,0,W,2,False,3,1,2,1,qualification
+2006,2006027,groups,False,Group F,2006-06-18,Group stage,True,Australia,Brazil,False,0,2,L,2,False,3,2,1,1,qualification
+2006,2006028,groups,False,Group G,2006-06-18,Group stage,True,France,South Korea,True,1,1,D,2,False,1,0,2,1,qualification
+2006,2006028,groups,False,Group G,2006-06-18,Group stage,True,South Korea,France,False,1,1,D,2,False,3,1,1,1,qualification
+2006,2006029,groups,False,Group G,2006-06-19,Group stage,True,Togo,Switzerland,True,0,2,L,2,False,0,-1,4,1,danger
+2006,2006029,groups,False,Group G,2006-06-19,Group stage,True,Switzerland,Togo,False,2,0,W,2,False,1,0,3,1,danger
+2006,2006030,groups,False,Group H,2006-06-19,Group stage,True,Saudi Arabia,Ukraine,True,0,4,L,2,False,1,0,2,1,qualification
+2006,2006030,groups,False,Group H,2006-06-19,Group stage,True,Ukraine,Saudi Arabia,False,4,0,W,2,False,0,-4,4,1,danger
+2006,2006031,groups,False,Group H,2006-06-19,Group stage,True,Spain,Tunisia,True,3,1,W,2,False,3,4,1,1,qualification
+2006,2006031,groups,False,Group H,2006-06-19,Group stage,True,Tunisia,Spain,False,1,3,L,2,False,1,0,3,1,danger
+2006,2006032,groups,False,Group A,2006-06-20,Group stage,True,Costa Rica,Poland,True,1,2,L,3,False,0,-5,4,0,danger
+2006,2006032,groups,False,Group A,2006-06-20,Group stage,True,Poland,Costa Rica,False,2,1,W,3,False,0,-3,3,0,danger
+2006,2006033,groups,False,Group A,2006-06-20,Group stage,True,Ecuador,Germany,True,0,3,L,3,False,6,5,1,0,qualification
+2006,2006033,groups,False,Group A,2006-06-20,Group stage,True,Germany,Ecuador,False,3,0,W,3,False,6,3,2,0,qualification
+2006,2006034,groups,False,Group B,2006-06-20,Group stage,True,Paraguay,Trinidad and Tobago,True,2,0,W,3,False,0,-2,4,0,danger
+2006,2006034,groups,False,Group B,2006-06-20,Group stage,True,Trinidad and Tobago,Paraguay,False,0,2,L,3,False,1,-2,3,0,danger
+2006,2006035,groups,False,Group B,2006-06-20,Group stage,True,Sweden,England,True,2,2,D,3,False,4,1,2,0,qualification
+2006,2006035,groups,False,Group B,2006-06-20,Group stage,True,England,Sweden,False,2,2,D,3,False,6,3,1,0,qualification
+2006,2006036,groups,False,Group D,2006-06-21,Group stage,True,Iran,Angola,True,1,1,D,3,False,0,-4,4,0,danger
+2006,2006036,groups,False,Group D,2006-06-21,Group stage,True,Angola,Iran,False,1,1,D,3,False,1,-1,3,0,danger
+2006,2006037,groups,False,Group D,2006-06-21,Group stage,True,Portugal,Mexico,True,2,1,W,3,False,6,3,1,0,qualification
+2006,2006037,groups,False,Group D,2006-06-21,Group stage,True,Mexico,Portugal,False,1,2,L,3,False,4,2,2,0,qualification
+2006,2006038,groups,False,Group C,2006-06-21,Group stage,True,Ivory Coast,Serbia and Montenegro,True,3,2,W,3,False,0,-2,3,0,danger
+2006,2006038,groups,False,Group C,2006-06-21,Group stage,True,Serbia and Montenegro,Ivory Coast,False,2,3,L,3,False,0,-7,4,0,danger
+2006,2006039,groups,False,Group C,2006-06-21,Group stage,True,Netherlands,Argentina,True,0,0,D,3,False,6,2,2,0,qualification
+2006,2006039,groups,False,Group C,2006-06-21,Group stage,True,Argentina,Netherlands,False,0,0,D,3,False,6,7,1,0,qualification
+2006,2006040,groups,False,Group E,2006-06-22,Group stage,True,Czech Republic,Italy,True,0,2,L,3,False,3,1,2,0,qualification
+2006,2006040,groups,False,Group E,2006-06-22,Group stage,True,Italy,Czech Republic,False,2,0,W,3,False,4,2,1,0,qualification
+2006,2006041,groups,False,Group E,2006-06-22,Group stage,True,Ghana,United States,True,2,1,W,3,False,3,0,3,0,danger
+2006,2006041,groups,False,Group E,2006-06-22,Group stage,True,United States,Ghana,False,1,2,L,3,False,1,-3,4,0,danger
+2006,2006042,groups,False,Group F,2006-06-22,Group stage,True,Croatia,Australia,True,2,2,D,3,False,1,-1,3,0,danger
+2006,2006042,groups,False,Group F,2006-06-22,Group stage,True,Australia,Croatia,False,2,2,D,3,False,3,0,2,0,qualification
+2006,2006043,groups,False,Group F,2006-06-22,Group stage,True,Japan,Brazil,True,1,4,L,3,False,1,-2,4,0,danger
+2006,2006043,groups,False,Group F,2006-06-22,Group stage,True,Brazil,Japan,False,4,1,W,3,False,6,3,1,0,qualification
+2006,2006044,groups,False,Group H,2006-06-23,Group stage,True,Saudi Arabia,Spain,True,0,1,L,3,False,1,-4,4,0,danger
+2006,2006044,groups,False,Group H,2006-06-23,Group stage,True,Spain,Saudi Arabia,False,1,0,W,3,False,6,6,1,0,qualification
+2006,2006045,groups,False,Group H,2006-06-23,Group stage,True,Ukraine,Tunisia,True,1,0,W,3,False,3,0,2,0,qualification
+2006,2006045,groups,False,Group H,2006-06-23,Group stage,True,Tunisia,Ukraine,False,0,1,L,3,False,1,-2,3,0,danger
+2006,2006046,groups,False,Group G,2006-06-23,Group stage,True,Switzerland,South Korea,True,2,0,W,3,False,4,2,1,0,qualification
+2006,2006046,groups,False,Group G,2006-06-23,Group stage,True,South Korea,Switzerland,False,0,2,L,3,False,4,1,2,0,qualification
+2006,2006047,groups,False,Group G,2006-06-23,Group stage,True,Togo,France,True,0,2,L,3,False,0,-3,4,0,danger
+2006,2006047,groups,False,Group G,2006-06-23,Group stage,True,France,Togo,False,2,0,W,3,False,2,0,3,0,danger
+2006,2006048,knockout,True,,2006-06-24,Round of 16,True,Germany,Sweden,True,2,0,W,,,,,,,
+2006,2006048,knockout,True,,2006-06-24,Round of 16,True,Sweden,Germany,False,0,2,L,,,,,,,
+2006,2006049,knockout,True,,2006-06-24,Round of 16,True,Argentina,Mexico,True,2,1,W,,,,,,,
+2006,2006049,knockout,True,,2006-06-24,Round of 16,True,Mexico,Argentina,False,1,2,L,,,,,,,
+2006,2006050,knockout,True,,2006-06-25,Round of 16,True,England,Ecuador,True,1,0,W,,,,,,,
+2006,2006050,knockout,True,,2006-06-25,Round of 16,True,Ecuador,England,False,0,1,L,,,,,,,
+2006,2006051,knockout,True,,2006-06-25,Round of 16,True,Portugal,Netherlands,True,1,0,W,,,,,,,
+2006,2006051,knockout,True,,2006-06-25,Round of 16,True,Netherlands,Portugal,False,0,1,L,,,,,,,
+2006,2006052,knockout,True,,2006-06-26,Round of 16,True,Italy,Australia,True,1,0,W,,,,,,,
+2006,2006052,knockout,True,,2006-06-26,Round of 16,True,Australia,Italy,False,0,1,L,,,,,,,
+2006,2006053,knockout,True,,2006-06-26,Round of 16,True,Switzerland,Ukraine,True,0,0,D,,,,,,,
+2006,2006053,knockout,True,,2006-06-26,Round of 16,True,Ukraine,Switzerland,False,0,0,D,,,,,,,
+2006,2006054,knockout,True,,2006-06-27,Round of 16,True,Brazil,Ghana,True,3,0,W,,,,,,,
+2006,2006054,knockout,True,,2006-06-27,Round of 16,True,Ghana,Brazil,False,0,3,L,,,,,,,
+2006,2006055,knockout,True,,2006-06-27,Round of 16,True,Spain,France,True,1,3,L,,,,,,,
+2006,2006055,knockout,True,,2006-06-27,Round of 16,True,France,Spain,False,3,1,W,,,,,,,
+2006,2006056,knockout,True,,2006-06-30,Quarter-final,True,Germany,Argentina,True,1,1,D,,,,,,,
+2006,2006056,knockout,True,,2006-06-30,Quarter-final,True,Argentina,Germany,False,1,1,D,,,,,,,
+2006,2006057,knockout,True,,2006-06-30,Quarter-final,True,Italy,Ukraine,True,3,0,W,,,,,,,
+2006,2006057,knockout,True,,2006-06-30,Quarter-final,True,Ukraine,Italy,False,0,3,L,,,,,,,
+2006,2006058,knockout,True,,2006-07-01,Quarter-final,True,England,Portugal,True,0,0,D,,,,,,,
+2006,2006058,knockout,True,,2006-07-01,Quarter-final,True,Portugal,England,False,0,0,D,,,,,,,
+2006,2006059,knockout,True,,2006-07-01,Quarter-final,True,Brazil,France,True,0,1,L,,,,,,,
+2006,2006059,knockout,True,,2006-07-01,Quarter-final,True,France,Brazil,False,1,0,W,,,,,,,
+2006,2006060,knockout,True,,2006-07-04,Semi-final,True,Germany,Italy,True,0,2,L,,,,,,,
+2006,2006060,knockout,True,,2006-07-04,Semi-final,True,Italy,Germany,False,2,0,W,,,,,,,
+2006,2006061,knockout,True,,2006-07-05,Semi-final,True,Portugal,France,True,0,1,L,,,,,,,
+2006,2006061,knockout,True,,2006-07-05,Semi-final,True,France,Portugal,False,1,0,W,,,,,,,
+2006,2006062,third_place,False,,2006-07-08,Match for third place,True,Germany,Portugal,True,3,1,W,,,,,,,
+2006,2006062,third_place,False,,2006-07-08,Match for third place,True,Portugal,Germany,False,1,3,L,,,,,,,
+2006,2006063,knockout,True,,2006-07-09,Final,True,Italy,France,True,1,1,D,,,,,,,
+2006,2006063,knockout,True,,2006-07-09,Final,True,France,Italy,False,1,1,D,,,,,,,
+2010,2010000,groups,False,Group A,2010-06-11,Group stage,True,South Africa,Mexico,True,1,1,D,1,True,0,0,3,2,danger
+2010,2010000,groups,False,Group A,2010-06-11,Group stage,True,Mexico,South Africa,False,1,1,D,1,True,0,0,2,2,qualification
+2010,2010001,groups,False,Group A,2010-06-11,Group stage,True,Uruguay,France,True,0,0,D,1,True,0,0,4,2,danger
+2010,2010001,groups,False,Group A,2010-06-11,Group stage,True,France,Uruguay,False,0,0,D,1,True,0,0,1,2,qualification
+2010,2010002,groups,False,Group B,2010-06-12,Group stage,True,South Korea,Greece,True,2,0,W,1,True,0,0,4,2,danger
+2010,2010002,groups,False,Group B,2010-06-12,Group stage,True,Greece,South Korea,False,0,2,L,1,True,0,0,2,2,qualification
+2010,2010003,groups,False,Group B,2010-06-12,Group stage,True,Argentina,Nigeria,True,1,0,W,1,True,0,0,1,2,qualification
+2010,2010003,groups,False,Group B,2010-06-12,Group stage,True,Nigeria,Argentina,False,0,1,L,1,True,0,0,3,2,danger
+2010,2010004,groups,False,Group C,2010-06-12,Group stage,True,England,United States,True,1,1,D,1,True,0,0,2,2,qualification
+2010,2010004,groups,False,Group C,2010-06-12,Group stage,True,United States,England,False,1,1,D,1,True,0,0,4,2,danger
+2010,2010005,groups,False,Group C,2010-06-13,Group stage,True,Algeria,Slovenia,True,0,1,L,1,True,0,0,3,2,danger
+2010,2010005,groups,False,Group C,2010-06-13,Group stage,True,Slovenia,Algeria,False,1,0,W,1,True,0,0,4,2,danger
+2010,2010006,groups,False,Group D,2010-06-13,Group stage,True,Serbia,Ghana,True,0,1,L,1,True,0,0,4,2,danger
+2010,2010006,groups,False,Group D,2010-06-13,Group stage,True,Ghana,Serbia,False,1,0,W,1,True,0,0,3,2,danger
+2010,2010007,groups,False,Group D,2010-06-13,Group stage,True,Germany,Australia,True,4,0,W,1,True,0,0,2,2,qualification
+2010,2010007,groups,False,Group D,2010-06-13,Group stage,True,Australia,Germany,False,0,4,L,1,True,0,0,1,2,qualification
+2010,2010008,groups,False,Group E,2010-06-14,Group stage,True,Netherlands,Denmark,True,2,0,W,1,True,0,0,4,2,danger
+2010,2010008,groups,False,Group E,2010-06-14,Group stage,True,Denmark,Netherlands,False,0,2,L,1,True,0,0,2,2,qualification
+2010,2010009,groups,False,Group E,2010-06-14,Group stage,True,Japan,Cameroon,True,1,0,W,1,True,0,0,3,2,danger
+2010,2010009,groups,False,Group E,2010-06-14,Group stage,True,Cameroon,Japan,False,0,1,L,1,True,0,0,1,2,qualification
+2010,2010010,groups,False,Group F,2010-06-14,Group stage,True,Italy,Paraguay,True,1,1,D,1,True,0,0,1,2,qualification
+2010,2010010,groups,False,Group F,2010-06-14,Group stage,True,Paraguay,Italy,False,1,1,D,1,True,0,0,3,2,danger
+2010,2010011,groups,False,Group F,2010-06-15,Group stage,True,New Zealand,Slovakia,True,1,1,D,1,True,0,0,3,2,danger
+2010,2010011,groups,False,Group F,2010-06-15,Group stage,True,Slovakia,New Zealand,False,1,1,D,1,True,0,0,4,2,danger
+2010,2010012,groups,False,Group G,2010-06-15,Group stage,True,Ivory Coast,Portugal,True,0,0,D,1,True,0,0,2,2,qualification
+2010,2010012,groups,False,Group G,2010-06-15,Group stage,True,Portugal,Ivory Coast,False,0,0,D,1,True,0,0,4,2,danger
+2010,2010013,groups,False,Group G,2010-06-15,Group stage,True,Brazil,North Korea,True,2,1,W,1,True,0,0,1,2,qualification
+2010,2010013,groups,False,Group G,2010-06-15,Group stage,True,North Korea,Brazil,False,1,2,L,1,True,0,0,3,2,danger
+2010,2010014,groups,False,Group H,2010-06-16,Group stage,True,Honduras,Chile,True,0,1,L,1,True,0,0,2,2,qualification
+2010,2010014,groups,False,Group H,2010-06-16,Group stage,True,Chile,Honduras,False,1,0,W,1,True,0,0,1,2,qualification
+2010,2010015,groups,False,Group H,2010-06-16,Group stage,True,Spain,Switzerland,True,0,1,L,1,True,0,0,3,2,danger
+2010,2010015,groups,False,Group H,2010-06-16,Group stage,True,Switzerland,Spain,False,1,0,W,1,True,0,0,4,2,danger
+2010,2010016,groups,False,Group A,2010-06-16,Group stage,True,South Africa,Uruguay,True,0,3,L,2,False,1,0,2,1,qualification
+2010,2010016,groups,False,Group A,2010-06-16,Group stage,True,Uruguay,South Africa,False,3,0,W,2,False,1,0,4,1,danger
+2010,2010017,groups,False,Group B,2010-06-17,Group stage,True,Argentina,South Korea,True,4,1,W,2,False,3,1,2,1,qualification
+2010,2010017,groups,False,Group B,2010-06-17,Group stage,True,South Korea,Argentina,False,1,4,L,2,False,3,2,1,1,qualification
+2010,2010018,groups,False,Group B,2010-06-17,Group stage,True,Greece,Nigeria,True,2,1,W,2,False,0,-2,4,1,danger
+2010,2010018,groups,False,Group B,2010-06-17,Group stage,True,Nigeria,Greece,False,1,2,L,2,False,0,-1,3,1,danger
+2010,2010019,groups,False,Group A,2010-06-17,Group stage,True,France,Mexico,True,0,2,L,2,False,1,0,3,1,danger
+2010,2010019,groups,False,Group A,2010-06-17,Group stage,True,Mexico,France,False,2,0,W,2,False,1,0,2,1,qualification
+2010,2010020,groups,False,Group D,2010-06-18,Group stage,True,Germany,Serbia,True,0,1,L,2,False,3,4,1,1,qualification
+2010,2010020,groups,False,Group D,2010-06-18,Group stage,True,Serbia,Germany,False,1,0,W,2,False,0,-1,3,1,danger
+2010,2010021,groups,False,Group C,2010-06-18,Group stage,True,Slovenia,United States,True,2,2,D,2,False,3,1,1,1,qualification
+2010,2010021,groups,False,Group C,2010-06-18,Group stage,True,United States,Slovenia,False,2,2,D,2,False,1,0,3,1,danger
+2010,2010022,groups,False,Group C,2010-06-18,Group stage,True,England,Algeria,True,0,0,D,2,False,1,0,2,1,qualification
+2010,2010022,groups,False,Group C,2010-06-18,Group stage,True,Algeria,England,False,0,0,D,2,False,0,-1,4,1,danger
+2010,2010023,groups,False,Group E,2010-06-19,Group stage,True,Netherlands,Japan,True,1,0,W,2,False,3,2,1,1,qualification
+2010,2010023,groups,False,Group E,2010-06-19,Group stage,True,Japan,Netherlands,False,0,1,L,2,False,3,1,2,1,qualification
+2010,2010024,groups,False,Group D,2010-06-19,Group stage,True,Ghana,Australia,True,1,1,D,2,False,3,1,2,1,qualification
+2010,2010024,groups,False,Group D,2010-06-19,Group stage,True,Australia,Ghana,False,1,1,D,2,False,0,-4,4,1,danger
+2010,2010025,groups,False,Group E,2010-06-19,Group stage,True,Cameroon,Denmark,True,1,2,L,2,False,0,-1,3,1,danger
+2010,2010025,groups,False,Group E,2010-06-19,Group stage,True,Denmark,Cameroon,False,2,1,W,2,False,0,-2,4,1,danger
+2010,2010026,groups,False,Group F,2010-06-20,Group stage,True,Slovakia,Paraguay,True,0,2,L,2,False,1,0,4,1,danger
+2010,2010026,groups,False,Group F,2010-06-20,Group stage,True,Paraguay,Slovakia,False,2,0,W,2,False,1,0,3,1,danger
+2010,2010027,groups,False,Group F,2010-06-20,Group stage,True,Italy,New Zealand,True,1,1,D,2,False,1,0,1,1,qualification
+2010,2010027,groups,False,Group F,2010-06-20,Group stage,True,New Zealand,Italy,False,1,1,D,2,False,1,0,2,1,qualification
+2010,2010028,groups,False,Group G,2010-06-20,Group stage,True,Brazil,Ivory Coast,True,3,1,W,2,False,3,1,1,1,qualification
+2010,2010028,groups,False,Group G,2010-06-20,Group stage,True,Ivory Coast,Brazil,False,1,3,L,2,False,1,0,2,1,qualification
+2010,2010029,groups,False,Group G,2010-06-21,Group stage,True,Portugal,North Korea,True,7,0,W,2,False,1,0,2,1,qualification
+2010,2010029,groups,False,Group G,2010-06-21,Group stage,True,North Korea,Portugal,False,0,7,L,2,False,0,-1,4,1,danger
+2010,2010030,groups,False,Group H,2010-06-21,Group stage,True,Chile,Switzerland,True,1,0,W,2,False,3,1,1,1,qualification
+2010,2010030,groups,False,Group H,2010-06-21,Group stage,True,Switzerland,Chile,False,0,1,L,2,False,3,1,2,1,qualification
+2010,2010031,groups,False,Group H,2010-06-21,Group stage,True,Spain,Honduras,True,2,0,W,2,False,0,-1,4,1,danger
+2010,2010031,groups,False,Group H,2010-06-21,Group stage,True,Honduras,Spain,False,0,2,L,2,False,0,-1,3,1,danger
+2010,2010032,groups,False,Group A,2010-06-22,Group stage,True,France,South Africa,True,1,2,L,3,False,1,-2,3,0,danger
+2010,2010032,groups,False,Group A,2010-06-22,Group stage,True,South Africa,France,False,2,1,W,3,False,1,-3,4,0,danger
+2010,2010033,groups,False,Group A,2010-06-22,Group stage,True,Mexico,Uruguay,True,0,1,L,3,False,4,2,2,0,qualification
+2010,2010033,groups,False,Group A,2010-06-22,Group stage,True,Uruguay,Mexico,False,1,0,W,3,False,4,3,1,0,qualification
+2010,2010034,groups,False,Group B,2010-06-22,Group stage,True,Greece,Argentina,True,0,2,L,3,False,3,-1,3,0,danger
+2010,2010034,groups,False,Group B,2010-06-22,Group stage,True,Argentina,Greece,False,2,0,W,3,False,6,4,1,0,qualification
+2010,2010035,groups,False,Group B,2010-06-22,Group stage,True,Nigeria,South Korea,True,2,2,D,3,False,0,-2,4,0,danger
+2010,2010035,groups,False,Group B,2010-06-22,Group stage,True,South Korea,Nigeria,False,2,2,D,3,False,3,-1,2,0,qualification
+2010,2010036,groups,False,Group C,2010-06-23,Group stage,True,Slovenia,England,True,0,1,L,3,False,4,1,1,0,qualification
+2010,2010036,groups,False,Group C,2010-06-23,Group stage,True,England,Slovenia,False,1,0,W,3,False,2,0,3,0,danger
+2010,2010037,groups,False,Group C,2010-06-23,Group stage,True,United States,Algeria,True,1,0,W,3,False,2,0,2,0,qualification
+2010,2010037,groups,False,Group C,2010-06-23,Group stage,True,Algeria,United States,False,0,1,L,3,False,1,-1,4,0,danger
+2010,2010038,groups,False,Group D,2010-06-23,Group stage,True,Australia,Serbia,True,2,1,W,3,False,1,-4,4,0,danger
+2010,2010038,groups,False,Group D,2010-06-23,Group stage,True,Serbia,Australia,False,1,2,L,3,False,3,0,3,0,danger
+2010,2010039,groups,False,Group D,2010-06-23,Group stage,True,Ghana,Germany,True,0,1,L,3,False,4,1,1,0,qualification
+2010,2010039,groups,False,Group D,2010-06-23,Group stage,True,Germany,Ghana,False,1,0,W,3,False,3,3,2,0,qualification
+2010,2010040,groups,False,Group F,2010-06-24,Group stage,True,Paraguay,New Zealand,True,0,0,D,3,False,4,2,1,0,qualification
+2010,2010040,groups,False,Group F,2010-06-24,Group stage,True,New Zealand,Paraguay,False,0,0,D,3,False,2,0,3,0,danger
+2010,2010041,groups,False,Group F,2010-06-24,Group stage,True,Slovakia,Italy,True,3,2,W,3,False,1,-2,4,0,danger
+2010,2010041,groups,False,Group F,2010-06-24,Group stage,True,Italy,Slovakia,False,2,3,L,3,False,2,0,2,0,qualification
+2010,2010042,groups,False,Group E,2010-06-24,Group stage,True,Cameroon,Netherlands,True,1,2,L,3,False,0,-2,4,0,danger
+2010,2010042,groups,False,Group E,2010-06-24,Group stage,True,Netherlands,Cameroon,False,2,1,W,3,False,6,3,1,0,qualification
+2010,2010043,groups,False,Group E,2010-06-24,Group stage,True,Denmark,Japan,True,1,3,L,3,False,3,-1,3,0,danger
+2010,2010043,groups,False,Group E,2010-06-24,Group stage,True,Japan,Denmark,False,3,1,W,3,False,3,0,2,0,qualification
+2010,2010044,groups,False,Group G,2010-06-25,Group stage,True,North Korea,Ivory Coast,True,0,3,L,3,False,0,-8,4,0,danger
+2010,2010044,groups,False,Group G,2010-06-25,Group stage,True,Ivory Coast,North Korea,False,3,0,W,3,False,1,-2,3,0,danger
+2010,2010045,groups,False,Group G,2010-06-25,Group stage,True,Portugal,Brazil,True,0,0,D,3,False,4,7,2,0,qualification
+2010,2010045,groups,False,Group G,2010-06-25,Group stage,True,Brazil,Portugal,False,0,0,D,3,False,6,3,1,0,qualification
+2010,2010046,groups,False,Group H,2010-06-25,Group stage,True,Chile,Spain,True,1,2,L,3,False,6,2,1,0,qualification
+2010,2010046,groups,False,Group H,2010-06-25,Group stage,True,Spain,Chile,False,2,1,W,3,False,3,1,2,0,qualification
+2010,2010047,groups,False,Group H,2010-06-25,Group stage,True,Switzerland,Honduras,True,0,0,D,3,False,3,0,3,0,danger
+2010,2010047,groups,False,Group H,2010-06-25,Group stage,True,Honduras,Switzerland,False,0,0,D,3,False,0,-3,4,0,danger
+2010,2010048,knockout,True,,2010-06-26,Round of 16,True,Uruguay,South Korea,True,2,1,W,,,,,,,
+2010,2010048,knockout,True,,2010-06-26,Round of 16,True,South Korea,Uruguay,False,1,2,L,,,,,,,
+2010,2010049,knockout,True,,2010-06-26,Round of 16,True,United States,Ghana,True,1,2,L,,,,,,,
+2010,2010049,knockout,True,,2010-06-26,Round of 16,True,Ghana,United States,False,2,1,W,,,,,,,
+2010,2010050,knockout,True,,2010-06-27,Round of 16,True,Germany,England,True,4,1,W,,,,,,,
+2010,2010050,knockout,True,,2010-06-27,Round of 16,True,England,Germany,False,1,4,L,,,,,,,
+2010,2010051,knockout,True,,2010-06-27,Round of 16,True,Argentina,Mexico,True,3,1,W,,,,,,,
+2010,2010051,knockout,True,,2010-06-27,Round of 16,True,Mexico,Argentina,False,1,3,L,,,,,,,
+2010,2010052,knockout,True,,2010-06-28,Round of 16,True,Netherlands,Slovakia,True,2,1,W,,,,,,,
+2010,2010052,knockout,True,,2010-06-28,Round of 16,True,Slovakia,Netherlands,False,1,2,L,,,,,,,
+2010,2010053,knockout,True,,2010-06-28,Round of 16,True,Brazil,Chile,True,3,0,W,,,,,,,
+2010,2010053,knockout,True,,2010-06-28,Round of 16,True,Chile,Brazil,False,0,3,L,,,,,,,
+2010,2010054,knockout,True,,2010-06-29,Round of 16,True,Paraguay,Japan,True,0,0,D,,,,,,,
+2010,2010054,knockout,True,,2010-06-29,Round of 16,True,Japan,Paraguay,False,0,0,D,,,,,,,
+2010,2010055,knockout,True,,2010-06-29,Round of 16,True,Spain,Portugal,True,1,0,W,,,,,,,
+2010,2010055,knockout,True,,2010-06-29,Round of 16,True,Portugal,Spain,False,0,1,L,,,,,,,
+2010,2010056,knockout,True,,2010-07-02,Quarter-final,True,Netherlands,Brazil,True,2,1,W,,,,,,,
+2010,2010056,knockout,True,,2010-07-02,Quarter-final,True,Brazil,Netherlands,False,1,2,L,,,,,,,
+2010,2010057,knockout,True,,2010-07-02,Quarter-final,True,Uruguay,Ghana,True,1,1,D,,,,,,,
+2010,2010057,knockout,True,,2010-07-02,Quarter-final,True,Ghana,Uruguay,False,1,1,D,,,,,,,
+2010,2010058,knockout,True,,2010-07-03,Quarter-final,True,Argentina,Germany,True,0,4,L,,,,,,,
+2010,2010058,knockout,True,,2010-07-03,Quarter-final,True,Germany,Argentina,False,4,0,W,,,,,,,
+2010,2010059,knockout,True,,2010-07-03,Quarter-final,True,Paraguay,Spain,True,0,1,L,,,,,,,
+2010,2010059,knockout,True,,2010-07-03,Quarter-final,True,Spain,Paraguay,False,1,0,W,,,,,,,
+2010,2010060,knockout,True,,2010-07-06,Semi-final,True,Uruguay,Netherlands,True,2,3,L,,,,,,,
+2010,2010060,knockout,True,,2010-07-06,Semi-final,True,Netherlands,Uruguay,False,3,2,W,,,,,,,
+2010,2010061,knockout,True,,2010-07-07,Semi-final,True,Germany,Spain,True,0,1,L,,,,,,,
+2010,2010061,knockout,True,,2010-07-07,Semi-final,True,Spain,Germany,False,1,0,W,,,,,,,
+2010,2010062,third_place,False,,2010-07-10,Match for third place,True,Uruguay,Germany,True,2,3,L,,,,,,,
+2010,2010062,third_place,False,,2010-07-10,Match for third place,True,Germany,Uruguay,False,3,2,W,,,,,,,
+2010,2010063,knockout,True,,2010-07-11,Final,True,Netherlands,Spain,True,0,1,L,,,,,,,
+2010,2010063,knockout,True,,2010-07-11,Final,True,Spain,Netherlands,False,1,0,W,,,,,,,
+2014,2014000,groups,False,Group A,2014-06-12,Group stage,True,Brazil,Croatia,True,3,1,W,1,True,0,0,1,2,qualification
+2014,2014000,groups,False,Group A,2014-06-12,Group stage,True,Croatia,Brazil,False,1,3,L,1,True,0,0,3,2,danger
+2014,2014001,groups,False,Group A,2014-06-13,Group stage,True,Mexico,Cameroon,True,1,0,W,1,True,0,0,3,2,danger
+2014,2014001,groups,False,Group A,2014-06-13,Group stage,True,Cameroon,Mexico,False,0,1,L,1,True,0,0,2,2,qualification
+2014,2014002,groups,False,Group B,2014-06-13,Group stage,True,Spain,Netherlands,True,1,5,L,1,True,0,0,4,2,danger
+2014,2014002,groups,False,Group B,2014-06-13,Group stage,True,Netherlands,Spain,False,5,1,W,1,True,0,0,3,2,danger
+2014,2014003,groups,False,Group B,2014-06-13,Group stage,True,Chile,Australia,True,3,1,W,1,True,0,0,2,2,qualification
+2014,2014003,groups,False,Group B,2014-06-13,Group stage,True,Australia,Chile,False,1,3,L,1,True,0,0,1,2,qualification
+2014,2014004,groups,False,Group C,2014-06-14,Group stage,True,Colombia,Greece,True,3,0,W,1,True,0,0,1,2,qualification
+2014,2014004,groups,False,Group C,2014-06-14,Group stage,True,Greece,Colombia,False,0,3,L,1,True,0,0,2,2,qualification
+2014,2014005,groups,False,Group D,2014-06-14,Group stage,True,Uruguay,Costa Rica,True,1,3,L,1,True,0,0,4,2,danger
+2014,2014005,groups,False,Group D,2014-06-14,Group stage,True,Costa Rica,Uruguay,False,3,1,W,1,True,0,0,1,2,qualification
+2014,2014006,groups,False,Group D,2014-06-14,Group stage,True,England,Italy,True,1,2,L,1,True,0,0,2,2,qualification
+2014,2014006,groups,False,Group D,2014-06-14,Group stage,True,Italy,England,False,2,1,W,1,True,0,0,3,2,danger
+2014,2014007,groups,False,Group C,2014-06-14,Group stage,True,Ivory Coast,Japan,True,2,1,W,1,True,0,0,3,2,danger
+2014,2014007,groups,False,Group C,2014-06-14,Group stage,True,Japan,Ivory Coast,False,1,2,L,1,True,0,0,4,2,danger
+2014,2014008,groups,False,Group E,2014-06-15,Group stage,True,Switzerland,Ecuador,True,2,1,W,1,True,0,0,4,2,danger
+2014,2014008,groups,False,Group E,2014-06-15,Group stage,True,Ecuador,Switzerland,False,1,2,L,1,True,0,0,1,2,qualification
+2014,2014009,groups,False,Group E,2014-06-15,Group stage,True,France,Honduras,True,3,0,W,1,True,0,0,2,2,qualification
+2014,2014009,groups,False,Group E,2014-06-15,Group stage,True,Honduras,France,False,0,3,L,1,True,0,0,3,2,danger
+2014,2014010,groups,False,Group F,2014-06-15,Group stage,True,Argentina,Bosnia and Herzegovina,True,2,1,W,1,True,0,0,1,2,qualification
+2014,2014010,groups,False,Group F,2014-06-15,Group stage,True,Bosnia and Herzegovina,Argentina,False,1,2,L,1,True,0,0,2,2,qualification
+2014,2014011,groups,False,Group G,2014-06-16,Group stage,True,Germany,Portugal,True,4,0,W,1,True,0,0,1,2,qualification
+2014,2014011,groups,False,Group G,2014-06-16,Group stage,True,Portugal,Germany,False,0,4,L,1,True,0,0,3,2,danger
+2014,2014012,groups,False,Group F,2014-06-16,Group stage,True,Iran,Nigeria,True,0,0,D,1,True,0,0,2,2,qualification
+2014,2014012,groups,False,Group F,2014-06-16,Group stage,True,Nigeria,Iran,False,0,0,D,1,True,0,0,3,2,danger
+2014,2014013,groups,False,Group G,2014-06-16,Group stage,True,Ghana,United States,True,1,2,L,1,True,0,0,2,2,qualification
+2014,2014013,groups,False,Group G,2014-06-16,Group stage,True,United States,Ghana,False,2,1,W,1,True,0,0,4,2,danger
+2014,2014014,groups,False,Group H,2014-06-17,Group stage,True,Belgium,Algeria,True,2,1,W,1,True,0,0,2,2,qualification
+2014,2014014,groups,False,Group H,2014-06-17,Group stage,True,Algeria,Belgium,False,1,2,L,1,True,0,0,1,2,qualification
+2014,2014015,groups,False,Group A,2014-06-17,Group stage,True,Brazil,Mexico,True,0,0,D,2,False,3,2,1,1,qualification
+2014,2014015,groups,False,Group A,2014-06-17,Group stage,True,Mexico,Brazil,False,0,0,D,2,False,3,1,2,1,qualification
+2014,2014016,groups,False,Group H,2014-06-17,Group stage,True,Russia,South Korea,True,1,1,D,1,True,0,0,3,2,danger
+2014,2014016,groups,False,Group H,2014-06-17,Group stage,True,South Korea,Russia,False,1,1,D,1,True,0,0,4,2,danger
+2014,2014017,groups,False,Group B,2014-06-18,Group stage,True,Australia,Netherlands,True,2,3,L,2,False,0,-2,3,1,danger
+2014,2014017,groups,False,Group B,2014-06-18,Group stage,True,Netherlands,Australia,False,3,2,W,2,False,3,4,1,1,qualification
+2014,2014018,groups,False,Group B,2014-06-18,Group stage,True,Spain,Chile,True,0,2,L,2,False,0,-4,4,1,danger
+2014,2014018,groups,False,Group B,2014-06-18,Group stage,True,Chile,Spain,False,2,0,W,2,False,3,2,2,1,qualification
+2014,2014019,groups,False,Group A,2014-06-18,Group stage,True,Cameroon,Croatia,True,0,4,L,2,False,0,-1,3,1,danger
+2014,2014019,groups,False,Group A,2014-06-18,Group stage,True,Croatia,Cameroon,False,4,0,W,2,False,0,-2,4,1,danger
+2014,2014020,groups,False,Group C,2014-06-19,Group stage,True,Colombia,Ivory Coast,True,2,1,W,2,False,3,3,1,1,qualification
+2014,2014020,groups,False,Group C,2014-06-19,Group stage,True,Ivory Coast,Colombia,False,1,2,L,2,False,3,1,2,1,qualification
+2014,2014021,groups,False,Group D,2014-06-19,Group stage,True,Uruguay,England,True,2,1,W,2,False,0,-2,4,1,danger
+2014,2014021,groups,False,Group D,2014-06-19,Group stage,True,England,Uruguay,False,1,2,L,2,False,0,-1,3,1,danger
+2014,2014022,groups,False,Group C,2014-06-19,Group stage,True,Japan,Greece,True,0,0,D,2,False,0,-1,3,1,danger
+2014,2014022,groups,False,Group C,2014-06-19,Group stage,True,Greece,Japan,False,0,0,D,2,False,0,-3,4,1,danger
+2014,2014023,groups,False,Group D,2014-06-20,Group stage,True,Italy,Costa Rica,True,0,1,L,2,False,3,1,2,1,qualification
+2014,2014023,groups,False,Group D,2014-06-20,Group stage,True,Costa Rica,Italy,False,1,0,W,2,False,3,2,1,1,qualification
+2014,2014024,groups,False,Group E,2014-06-20,Group stage,True,Switzerland,France,True,2,5,L,2,False,3,1,2,1,qualification
+2014,2014024,groups,False,Group E,2014-06-20,Group stage,True,France,Switzerland,False,5,2,W,2,False,3,3,1,1,qualification
+2014,2014025,groups,False,Group E,2014-06-20,Group stage,True,Honduras,Ecuador,True,1,2,L,2,False,0,-3,4,1,danger
+2014,2014025,groups,False,Group E,2014-06-20,Group stage,True,Ecuador,Honduras,False,2,1,W,2,False,0,-1,3,1,danger
+2014,2014026,groups,False,Group F,2014-06-21,Group stage,True,Argentina,Iran,True,1,0,W,2,False,3,1,1,1,qualification
+2014,2014026,groups,False,Group F,2014-06-21,Group stage,True,Iran,Argentina,False,0,1,L,2,False,1,0,2,1,qualification
+2014,2014027,groups,False,Group G,2014-06-21,Group stage,True,Germany,Ghana,True,2,2,D,2,False,3,4,1,1,qualification
+2014,2014027,groups,False,Group G,2014-06-21,Group stage,True,Ghana,Germany,False,2,2,D,2,False,0,-1,3,1,danger
+2014,2014028,groups,False,Group F,2014-06-21,Group stage,True,Nigeria,Bosnia and Herzegovina,True,1,0,W,2,False,1,0,3,1,danger
+2014,2014028,groups,False,Group F,2014-06-21,Group stage,True,Bosnia and Herzegovina,Nigeria,False,0,1,L,2,False,0,-1,4,1,danger
+2014,2014029,groups,False,Group H,2014-06-22,Group stage,True,Belgium,Russia,True,1,0,W,2,False,3,1,1,1,qualification
+2014,2014029,groups,False,Group H,2014-06-22,Group stage,True,Russia,Belgium,False,0,1,L,2,False,1,0,2,1,qualification
+2014,2014030,groups,False,Group H,2014-06-22,Group stage,True,South Korea,Algeria,True,2,4,L,2,False,1,0,3,1,danger
+2014,2014030,groups,False,Group H,2014-06-22,Group stage,True,Algeria,South Korea,False,4,2,W,2,False,0,-1,4,1,danger
+2014,2014031,groups,False,Group G,2014-06-22,Group stage,True,United States,Portugal,True,2,2,D,2,False,3,1,2,1,qualification
+2014,2014031,groups,False,Group G,2014-06-22,Group stage,True,Portugal,United States,False,2,2,D,2,False,0,-4,4,1,danger
+2014,2014032,groups,False,Group B,2014-06-23,Group stage,True,Australia,Spain,True,0,3,L,3,False,0,-3,3,0,danger
+2014,2014032,groups,False,Group B,2014-06-23,Group stage,True,Spain,Australia,False,3,0,W,3,False,0,-6,4,0,danger
+2014,2014033,groups,False,Group B,2014-06-23,Group stage,True,Netherlands,Chile,True,2,0,W,3,False,6,5,1,0,qualification
+2014,2014033,groups,False,Group B,2014-06-23,Group stage,True,Chile,Netherlands,False,0,2,L,3,False,6,4,2,0,qualification
+2014,2014034,groups,False,Group A,2014-06-23,Group stage,True,Cameroon,Brazil,True,1,4,L,3,False,0,-5,4,0,danger
+2014,2014034,groups,False,Group A,2014-06-23,Group stage,True,Brazil,Cameroon,False,4,1,W,3,False,4,2,1,0,qualification
+2014,2014035,groups,False,Group A,2014-06-23,Group stage,True,Croatia,Mexico,True,1,3,L,3,False,3,2,3,0,danger
+2014,2014035,groups,False,Group A,2014-06-23,Group stage,True,Mexico,Croatia,False,3,1,W,3,False,4,1,2,0,qualification
+2014,2014036,groups,False,Group D,2014-06-24,Group stage,True,Costa Rica,England,True,0,0,D,3,False,6,3,1,0,qualification
+2014,2014036,groups,False,Group D,2014-06-24,Group stage,True,England,Costa Rica,False,0,0,D,3,False,0,-2,4,0,danger
+2014,2014037,groups,False,Group D,2014-06-24,Group stage,True,Italy,Uruguay,True,0,1,L,3,False,3,0,2,0,qualification
+2014,2014037,groups,False,Group D,2014-06-24,Group stage,True,Uruguay,Italy,False,1,0,W,3,False,3,-1,3,0,danger
+2014,2014038,groups,False,Group C,2014-06-24,Group stage,True,Japan,Colombia,True,1,4,L,3,False,1,-1,3,0,danger
+2014,2014038,groups,False,Group C,2014-06-24,Group stage,True,Colombia,Japan,False,4,1,W,3,False,6,4,1,0,qualification
+2014,2014039,groups,False,Group C,2014-06-24,Group stage,True,Greece,Ivory Coast,True,2,1,W,3,False,1,-3,4,0,danger
+2014,2014039,groups,False,Group C,2014-06-24,Group stage,True,Ivory Coast,Greece,False,1,2,L,3,False,3,0,2,0,qualification
+2014,2014040,groups,False,Group F,2014-06-25,Group stage,True,Bosnia and Herzegovina,Iran,True,3,1,W,3,False,0,-2,4,0,danger
+2014,2014040,groups,False,Group F,2014-06-25,Group stage,True,Iran,Bosnia and Herzegovina,False,1,3,L,3,False,1,-1,3,0,danger
+2014,2014041,groups,False,Group F,2014-06-25,Group stage,True,Nigeria,Argentina,True,2,3,L,3,False,4,1,2,0,qualification
+2014,2014041,groups,False,Group F,2014-06-25,Group stage,True,Argentina,Nigeria,False,3,2,W,3,False,6,2,1,0,qualification
+2014,2014042,groups,False,Group E,2014-06-25,Group stage,True,Honduras,Switzerland,True,0,3,L,3,False,0,-4,4,0,danger
+2014,2014042,groups,False,Group E,2014-06-25,Group stage,True,Switzerland,Honduras,False,3,0,W,3,False,3,-2,3,0,danger
+2014,2014043,groups,False,Group E,2014-06-25,Group stage,True,Ecuador,France,True,0,0,D,3,False,3,0,2,0,qualification
+2014,2014043,groups,False,Group E,2014-06-25,Group stage,True,France,Ecuador,False,0,0,D,3,False,6,6,1,0,qualification
+2014,2014044,groups,False,Group G,2014-06-26,Group stage,True,Portugal,Ghana,True,2,1,W,3,False,1,-4,4,0,danger
+2014,2014044,groups,False,Group G,2014-06-26,Group stage,True,Ghana,Portugal,False,1,2,L,3,False,1,-1,3,0,danger
+2014,2014045,groups,False,Group G,2014-06-26,Group stage,True,United States,Germany,True,0,1,L,3,False,4,1,2,0,qualification
+2014,2014045,groups,False,Group G,2014-06-26,Group stage,True,Germany,United States,False,1,0,W,3,False,4,4,1,0,qualification
+2014,2014046,groups,False,Group H,2014-06-26,Group stage,True,Algeria,Russia,True,1,1,D,3,False,3,1,2,0,qualification
+2014,2014046,groups,False,Group H,2014-06-26,Group stage,True,Russia,Algeria,False,1,1,D,3,False,1,-1,3,0,danger
+2014,2014047,groups,False,Group H,2014-06-26,Group stage,True,South Korea,Belgium,True,0,1,L,3,False,1,-2,4,0,danger
+2014,2014047,groups,False,Group H,2014-06-26,Group stage,True,Belgium,South Korea,False,1,0,W,3,False,6,2,1,0,qualification
+2014,2014048,knockout,True,,2014-06-28,Round of 16,True,Brazil,Chile,True,1,1,D,,,,,,,
+2014,2014048,knockout,True,,2014-06-28,Round of 16,True,Chile,Brazil,False,1,1,D,,,,,,,
+2014,2014049,knockout,True,,2014-06-28,Round of 16,True,Colombia,Uruguay,True,2,0,W,,,,,,,
+2014,2014049,knockout,True,,2014-06-28,Round of 16,True,Uruguay,Colombia,False,0,2,L,,,,,,,
+2014,2014050,knockout,True,,2014-06-29,Round of 16,True,Netherlands,Mexico,True,2,1,W,,,,,,,
+2014,2014050,knockout,True,,2014-06-29,Round of 16,True,Mexico,Netherlands,False,1,2,L,,,,,,,
+2014,2014051,knockout,True,,2014-06-29,Round of 16,True,Costa Rica,Greece,True,1,1,D,,,,,,,
+2014,2014051,knockout,True,,2014-06-29,Round of 16,True,Greece,Costa Rica,False,1,1,D,,,,,,,
+2014,2014052,knockout,True,,2014-06-30,Round of 16,True,France,Nigeria,True,2,0,W,,,,,,,
+2014,2014052,knockout,True,,2014-06-30,Round of 16,True,Nigeria,France,False,0,2,L,,,,,,,
+2014,2014053,knockout,True,,2014-06-30,Round of 16,True,Germany,Algeria,True,2,1,W,,,,,,,
+2014,2014053,knockout,True,,2014-06-30,Round of 16,True,Algeria,Germany,False,1,2,L,,,,,,,
+2014,2014054,knockout,True,,2014-07-01,Round of 16,True,Argentina,Switzerland,True,1,0,W,,,,,,,
+2014,2014054,knockout,True,,2014-07-01,Round of 16,True,Switzerland,Argentina,False,0,1,L,,,,,,,
+2014,2014055,knockout,True,,2014-07-01,Round of 16,True,Belgium,United States,True,2,1,W,,,,,,,
+2014,2014055,knockout,True,,2014-07-01,Round of 16,True,United States,Belgium,False,1,2,L,,,,,,,
+2014,2014056,knockout,True,,2014-07-04,Quarter-final,True,France,Germany,True,0,1,L,,,,,,,
+2014,2014056,knockout,True,,2014-07-04,Quarter-final,True,Germany,France,False,1,0,W,,,,,,,
+2014,2014057,knockout,True,,2014-07-04,Quarter-final,True,Brazil,Colombia,True,2,1,W,,,,,,,
+2014,2014057,knockout,True,,2014-07-04,Quarter-final,True,Colombia,Brazil,False,1,2,L,,,,,,,
+2014,2014058,knockout,True,,2014-07-05,Quarter-final,True,Argentina,Belgium,True,1,0,W,,,,,,,
+2014,2014058,knockout,True,,2014-07-05,Quarter-final,True,Belgium,Argentina,False,0,1,L,,,,,,,
+2014,2014059,knockout,True,,2014-07-05,Quarter-final,True,Netherlands,Costa Rica,True,0,0,D,,,,,,,
+2014,2014059,knockout,True,,2014-07-05,Quarter-final,True,Costa Rica,Netherlands,False,0,0,D,,,,,,,
+2014,2014060,knockout,True,,2014-07-08,Semi-final,True,Brazil,Germany,True,1,7,L,,,,,,,
+2014,2014060,knockout,True,,2014-07-08,Semi-final,True,Germany,Brazil,False,7,1,W,,,,,,,
+2014,2014061,knockout,True,,2014-07-09,Semi-final,True,Netherlands,Argentina,True,0,0,D,,,,,,,
+2014,2014061,knockout,True,,2014-07-09,Semi-final,True,Argentina,Netherlands,False,0,0,D,,,,,,,
+2014,2014062,third_place,False,,2014-07-12,Match for third place,True,Brazil,Netherlands,True,0,3,L,,,,,,,
+2014,2014062,third_place,False,,2014-07-12,Match for third place,True,Netherlands,Brazil,False,3,0,W,,,,,,,
+2014,2014063,knockout,True,,2014-07-13,Final,True,Germany,Argentina,True,1,0,W,,,,,,,
+2014,2014063,knockout,True,,2014-07-13,Final,True,Argentina,Germany,False,0,1,L,,,,,,,
+2018,2018000,groups,False,Group A,2018-06-14,Group stage,True,Russia,Saudi Arabia,True,5,0,W,1,True,0,0,2,2,qualification
+2018,2018000,groups,False,Group A,2018-06-14,Group stage,True,Saudi Arabia,Russia,False,0,5,L,1,True,0,0,3,2,danger
+2018,2018001,groups,False,Group A,2018-06-15,Group stage,True,Egypt,Uruguay,True,0,1,L,1,True,0,0,2,2,qualification
+2018,2018001,groups,False,Group A,2018-06-15,Group stage,True,Uruguay,Egypt,False,1,0,W,1,True,0,0,3,2,danger
+2018,2018002,groups,False,Group B,2018-06-15,Group stage,True,Morocco,Iran,True,0,1,L,1,True,0,0,2,2,qualification
+2018,2018002,groups,False,Group B,2018-06-15,Group stage,True,Iran,Morocco,False,1,0,W,1,True,0,0,1,2,qualification
+2018,2018003,groups,False,Group B,2018-06-15,Group stage,True,Portugal,Spain,True,3,3,D,1,True,0,0,3,2,danger
+2018,2018003,groups,False,Group B,2018-06-15,Group stage,True,Spain,Portugal,False,3,3,D,1,True,0,0,4,2,danger
+2018,2018004,groups,False,Group C,2018-06-16,Group stage,True,France,Australia,True,2,1,W,1,True,0,0,3,2,danger
+2018,2018004,groups,False,Group C,2018-06-16,Group stage,True,Australia,France,False,1,2,L,1,True,0,0,1,2,qualification
+2018,2018005,groups,False,Group D,2018-06-16,Group stage,True,Argentina,Iceland,True,1,1,D,1,True,0,0,1,2,qualification
+2018,2018005,groups,False,Group D,2018-06-16,Group stage,True,Iceland,Argentina,False,1,1,D,1,True,0,0,3,2,danger
+2018,2018006,groups,False,Group C,2018-06-16,Group stage,True,Peru,Denmark,True,0,1,L,1,True,0,0,4,2,danger
+2018,2018006,groups,False,Group C,2018-06-16,Group stage,True,Denmark,Peru,False,1,0,W,1,True,0,0,2,2,qualification
+2018,2018007,groups,False,Group D,2018-06-16,Group stage,True,Croatia,Nigeria,True,2,0,W,1,True,0,0,2,2,qualification
+2018,2018007,groups,False,Group D,2018-06-16,Group stage,True,Nigeria,Croatia,False,0,2,L,1,True,0,0,4,2,danger
+2018,2018008,groups,False,Group E,2018-06-17,Group stage,True,Costa Rica,Serbia,True,0,1,L,1,True,0,0,2,2,qualification
+2018,2018008,groups,False,Group E,2018-06-17,Group stage,True,Serbia,Costa Rica,False,1,0,W,1,True,0,0,3,2,danger
+2018,2018009,groups,False,Group F,2018-06-17,Group stage,True,Germany,Mexico,True,0,1,L,1,True,0,0,1,2,qualification
+2018,2018009,groups,False,Group F,2018-06-17,Group stage,True,Mexico,Germany,False,1,0,W,1,True,0,0,2,2,qualification
+2018,2018010,groups,False,Group E,2018-06-17,Group stage,True,Brazil,Switzerland,True,1,1,D,1,True,0,0,1,2,qualification
+2018,2018010,groups,False,Group E,2018-06-17,Group stage,True,Switzerland,Brazil,False,1,1,D,1,True,0,0,4,2,danger
+2018,2018011,groups,False,Group F,2018-06-18,Group stage,True,Sweden,South Korea,True,1,0,W,1,True,0,0,3,2,danger
+2018,2018011,groups,False,Group F,2018-06-18,Group stage,True,South Korea,Sweden,False,0,1,L,1,True,0,0,2,2,qualification
+2018,2018012,groups,False,Group G,2018-06-18,Group stage,True,Belgium,Panama,True,3,0,W,1,True,0,0,1,2,qualification
+2018,2018012,groups,False,Group G,2018-06-18,Group stage,True,Panama,Belgium,False,0,3,L,1,True,0,0,3,2,danger
+2018,2018013,groups,False,Group G,2018-06-18,Group stage,True,Tunisia,England,True,1,2,L,1,True,0,0,4,2,danger
+2018,2018013,groups,False,Group G,2018-06-18,Group stage,True,England,Tunisia,False,2,1,W,1,True,0,0,2,2,qualification
+2018,2018014,groups,False,Group H,2018-06-19,Group stage,True,Colombia,Japan,True,1,2,L,1,True,0,0,1,2,qualification
+2018,2018014,groups,False,Group H,2018-06-19,Group stage,True,Japan,Colombia,False,2,1,W,1,True,0,0,2,2,qualification
+2018,2018015,groups,False,Group H,2018-06-19,Group stage,True,Poland,Senegal,True,1,2,L,1,True,0,0,3,2,danger
+2018,2018015,groups,False,Group H,2018-06-19,Group stage,True,Senegal,Poland,False,2,1,W,1,True,0,0,4,2,danger
+2018,2018016,groups,False,Group A,2018-06-19,Group stage,True,Russia,Egypt,True,3,1,W,2,False,3,5,1,1,qualification
+2018,2018016,groups,False,Group A,2018-06-19,Group stage,True,Egypt,Russia,False,1,3,L,2,False,0,-1,3,1,danger
+2018,2018017,groups,False,Group B,2018-06-20,Group stage,True,Portugal,Morocco,True,1,0,W,2,False,1,0,2,1,qualification
+2018,2018017,groups,False,Group B,2018-06-20,Group stage,True,Morocco,Portugal,False,0,1,L,2,False,0,-1,4,1,danger
+2018,2018018,groups,False,Group A,2018-06-20,Group stage,True,Uruguay,Saudi Arabia,True,1,0,W,2,False,3,1,2,1,qualification
+2018,2018018,groups,False,Group A,2018-06-20,Group stage,True,Saudi Arabia,Uruguay,False,0,1,L,2,False,0,-5,4,1,danger
+2018,2018019,groups,False,Group B,2018-06-20,Group stage,True,Iran,Spain,True,0,1,L,2,False,3,1,1,1,qualification
+2018,2018019,groups,False,Group B,2018-06-20,Group stage,True,Spain,Iran,False,1,0,W,2,False,1,0,3,1,danger
+2018,2018020,groups,False,Group C,2018-06-21,Group stage,True,Denmark,Australia,True,1,1,D,2,False,3,1,2,1,qualification
+2018,2018020,groups,False,Group C,2018-06-21,Group stage,True,Australia,Denmark,False,1,1,D,2,False,0,-1,3,1,danger
+2018,2018021,groups,False,Group C,2018-06-21,Group stage,True,France,Peru,True,1,0,W,2,False,3,1,1,1,qualification
+2018,2018021,groups,False,Group C,2018-06-21,Group stage,True,Peru,France,False,0,1,L,2,False,0,-1,4,1,danger
+2018,2018022,groups,False,Group D,2018-06-21,Group stage,True,Argentina,Croatia,True,0,3,L,2,False,1,0,2,1,qualification
+2018,2018022,groups,False,Group D,2018-06-21,Group stage,True,Croatia,Argentina,False,3,0,W,2,False,3,2,1,1,qualification
+2018,2018023,groups,False,Group E,2018-06-22,Group stage,True,Brazil,Costa Rica,True,2,0,W,2,False,1,0,2,1,qualification
+2018,2018023,groups,False,Group E,2018-06-22,Group stage,True,Costa Rica,Brazil,False,0,2,L,2,False,0,-1,4,1,danger
+2018,2018024,groups,False,Group D,2018-06-22,Group stage,True,Nigeria,Iceland,True,2,0,W,2,False,0,-2,4,1,danger
+2018,2018024,groups,False,Group D,2018-06-22,Group stage,True,Iceland,Nigeria,False,0,2,L,2,False,1,0,2,1,qualification
+2018,2018025,groups,False,Group E,2018-06-22,Group stage,True,Serbia,Switzerland,True,1,2,L,2,False,3,1,1,1,qualification
+2018,2018025,groups,False,Group E,2018-06-22,Group stage,True,Switzerland,Serbia,False,2,1,W,2,False,1,0,3,1,danger
+2018,2018026,groups,False,Group G,2018-06-23,Group stage,True,Belgium,Tunisia,True,5,2,W,2,False,3,3,1,1,qualification
+2018,2018026,groups,False,Group G,2018-06-23,Group stage,True,Tunisia,Belgium,False,2,5,L,2,False,0,-1,3,1,danger
+2018,2018027,groups,False,Group F,2018-06-23,Group stage,True,South Korea,Mexico,True,1,2,L,2,False,0,-1,4,1,danger
+2018,2018027,groups,False,Group F,2018-06-23,Group stage,True,Mexico,South Korea,False,2,1,W,2,False,3,1,1,1,qualification
+2018,2018028,groups,False,Group F,2018-06-23,Group stage,True,Germany,Sweden,True,2,1,W,2,False,0,-1,3,1,danger
+2018,2018028,groups,False,Group F,2018-06-23,Group stage,True,Sweden,Germany,False,1,2,L,2,False,3,1,2,1,qualification
+2018,2018029,groups,False,Group G,2018-06-24,Group stage,True,England,Panama,True,6,1,W,2,False,3,1,2,1,qualification
+2018,2018029,groups,False,Group G,2018-06-24,Group stage,True,Panama,England,False,1,6,L,2,False,0,-3,3,1,danger
+2018,2018030,groups,False,Group H,2018-06-24,Group stage,True,Japan,Senegal,True,2,2,D,2,False,3,1,1,1,qualification
+2018,2018030,groups,False,Group H,2018-06-24,Group stage,True,Senegal,Japan,False,2,2,D,2,False,3,1,2,1,qualification
+2018,2018031,groups,False,Group H,2018-06-24,Group stage,True,Poland,Colombia,True,0,3,L,2,False,0,-1,4,1,danger
+2018,2018031,groups,False,Group H,2018-06-24,Group stage,True,Colombia,Poland,False,3,0,W,2,False,0,-1,3,1,danger
+2018,2018032,groups,False,Group A,2018-06-25,Group stage,True,Saudi Arabia,Egypt,True,2,1,W,3,False,0,-6,4,0,danger
+2018,2018032,groups,False,Group A,2018-06-25,Group stage,True,Egypt,Saudi Arabia,False,1,2,L,3,False,0,-3,3,0,danger
+2018,2018033,groups,False,Group A,2018-06-25,Group stage,True,Uruguay,Russia,True,3,0,W,3,False,6,2,2,0,qualification
+2018,2018033,groups,False,Group A,2018-06-25,Group stage,True,Russia,Uruguay,False,0,3,L,3,False,6,7,1,0,qualification
+2018,2018034,groups,False,Group B,2018-06-25,Group stage,True,Spain,Morocco,True,2,2,D,3,False,4,1,2,0,qualification
+2018,2018034,groups,False,Group B,2018-06-25,Group stage,True,Morocco,Spain,False,2,2,D,3,False,0,-2,4,0,danger
+2018,2018035,groups,False,Group B,2018-06-25,Group stage,True,Iran,Portugal,True,1,1,D,3,False,3,0,3,0,danger
+2018,2018035,groups,False,Group B,2018-06-25,Group stage,True,Portugal,Iran,False,1,1,D,3,False,4,1,1,0,qualification
+2018,2018036,groups,False,Group C,2018-06-26,Group stage,True,Australia,Peru,True,0,2,L,3,False,1,-1,3,0,danger
+2018,2018036,groups,False,Group C,2018-06-26,Group stage,True,Peru,Australia,False,2,0,W,3,False,0,-2,4,0,danger
+2018,2018037,groups,False,Group C,2018-06-26,Group stage,True,Denmark,France,True,0,0,D,3,False,4,1,2,0,qualification
+2018,2018037,groups,False,Group C,2018-06-26,Group stage,True,France,Denmark,False,0,0,D,3,False,6,2,1,0,qualification
+2018,2018038,groups,False,Group D,2018-06-26,Group stage,True,Iceland,Croatia,True,1,2,L,3,False,1,-2,3,0,danger
+2018,2018038,groups,False,Group D,2018-06-26,Group stage,True,Croatia,Iceland,False,2,1,W,3,False,6,5,1,0,qualification
+2018,2018039,groups,False,Group D,2018-06-26,Group stage,True,Nigeria,Argentina,True,1,2,L,3,False,3,0,2,0,qualification
+2018,2018039,groups,False,Group D,2018-06-26,Group stage,True,Argentina,Nigeria,False,2,1,W,3,False,1,-3,4,0,danger
+2018,2018040,groups,False,Group F,2018-06-27,Group stage,True,South Korea,Germany,True,2,0,W,3,False,0,-2,4,0,danger
+2018,2018040,groups,False,Group F,2018-06-27,Group stage,True,Germany,South Korea,False,0,2,L,3,False,3,0,2,0,qualification
+2018,2018041,groups,False,Group F,2018-06-27,Group stage,True,Mexico,Sweden,True,0,3,L,3,False,6,2,1,0,qualification
+2018,2018041,groups,False,Group F,2018-06-27,Group stage,True,Sweden,Mexico,False,3,0,W,3,False,3,0,3,0,danger
+2018,2018042,groups,False,Group E,2018-06-27,Group stage,True,Serbia,Brazil,True,0,2,L,3,False,3,0,3,0,danger
+2018,2018042,groups,False,Group E,2018-06-27,Group stage,True,Brazil,Serbia,False,2,0,W,3,False,4,2,1,0,qualification
+2018,2018043,groups,False,Group E,2018-06-27,Group stage,True,Switzerland,Costa Rica,True,2,2,D,3,False,4,1,2,0,qualification
+2018,2018043,groups,False,Group E,2018-06-27,Group stage,True,Costa Rica,Switzerland,False,2,2,D,3,False,0,-3,4,0,danger
+2018,2018044,groups,False,Group H,2018-06-28,Group stage,True,Japan,Poland,True,0,1,L,3,False,4,1,1,0,qualification
+2018,2018044,groups,False,Group H,2018-06-28,Group stage,True,Poland,Japan,False,1,0,W,3,False,0,-4,4,0,danger
+2018,2018045,groups,False,Group H,2018-06-28,Group stage,True,Senegal,Colombia,True,0,1,L,3,False,4,1,2,0,qualification
+2018,2018045,groups,False,Group H,2018-06-28,Group stage,True,Colombia,Senegal,False,1,0,W,3,False,3,2,3,0,danger
+2018,2018046,groups,False,Group G,2018-06-28,Group stage,True,England,Belgium,True,0,1,L,3,False,6,6,2,0,qualification
+2018,2018046,groups,False,Group G,2018-06-28,Group stage,True,Belgium,England,False,1,0,W,3,False,6,6,1,0,qualification
+2018,2018047,groups,False,Group G,2018-06-28,Group stage,True,Panama,Tunisia,True,1,2,L,3,False,0,-8,4,0,danger
+2018,2018047,groups,False,Group G,2018-06-28,Group stage,True,Tunisia,Panama,False,2,1,W,3,False,0,-4,3,0,danger
+2018,2018048,knockout,True,,2018-06-30,Round of 16,True,France,Argentina,True,4,3,W,,,,,,,
+2018,2018048,knockout,True,,2018-06-30,Round of 16,True,Argentina,France,False,3,4,L,,,,,,,
+2018,2018049,knockout,True,,2018-06-30,Round of 16,True,Uruguay,Portugal,True,2,1,W,,,,,,,
+2018,2018049,knockout,True,,2018-06-30,Round of 16,True,Portugal,Uruguay,False,1,2,L,,,,,,,
+2018,2018050,knockout,True,,2018-07-01,Round of 16,True,Spain,Russia,True,1,1,D,,,,,,,
+2018,2018050,knockout,True,,2018-07-01,Round of 16,True,Russia,Spain,False,1,1,D,,,,,,,
+2018,2018051,knockout,True,,2018-07-01,Round of 16,True,Croatia,Denmark,True,1,1,D,,,,,,,
+2018,2018051,knockout,True,,2018-07-01,Round of 16,True,Denmark,Croatia,False,1,1,D,,,,,,,
+2018,2018052,knockout,True,,2018-07-02,Round of 16,True,Brazil,Mexico,True,2,0,W,,,,,,,
+2018,2018052,knockout,True,,2018-07-02,Round of 16,True,Mexico,Brazil,False,0,2,L,,,,,,,
+2018,2018053,knockout,True,,2018-07-02,Round of 16,True,Belgium,Japan,True,3,2,W,,,,,,,
+2018,2018053,knockout,True,,2018-07-02,Round of 16,True,Japan,Belgium,False,2,3,L,,,,,,,
+2018,2018054,knockout,True,,2018-07-03,Round of 16,True,Sweden,Switzerland,True,1,0,W,,,,,,,
+2018,2018054,knockout,True,,2018-07-03,Round of 16,True,Switzerland,Sweden,False,0,1,L,,,,,,,
+2018,2018055,knockout,True,,2018-07-03,Round of 16,True,Colombia,England,True,1,1,D,,,,,,,
+2018,2018055,knockout,True,,2018-07-03,Round of 16,True,England,Colombia,False,1,1,D,,,,,,,
+2018,2018056,knockout,True,,2018-07-06,Quarter-final,True,Uruguay,France,True,0,2,L,,,,,,,
+2018,2018056,knockout,True,,2018-07-06,Quarter-final,True,France,Uruguay,False,2,0,W,,,,,,,
+2018,2018057,knockout,True,,2018-07-06,Quarter-final,True,Brazil,Belgium,True,1,2,L,,,,,,,
+2018,2018057,knockout,True,,2018-07-06,Quarter-final,True,Belgium,Brazil,False,2,1,W,,,,,,,
+2018,2018058,knockout,True,,2018-07-07,Quarter-final,True,Sweden,England,True,0,2,L,,,,,,,
+2018,2018058,knockout,True,,2018-07-07,Quarter-final,True,England,Sweden,False,2,0,W,,,,,,,
+2018,2018059,knockout,True,,2018-07-07,Quarter-final,True,Russia,Croatia,True,2,2,D,,,,,,,
+2018,2018059,knockout,True,,2018-07-07,Quarter-final,True,Croatia,Russia,False,2,2,D,,,,,,,
+2018,2018060,knockout,True,,2018-07-10,Semi-final,True,France,Belgium,True,1,0,W,,,,,,,
+2018,2018060,knockout,True,,2018-07-10,Semi-final,True,Belgium,France,False,0,1,L,,,,,,,
+2018,2018061,knockout,True,,2018-07-11,Semi-final,True,Croatia,England,True,2,1,W,,,,,,,
+2018,2018061,knockout,True,,2018-07-11,Semi-final,True,England,Croatia,False,1,2,L,,,,,,,
+2018,2018062,third_place,False,,2018-07-14,Match for third place,True,Belgium,England,True,2,0,W,,,,,,,
+2018,2018062,third_place,False,,2018-07-14,Match for third place,True,England,Belgium,False,0,2,L,,,,,,,
+2018,2018063,knockout,True,,2018-07-15,Final,True,France,Croatia,True,4,2,W,,,,,,,
+2018,2018063,knockout,True,,2018-07-15,Final,True,Croatia,France,False,2,4,L,,,,,,,
+2022,2022000,groups,False,Group A,2022-11-20,Group stage,True,Qatar,Ecuador,True,0,2,L,1,True,0,0,3,2,danger
+2022,2022000,groups,False,Group A,2022-11-20,Group stage,True,Ecuador,Qatar,False,2,0,W,1,True,0,0,1,2,qualification
+2022,2022001,groups,False,Group B,2022-11-21,Group stage,True,England,Iran,True,6,2,W,1,True,0,0,1,2,qualification
+2022,2022001,groups,False,Group B,2022-11-21,Group stage,True,Iran,England,False,2,6,L,1,True,0,0,2,2,qualification
+2022,2022002,groups,False,Group A,2022-11-21,Group stage,True,Senegal,Netherlands,True,0,2,L,1,True,0,0,3,2,danger
+2022,2022002,groups,False,Group A,2022-11-21,Group stage,True,Netherlands,Senegal,False,2,0,W,1,True,0,0,2,2,qualification
+2022,2022003,groups,False,Group B,2022-11-21,Group stage,True,United States,Wales,True,1,1,D,1,True,0,0,3,2,danger
+2022,2022003,groups,False,Group B,2022-11-21,Group stage,True,Wales,United States,False,1,1,D,1,True,0,0,4,2,danger
+2022,2022004,groups,False,Group C,2022-11-22,Group stage,True,Argentina,Saudi Arabia,True,1,2,L,1,True,0,0,1,2,qualification
+2022,2022004,groups,False,Group C,2022-11-22,Group stage,True,Saudi Arabia,Argentina,False,2,1,W,1,True,0,0,4,2,danger
+2022,2022005,groups,False,Group D,2022-11-22,Group stage,True,Denmark,Tunisia,True,0,0,D,1,True,0,0,2,2,qualification
+2022,2022005,groups,False,Group D,2022-11-22,Group stage,True,Tunisia,Denmark,False,0,0,D,1,True,0,0,4,2,danger
+2022,2022006,groups,False,Group C,2022-11-22,Group stage,True,Mexico,Poland,True,0,0,D,1,True,0,0,2,2,qualification
+2022,2022006,groups,False,Group C,2022-11-22,Group stage,True,Poland,Mexico,False,0,0,D,1,True,0,0,3,2,danger
+2022,2022007,groups,False,Group D,2022-11-22,Group stage,True,France,Australia,True,4,1,W,1,True,0,0,3,2,danger
+2022,2022007,groups,False,Group D,2022-11-22,Group stage,True,Australia,France,False,1,4,L,1,True,0,0,1,2,qualification
+2022,2022008,groups,False,Group F,2022-11-23,Group stage,True,Morocco,Croatia,True,0,0,D,1,True,0,0,4,2,danger
+2022,2022008,groups,False,Group F,2022-11-23,Group stage,True,Croatia,Morocco,False,0,0,D,1,True,0,0,3,2,danger
+2022,2022009,groups,False,Group E,2022-11-23,Group stage,True,Germany,Japan,True,1,2,L,1,True,0,0,2,2,qualification
+2022,2022009,groups,False,Group E,2022-11-23,Group stage,True,Japan,Germany,False,2,1,W,1,True,0,0,3,2,danger
+2022,2022010,groups,False,Group E,2022-11-23,Group stage,True,Spain,Costa Rica,True,7,0,W,1,True,0,0,4,2,danger
+2022,2022010,groups,False,Group E,2022-11-23,Group stage,True,Costa Rica,Spain,False,0,7,L,1,True,0,0,1,2,qualification
+2022,2022011,groups,False,Group F,2022-11-23,Group stage,True,Belgium,Canada,True,1,0,W,1,True,0,0,1,2,qualification
+2022,2022011,groups,False,Group F,2022-11-23,Group stage,True,Canada,Belgium,False,0,1,L,1,True,0,0,2,2,qualification
+2022,2022012,groups,False,Group G,2022-11-24,Group stage,True,Switzerland,Cameroon,True,1,0,W,1,True,0,0,4,2,danger
+2022,2022012,groups,False,Group G,2022-11-24,Group stage,True,Cameroon,Switzerland,False,0,1,L,1,True,0,0,2,2,qualification
+2022,2022013,groups,False,Group H,2022-11-24,Group stage,True,Uruguay,South Korea,True,0,0,D,1,True,0,0,4,2,danger
+2022,2022013,groups,False,Group H,2022-11-24,Group stage,True,South Korea,Uruguay,False,0,0,D,1,True,0,0,3,2,danger
+2022,2022014,groups,False,Group H,2022-11-24,Group stage,True,Portugal,Ghana,True,3,2,W,1,True,0,0,2,2,qualification
+2022,2022014,groups,False,Group H,2022-11-24,Group stage,True,Ghana,Portugal,False,2,3,L,1,True,0,0,1,2,qualification
+2022,2022015,groups,False,Group G,2022-11-24,Group stage,True,Brazil,Serbia,True,2,0,W,1,True,0,0,1,2,qualification
+2022,2022015,groups,False,Group G,2022-11-24,Group stage,True,Serbia,Brazil,False,0,2,L,1,True,0,0,3,2,danger
+2022,2022016,groups,False,Group B,2022-11-25,Group stage,True,Wales,Iran,True,0,2,L,2,False,1,0,3,1,danger
+2022,2022016,groups,False,Group B,2022-11-25,Group stage,True,Iran,Wales,False,2,0,W,2,False,0,-4,4,1,danger
+2022,2022017,groups,False,Group A,2022-11-25,Group stage,True,Qatar,Senegal,True,1,3,L,2,False,0,-2,3,1,danger
+2022,2022017,groups,False,Group A,2022-11-25,Group stage,True,Senegal,Qatar,False,3,1,W,2,False,0,-2,4,1,danger
+2022,2022018,groups,False,Group A,2022-11-25,Group stage,True,Netherlands,Ecuador,True,1,1,D,2,False,3,2,2,1,qualification
+2022,2022018,groups,False,Group A,2022-11-25,Group stage,True,Ecuador,Netherlands,False,1,1,D,2,False,3,2,1,1,qualification
+2022,2022019,groups,False,Group B,2022-11-25,Group stage,True,England,United States,True,0,0,D,2,False,3,4,1,1,qualification
+2022,2022019,groups,False,Group B,2022-11-25,Group stage,True,United States,England,False,0,0,D,2,False,1,0,2,1,qualification
+2022,2022020,groups,False,Group D,2022-11-26,Group stage,True,Tunisia,Australia,True,0,1,L,2,False,1,0,3,1,danger
+2022,2022020,groups,False,Group D,2022-11-26,Group stage,True,Australia,Tunisia,False,1,0,W,2,False,0,-3,4,1,danger
+2022,2022021,groups,False,Group C,2022-11-26,Group stage,True,Poland,Saudi Arabia,True,2,0,W,2,False,1,0,3,1,danger
+2022,2022021,groups,False,Group C,2022-11-26,Group stage,True,Saudi Arabia,Poland,False,0,2,L,2,False,3,1,1,1,qualification
+2022,2022022,groups,False,Group D,2022-11-26,Group stage,True,France,Denmark,True,2,1,W,2,False,3,3,1,1,qualification
+2022,2022022,groups,False,Group D,2022-11-26,Group stage,True,Denmark,France,False,1,2,L,2,False,1,0,2,1,qualification
+2022,2022023,groups,False,Group C,2022-11-26,Group stage,True,Argentina,Mexico,True,2,0,W,2,False,0,-1,4,1,danger
+2022,2022023,groups,False,Group C,2022-11-26,Group stage,True,Mexico,Argentina,False,0,2,L,2,False,1,0,2,1,qualification
+2022,2022024,groups,False,Group E,2022-11-27,Group stage,True,Japan,Costa Rica,True,0,1,L,2,False,3,1,2,1,qualification
+2022,2022024,groups,False,Group E,2022-11-27,Group stage,True,Costa Rica,Japan,False,1,0,W,2,False,0,-7,4,1,danger
+2022,2022025,groups,False,Group F,2022-11-27,Group stage,True,Belgium,Morocco,True,0,2,L,2,False,3,1,1,1,qualification
+2022,2022025,groups,False,Group F,2022-11-27,Group stage,True,Morocco,Belgium,False,2,0,W,2,False,1,0,3,1,danger
+2022,2022026,groups,False,Group F,2022-11-27,Group stage,True,Croatia,Canada,True,4,1,W,2,False,1,0,2,1,qualification
+2022,2022026,groups,False,Group F,2022-11-27,Group stage,True,Canada,Croatia,False,1,4,L,2,False,0,-1,4,1,danger
+2022,2022027,groups,False,Group E,2022-11-27,Group stage,True,Spain,Germany,True,1,1,D,2,False,3,7,1,1,qualification
+2022,2022027,groups,False,Group E,2022-11-27,Group stage,True,Germany,Spain,False,1,1,D,2,False,0,-1,3,1,danger
+2022,2022028,groups,False,Group G,2022-11-28,Group stage,True,Cameroon,Serbia,True,3,3,D,2,False,0,-1,3,1,danger
+2022,2022028,groups,False,Group G,2022-11-28,Group stage,True,Serbia,Cameroon,False,3,3,D,2,False,0,-2,4,1,danger
+2022,2022029,groups,False,Group H,2022-11-28,Group stage,True,South Korea,Ghana,True,2,3,L,2,False,1,0,2,1,qualification
+2022,2022029,groups,False,Group H,2022-11-28,Group stage,True,Ghana,South Korea,False,3,2,W,2,False,0,-1,4,1,danger
+2022,2022030,groups,False,Group G,2022-11-28,Group stage,True,Brazil,Switzerland,True,1,0,W,2,False,3,2,1,1,qualification
+2022,2022030,groups,False,Group G,2022-11-28,Group stage,True,Switzerland,Brazil,False,0,1,L,2,False,3,1,2,1,qualification
+2022,2022031,groups,False,Group H,2022-11-28,Group stage,True,Portugal,Uruguay,True,2,0,W,2,False,3,1,1,1,qualification
+2022,2022031,groups,False,Group H,2022-11-28,Group stage,True,Uruguay,Portugal,False,0,2,L,2,False,1,0,3,1,danger
+2022,2022032,groups,False,Group A,2022-11-29,Group stage,True,Ecuador,Senegal,True,1,2,L,3,False,4,2,1,0,qualification
+2022,2022032,groups,False,Group A,2022-11-29,Group stage,True,Senegal,Ecuador,False,2,1,W,3,False,3,0,3,0,danger
+2022,2022033,groups,False,Group A,2022-11-29,Group stage,True,Netherlands,Qatar,True,2,0,W,3,False,4,2,2,0,qualification
+2022,2022033,groups,False,Group A,2022-11-29,Group stage,True,Qatar,Netherlands,False,0,2,L,3,False,0,-4,4,0,danger
+2022,2022034,groups,False,Group B,2022-11-29,Group stage,True,Iran,United States,True,0,1,L,3,False,3,-2,2,0,qualification
+2022,2022034,groups,False,Group B,2022-11-29,Group stage,True,United States,Iran,False,1,0,W,3,False,2,0,3,0,danger
+2022,2022035,groups,False,Group B,2022-11-29,Group stage,True,Wales,England,True,0,3,L,3,False,1,-2,4,0,danger
+2022,2022035,groups,False,Group B,2022-11-29,Group stage,True,England,Wales,False,3,0,W,3,False,4,4,1,0,qualification
+2022,2022036,groups,False,Group D,2022-11-30,Group stage,True,Australia,Denmark,True,1,0,W,3,False,3,-2,2,0,qualification
+2022,2022036,groups,False,Group D,2022-11-30,Group stage,True,Denmark,Australia,False,0,1,L,3,False,1,-1,3,0,danger
+2022,2022037,groups,False,Group D,2022-11-30,Group stage,True,Tunisia,France,True,1,0,W,3,False,1,-1,4,0,danger
+2022,2022037,groups,False,Group D,2022-11-30,Group stage,True,France,Tunisia,False,0,1,L,3,False,6,4,1,0,qualification
+2022,2022038,groups,False,Group C,2022-11-30,Group stage,True,Poland,Argentina,True,0,2,L,3,False,4,2,1,0,qualification
+2022,2022038,groups,False,Group C,2022-11-30,Group stage,True,Argentina,Poland,False,2,0,W,3,False,3,1,2,0,qualification
+2022,2022039,groups,False,Group C,2022-11-30,Group stage,True,Saudi Arabia,Mexico,True,1,2,L,3,False,3,-1,3,0,danger
+2022,2022039,groups,False,Group C,2022-11-30,Group stage,True,Mexico,Saudi Arabia,False,2,1,W,3,False,1,-2,4,0,danger
+2022,2022040,groups,False,Group F,2022-12-01,Group stage,True,Canada,Morocco,True,1,2,L,3,False,0,-4,4,0,danger
+2022,2022040,groups,False,Group F,2022-12-01,Group stage,True,Morocco,Canada,False,2,1,W,3,False,4,2,2,0,qualification
+2022,2022041,groups,False,Group F,2022-12-01,Group stage,True,Croatia,Belgium,True,0,0,D,3,False,4,3,1,0,qualification
+2022,2022041,groups,False,Group F,2022-12-01,Group stage,True,Belgium,Croatia,False,0,0,D,3,False,3,-1,3,0,danger
+2022,2022042,groups,False,Group E,2022-12-01,Group stage,True,Costa Rica,Germany,True,2,4,L,3,False,3,-6,3,0,danger
+2022,2022042,groups,False,Group E,2022-12-01,Group stage,True,Germany,Costa Rica,False,4,2,W,3,False,1,-1,4,0,danger
+2022,2022043,groups,False,Group E,2022-12-01,Group stage,True,Japan,Spain,True,2,1,W,3,False,3,0,2,0,qualification
+2022,2022043,groups,False,Group E,2022-12-01,Group stage,True,Spain,Japan,False,1,2,L,3,False,4,7,1,0,qualification
+2022,2022044,groups,False,Group H,2022-12-02,Group stage,True,Ghana,Uruguay,True,0,2,L,3,False,3,0,2,0,qualification
+2022,2022044,groups,False,Group H,2022-12-02,Group stage,True,Uruguay,Ghana,False,2,0,W,3,False,1,-2,4,0,danger
+2022,2022045,groups,False,Group H,2022-12-02,Group stage,True,South Korea,Portugal,True,2,1,W,3,False,1,-1,3,0,danger
+2022,2022045,groups,False,Group H,2022-12-02,Group stage,True,Portugal,South Korea,False,1,2,L,3,False,6,3,1,0,qualification
+2022,2022046,groups,False,Group G,2022-12-02,Group stage,True,Cameroon,Brazil,True,1,0,W,3,False,1,-1,3,0,danger
+2022,2022046,groups,False,Group G,2022-12-02,Group stage,True,Brazil,Cameroon,False,0,1,L,3,False,6,3,1,0,qualification
+2022,2022047,groups,False,Group G,2022-12-02,Group stage,True,Serbia,Switzerland,True,2,3,L,3,False,1,-2,4,0,danger
+2022,2022047,groups,False,Group G,2022-12-02,Group stage,True,Switzerland,Serbia,False,3,2,W,3,False,3,0,2,0,qualification
+2022,2022048,knockout,True,,2022-12-03,Round of 16,True,Netherlands,United States,True,3,1,W,,,,,,,
+2022,2022048,knockout,True,,2022-12-03,Round of 16,True,United States,Netherlands,False,1,3,L,,,,,,,
+2022,2022049,knockout,True,,2022-12-03,Round of 16,True,Argentina,Australia,True,2,1,W,,,,,,,
+2022,2022049,knockout,True,,2022-12-03,Round of 16,True,Australia,Argentina,False,1,2,L,,,,,,,
+2022,2022050,knockout,True,,2022-12-04,Round of 16,True,France,Poland,True,3,1,W,,,,,,,
+2022,2022050,knockout,True,,2022-12-04,Round of 16,True,Poland,France,False,1,3,L,,,,,,,
+2022,2022051,knockout,True,,2022-12-04,Round of 16,True,England,Senegal,True,3,0,W,,,,,,,
+2022,2022051,knockout,True,,2022-12-04,Round of 16,True,Senegal,England,False,0,3,L,,,,,,,
+2022,2022052,knockout,True,,2022-12-05,Round of 16,True,Japan,Croatia,True,1,1,D,,,,,,,
+2022,2022052,knockout,True,,2022-12-05,Round of 16,True,Croatia,Japan,False,1,1,D,,,,,,,
+2022,2022053,knockout,True,,2022-12-05,Round of 16,True,Brazil,South Korea,True,4,1,W,,,,,,,
+2022,2022053,knockout,True,,2022-12-05,Round of 16,True,South Korea,Brazil,False,1,4,L,,,,,,,
+2022,2022054,knockout,True,,2022-12-06,Round of 16,True,Morocco,Spain,True,0,0,D,,,,,,,
+2022,2022054,knockout,True,,2022-12-06,Round of 16,True,Spain,Morocco,False,0,0,D,,,,,,,
+2022,2022055,knockout,True,,2022-12-06,Round of 16,True,Portugal,Switzerland,True,6,1,W,,,,,,,
+2022,2022055,knockout,True,,2022-12-06,Round of 16,True,Switzerland,Portugal,False,1,6,L,,,,,,,
+2022,2022056,knockout,True,,2022-12-09,Quarter-final,True,Croatia,Brazil,True,1,1,D,,,,,,,
+2022,2022056,knockout,True,,2022-12-09,Quarter-final,True,Brazil,Croatia,False,1,1,D,,,,,,,
+2022,2022057,knockout,True,,2022-12-09,Quarter-final,True,Netherlands,Argentina,True,2,2,D,,,,,,,
+2022,2022057,knockout,True,,2022-12-09,Quarter-final,True,Argentina,Netherlands,False,2,2,D,,,,,,,
+2022,2022058,knockout,True,,2022-12-10,Quarter-final,True,Morocco,Portugal,True,1,0,W,,,,,,,
+2022,2022058,knockout,True,,2022-12-10,Quarter-final,True,Portugal,Morocco,False,0,1,L,,,,,,,
+2022,2022059,knockout,True,,2022-12-10,Quarter-final,True,England,France,True,1,2,L,,,,,,,
+2022,2022059,knockout,True,,2022-12-10,Quarter-final,True,France,England,False,2,1,W,,,,,,,
+2022,2022060,knockout,True,,2022-12-13,Semi-final,True,Argentina,Croatia,True,3,0,W,,,,,,,
+2022,2022060,knockout,True,,2022-12-13,Semi-final,True,Croatia,Argentina,False,0,3,L,,,,,,,
+2022,2022061,knockout,True,,2022-12-14,Semi-final,True,France,Morocco,True,2,0,W,,,,,,,
+2022,2022061,knockout,True,,2022-12-14,Semi-final,True,Morocco,France,False,0,2,L,,,,,,,
+2022,2022062,third_place,False,,2022-12-17,Match for third place,True,Croatia,Morocco,True,2,1,W,,,,,,,
+2022,2022062,third_place,False,,2022-12-17,Match for third place,True,Morocco,Croatia,False,1,2,L,,,,,,,
+2022,2022063,knockout,True,,2022-12-18,Final,True,Argentina,France,True,3,3,D,,,,,,,
+2022,2022063,knockout,True,,2022-12-18,Final,True,France,Argentina,False,3,3,D,,,,,,,
+2026,2026000,groups,False,Group A,2026-06-11,Matchday 1,True,Mexico,South Africa,True,2,0,W,1,True,0,0,2,2,qualification
+2026,2026000,groups,False,Group A,2026-06-11,Matchday 1,True,South Africa,Mexico,False,0,2,L,1,True,0,0,3,2,danger
+2026,2026001,groups,False,Group A,2026-06-11,Matchday 1,True,South Korea,Czech Republic,True,2,1,W,1,True,0,0,4,2,danger
+2026,2026001,groups,False,Group A,2026-06-11,Matchday 1,True,Czech Republic,South Korea,False,1,2,L,1,True,0,0,1,2,qualification
+2026,2026002,groups,False,Group A,2026-06-18,Matchday 8,True,Czech Republic,South Africa,True,1,1,D,2,False,0,-1,3,1,danger
+2026,2026002,groups,False,Group A,2026-06-18,Matchday 8,True,South Africa,Czech Republic,False,1,1,D,2,False,0,-2,4,1,danger
+2026,2026003,groups,False,Group A,2026-06-18,Matchday 8,True,Mexico,South Korea,True,1,0,W,2,False,3,2,1,1,qualification
+2026,2026003,groups,False,Group A,2026-06-18,Matchday 8,True,South Korea,Mexico,False,0,1,L,2,False,3,1,2,1,qualification
+2026,2026004,groups,False,Group A,2026-06-24,Matchday 14,True,Czech Republic,Mexico,True,0,3,L,3,False,1,-1,3,0,danger
+2026,2026004,groups,False,Group A,2026-06-24,Matchday 14,True,Mexico,Czech Republic,False,3,0,W,3,False,6,3,1,0,qualification
+2026,2026005,groups,False,Group A,2026-06-24,Matchday 14,True,South Africa,South Korea,True,1,0,W,3,False,1,-2,4,0,danger
+2026,2026005,groups,False,Group A,2026-06-24,Matchday 14,True,South Korea,South Africa,False,0,1,L,3,False,3,0,2,0,qualification
+2026,2026006,groups,False,Group B,2026-06-12,Matchday 2,True,Canada,Bosnia & Herzegovina,True,1,1,D,1,True,0,0,2,2,qualification
+2026,2026006,groups,False,Group B,2026-06-12,Matchday 2,True,Bosnia & Herzegovina,Canada,False,1,1,D,1,True,0,0,1,2,qualification
+2026,2026007,groups,False,Group B,2026-06-13,Matchday 3,True,Qatar,Switzerland,True,1,1,D,1,True,0,0,3,2,danger
+2026,2026007,groups,False,Group B,2026-06-13,Matchday 3,True,Switzerland,Qatar,False,1,1,D,1,True,0,0,4,2,danger
+2026,2026008,groups,False,Group B,2026-06-18,Matchday 8,True,Switzerland,Bosnia & Herzegovina,True,4,1,W,2,False,1,0,4,1,danger
+2026,2026008,groups,False,Group B,2026-06-18,Matchday 8,True,Bosnia & Herzegovina,Switzerland,False,1,4,L,2,False,1,0,1,1,qualification
+2026,2026009,groups,False,Group B,2026-06-18,Matchday 8,True,Canada,Qatar,True,6,0,W,2,False,1,0,2,1,qualification
+2026,2026009,groups,False,Group B,2026-06-18,Matchday 8,True,Qatar,Canada,False,0,6,L,2,False,1,0,3,1,danger
+2026,2026010,groups,False,Group B,2026-06-24,Matchday 14,True,Switzerland,Canada,True,2,1,W,3,False,4,3,2,0,qualification
+2026,2026010,groups,False,Group B,2026-06-24,Matchday 14,True,Canada,Switzerland,False,1,2,L,3,False,4,6,1,0,qualification
+2026,2026011,groups,False,Group B,2026-06-24,Matchday 14,True,Bosnia & Herzegovina,Qatar,True,3,1,W,3,False,1,-3,3,0,danger
+2026,2026011,groups,False,Group B,2026-06-24,Matchday 14,True,Qatar,Bosnia & Herzegovina,False,1,3,L,3,False,1,-6,4,0,danger
+2026,2026012,groups,False,Group C,2026-06-13,Matchday 3,True,Brazil,Morocco,True,1,1,D,1,True,0,0,1,2,qualification
+2026,2026012,groups,False,Group C,2026-06-13,Matchday 3,True,Morocco,Brazil,False,1,1,D,1,True,0,0,3,2,danger
+2026,2026013,groups,False,Group C,2026-06-13,Matchday 3,True,Haiti,Scotland,True,0,1,L,1,True,0,0,2,2,qualification
+2026,2026013,groups,False,Group C,2026-06-13,Matchday 3,True,Scotland,Haiti,False,1,0,W,1,True,0,0,4,2,danger
+2026,2026014,groups,False,Group C,2026-06-19,Matchday 9,True,Scotland,Morocco,True,0,1,L,2,False,3,1,1,1,qualification
+2026,2026014,groups,False,Group C,2026-06-19,Matchday 9,True,Morocco,Scotland,False,1,0,W,2,False,1,0,3,1,danger
+2026,2026015,groups,False,Group C,2026-06-19,Matchday 9,True,Brazil,Haiti,True,3,0,W,2,False,1,0,2,1,qualification
+2026,2026015,groups,False,Group C,2026-06-19,Matchday 9,True,Haiti,Brazil,False,0,3,L,2,False,0,-1,4,1,danger
+2026,2026016,groups,False,Group C,2026-06-24,Matchday 14,True,Scotland,Brazil,True,0,3,L,3,False,3,0,3,0,danger
+2026,2026016,groups,False,Group C,2026-06-24,Matchday 14,True,Brazil,Scotland,False,3,0,W,3,False,4,3,1,0,qualification
+2026,2026017,groups,False,Group C,2026-06-24,Matchday 14,True,Morocco,Haiti,True,4,2,W,3,False,4,1,2,0,qualification
+2026,2026017,groups,False,Group C,2026-06-24,Matchday 14,True,Haiti,Morocco,False,2,4,L,3,False,0,-4,4,0,danger
+2026,2026018,groups,False,Group D,2026-06-12,Matchday 2,True,USA,Paraguay,True,4,1,W,1,True,0,0,4,2,danger
+2026,2026018,groups,False,Group D,2026-06-12,Matchday 2,True,Paraguay,USA,False,1,4,L,1,True,0,0,2,2,qualification
+2026,2026019,groups,False,Group D,2026-06-13,Matchday 3,True,Australia,Turkey,True,2,0,W,1,True,0,0,2,2,qualification
+2026,2026019,groups,False,Group D,2026-06-13,Matchday 3,True,Turkey,Australia,False,0,2,L,1,True,0,0,3,2,danger
+2026,2026020,groups,False,Group D,2026-06-19,Matchday 9,True,USA,Australia,True,2,0,W,2,False,3,3,1,1,qualification
+2026,2026020,groups,False,Group D,2026-06-19,Matchday 9,True,Australia,USA,False,0,2,L,2,False,3,2,2,1,qualification
+2026,2026021,groups,False,Group D,2026-06-19,Matchday 9,True,Turkey,Paraguay,True,0,1,L,2,False,0,-2,3,1,danger
+2026,2026021,groups,False,Group D,2026-06-19,Matchday 9,True,Paraguay,Turkey,False,1,0,W,2,False,0,-3,4,1,danger
+2026,2026022,groups,False,Group D,2026-06-25,Matchday 15,True,Turkey,USA,True,3,2,W,3,False,0,-3,4,0,danger
+2026,2026022,groups,False,Group D,2026-06-25,Matchday 15,True,USA,Turkey,False,2,3,L,3,False,6,5,1,0,qualification
+2026,2026023,groups,False,Group D,2026-06-25,Matchday 15,True,Paraguay,Australia,True,0,0,D,3,False,3,-2,3,0,danger
+2026,2026023,groups,False,Group D,2026-06-25,Matchday 15,True,Australia,Paraguay,False,0,0,D,3,False,3,0,2,0,qualification
+2026,2026024,groups,False,Group E,2026-06-14,Matchday 4,True,Germany,Curaçao,True,7,1,W,1,True,0,0,3,2,danger
+2026,2026024,groups,False,Group E,2026-06-14,Matchday 4,True,Curaçao,Germany,False,1,7,L,1,True,0,0,1,2,qualification
+2026,2026025,groups,False,Group E,2026-06-14,Matchday 4,True,Ivory Coast,Ecuador,True,1,0,W,1,True,0,0,4,2,danger
+2026,2026025,groups,False,Group E,2026-06-14,Matchday 4,True,Ecuador,Ivory Coast,False,0,1,L,1,True,0,0,2,2,qualification
+2026,2026026,groups,False,Group E,2026-06-20,Matchday 10,True,Germany,Ivory Coast,True,2,1,W,2,False,3,6,1,1,qualification
+2026,2026026,groups,False,Group E,2026-06-20,Matchday 10,True,Ivory Coast,Germany,False,1,2,L,2,False,3,1,2,1,qualification
+2026,2026027,groups,False,Group E,2026-06-20,Matchday 10,True,Ecuador,Curaçao,True,0,0,D,2,False,0,-1,3,1,danger
+2026,2026027,groups,False,Group E,2026-06-20,Matchday 10,True,Curaçao,Ecuador,False,0,0,D,2,False,0,-6,4,1,danger
+2026,2026028,groups,False,Group E,2026-06-25,Matchday 15,True,Curaçao,Ivory Coast,True,0,2,L,3,False,1,-6,4,0,danger
+2026,2026028,groups,False,Group E,2026-06-25,Matchday 15,True,Ivory Coast,Curaçao,False,2,0,W,3,False,3,0,2,0,qualification
+2026,2026029,groups,False,Group E,2026-06-25,Matchday 15,True,Ecuador,Germany,True,2,1,W,3,False,1,-1,3,0,danger
+2026,2026029,groups,False,Group E,2026-06-25,Matchday 15,True,Germany,Ecuador,False,1,2,L,3,False,6,7,1,0,qualification
+2026,2026030,groups,False,Group F,2026-06-14,Matchday 4,True,Netherlands,Japan,True,2,2,D,1,True,0,0,2,2,qualification
+2026,2026030,groups,False,Group F,2026-06-14,Matchday 4,True,Japan,Netherlands,False,2,2,D,1,True,0,0,1,2,qualification
+2026,2026031,groups,False,Group F,2026-06-14,Matchday 4,True,Sweden,Tunisia,True,5,1,W,1,True,0,0,3,2,danger
+2026,2026031,groups,False,Group F,2026-06-14,Matchday 4,True,Tunisia,Sweden,False,1,5,L,1,True,0,0,4,2,danger
+2026,2026032,groups,False,Group F,2026-06-20,Matchday 10,True,Netherlands,Sweden,True,5,1,W,2,False,1,0,3,1,danger
+2026,2026032,groups,False,Group F,2026-06-20,Matchday 10,True,Sweden,Netherlands,False,1,5,L,2,False,3,4,1,1,qualification
+2026,2026033,groups,False,Group F,2026-06-20,Matchday 10,True,Tunisia,Japan,True,0,4,L,2,False,0,-4,4,1,danger
+2026,2026033,groups,False,Group F,2026-06-20,Matchday 10,True,Japan,Tunisia,False,4,0,W,2,False,1,0,2,1,qualification
+2026,2026034,groups,False,Group F,2026-06-25,Matchday 15,True,Japan,Sweden,True,1,1,D,3,False,4,4,2,0,qualification
+2026,2026034,groups,False,Group F,2026-06-25,Matchday 15,True,Sweden,Japan,False,1,1,D,3,False,3,0,3,0,danger
+2026,2026035,groups,False,Group F,2026-06-25,Matchday 15,True,Tunisia,Netherlands,True,1,3,L,3,False,0,-8,4,0,danger
+2026,2026035,groups,False,Group F,2026-06-25,Matchday 15,True,Netherlands,Tunisia,False,3,1,W,3,False,4,4,1,0,qualification
+2026,2026036,groups,False,Group G,2026-06-15,Matchday 5,True,Belgium,Egypt,True,1,1,D,1,True,0,0,1,2,qualification
+2026,2026036,groups,False,Group G,2026-06-15,Matchday 5,True,Egypt,Belgium,False,1,1,D,1,True,0,0,2,2,qualification
+2026,2026037,groups,False,Group G,2026-06-15,Matchday 5,True,Iran,New Zealand,True,2,2,D,1,True,0,0,3,2,danger
+2026,2026037,groups,False,Group G,2026-06-15,Matchday 5,True,New Zealand,Iran,False,2,2,D,1,True,0,0,4,2,danger
+2026,2026038,groups,False,Group G,2026-06-21,Matchday 11,True,Belgium,Iran,True,0,0,D,2,False,1,0,3,1,danger
+2026,2026038,groups,False,Group G,2026-06-21,Matchday 11,True,Iran,Belgium,False,0,0,D,2,False,1,0,1,1,qualification
+2026,2026039,groups,False,Group G,2026-06-21,Matchday 11,True,New Zealand,Egypt,True,1,3,L,2,False,1,0,2,1,qualification
+2026,2026039,groups,False,Group G,2026-06-21,Matchday 11,True,Egypt,New Zealand,False,3,1,W,2,False,1,0,4,1,danger
+2026,2026040,groups,False,Group G,2026-06-26,Matchday 16,True,Egypt,Iran,True,1,1,D,3,False,4,2,1,0,qualification
+2026,2026040,groups,False,Group G,2026-06-26,Matchday 16,True,Iran,Egypt,False,1,1,D,3,False,2,0,2,0,qualification
+2026,2026041,groups,False,Group G,2026-06-26,Matchday 16,True,New Zealand,Belgium,True,1,5,L,3,False,1,-2,4,0,danger
+2026,2026041,groups,False,Group G,2026-06-26,Matchday 16,True,Belgium,New Zealand,False,5,1,W,3,False,2,0,3,0,danger
+2026,2026042,groups,False,Group H,2026-06-15,Matchday 5,True,Spain,Cape Verde,True,0,0,D,1,True,0,0,3,2,danger
+2026,2026042,groups,False,Group H,2026-06-15,Matchday 5,True,Cape Verde,Spain,False,0,0,D,1,True,0,0,1,2,qualification
+2026,2026043,groups,False,Group H,2026-06-15,Matchday 5,True,Saudi Arabia,Uruguay,True,1,1,D,1,True,0,0,2,2,qualification
+2026,2026043,groups,False,Group H,2026-06-15,Matchday 5,True,Uruguay,Saudi Arabia,False,1,1,D,1,True,0,0,4,2,danger
+2026,2026044,groups,False,Group H,2026-06-21,Matchday 11,True,Spain,Saudi Arabia,True,4,0,W,2,False,1,0,4,1,danger
+2026,2026044,groups,False,Group H,2026-06-21,Matchday 11,True,Saudi Arabia,Spain,False,0,4,L,2,False,1,0,1,1,qualification
+2026,2026045,groups,False,Group H,2026-06-21,Matchday 11,True,Uruguay,Cape Verde,True,2,2,D,2,False,1,0,2,1,qualification
+2026,2026045,groups,False,Group H,2026-06-21,Matchday 11,True,Cape Verde,Uruguay,False,2,2,D,2,False,1,0,3,1,danger
+2026,2026046,groups,False,Group H,2026-06-26,Matchday 16,True,Cape Verde,Saudi Arabia,True,0,0,D,3,False,2,0,3,0,danger
+2026,2026046,groups,False,Group H,2026-06-26,Matchday 16,True,Saudi Arabia,Cape Verde,False,0,0,D,3,False,1,-4,4,0,danger
+2026,2026047,groups,False,Group H,2026-06-26,Matchday 16,True,Uruguay,Spain,True,0,1,L,3,False,2,0,2,0,qualification
+2026,2026047,groups,False,Group H,2026-06-26,Matchday 16,True,Spain,Uruguay,False,1,0,W,3,False,4,4,1,0,qualification
+2026,2026048,groups,False,Group I,2026-06-16,Matchday 6,True,France,Senegal,True,3,1,W,1,True,0,0,1,2,qualification
+2026,2026048,groups,False,Group I,2026-06-16,Matchday 6,True,Senegal,France,False,1,3,L,1,True,0,0,4,2,danger
+2026,2026049,groups,False,Group I,2026-06-16,Matchday 6,True,Iraq,Norway,True,1,4,L,1,True,0,0,2,2,qualification
+2026,2026049,groups,False,Group I,2026-06-16,Matchday 6,True,Norway,Iraq,False,4,1,W,1,True,0,0,3,2,danger
+2026,2026050,groups,False,Group I,2026-06-22,Matchday 12,True,France,Iraq,True,3,0,W,2,False,3,2,2,1,qualification
+2026,2026050,groups,False,Group I,2026-06-22,Matchday 12,True,Iraq,France,False,0,3,L,2,False,0,-3,4,1,danger
+2026,2026051,groups,False,Group I,2026-06-22,Matchday 12,True,Norway,Senegal,True,3,2,W,2,False,3,3,1,1,qualification
+2026,2026051,groups,False,Group I,2026-06-22,Matchday 12,True,Senegal,Norway,False,2,3,L,2,False,0,-2,3,1,danger
+2026,2026052,groups,False,Group I,2026-06-26,Matchday 16,True,Norway,France,True,1,4,L,3,False,6,4,2,0,qualification
+2026,2026052,groups,False,Group I,2026-06-26,Matchday 16,True,France,Norway,False,4,1,W,3,False,6,5,1,0,qualification
+2026,2026053,groups,False,Group I,2026-06-26,Matchday 16,True,Senegal,Iraq,True,5,0,W,3,False,0,-3,3,0,danger
+2026,2026053,groups,False,Group I,2026-06-26,Matchday 16,True,Iraq,Senegal,False,0,5,L,3,False,0,-6,4,0,danger
+2026,2026054,groups,False,Group J,2026-06-16,Matchday 6,True,Argentina,Algeria,True,3,0,W,1,True,0,0,2,2,qualification
+2026,2026054,groups,False,Group J,2026-06-16,Matchday 6,True,Algeria,Argentina,False,0,3,L,1,True,0,0,1,2,qualification
+2026,2026055,groups,False,Group J,2026-06-16,Matchday 6,True,Austria,Jordan,True,3,1,W,1,True,0,0,3,2,danger
+2026,2026055,groups,False,Group J,2026-06-16,Matchday 6,True,Jordan,Austria,False,1,3,L,1,True,0,0,4,2,danger
+2026,2026056,groups,False,Group J,2026-06-22,Matchday 12,True,Argentina,Austria,True,2,0,W,2,False,3,3,1,1,qualification
+2026,2026056,groups,False,Group J,2026-06-22,Matchday 12,True,Austria,Argentina,False,0,2,L,2,False,3,2,2,1,qualification
+2026,2026057,groups,False,Group J,2026-06-22,Matchday 12,True,Jordan,Algeria,True,1,2,L,2,False,0,-2,3,1,danger
+2026,2026057,groups,False,Group J,2026-06-22,Matchday 12,True,Algeria,Jordan,False,2,1,W,2,False,0,-3,4,1,danger
+2026,2026058,groups,False,Group J,2026-06-27,Matchday 17,True,Algeria,Austria,True,3,3,D,3,False,3,-2,3,0,danger
+2026,2026058,groups,False,Group J,2026-06-27,Matchday 17,True,Austria,Algeria,False,3,3,D,3,False,3,0,2,0,qualification
+2026,2026059,groups,False,Group J,2026-06-27,Matchday 17,True,Jordan,Argentina,True,1,3,L,3,False,0,-3,4,0,danger
+2026,2026059,groups,False,Group J,2026-06-27,Matchday 17,True,Argentina,Jordan,False,3,1,W,3,False,6,5,1,0,qualification
+2026,2026060,groups,False,Group K,2026-06-17,Matchday 7,True,Portugal,DR Congo,True,1,1,D,1,True,0,0,3,2,danger
+2026,2026060,groups,False,Group K,2026-06-17,Matchday 7,True,DR Congo,Portugal,False,1,1,D,1,True,0,0,2,2,qualification
+2026,2026061,groups,False,Group K,2026-06-17,Matchday 7,True,Uzbekistan,Colombia,True,1,3,L,1,True,0,0,4,2,danger
+2026,2026061,groups,False,Group K,2026-06-17,Matchday 7,True,Colombia,Uzbekistan,False,3,1,W,1,True,0,0,1,2,qualification
+2026,2026062,groups,False,Group K,2026-06-23,Matchday 13,True,Portugal,Uzbekistan,True,5,0,W,2,False,1,0,3,1,danger
+2026,2026062,groups,False,Group K,2026-06-23,Matchday 13,True,Uzbekistan,Portugal,False,0,5,L,2,False,0,-2,4,1,danger
+2026,2026063,groups,False,Group K,2026-06-23,Matchday 13,True,Colombia,DR Congo,True,1,0,W,2,False,3,2,1,1,qualification
+2026,2026063,groups,False,Group K,2026-06-23,Matchday 13,True,DR Congo,Colombia,False,0,1,L,2,False,1,0,2,1,qualification
+2026,2026064,groups,False,Group K,2026-06-27,Matchday 17,True,Colombia,Portugal,True,0,0,D,3,False,6,3,1,0,qualification
+2026,2026064,groups,False,Group K,2026-06-27,Matchday 17,True,Portugal,Colombia,False,0,0,D,3,False,4,5,2,0,qualification
+2026,2026065,groups,False,Group K,2026-06-27,Matchday 17,True,DR Congo,Uzbekistan,True,3,1,W,3,False,1,-1,3,0,danger
+2026,2026065,groups,False,Group K,2026-06-27,Matchday 17,True,Uzbekistan,DR Congo,False,1,3,L,3,False,0,-7,4,0,danger
+2026,2026066,groups,False,Group L,2026-06-17,Matchday 7,True,England,Croatia,True,4,2,W,1,True,0,0,2,2,qualification
+2026,2026066,groups,False,Group L,2026-06-17,Matchday 7,True,Croatia,England,False,2,4,L,1,True,0,0,1,2,qualification
+2026,2026067,groups,False,Group L,2026-06-17,Matchday 7,True,Ghana,Panama,True,1,0,W,1,True,0,0,3,2,danger
+2026,2026067,groups,False,Group L,2026-06-17,Matchday 7,True,Panama,Ghana,False,0,1,L,1,True,0,0,4,2,danger
+2026,2026068,groups,False,Group L,2026-06-23,Matchday 13,True,England,Ghana,True,0,0,D,2,False,3,2,1,1,qualification
+2026,2026068,groups,False,Group L,2026-06-23,Matchday 13,True,Ghana,England,False,0,0,D,2,False,3,1,2,1,qualification
+2026,2026069,groups,False,Group L,2026-06-23,Matchday 13,True,Panama,Croatia,True,0,1,L,2,False,0,-1,3,1,danger
+2026,2026069,groups,False,Group L,2026-06-23,Matchday 13,True,Croatia,Panama,False,1,0,W,2,False,0,-2,4,1,danger
+2026,2026070,groups,False,Group L,2026-06-27,Matchday 17,True,Panama,England,True,0,2,L,3,False,0,-2,4,0,danger
+2026,2026070,groups,False,Group L,2026-06-27,Matchday 17,True,England,Panama,False,2,0,W,3,False,4,2,1,0,qualification
+2026,2026071,groups,False,Group L,2026-06-27,Matchday 17,True,Croatia,Ghana,True,2,1,W,3,False,3,-1,3,0,danger
+2026,2026071,groups,False,Group L,2026-06-27,Matchday 17,True,Ghana,Croatia,False,1,2,L,3,False,4,1,2,0,qualification
+2026,2026072,knockout,True,,2026-06-28,Round of 32,True,South Africa,Canada,True,0,1,L,,,,,,,
+2026,2026072,knockout,True,,2026-06-28,Round of 32,True,Canada,South Africa,False,1,0,W,,,,,,,
+2026,2026073,knockout,True,,2026-06-29,Round of 32,True,Germany,Paraguay,True,1,1,D,,,,,,,
+2026,2026073,knockout,True,,2026-06-29,Round of 32,True,Paraguay,Germany,False,1,1,D,,,,,,,
+2026,2026074,knockout,True,,2026-06-29,Round of 32,True,Netherlands,Morocco,True,1,1,D,,,,,,,
+2026,2026074,knockout,True,,2026-06-29,Round of 32,True,Morocco,Netherlands,False,1,1,D,,,,,,,
+2026,2026075,knockout,True,,2026-06-29,Round of 32,True,Brazil,Japan,True,2,1,W,,,,,,,
+2026,2026075,knockout,True,,2026-06-29,Round of 32,True,Japan,Brazil,False,1,2,L,,,,,,,
+2026,2026076,knockout,True,,2026-06-30,Round of 32,True,France,Sweden,True,3,0,W,,,,,,,
+2026,2026076,knockout,True,,2026-06-30,Round of 32,True,Sweden,France,False,0,3,L,,,,,,,
+2026,2026077,knockout,True,,2026-06-30,Round of 32,True,Ivory Coast,Norway,True,1,2,L,,,,,,,
+2026,2026077,knockout,True,,2026-06-30,Round of 32,True,Norway,Ivory Coast,False,2,1,W,,,,,,,
+2026,2026078,knockout,True,,2026-06-30,Round of 32,True,Mexico,Ecuador,True,2,0,W,,,,,,,
+2026,2026078,knockout,True,,2026-06-30,Round of 32,True,Ecuador,Mexico,False,0,2,L,,,,,,,
+2026,2026079,knockout,True,,2026-07-01,Round of 32,True,England,DR Congo,True,2,1,W,,,,,,,
+2026,2026079,knockout,True,,2026-07-01,Round of 32,True,DR Congo,England,False,1,2,L,,,,,,,
+2026,2026080,knockout,True,,2026-07-01,Round of 32,True,USA,Bosnia & Herzegovina,True,2,0,W,,,,,,,
+2026,2026080,knockout,True,,2026-07-01,Round of 32,True,Bosnia & Herzegovina,USA,False,0,2,L,,,,,,,
+2026,2026081,knockout,True,,2026-07-01,Round of 32,True,Belgium,Senegal,True,3,2,W,,,,,,,
+2026,2026081,knockout,True,,2026-07-01,Round of 32,True,Senegal,Belgium,False,2,3,L,,,,,,,
+2026,2026082,knockout,True,,2026-07-02,Round of 32,True,Portugal,Croatia,True,2,1,W,,,,,,,
+2026,2026082,knockout,True,,2026-07-02,Round of 32,True,Croatia,Portugal,False,1,2,L,,,,,,,
+2026,2026083,knockout,True,,2026-07-02,Round of 32,True,Spain,Austria,True,3,0,W,,,,,,,
+2026,2026083,knockout,True,,2026-07-02,Round of 32,True,Austria,Spain,False,0,3,L,,,,,,,
+2026,2026084,knockout,True,,2026-07-02,Round of 32,True,Switzerland,Algeria,True,2,0,W,,,,,,,
+2026,2026084,knockout,True,,2026-07-02,Round of 32,True,Algeria,Switzerland,False,0,2,L,,,,,,,
+2026,2026085,knockout,True,,2026-07-03,Round of 32,True,Argentina,Cape Verde,True,3,2,W,,,,,,,
+2026,2026085,knockout,True,,2026-07-03,Round of 32,True,Cape Verde,Argentina,False,2,3,L,,,,,,,
+2026,2026086,knockout,True,,2026-07-03,Round of 32,True,Colombia,Ghana,True,1,0,W,,,,,,,
+2026,2026086,knockout,True,,2026-07-03,Round of 32,True,Ghana,Colombia,False,0,1,L,,,,,,,
+2026,2026087,knockout,True,,2026-07-03,Round of 32,True,Australia,Egypt,True,1,1,D,,,,,,,
+2026,2026087,knockout,True,,2026-07-03,Round of 32,True,Egypt,Australia,False,1,1,D,,,,,,,
+2026,2026088,knockout,True,,2026-07-04,Round of 16,True,Paraguay,France,True,0,1,L,,,,,,,
+2026,2026088,knockout,True,,2026-07-04,Round of 16,True,France,Paraguay,False,1,0,W,,,,,,,
+2026,2026089,knockout,True,,2026-07-04,Round of 16,True,Canada,Morocco,True,0,3,L,,,,,,,
+2026,2026089,knockout,True,,2026-07-04,Round of 16,True,Morocco,Canada,False,3,0,W,,,,,,,
+2026,2026090,knockout,True,,2026-07-05,Round of 16,True,Brazil,Norway,True,1,2,L,,,,,,,
+2026,2026090,knockout,True,,2026-07-05,Round of 16,True,Norway,Brazil,False,2,1,W,,,,,,,
+2026,2026091,knockout,True,,2026-07-05,Round of 16,True,Mexico,England,True,2,3,L,,,,,,,
+2026,2026091,knockout,True,,2026-07-05,Round of 16,True,England,Mexico,False,3,2,W,,,,,,,
+2026,2026092,knockout,True,,2026-07-06,Round of 16,True,Portugal,Spain,True,0,1,L,,,,,,,
+2026,2026092,knockout,True,,2026-07-06,Round of 16,True,Spain,Portugal,False,1,0,W,,,,,,,
+2026,2026093,knockout,True,,2026-07-06,Round of 16,True,USA,Belgium,True,1,4,L,,,,,,,
+2026,2026093,knockout,True,,2026-07-06,Round of 16,True,Belgium,USA,False,4,1,W,,,,,,,
+2026,2026094,knockout,True,,2026-07-07,Round of 16,True,Argentina,Egypt,True,3,2,W,,,,,,,
+2026,2026094,knockout,True,,2026-07-07,Round of 16,True,Egypt,Argentina,False,2,3,L,,,,,,,
+2026,2026095,knockout,True,,2026-07-07,Round of 16,True,Switzerland,Colombia,True,0,0,D,,,,,,,
+2026,2026095,knockout,True,,2026-07-07,Round of 16,True,Colombia,Switzerland,False,0,0,D,,,,,,,
+2026,2026096,knockout,True,,2026-07-09,Quarter-final,True,France,Morocco,True,2,0,W,,,,,,,
+2026,2026096,knockout,True,,2026-07-09,Quarter-final,True,Morocco,France,False,0,2,L,,,,,,,
+2026,2026097,knockout,True,,2026-07-10,Quarter-final,True,Spain,Belgium,True,2,1,W,,,,,,,
+2026,2026097,knockout,True,,2026-07-10,Quarter-final,True,Belgium,Spain,False,1,2,L,,,,,,,
+2026,2026098,knockout,True,,2026-07-11,Quarter-final,True,Norway,England,True,1,2,L,,,,,,,
+2026,2026098,knockout,True,,2026-07-11,Quarter-final,True,England,Norway,False,2,1,W,,,,,,,
+2026,2026099,knockout,True,,2026-07-11,Quarter-final,True,Argentina,Switzerland,True,3,1,W,,,,,,,
+2026,2026099,knockout,True,,2026-07-11,Quarter-final,True,Switzerland,Argentina,False,1,3,L,,,,,,,
+2026,2026100,knockout,True,,2026-07-14,Semi-final,True,France,Spain,True,0,2,L,,,,,,,
+2026,2026100,knockout,True,,2026-07-14,Semi-final,True,Spain,France,False,2,0,W,,,,,,,
+2026,2026101,knockout,True,,2026-07-15,Semi-final,True,England,Argentina,True,1,2,L,,,,,,,
+2026,2026101,knockout,True,,2026-07-15,Semi-final,True,Argentina,England,False,2,1,W,,,,,,,
+2026,2026102,third_place,False,,2026-07-18,Match for third place,True,France,England,True,4,6,L,,,,,,,
+2026,2026102,third_place,False,,2026-07-18,Match for third place,True,England,France,False,6,4,W,,,,,,,
+2026,2026103,knockout,True,,2026-07-19,Final,True,Spain,Argentina,True,1,0,W,,,,,,,
+2026,2026103,knockout,True,,2026-07-19,Final,True,Argentina,Spain,False,0,1,L,,,,,,,

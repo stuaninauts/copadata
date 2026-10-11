@@ -1,0 +1,1833 @@
+year,match_id,stage,is_knockout,team,side,minute,order,extra_time,late,stoppage,own_goal,penalty
+1986,1986000,groups,False,Italy,2,44,44.0,False,False,False,False,False
+1986,1986000,groups,False,Bulgaria,1,85,85.0,False,True,False,False,False
+1986,1986001,groups,False,Brazil,2,62,62.0,False,False,False,False,False
+1986,1986002,groups,False,France,2,79,79.0,False,False,False,False,False
+1986,1986003,groups,False,Argentina,1,6,6.0,False,False,False,False,False
+1986,1986003,groups,False,Argentina,1,18,18.0,False,False,False,False,False
+1986,1986003,groups,False,Argentina,1,46,46.0,False,False,False,False,False
+1986,1986003,groups,False,South Korea,2,73,73.0,False,False,False,False,False
+1986,1986004,groups,False,Soviet Union,1,2,2.0,False,False,False,False,False
+1986,1986004,groups,False,Soviet Union,1,4,4.0,False,False,False,False,False
+1986,1986004,groups,False,Soviet Union,1,24,24.0,False,False,False,False,True
+1986,1986004,groups,False,Soviet Union,1,66,66.0,False,False,False,False,False
+1986,1986004,groups,False,Soviet Union,1,73,73.0,False,False,False,True,False
+1986,1986004,groups,False,Soviet Union,1,80,80.0,False,True,False,False,False
+1986,1986006,groups,False,Mexico,2,23,23.0,False,False,False,False,False
+1986,1986006,groups,False,Mexico,2,39,39.0,False,False,False,False,False
+1986,1986006,groups,False,Belgium,1,45,45.0,False,False,False,False,False
+1986,1986007,groups,False,Northern Ireland,2,6,6.0,False,False,False,False,False
+1986,1986007,groups,False,Algeria,1,59,59.0,False,False,False,False,False
+1986,1986008,groups,False,Portugal,1,75,75.0,False,False,False,False,False
+1986,1986009,groups,False,Paraguay,1,35,35.0,False,False,False,False,False
+1986,1986010,groups,False,Uruguay,1,4,4.0,False,False,False,False,False
+1986,1986010,groups,False,West Germany,2,84,84.0,False,True,False,False,False
+1986,1986011,groups,False,Denmark,2,57,57.0,False,False,False,False,False
+1986,1986012,groups,False,Italy,1,6,6.0,False,False,False,False,True
+1986,1986012,groups,False,Argentina,2,34,34.0,False,False,False,False,False
+1986,1986013,groups,False,Soviet Union,2,53,53.0,False,False,False,False,False
+1986,1986013,groups,False,France,1,62,62.0,False,False,False,False,False
+1986,1986014,groups,False,Bulgaria,2,11,11.0,False,False,False,False,False
+1986,1986014,groups,False,South Korea,1,70,70.0,False,False,False,False,False
+1986,1986015,groups,False,Hungary,1,2,2.0,False,False,False,False,False
+1986,1986015,groups,False,Hungary,1,75,75.0,False,False,False,False,False
+1986,1986016,groups,False,Brazil,1,66,66.0,False,False,False,False,False
+1986,1986018,groups,False,Mexico,1,3,3.0,False,False,False,False,False
+1986,1986018,groups,False,Paraguay,2,85,85.0,False,True,False,False,False
+1986,1986019,groups,False,Spain,2,1,1.0,False,False,False,False,False
+1986,1986019,groups,False,Spain,2,18,18.0,False,False,False,False,False
+1986,1986019,groups,False,Northern Ireland,1,46,46.0,False,False,False,False,False
+1986,1986020,groups,False,Poland,1,68,68.0,False,False,False,False,False
+1986,1986021,groups,False,Belgium,2,16,16.0,False,False,False,False,False
+1986,1986021,groups,False,Belgium,2,21,21.0,False,False,False,False,True
+1986,1986021,groups,False,Iraq,1,59,59.0,False,False,False,False,False
+1986,1986022,groups,False,Scotland,2,18,18.0,False,False,False,False,False
+1986,1986022,groups,False,West Germany,1,23,23.0,False,False,False,False,False
+1986,1986022,groups,False,West Germany,1,49,49.0,False,False,False,False,False
+1986,1986023,groups,False,Denmark,1,11,11.0,False,False,False,False,False
+1986,1986023,groups,False,Denmark,1,41,41.0,False,False,False,False,False
+1986,1986023,groups,False,Uruguay,2,45,45.0,False,False,False,False,True
+1986,1986023,groups,False,Denmark,1,52,52.0,False,False,False,False,False
+1986,1986023,groups,False,Denmark,1,67,67.0,False,False,False,False,False
+1986,1986023,groups,False,Denmark,1,80,80.0,False,True,False,False,False
+1986,1986023,groups,False,Denmark,1,88,88.0,False,True,False,False,False
+1986,1986024,groups,False,France,2,29,29.0,False,False,False,False,False
+1986,1986024,groups,False,France,2,62,62.0,False,False,False,False,False
+1986,1986024,groups,False,France,2,84,84.0,False,True,False,False,False
+1986,1986025,groups,False,Soviet Union,1,58,58.0,False,False,False,False,False
+1986,1986025,groups,False,Soviet Union,1,74,74.0,False,False,False,False,False
+1986,1986026,groups,False,Argentina,1,4,4.0,False,False,False,False,False
+1986,1986026,groups,False,Argentina,1,77,77.0,False,False,False,False,False
+1986,1986027,groups,False,Italy,2,17,17.0,False,False,False,False,False
+1986,1986027,groups,False,South Korea,1,62,62.0,False,False,False,False,False
+1986,1986027,groups,False,Italy,2,73,73.0,False,False,False,False,False
+1986,1986027,groups,False,Italy,2,82,82.0,False,True,False,True,False
+1986,1986027,groups,False,South Korea,1,83,83.0,False,True,False,False,False
+1986,1986028,groups,False,Mexico,2,54,54.0,False,False,False,False,False
+1986,1986029,groups,False,Belgium,2,30,30.0,False,False,False,False,False
+1986,1986029,groups,False,Paraguay,1,50,50.0,False,False,False,False,False
+1986,1986029,groups,False,Belgium,2,59,59.0,False,False,False,False,False
+1986,1986029,groups,False,Paraguay,1,76,76.0,False,False,False,False,False
+1986,1986030,groups,False,England,1,9,9.0,False,False,False,False,False
+1986,1986030,groups,False,England,1,14,14.0,False,False,False,False,False
+1986,1986030,groups,False,England,1,34,34.0,False,False,False,False,False
+1986,1986031,groups,False,Morocco,2,19,19.0,False,False,False,False,False
+1986,1986031,groups,False,Morocco,2,26,26.0,False,False,False,False,False
+1986,1986031,groups,False,Morocco,2,62,62.0,False,False,False,False,False
+1986,1986031,groups,False,Portugal,1,80,80.0,False,True,False,False,False
+1986,1986032,groups,False,Spain,2,15,15.0,False,False,False,False,False
+1986,1986032,groups,False,Spain,2,68,68.0,False,False,False,False,False
+1986,1986032,groups,False,Spain,2,70,70.0,False,False,False,False,False
+1986,1986033,groups,False,Brazil,2,15,15.0,False,False,False,False,False
+1986,1986033,groups,False,Brazil,2,42,42.0,False,False,False,False,False
+1986,1986033,groups,False,Brazil,2,87,87.0,False,True,False,False,False
+1986,1986034,groups,False,Denmark,1,43,43.0,False,False,False,False,True
+1986,1986034,groups,False,Denmark,1,62,62.0,False,False,False,False,False
+1986,1986036,knockout,True,Mexico,1,34,34.0,False,False,False,False,False
+1986,1986036,knockout,True,Mexico,1,61,61.0,False,False,False,False,False
+1986,1986037,knockout,True,Soviet Union,1,27,27.0,False,False,False,False,False
+1986,1986037,knockout,True,Belgium,2,56,56.0,False,False,False,False,False
+1986,1986037,knockout,True,Soviet Union,1,70,70.0,False,False,False,False,False
+1986,1986037,knockout,True,Belgium,2,77,77.0,False,False,False,False,False
+1986,1986037,knockout,True,Belgium,2,102,102.0,True,False,False,False,False
+1986,1986037,knockout,True,Belgium,2,110,110.0,True,False,False,False,False
+1986,1986037,knockout,True,Soviet Union,1,111,111.0,True,False,False,False,True
+1986,1986038,knockout,True,Brazil,1,30,30.0,False,False,False,False,True
+1986,1986038,knockout,True,Brazil,1,55,55.0,False,False,False,False,False
+1986,1986038,knockout,True,Brazil,1,79,79.0,False,False,False,False,False
+1986,1986038,knockout,True,Brazil,1,83,83.0,False,True,False,False,True
+1986,1986039,knockout,True,Argentina,1,42,42.0,False,False,False,False,False
+1986,1986040,knockout,True,France,2,15,15.0,False,False,False,False,False
+1986,1986040,knockout,True,France,2,57,57.0,False,False,False,False,False
+1986,1986041,knockout,True,West Germany,2,87,87.0,False,True,False,False,False
+1986,1986042,knockout,True,England,1,31,31.0,False,False,False,False,False
+1986,1986042,knockout,True,England,1,56,56.0,False,False,False,False,False
+1986,1986042,knockout,True,England,1,73,73.0,False,False,False,False,False
+1986,1986043,knockout,True,Denmark,1,33,33.0,False,False,False,False,True
+1986,1986043,knockout,True,Spain,2,43,43.0,False,False,False,False,False
+1986,1986043,knockout,True,Spain,2,56,56.0,False,False,False,False,False
+1986,1986043,knockout,True,Spain,2,68,68.0,False,False,False,False,True
+1986,1986043,knockout,True,Spain,2,80,80.0,False,True,False,False,False
+1986,1986043,knockout,True,Spain,2,88,88.0,False,True,False,False,True
+1986,1986044,knockout,True,Brazil,1,17,17.0,False,False,False,False,False
+1986,1986044,knockout,True,France,2,40,40.0,False,False,False,False,False
+1986,1986046,knockout,True,Argentina,1,51,51.0,False,False,False,False,False
+1986,1986046,knockout,True,Argentina,1,55,55.0,False,False,False,False,False
+1986,1986046,knockout,True,England,2,81,81.0,False,True,False,False,False
+1986,1986047,knockout,True,Belgium,2,35,35.0,False,False,False,False,False
+1986,1986047,knockout,True,Spain,1,85,85.0,False,True,False,False,False
+1986,1986048,knockout,True,West Germany,2,9,9.0,False,False,False,False,False
+1986,1986048,knockout,True,West Germany,2,90,90.0,False,True,False,False,False
+1986,1986049,knockout,True,Argentina,1,51,51.0,False,False,False,False,False
+1986,1986049,knockout,True,Argentina,1,63,63.0,False,False,False,False,False
+1986,1986050,third_place,False,Belgium,1,11,11.0,False,False,False,False,False
+1986,1986050,third_place,False,France,2,27,27.0,False,False,False,False,False
+1986,1986050,third_place,False,France,2,43,43.0,False,False,False,False,False
+1986,1986050,third_place,False,Belgium,1,73,73.0,False,False,False,False,False
+1986,1986050,third_place,False,France,2,104,104.0,True,False,False,False,False
+1986,1986050,third_place,False,France,2,111,111.0,True,False,False,False,True
+1986,1986051,knockout,True,Argentina,1,23,23.0,False,False,False,False,False
+1986,1986051,knockout,True,Argentina,1,56,56.0,False,False,False,False,False
+1986,1986051,knockout,True,West Germany,2,74,74.0,False,False,False,False,False
+1986,1986051,knockout,True,West Germany,2,81,81.0,False,True,False,False,False
+1986,1986051,knockout,True,Argentina,1,84,84.0,False,True,False,False,False
+1990,1990000,groups,False,Cameroon,2,67,67.0,False,False,False,False,False
+1990,1990001,groups,False,Romania,2,41,41.0,False,False,False,False,False
+1990,1990001,groups,False,Romania,2,55,55.0,False,False,False,False,True
+1990,1990002,groups,False,Colombia,2,50,50.0,False,False,False,False,False
+1990,1990002,groups,False,Colombia,2,85,85.0,False,True,False,False,False
+1990,1990003,groups,False,Italy,1,78,78.0,False,False,False,False,False
+1990,1990004,groups,False,Czechoslovakia,2,26,26.0,False,False,False,False,False
+1990,1990004,groups,False,Czechoslovakia,2,40,40.0,False,False,False,False,True
+1990,1990004,groups,False,Czechoslovakia,2,50,50.0,False,False,False,False,False
+1990,1990004,groups,False,United States,1,60,60.0,False,False,False,False,False
+1990,1990004,groups,False,Czechoslovakia,2,78,78.0,False,False,False,False,False
+1990,1990004,groups,False,Czechoslovakia,2,90,90.03,False,True,True,False,False
+1990,1990005,groups,False,Brazil,1,40,40.0,False,False,False,False,False
+1990,1990005,groups,False,Brazil,1,63,63.0,False,False,False,False,False
+1990,1990005,groups,False,Sweden,2,79,79.0,False,False,False,False,False
+1990,1990006,groups,False,West Germany,1,28,28.0,False,False,False,False,False
+1990,1990006,groups,False,West Germany,1,39,39.0,False,False,False,False,False
+1990,1990006,groups,False,Yugoslavia,2,55,55.0,False,False,False,False,False
+1990,1990006,groups,False,West Germany,1,64,64.0,False,False,False,False,False
+1990,1990006,groups,False,West Germany,1,70,70.0,False,False,False,False,False
+1990,1990007,groups,False,Costa Rica,1,49,49.0,False,False,False,False,False
+1990,1990008,groups,False,England,1,9,9.0,False,False,False,False,False
+1990,1990008,groups,False,Republic of Ireland,2,73,73.0,False,False,False,False,False
+1990,1990009,groups,False,Belgium,1,53,53.0,False,False,False,False,False
+1990,1990009,groups,False,Belgium,1,64,64.0,False,False,False,False,False
+1990,1990010,groups,False,Netherlands,1,58,58.0,False,False,False,False,False
+1990,1990010,groups,False,Egypt,2,83,83.0,False,True,False,False,True
+1990,1990012,groups,False,Argentina,1,27,27.0,False,False,False,False,False
+1990,1990012,groups,False,Argentina,1,79,79.0,False,False,False,False,False
+1990,1990013,groups,False,Cameroon,1,76,76.0,False,False,False,False,False
+1990,1990013,groups,False,Cameroon,1,86,86.0,False,True,False,False,False
+1990,1990013,groups,False,Romania,2,88,88.0,False,True,False,False,False
+1990,1990014,groups,False,Yugoslavia,1,75,75.0,False,False,False,False,False
+1990,1990015,groups,False,Italy,1,11,11.0,False,False,False,False,False
+1990,1990016,groups,False,Czechoslovakia,2,31,31.0,False,False,False,False,True
+1990,1990017,groups,False,West Germany,1,35,35.0,False,False,False,False,False
+1990,1990017,groups,False,West Germany,1,37,37.0,False,False,False,False,False
+1990,1990017,groups,False,United Arab Emirates,2,46,46.0,False,False,False,False,False
+1990,1990017,groups,False,West Germany,1,47,47.0,False,False,False,False,False
+1990,1990017,groups,False,West Germany,1,58,58.0,False,False,False,False,False
+1990,1990017,groups,False,West Germany,1,75,75.0,False,False,False,False,False
+1990,1990018,groups,False,Brazil,1,33,33.0,False,False,False,False,False
+1990,1990019,groups,False,Scotland,2,11,11.0,False,False,False,False,False
+1990,1990019,groups,False,Scotland,2,81,81.0,False,True,False,False,True
+1990,1990019,groups,False,Sweden,1,86,86.0,False,True,False,False,False
+1990,1990022,groups,False,Belgium,1,15,15.0,False,False,False,False,False
+1990,1990022,groups,False,Belgium,1,24,24.0,False,False,False,False,False
+1990,1990022,groups,False,Belgium,1,47,47.0,False,False,False,False,False
+1990,1990022,groups,False,Uruguay,2,73,73.0,False,False,False,False,False
+1990,1990023,groups,False,Spain,2,23,23.0,False,False,False,False,False
+1990,1990023,groups,False,South Korea,1,43,43.0,False,False,False,False,False
+1990,1990023,groups,False,Spain,2,61,61.0,False,False,False,False,False
+1990,1990023,groups,False,Spain,2,81,81.0,False,True,False,False,False
+1990,1990024,groups,False,Argentina,1,62,62.0,False,False,False,False,False
+1990,1990024,groups,False,Romania,2,68,68.0,False,False,False,False,False
+1990,1990025,groups,False,Soviet Union,2,20,20.0,False,False,False,False,False
+1990,1990025,groups,False,Soviet Union,2,29,29.0,False,False,False,False,False
+1990,1990025,groups,False,Soviet Union,2,52,52.0,False,False,False,False,False
+1990,1990025,groups,False,Soviet Union,2,63,63.0,False,False,False,False,False
+1990,1990026,groups,False,West Germany,1,88,88.0,False,True,False,False,False
+1990,1990026,groups,False,Colombia,2,90,90.03,False,True,True,False,False
+1990,1990027,groups,False,Yugoslavia,1,5,5.0,False,False,False,False,False
+1990,1990027,groups,False,Yugoslavia,1,9,9.0,False,False,False,False,False
+1990,1990027,groups,False,United Arab Emirates,2,22,22.0,False,False,False,False,False
+1990,1990027,groups,False,Yugoslavia,1,46,46.0,False,False,False,False,False
+1990,1990027,groups,False,Yugoslavia,1,90,90.03,False,True,True,False,False
+1990,1990028,groups,False,Austria,1,49,49.0,False,False,False,False,False
+1990,1990028,groups,False,Austria,1,63,63.0,False,False,False,False,False
+1990,1990028,groups,False,United States,2,83,83.0,False,True,False,False,False
+1990,1990029,groups,False,Italy,1,9,9.0,False,False,False,False,False
+1990,1990029,groups,False,Italy,1,78,78.0,False,False,False,False,False
+1990,1990030,groups,False,Brazil,1,81,81.0,False,True,False,False,False
+1990,1990031,groups,False,Sweden,1,32,32.0,False,False,False,False,False
+1990,1990031,groups,False,Costa Rica,2,75,75.0,False,False,False,False,False
+1990,1990031,groups,False,Costa Rica,2,87,87.0,False,True,False,False,False
+1990,1990032,groups,False,Spain,2,26,26.0,False,False,False,False,True
+1990,1990032,groups,False,Belgium,1,29,29.0,False,False,False,False,False
+1990,1990032,groups,False,Spain,2,38,38.0,False,False,False,False,False
+1990,1990033,groups,False,Uruguay,2,90,90.01,False,True,True,False,False
+1990,1990034,groups,False,England,1,58,58.0,False,False,False,False,False
+1990,1990035,groups,False,Netherlands,2,11,11.0,False,False,False,False,False
+1990,1990035,groups,False,Republic of Ireland,1,71,71.0,False,False,False,False,False
+1990,1990036,knockout,True,Cameroon,1,106,106.0,True,False,False,False,False
+1990,1990036,knockout,True,Cameroon,1,108,108.0,True,False,False,False,False
+1990,1990036,knockout,True,Colombia,2,115,115.0,True,False,False,False,False
+1990,1990037,knockout,True,Czechoslovakia,1,12,12.0,False,False,False,False,False
+1990,1990037,knockout,True,Costa Rica,2,55,55.0,False,False,False,False,False
+1990,1990037,knockout,True,Czechoslovakia,1,63,63.0,False,False,False,False,False
+1990,1990037,knockout,True,Czechoslovakia,1,76,76.0,False,False,False,False,False
+1990,1990037,knockout,True,Czechoslovakia,1,82,82.0,False,True,False,False,False
+1990,1990038,knockout,True,Argentina,2,81,81.0,False,True,False,False,False
+1990,1990039,knockout,True,West Germany,1,51,51.0,False,False,False,False,False
+1990,1990039,knockout,True,West Germany,1,85,85.0,False,True,False,False,False
+1990,1990039,knockout,True,Netherlands,2,89,89.0,False,True,False,False,True
+1990,1990041,knockout,True,Italy,1,65,65.0,False,False,False,False,False
+1990,1990041,knockout,True,Italy,1,83,83.0,False,True,False,False,False
+1990,1990042,knockout,True,Yugoslavia,2,78,78.0,False,False,False,False,False
+1990,1990042,knockout,True,Spain,1,84,84.0,False,True,False,False,False
+1990,1990042,knockout,True,Yugoslavia,2,93,93.0,True,False,False,False,False
+1990,1990043,knockout,True,England,1,119,119.0,True,False,False,False,False
+1990,1990045,knockout,True,Italy,2,38,38.0,False,False,False,False,False
+1990,1990046,knockout,True,West Germany,2,25,25.0,False,False,False,False,True
+1990,1990047,knockout,True,England,2,25,25.0,False,False,False,False,False
+1990,1990047,knockout,True,Cameroon,1,61,61.0,False,False,False,False,True
+1990,1990047,knockout,True,Cameroon,1,65,65.0,False,False,False,False,False
+1990,1990047,knockout,True,England,2,83,83.0,False,True,False,False,True
+1990,1990047,knockout,True,England,2,105,105.0,True,False,False,False,True
+1990,1990048,knockout,True,Italy,2,17,17.0,False,False,False,False,False
+1990,1990048,knockout,True,Argentina,1,67,67.0,False,False,False,False,False
+1990,1990049,knockout,True,West Germany,1,60,60.0,False,False,False,False,False
+1990,1990049,knockout,True,England,2,80,80.0,False,True,False,False,False
+1990,1990050,third_place,False,Italy,1,71,71.0,False,False,False,False,False
+1990,1990050,third_place,False,England,2,81,81.0,False,True,False,False,False
+1990,1990050,third_place,False,Italy,1,86,86.0,False,True,False,False,True
+1990,1990051,knockout,True,West Germany,1,85,85.0,False,True,False,False,True
+1994,1994000,groups,False,Germany,1,61,61.0,False,False,False,False,False
+1994,1994001,groups,False,Spain,1,51,51.0,False,False,False,False,False
+1994,1994001,groups,False,Spain,1,55,55.0,False,False,False,False,False
+1994,1994001,groups,False,South Korea,2,85,85.0,False,True,False,False,False
+1994,1994001,groups,False,South Korea,2,90,90.0,False,True,False,False,False
+1994,1994002,groups,False,Switzerland,2,39,39.0,False,False,False,False,False
+1994,1994002,groups,False,United States,1,44,44.0,False,False,False,False,False
+1994,1994003,groups,False,Republic of Ireland,2,11,11.0,False,False,False,False,False
+1994,1994004,groups,False,Romania,2,15,15.0,False,False,False,False,False
+1994,1994004,groups,False,Romania,2,34,34.0,False,False,False,False,False
+1994,1994004,groups,False,Colombia,1,43,43.0,False,False,False,False,False
+1994,1994004,groups,False,Romania,2,89,89.0,False,True,False,False,False
+1994,1994005,groups,False,Belgium,1,11,11.0,False,False,False,False,False
+1994,1994006,groups,False,Norway,1,84,84.0,False,True,False,False,False
+1994,1994007,groups,False,Sweden,2,8,8.0,False,False,False,False,False
+1994,1994007,groups,False,Cameroon,1,31,31.0,False,False,False,False,False
+1994,1994007,groups,False,Cameroon,1,47,47.0,False,False,False,False,False
+1994,1994007,groups,False,Sweden,2,75,75.0,False,False,False,False,False
+1994,1994008,groups,False,Brazil,1,26,26.0,False,False,False,False,False
+1994,1994008,groups,False,Brazil,1,52,52.0,False,False,False,False,True
+1994,1994009,groups,False,Saudi Arabia,2,18,18.0,False,False,False,False,False
+1994,1994009,groups,False,Netherlands,1,50,50.0,False,False,False,False,False
+1994,1994009,groups,False,Netherlands,1,86,86.0,False,True,False,False,False
+1994,1994010,groups,False,Argentina,1,2,2.0,False,False,False,False,False
+1994,1994010,groups,False,Argentina,1,44,44.0,False,False,False,False,False
+1994,1994010,groups,False,Argentina,1,60,60.0,False,False,False,False,False
+1994,1994010,groups,False,Argentina,1,90,90.0,False,True,False,False,True
+1994,1994011,groups,False,Spain,2,14,14.0,False,False,False,False,False
+1994,1994011,groups,False,Germany,1,48,48.0,False,False,False,False,False
+1994,1994012,groups,False,Nigeria,1,21,21.0,False,False,False,False,False
+1994,1994012,groups,False,Nigeria,1,43,43.0,False,False,False,False,False
+1994,1994012,groups,False,Nigeria,1,55,55.0,False,False,False,False,False
+1994,1994013,groups,False,Switzerland,2,16,16.0,False,False,False,False,False
+1994,1994013,groups,False,Romania,1,35,35.0,False,False,False,False,False
+1994,1994013,groups,False,Switzerland,2,52,52.0,False,False,False,False,False
+1994,1994013,groups,False,Switzerland,2,65,65.0,False,False,False,False,False
+1994,1994013,groups,False,Switzerland,2,72,72.0,False,False,False,False,False
+1994,1994014,groups,False,United States,1,35,35.0,False,False,False,True,False
+1994,1994014,groups,False,United States,1,52,52.0,False,False,False,False,False
+1994,1994014,groups,False,Colombia,2,90,90.0,False,True,False,False,False
+1994,1994015,groups,False,Italy,1,69,69.0,False,False,False,False,False
+1994,1994017,groups,False,Mexico,1,42,42.0,False,False,False,False,False
+1994,1994017,groups,False,Mexico,1,65,65.0,False,False,False,False,False
+1994,1994017,groups,False,Republic of Ireland,2,84,84.0,False,True,False,False,False
+1994,1994018,groups,False,Brazil,1,39,39.0,False,False,False,False,False
+1994,1994018,groups,False,Brazil,1,66,66.0,False,False,False,False,False
+1994,1994018,groups,False,Brazil,1,73,73.0,False,False,False,False,False
+1994,1994019,groups,False,Russia,2,4,4.0,False,False,False,False,True
+1994,1994019,groups,False,Sweden,1,39,39.0,False,False,False,False,True
+1994,1994019,groups,False,Sweden,1,60,60.0,False,False,False,False,False
+1994,1994019,groups,False,Sweden,1,82,82.0,False,True,False,False,False
+1994,1994020,groups,False,Belgium,1,65,65.0,False,False,False,False,False
+1994,1994021,groups,False,Saudi Arabia,1,7,7.0,False,False,False,False,True
+1994,1994021,groups,False,Morocco,2,26,26.0,False,False,False,False,False
+1994,1994021,groups,False,Saudi Arabia,1,45,45.0,False,False,False,False,False
+1994,1994022,groups,False,Nigeria,2,8,8.0,False,False,False,False,False
+1994,1994022,groups,False,Argentina,1,21,21.0,False,False,False,False,False
+1994,1994022,groups,False,Argentina,1,28,28.0,False,False,False,False,False
+1994,1994023,groups,False,Bulgaria,1,5,5.0,False,False,False,False,True
+1994,1994023,groups,False,Bulgaria,1,55,55.0,False,False,False,False,True
+1994,1994023,groups,False,Bulgaria,1,65,65.0,False,False,False,False,False
+1994,1994023,groups,False,Bulgaria,1,90,90.0,False,True,False,False,False
+1994,1994024,groups,False,Colombia,2,44,44.0,False,False,False,False,False
+1994,1994024,groups,False,Colombia,2,90,90.0,False,True,False,False,False
+1994,1994025,groups,False,Romania,2,18,18.0,False,False,False,False,False
+1994,1994026,groups,False,Spain,2,19,19.0,False,False,False,False,True
+1994,1994026,groups,False,Spain,2,66,66.0,False,False,False,False,False
+1994,1994026,groups,False,Bolivia,1,67,67.0,False,False,False,False,False
+1994,1994026,groups,False,Spain,2,70,70.0,False,False,False,False,False
+1994,1994027,groups,False,Germany,1,12,12.0,False,False,False,False,False
+1994,1994027,groups,False,Germany,1,20,20.0,False,False,False,False,False
+1994,1994027,groups,False,Germany,1,37,37.0,False,False,False,False,False
+1994,1994027,groups,False,South Korea,2,52,52.0,False,False,False,False,False
+1994,1994027,groups,False,South Korea,2,63,63.0,False,False,False,False,False
+1994,1994028,groups,False,Italy,1,48,48.0,False,False,False,False,False
+1994,1994028,groups,False,Mexico,2,57,57.0,False,False,False,False,False
+1994,1994030,groups,False,Russia,1,15,15.0,False,False,False,False,False
+1994,1994030,groups,False,Russia,1,41,41.0,False,False,False,False,False
+1994,1994030,groups,False,Russia,1,44,44.0,False,False,False,False,True
+1994,1994030,groups,False,Cameroon,2,46,46.0,False,False,False,False,False
+1994,1994030,groups,False,Russia,1,72,72.0,False,False,False,False,False
+1994,1994030,groups,False,Russia,1,75,75.0,False,False,False,False,False
+1994,1994030,groups,False,Russia,1,81,81.0,False,True,False,False,False
+1994,1994031,groups,False,Sweden,2,23,23.0,False,False,False,False,False
+1994,1994031,groups,False,Brazil,1,47,47.0,False,False,False,False,False
+1994,1994032,groups,False,Saudi Arabia,2,5,5.0,False,False,False,False,False
+1994,1994033,groups,False,Netherlands,2,43,43.0,False,False,False,False,False
+1994,1994033,groups,False,Morocco,1,47,47.0,False,False,False,False,False
+1994,1994033,groups,False,Netherlands,2,77,77.0,False,False,False,False,False
+1994,1994034,groups,False,Bulgaria,2,61,61.0,False,False,False,False,False
+1994,1994034,groups,False,Bulgaria,2,90,90.03,False,True,True,False,False
+1994,1994035,groups,False,Nigeria,2,45,45.02,False,False,False,False,False
+1994,1994035,groups,False,Nigeria,2,90,90.05,False,True,True,False,False
+1994,1994036,knockout,True,Germany,1,6,6.0,False,False,False,False,False
+1994,1994036,knockout,True,Belgium,2,8,8.0,False,False,False,False,False
+1994,1994036,knockout,True,Germany,1,11,11.0,False,False,False,False,False
+1994,1994036,knockout,True,Germany,1,38,38.0,False,False,False,False,False
+1994,1994036,knockout,True,Belgium,2,90,90.0,False,True,False,False,False
+1994,1994037,knockout,True,Spain,1,15,15.0,False,False,False,False,False
+1994,1994037,knockout,True,Spain,1,74,74.0,False,False,False,False,False
+1994,1994037,knockout,True,Spain,1,86,86.0,False,True,False,False,True
+1994,1994038,knockout,True,Sweden,2,6,6.0,False,False,False,False,False
+1994,1994038,knockout,True,Sweden,2,51,51.0,False,False,False,False,False
+1994,1994038,knockout,True,Saudi Arabia,1,85,85.0,False,True,False,False,False
+1994,1994038,knockout,True,Sweden,2,88,88.0,False,True,False,False,False
+1994,1994039,knockout,True,Romania,1,11,11.0,False,False,False,False,False
+1994,1994039,knockout,True,Argentina,2,16,16.0,False,False,False,False,True
+1994,1994039,knockout,True,Romania,1,18,18.0,False,False,False,False,False
+1994,1994039,knockout,True,Romania,1,58,58.0,False,False,False,False,False
+1994,1994039,knockout,True,Argentina,2,75,75.0,False,False,False,False,False
+1994,1994040,knockout,True,Netherlands,1,11,11.0,False,False,False,False,False
+1994,1994040,knockout,True,Netherlands,1,41,41.0,False,False,False,False,False
+1994,1994041,knockout,True,Brazil,1,72,72.0,False,False,False,False,False
+1994,1994042,knockout,True,Nigeria,1,25,25.0,False,False,False,False,False
+1994,1994042,knockout,True,Italy,2,88,88.0,False,True,False,False,False
+1994,1994042,knockout,True,Italy,2,102,102.0,True,False,False,False,True
+1994,1994043,knockout,True,Bulgaria,2,6,6.0,False,False,False,False,False
+1994,1994043,knockout,True,Mexico,1,18,18.0,False,False,False,False,True
+1994,1994044,knockout,True,Italy,1,25,25.0,False,False,False,False,False
+1994,1994044,knockout,True,Spain,2,58,58.0,False,False,False,False,False
+1994,1994044,knockout,True,Italy,1,88,88.0,False,True,False,False,False
+1994,1994045,knockout,True,Brazil,2,53,53.0,False,False,False,False,False
+1994,1994045,knockout,True,Brazil,2,63,63.0,False,False,False,False,False
+1994,1994045,knockout,True,Netherlands,1,64,64.0,False,False,False,False,False
+1994,1994045,knockout,True,Netherlands,1,76,76.0,False,False,False,False,False
+1994,1994045,knockout,True,Brazil,2,81,81.0,False,True,False,False,False
+1994,1994046,knockout,True,Germany,2,47,47.0,False,False,False,False,True
+1994,1994046,knockout,True,Bulgaria,1,75,75.0,False,False,False,False,False
+1994,1994046,knockout,True,Bulgaria,1,78,78.0,False,False,False,False,False
+1994,1994047,knockout,True,Sweden,2,78,78.0,False,False,False,False,False
+1994,1994047,knockout,True,Romania,1,88,88.0,False,True,False,False,False
+1994,1994047,knockout,True,Romania,1,101,101.0,True,False,False,False,False
+1994,1994047,knockout,True,Sweden,2,115,115.0,True,False,False,False,False
+1994,1994048,knockout,True,Italy,2,21,21.0,False,False,False,False,False
+1994,1994048,knockout,True,Italy,2,25,25.0,False,False,False,False,False
+1994,1994048,knockout,True,Bulgaria,1,44,44.0,False,False,False,False,True
+1994,1994049,knockout,True,Brazil,2,80,80.0,False,True,False,False,False
+1994,1994050,third_place,False,Sweden,1,8,8.0,False,False,False,False,False
+1994,1994050,third_place,False,Sweden,1,30,30.0,False,False,False,False,False
+1994,1994050,third_place,False,Sweden,1,37,37.0,False,False,False,False,False
+1994,1994050,third_place,False,Sweden,1,39,39.0,False,False,False,False,False
+1998,1998000,groups,False,Brazil,1,5,5.0,False,False,False,False,False
+1998,1998000,groups,False,Scotland,2,38,38.0,False,False,False,False,True
+1998,1998000,groups,False,Brazil,1,74,74.0,False,False,False,True,False
+1998,1998001,groups,False,Morocco,1,37,37.0,False,False,False,False,False
+1998,1998001,groups,False,Norway,2,45,45.01,False,False,False,True,False
+1998,1998001,groups,False,Morocco,1,60,60.0,False,False,False,False,False
+1998,1998001,groups,False,Norway,2,61,61.0,False,False,False,False,False
+1998,1998002,groups,False,Italy,1,10,10.0,False,False,False,False,False
+1998,1998002,groups,False,Chile,2,45,45.03,False,False,False,False,False
+1998,1998002,groups,False,Chile,2,50,50.0,False,False,False,False,False
+1998,1998002,groups,False,Italy,1,84,84.0,False,True,False,False,True
+1998,1998003,groups,False,Cameroon,1,77,77.0,False,False,False,False,False
+1998,1998003,groups,False,Austria,2,90,90.01,False,True,True,False,False
+1998,1998005,groups,False,Denmark,2,69,69.0,False,False,False,False,False
+1998,1998006,groups,False,France,1,35,35.0,False,False,False,False,False
+1998,1998006,groups,False,France,1,77,77.0,False,False,False,True,False
+1998,1998006,groups,False,France,1,90,90.02,False,True,True,False,False
+1998,1998007,groups,False,Spain,1,21,21.0,False,False,False,False,False
+1998,1998007,groups,False,Nigeria,2,24,24.0,False,False,False,False,False
+1998,1998007,groups,False,Spain,1,47,47.0,False,False,False,False,False
+1998,1998007,groups,False,Nigeria,2,73,73.0,False,False,False,True,False
+1998,1998007,groups,False,Nigeria,2,78,78.0,False,False,False,False,False
+1998,1998008,groups,False,South Korea,1,27,27.0,False,False,False,False,False
+1998,1998008,groups,False,Mexico,2,50,50.0,False,False,False,False,False
+1998,1998008,groups,False,Mexico,2,75,75.0,False,False,False,False,False
+1998,1998008,groups,False,Mexico,2,84,84.0,False,True,False,False,False
+1998,1998010,groups,False,Argentina,1,28,28.0,False,False,False,False,False
+1998,1998011,groups,False,Yugoslavia,1,73,73.0,False,False,False,False,False
+1998,1998012,groups,False,Croatia,2,27,27.0,False,False,False,False,False
+1998,1998012,groups,False,Jamaica,1,45,45.0,False,False,False,False,False
+1998,1998012,groups,False,Croatia,2,53,53.0,False,False,False,False,False
+1998,1998012,groups,False,Croatia,2,69,69.0,False,False,False,False,False
+1998,1998013,groups,False,England,1,42,42.0,False,False,False,False,False
+1998,1998013,groups,False,England,1,89,89.0,False,True,False,False,False
+1998,1998014,groups,False,Romania,1,45,45.01,False,False,False,False,False
+1998,1998015,groups,False,Germany,1,9,9.0,False,False,False,False,False
+1998,1998015,groups,False,Germany,1,65,65.0,False,False,False,False,False
+1998,1998016,groups,False,Norway,2,46,46.0,False,False,False,False,False
+1998,1998016,groups,False,Scotland,1,66,66.0,False,False,False,False,False
+1998,1998017,groups,False,Brazil,1,9,9.0,False,False,False,False,False
+1998,1998017,groups,False,Brazil,1,45,45.02,False,False,False,False,False
+1998,1998017,groups,False,Brazil,1,50,50.0,False,False,False,False,False
+1998,1998018,groups,False,Chile,1,70,70.0,False,False,False,False,False
+1998,1998018,groups,False,Austria,2,90,90.02,False,True,True,False,False
+1998,1998019,groups,False,Italy,1,7,7.0,False,False,False,False,False
+1998,1998019,groups,False,Italy,1,75,75.0,False,False,False,False,False
+1998,1998019,groups,False,Italy,1,89,89.0,False,True,False,False,False
+1998,1998020,groups,False,Denmark,2,12,12.0,False,False,False,False,False
+1998,1998020,groups,False,South Africa,1,51,51.0,False,False,False,False,False
+1998,1998021,groups,False,France,1,37,37.0,False,False,False,False,False
+1998,1998021,groups,False,France,1,68,68.0,False,False,False,False,False
+1998,1998021,groups,False,France,1,78,78.0,False,False,False,False,False
+1998,1998021,groups,False,France,1,85,85.0,False,True,False,False,False
+1998,1998022,groups,False,Nigeria,1,28,28.0,False,False,False,False,False
+1998,1998024,groups,False,Croatia,2,77,77.0,False,False,False,False,False
+1998,1998025,groups,False,Belgium,1,42,42.0,False,False,False,False,False
+1998,1998025,groups,False,Belgium,1,47,47.0,False,False,False,False,False
+1998,1998025,groups,False,Mexico,2,55,55.0,False,False,False,False,True
+1998,1998025,groups,False,Mexico,2,62,62.0,False,False,False,False,False
+1998,1998026,groups,False,Netherlands,1,37,37.0,False,False,False,False,False
+1998,1998026,groups,False,Netherlands,1,41,41.0,False,False,False,False,False
+1998,1998026,groups,False,Netherlands,1,71,71.0,False,False,False,False,False
+1998,1998026,groups,False,Netherlands,1,80,80.0,False,True,False,False,False
+1998,1998026,groups,False,Netherlands,1,83,83.0,False,True,False,False,False
+1998,1998027,groups,False,Yugoslavia,2,13,13.0,False,False,False,False,False
+1998,1998027,groups,False,Yugoslavia,2,52,52.0,False,False,False,False,False
+1998,1998027,groups,False,Germany,1,72,72.0,False,False,False,True,False
+1998,1998027,groups,False,Germany,1,78,78.0,False,False,False,False,False
+1998,1998028,groups,False,Argentina,1,31,31.0,False,False,False,False,False
+1998,1998028,groups,False,Argentina,1,55,55.0,False,False,False,False,False
+1998,1998028,groups,False,Argentina,1,73,73.0,False,False,False,False,False
+1998,1998028,groups,False,Argentina,1,78,78.0,False,False,False,False,False
+1998,1998028,groups,False,Argentina,1,83,83.0,False,True,False,False,True
+1998,1998029,groups,False,Iran,2,40,40.0,False,False,False,False,False
+1998,1998029,groups,False,Iran,2,84,84.0,False,True,False,False,False
+1998,1998029,groups,False,United States,1,87,87.0,False,True,False,False,False
+1998,1998030,groups,False,Colombia,1,82,82.0,False,True,False,False,False
+1998,1998031,groups,False,Romania,1,46,46.0,False,False,False,False,False
+1998,1998031,groups,False,England,2,81,81.0,False,True,False,False,False
+1998,1998031,groups,False,Romania,1,90,90.0,False,True,False,False,False
+1998,1998032,groups,False,Chile,1,20,20.0,False,False,False,False,False
+1998,1998032,groups,False,Cameroon,2,56,56.0,False,False,False,False,False
+1998,1998033,groups,False,Italy,1,48,48.0,False,False,False,False,False
+1998,1998033,groups,False,Italy,1,90,90.0,False,True,False,False,False
+1998,1998033,groups,False,Austria,2,90,90.02,False,True,True,False,True
+1998,1998034,groups,False,Brazil,1,78,78.0,False,False,False,False,False
+1998,1998034,groups,False,Norway,2,83,83.0,False,True,False,False,False
+1998,1998034,groups,False,Norway,2,89,89.0,False,True,False,False,True
+1998,1998035,groups,False,Morocco,2,23,23.0,False,False,False,False,False
+1998,1998035,groups,False,Morocco,2,46,46.0,False,False,False,False,False
+1998,1998035,groups,False,Morocco,2,85,85.0,False,True,False,False,False
+1998,1998036,groups,False,France,1,12,12.0,False,False,False,False,True
+1998,1998036,groups,False,Denmark,2,42,42.0,False,False,False,False,True
+1998,1998036,groups,False,France,1,56,56.0,False,False,False,False,False
+1998,1998037,groups,False,South Africa,1,18,18.0,False,False,False,False,False
+1998,1998037,groups,False,Saudi Arabia,2,45,45.02,False,False,False,False,True
+1998,1998037,groups,False,Saudi Arabia,2,74,74.0,False,False,False,False,True
+1998,1998037,groups,False,South Africa,1,90,90.03,False,True,True,False,True
+1998,1998038,groups,False,Paraguay,2,1,1.0,False,False,False,False,False
+1998,1998038,groups,False,Nigeria,1,11,11.0,False,False,False,False,False
+1998,1998038,groups,False,Paraguay,2,58,58.0,False,False,False,False,False
+1998,1998038,groups,False,Paraguay,2,86,86.0,False,True,False,False,False
+1998,1998039,groups,False,Spain,1,6,6.0,False,False,False,False,True
+1998,1998039,groups,False,Spain,1,18,18.0,False,False,False,False,False
+1998,1998039,groups,False,Spain,1,55,55.0,False,False,False,False,False
+1998,1998039,groups,False,Bulgaria,2,58,58.0,False,False,False,False,False
+1998,1998039,groups,False,Spain,1,81,81.0,False,True,False,False,False
+1998,1998039,groups,False,Spain,1,88,88.0,False,True,False,True,False
+1998,1998039,groups,False,Spain,1,90,90.04,False,True,True,False,False
+1998,1998040,groups,False,Belgium,1,7,7.0,False,False,False,False,False
+1998,1998040,groups,False,South Korea,2,72,72.0,False,False,False,False,False
+1998,1998041,groups,False,Netherlands,1,4,4.0,False,False,False,False,False
+1998,1998041,groups,False,Netherlands,1,18,18.0,False,False,False,False,False
+1998,1998041,groups,False,Mexico,2,75,75.0,False,False,False,False,False
+1998,1998041,groups,False,Mexico,2,90,90.04,False,True,True,False,False
+1998,1998042,groups,False,Germany,1,50,50.0,False,False,False,False,False
+1998,1998042,groups,False,Germany,1,57,57.0,False,False,False,False,False
+1998,1998043,groups,False,Yugoslavia,2,4,4.0,False,False,False,False,False
+1998,1998044,groups,False,Argentina,1,36,36.0,False,False,False,False,False
+1998,1998045,groups,False,Jamaica,2,39,39.0,False,False,False,False,False
+1998,1998045,groups,False,Jamaica,2,54,54.0,False,False,False,False,False
+1998,1998045,groups,False,Japan,1,74,74.0,False,False,False,False,False
+1998,1998046,groups,False,England,2,20,20.0,False,False,False,False,False
+1998,1998046,groups,False,England,2,29,29.0,False,False,False,False,False
+1998,1998047,groups,False,Tunisia,2,12,12.0,False,False,False,False,True
+1998,1998047,groups,False,Romania,1,71,71.0,False,False,False,False,False
+1998,1998048,knockout,True,Italy,1,18,18.0,False,False,False,False,False
+1998,1998049,knockout,True,Brazil,1,11,11.0,False,False,False,False,False
+1998,1998049,knockout,True,Brazil,1,26,26.0,False,False,False,False,False
+1998,1998049,knockout,True,Brazil,1,45,45.03,False,False,False,False,True
+1998,1998049,knockout,True,Chile,2,70,70.0,False,False,False,False,False
+1998,1998049,knockout,True,Brazil,1,72,72.0,False,False,False,False,False
+1998,1998050,knockout,True,France,1,114,114.0,True,False,False,False,False
+1998,1998051,knockout,True,Denmark,2,3,3.0,False,False,False,False,False
+1998,1998051,knockout,True,Denmark,2,12,12.0,False,False,False,False,False
+1998,1998051,knockout,True,Denmark,2,58,58.0,False,False,False,False,False
+1998,1998051,knockout,True,Denmark,2,76,76.0,False,False,False,False,False
+1998,1998051,knockout,True,Nigeria,1,77,77.0,False,False,False,False,False
+1998,1998052,knockout,True,Mexico,2,47,47.0,False,False,False,False,False
+1998,1998052,knockout,True,Germany,1,74,74.0,False,False,False,False,False
+1998,1998052,knockout,True,Germany,1,86,86.0,False,True,False,False,False
+1998,1998053,knockout,True,Netherlands,1,38,38.0,False,False,False,False,False
+1998,1998053,knockout,True,Yugoslavia,2,48,48.0,False,False,False,False,False
+1998,1998053,knockout,True,Netherlands,1,90,90.02,False,True,True,False,False
+1998,1998054,knockout,True,Croatia,2,45,45.02,False,False,False,False,True
+1998,1998055,knockout,True,Argentina,1,5,5.0,False,False,False,False,True
+1998,1998055,knockout,True,England,2,9,9.0,False,False,False,False,True
+1998,1998055,knockout,True,England,2,16,16.0,False,False,False,False,False
+1998,1998055,knockout,True,Argentina,1,45,45.01,False,False,False,False,False
+1998,1998057,knockout,True,Denmark,2,2,2.0,False,False,False,False,False
+1998,1998057,knockout,True,Brazil,1,10,10.0,False,False,False,False,False
+1998,1998057,knockout,True,Brazil,1,25,25.0,False,False,False,False,False
+1998,1998057,knockout,True,Denmark,2,50,50.0,False,False,False,False,False
+1998,1998057,knockout,True,Brazil,1,59,59.0,False,False,False,False,False
+1998,1998058,knockout,True,Netherlands,1,12,12.0,False,False,False,False,False
+1998,1998058,knockout,True,Argentina,2,17,17.0,False,False,False,False,False
+1998,1998058,knockout,True,Netherlands,1,90,90.0,False,True,False,False,False
+1998,1998059,knockout,True,Croatia,2,45,45.03,False,False,False,False,False
+1998,1998059,knockout,True,Croatia,2,80,80.0,False,True,False,False,False
+1998,1998059,knockout,True,Croatia,2,85,85.0,False,True,False,False,False
+1998,1998060,knockout,True,Brazil,1,46,46.0,False,False,False,False,False
+1998,1998060,knockout,True,Netherlands,2,87,87.0,False,True,False,False,False
+1998,1998061,knockout,True,Croatia,2,46,46.0,False,False,False,False,False
+1998,1998061,knockout,True,France,1,47,47.0,False,False,False,False,False
+1998,1998061,knockout,True,France,1,70,70.0,False,False,False,False,False
+1998,1998062,third_place,False,Croatia,2,14,14.0,False,False,False,False,False
+1998,1998062,third_place,False,Netherlands,1,22,22.0,False,False,False,False,False
+1998,1998062,third_place,False,Croatia,2,36,36.0,False,False,False,False,False
+1998,1998063,knockout,True,France,2,27,27.0,False,False,False,False,False
+1998,1998063,knockout,True,France,2,45,45.01,False,False,False,False,False
+1998,1998063,knockout,True,France,2,90,90.03,False,True,True,False,False
+2002,2002000,groups,False,Senegal,2,30,30.0,False,False,False,False,False
+2002,2002001,groups,False,Cameroon,2,39,39.0,False,False,False,False,False
+2002,2002001,groups,False,Republic of Ireland,1,52,52.0,False,False,False,False,False
+2002,2002002,groups,False,Denmark,2,45,45.0,False,False,False,False,False
+2002,2002002,groups,False,Uruguay,1,47,47.0,False,False,False,False,False
+2002,2002002,groups,False,Denmark,2,83,83.0,False,True,False,False,False
+2002,2002003,groups,False,Germany,1,20,20.0,False,False,False,False,False
+2002,2002003,groups,False,Germany,1,25,25.0,False,False,False,False,False
+2002,2002003,groups,False,Germany,1,40,40.0,False,False,False,False,False
+2002,2002003,groups,False,Germany,1,45,45.01,False,False,False,False,False
+2002,2002003,groups,False,Germany,1,70,70.0,False,False,False,False,False
+2002,2002003,groups,False,Germany,1,73,73.0,False,False,False,False,False
+2002,2002003,groups,False,Germany,1,84,84.0,False,True,False,False,False
+2002,2002003,groups,False,Germany,1,90,90.01,False,True,True,False,False
+2002,2002004,groups,False,Argentina,1,63,63.0,False,False,False,False,False
+2002,2002005,groups,False,Paraguay,1,39,39.0,False,False,False,False,False
+2002,2002005,groups,False,Paraguay,1,55,55.0,False,False,False,False,False
+2002,2002005,groups,False,South Africa,2,63,63.0,False,False,False,False,False
+2002,2002005,groups,False,South Africa,2,90,90.01,False,True,True,False,True
+2002,2002006,groups,False,England,1,24,24.0,False,False,False,False,False
+2002,2002006,groups,False,Sweden,2,59,59.0,False,False,False,False,False
+2002,2002007,groups,False,Spain,1,44,44.0,False,False,False,False,False
+2002,2002007,groups,False,Spain,1,74,74.0,False,False,False,False,False
+2002,2002007,groups,False,Slovenia,2,82,82.0,False,True,False,False,False
+2002,2002007,groups,False,Spain,1,87,87.0,False,True,False,False,True
+2002,2002008,groups,False,Mexico,2,60,60.0,False,False,False,False,True
+2002,2002009,groups,False,Turkey,2,45,45.02,False,False,False,False,False
+2002,2002009,groups,False,Brazil,1,50,50.0,False,False,False,False,False
+2002,2002009,groups,False,Brazil,1,87,87.0,False,True,False,False,True
+2002,2002010,groups,False,Italy,1,7,7.0,False,False,False,False,False
+2002,2002010,groups,False,Italy,1,27,27.0,False,False,False,False,False
+2002,2002011,groups,False,Costa Rica,2,61,61.0,False,False,False,False,False
+2002,2002011,groups,False,Costa Rica,2,65,65.0,False,False,False,False,False
+2002,2002012,groups,False,Belgium,2,57,57.0,False,False,False,False,False
+2002,2002012,groups,False,Japan,1,59,59.0,False,False,False,False,False
+2002,2002012,groups,False,Japan,1,67,67.0,False,False,False,False,False
+2002,2002012,groups,False,Belgium,2,75,75.0,False,False,False,False,False
+2002,2002013,groups,False,South Korea,1,26,26.0,False,False,False,False,False
+2002,2002013,groups,False,South Korea,1,53,53.0,False,False,False,False,False
+2002,2002014,groups,False,Russia,1,59,59.0,False,False,False,False,False
+2002,2002014,groups,False,Russia,1,64,64.0,False,False,False,False,True
+2002,2002015,groups,False,United States,1,4,4.0,False,False,False,False,False
+2002,2002015,groups,False,United States,1,29,29.0,False,False,False,True,False
+2002,2002015,groups,False,United States,1,36,36.0,False,False,False,False,False
+2002,2002015,groups,False,Portugal,2,39,39.0,False,False,False,False,False
+2002,2002015,groups,False,Portugal,2,71,71.0,False,False,False,True,False
+2002,2002016,groups,False,Germany,1,19,19.0,False,False,False,False,False
+2002,2002016,groups,False,Republic of Ireland,2,90,90.02,False,True,True,False,False
+2002,2002017,groups,False,Denmark,1,16,16.0,False,False,False,False,True
+2002,2002017,groups,False,Senegal,2,52,52.0,False,False,False,False,False
+2002,2002018,groups,False,Cameroon,1,66,66.0,False,False,False,False,False
+2002,2002020,groups,False,Nigeria,2,27,27.0,False,False,False,False,False
+2002,2002020,groups,False,Sweden,1,35,35.0,False,False,False,False,False
+2002,2002020,groups,False,Sweden,1,63,63.0,False,False,False,False,True
+2002,2002021,groups,False,Paraguay,2,10,10.0,False,False,False,True,False
+2002,2002021,groups,False,Spain,1,53,53.0,False,False,False,False,False
+2002,2002021,groups,False,Spain,1,69,69.0,False,False,False,False,False
+2002,2002021,groups,False,Spain,1,83,83.0,False,True,False,False,True
+2002,2002022,groups,False,England,2,44,44.0,False,False,False,False,True
+2002,2002023,groups,False,South Africa,1,4,4.0,False,False,False,False,False
+2002,2002024,groups,False,Italy,1,55,55.0,False,False,False,False,False
+2002,2002024,groups,False,Croatia,2,73,73.0,False,False,False,False,False
+2002,2002024,groups,False,Croatia,2,76,76.0,False,False,False,False,False
+2002,2002025,groups,False,Brazil,1,15,15.0,False,False,False,False,False
+2002,2002025,groups,False,Brazil,1,32,32.0,False,False,False,False,False
+2002,2002025,groups,False,Brazil,1,45,45.0,False,False,False,False,True
+2002,2002025,groups,False,Brazil,1,55,55.0,False,False,False,False,False
+2002,2002026,groups,False,Ecuador,2,5,5.0,False,False,False,False,False
+2002,2002026,groups,False,Mexico,1,28,28.0,False,False,False,False,False
+2002,2002026,groups,False,Mexico,1,57,57.0,False,False,False,False,False
+2002,2002027,groups,False,Turkey,2,56,56.0,False,False,False,False,False
+2002,2002027,groups,False,Costa Rica,1,86,86.0,False,True,False,False,False
+2002,2002028,groups,False,Japan,1,51,51.0,False,False,False,False,False
+2002,2002029,groups,False,United States,2,24,24.0,False,False,False,False,False
+2002,2002029,groups,False,South Korea,1,78,78.0,False,False,False,False,False
+2002,2002030,groups,False,Belgium,2,13,13.0,False,False,False,False,False
+2002,2002030,groups,False,Tunisia,1,17,17.0,False,False,False,False,False
+2002,2002031,groups,False,Portugal,1,14,14.0,False,False,False,False,False
+2002,2002031,groups,False,Portugal,1,65,65.0,False,False,False,False,False
+2002,2002031,groups,False,Portugal,1,77,77.0,False,False,False,False,False
+2002,2002031,groups,False,Portugal,1,88,88.0,False,True,False,False,False
+2002,2002032,groups,False,Denmark,1,22,22.0,False,False,False,False,False
+2002,2002032,groups,False,Denmark,1,67,67.0,False,False,False,False,False
+2002,2002033,groups,False,Senegal,1,20,20.0,False,False,False,False,True
+2002,2002033,groups,False,Senegal,1,26,26.0,False,False,False,False,False
+2002,2002033,groups,False,Senegal,1,38,38.0,False,False,False,False,False
+2002,2002033,groups,False,Uruguay,2,46,46.0,False,False,False,False,False
+2002,2002033,groups,False,Uruguay,2,69,69.0,False,False,False,False,False
+2002,2002033,groups,False,Uruguay,2,88,88.0,False,True,False,False,True
+2002,2002034,groups,False,Germany,2,50,50.0,False,False,False,False,False
+2002,2002034,groups,False,Germany,2,79,79.0,False,False,False,False,False
+2002,2002035,groups,False,Republic of Ireland,2,7,7.0,False,False,False,False,False
+2002,2002035,groups,False,Republic of Ireland,2,61,61.0,False,False,False,False,False
+2002,2002035,groups,False,Republic of Ireland,2,87,87.0,False,True,False,False,False
+2002,2002037,groups,False,Sweden,1,59,59.0,False,False,False,False,False
+2002,2002037,groups,False,Argentina,2,88,88.0,False,True,False,False,False
+2002,2002038,groups,False,Slovenia,1,45,45.01,False,False,False,False,False
+2002,2002038,groups,False,Paraguay,2,65,65.0,False,False,False,False,False
+2002,2002038,groups,False,Paraguay,2,73,73.0,False,False,False,False,False
+2002,2002038,groups,False,Paraguay,2,84,84.0,False,True,False,False,False
+2002,2002039,groups,False,Spain,2,4,4.0,False,False,False,False,False
+2002,2002039,groups,False,South Africa,1,31,31.0,False,False,False,False,False
+2002,2002039,groups,False,Spain,2,45,45.01,False,False,False,False,False
+2002,2002039,groups,False,South Africa,1,53,53.0,False,False,False,False,False
+2002,2002039,groups,False,Spain,2,56,56.0,False,False,False,False,False
+2002,2002040,groups,False,Brazil,2,10,10.0,False,False,False,False,False
+2002,2002040,groups,False,Brazil,2,13,13.0,False,False,False,False,False
+2002,2002040,groups,False,Brazil,2,38,38.0,False,False,False,False,False
+2002,2002040,groups,False,Costa Rica,1,39,39.0,False,False,False,False,False
+2002,2002040,groups,False,Costa Rica,1,56,56.0,False,False,False,False,False
+2002,2002040,groups,False,Brazil,2,62,62.0,False,False,False,False,False
+2002,2002040,groups,False,Brazil,2,64,64.0,False,False,False,False,False
+2002,2002041,groups,False,Turkey,1,6,6.0,False,False,False,False,False
+2002,2002041,groups,False,Turkey,1,9,9.0,False,False,False,False,False
+2002,2002041,groups,False,Turkey,1,85,85.0,False,True,False,False,False
+2002,2002042,groups,False,Ecuador,1,48,48.0,False,False,False,False,False
+2002,2002043,groups,False,Mexico,1,34,34.0,False,False,False,False,False
+2002,2002043,groups,False,Italy,2,85,85.0,False,True,False,False,False
+2002,2002044,groups,False,Belgium,1,7,7.0,False,False,False,False,False
+2002,2002044,groups,False,Russia,2,52,52.0,False,False,False,False,False
+2002,2002044,groups,False,Belgium,1,78,78.0,False,False,False,False,False
+2002,2002044,groups,False,Belgium,1,82,82.0,False,True,False,False,False
+2002,2002044,groups,False,Russia,2,88,88.0,False,True,False,False,False
+2002,2002045,groups,False,Japan,2,48,48.0,False,False,False,False,False
+2002,2002045,groups,False,Japan,2,75,75.0,False,False,False,False,False
+2002,2002046,groups,False,Poland,1,3,3.0,False,False,False,False,False
+2002,2002046,groups,False,Poland,1,5,5.0,False,False,False,False,False
+2002,2002046,groups,False,Poland,1,66,66.0,False,False,False,False,False
+2002,2002046,groups,False,United States,2,83,83.0,False,True,False,False,False
+2002,2002047,groups,False,South Korea,2,70,70.0,False,False,False,False,False
+2002,2002048,knockout,True,Germany,1,88,88.0,False,True,False,False,False
+2002,2002049,knockout,True,England,2,5,5.0,False,False,False,False,False
+2002,2002049,knockout,True,England,2,22,22.0,False,False,False,False,False
+2002,2002049,knockout,True,England,2,44,44.0,False,False,False,False,False
+2002,2002050,knockout,True,Sweden,1,11,11.0,False,False,False,False,False
+2002,2002050,knockout,True,Senegal,2,37,37.0,False,False,False,False,False
+2002,2002050,knockout,True,Senegal,2,104,104.0,True,False,False,False,False
+2002,2002051,knockout,True,Spain,1,8,8.0,False,False,False,False,False
+2002,2002051,knockout,True,Republic of Ireland,2,90,90.0,False,True,False,False,True
+2002,2002052,knockout,True,United States,2,8,8.0,False,False,False,False,False
+2002,2002052,knockout,True,United States,2,65,65.0,False,False,False,False,False
+2002,2002053,knockout,True,Brazil,1,67,67.0,False,False,False,False,False
+2002,2002053,knockout,True,Brazil,1,87,87.0,False,True,False,False,False
+2002,2002054,knockout,True,Turkey,2,12,12.0,False,False,False,False,False
+2002,2002055,knockout,True,Italy,2,18,18.0,False,False,False,False,False
+2002,2002055,knockout,True,South Korea,1,88,88.0,False,True,False,False,False
+2002,2002055,knockout,True,South Korea,1,117,117.0,True,False,False,False,False
+2002,2002056,knockout,True,England,1,23,23.0,False,False,False,False,False
+2002,2002056,knockout,True,Brazil,2,45,45.02,False,False,False,False,False
+2002,2002056,knockout,True,Brazil,2,50,50.0,False,False,False,False,False
+2002,2002057,knockout,True,Germany,1,39,39.0,False,False,False,False,False
+2002,2002059,knockout,True,Turkey,2,94,94.0,True,False,False,False,False
+2002,2002060,knockout,True,Germany,1,75,75.0,False,False,False,False,False
+2002,2002061,knockout,True,Brazil,1,49,49.0,False,False,False,False,False
+2002,2002062,third_place,False,Turkey,2,1,1.0,False,False,False,False,False
+2002,2002062,third_place,False,South Korea,1,9,9.0,False,False,False,False,False
+2002,2002062,third_place,False,Turkey,2,13,13.0,False,False,False,False,False
+2002,2002062,third_place,False,Turkey,2,32,32.0,False,False,False,False,False
+2002,2002062,third_place,False,South Korea,1,90,90.03,False,True,True,False,False
+2002,2002063,knockout,True,Brazil,2,67,67.0,False,False,False,False,False
+2002,2002063,knockout,True,Brazil,2,79,79.0,False,False,False,False,False
+2006,2006000,groups,False,Germany,1,6,6.0,False,False,False,False,False
+2006,2006000,groups,False,Costa Rica,2,12,12.0,False,False,False,False,False
+2006,2006000,groups,False,Germany,1,17,17.0,False,False,False,False,False
+2006,2006000,groups,False,Germany,1,61,61.0,False,False,False,False,False
+2006,2006000,groups,False,Costa Rica,2,73,73.0,False,False,False,False,False
+2006,2006000,groups,False,Germany,1,87,87.0,False,True,False,False,False
+2006,2006001,groups,False,Ecuador,2,24,24.0,False,False,False,False,False
+2006,2006001,groups,False,Ecuador,2,80,80.0,False,True,False,False,False
+2006,2006002,groups,False,England,1,3,3.0,False,False,False,True,False
+2006,2006004,groups,False,Argentina,1,24,24.0,False,False,False,False,False
+2006,2006004,groups,False,Argentina,1,38,38.0,False,False,False,False,False
+2006,2006004,groups,False,Ivory Coast,2,82,82.0,False,True,False,False,False
+2006,2006005,groups,False,Netherlands,2,18,18.0,False,False,False,False,False
+2006,2006006,groups,False,Mexico,1,28,28.0,False,False,False,False,False
+2006,2006006,groups,False,Iran,2,36,36.0,False,False,False,False,False
+2006,2006006,groups,False,Mexico,1,76,76.0,False,False,False,False,False
+2006,2006006,groups,False,Mexico,1,79,79.0,False,False,False,False,False
+2006,2006007,groups,False,Portugal,2,4,4.0,False,False,False,False,False
+2006,2006008,groups,False,Japan,2,26,26.0,False,False,False,False,False
+2006,2006008,groups,False,Australia,1,84,84.0,False,True,False,False,False
+2006,2006008,groups,False,Australia,1,89,89.0,False,True,False,False,False
+2006,2006008,groups,False,Australia,1,90,90.02,False,True,True,False,False
+2006,2006009,groups,False,Czech Republic,2,5,5.0,False,False,False,False,False
+2006,2006009,groups,False,Czech Republic,2,36,36.0,False,False,False,False,False
+2006,2006009,groups,False,Czech Republic,2,76,76.0,False,False,False,False,False
+2006,2006010,groups,False,Italy,1,40,40.0,False,False,False,False,False
+2006,2006010,groups,False,Italy,1,83,83.0,False,True,False,False,False
+2006,2006011,groups,False,Togo,2,31,31.0,False,False,False,False,False
+2006,2006011,groups,False,South Korea,1,54,54.0,False,False,False,False,False
+2006,2006011,groups,False,South Korea,1,72,72.0,False,False,False,False,False
+2006,2006013,groups,False,Brazil,1,44,44.0,False,False,False,False,False
+2006,2006014,groups,False,Spain,1,13,13.0,False,False,False,False,False
+2006,2006014,groups,False,Spain,1,17,17.0,False,False,False,False,False
+2006,2006014,groups,False,Spain,1,48,48.0,False,False,False,False,True
+2006,2006014,groups,False,Spain,1,81,81.0,False,True,False,False,False
+2006,2006015,groups,False,Tunisia,1,23,23.0,False,False,False,False,False
+2006,2006015,groups,False,Saudi Arabia,2,57,57.0,False,False,False,False,False
+2006,2006015,groups,False,Saudi Arabia,2,84,84.0,False,True,False,False,False
+2006,2006015,groups,False,Tunisia,1,90,90.02,False,True,True,False,False
+2006,2006016,groups,False,Germany,1,90,90.01,False,True,True,False,False
+2006,2006017,groups,False,Ecuador,1,8,8.0,False,False,False,False,False
+2006,2006017,groups,False,Ecuador,1,54,54.0,False,False,False,False,False
+2006,2006017,groups,False,Ecuador,1,90,90.02,False,True,True,False,False
+2006,2006018,groups,False,England,1,83,83.0,False,True,False,False,False
+2006,2006018,groups,False,England,1,90,90.01,False,True,True,False,False
+2006,2006019,groups,False,Sweden,1,89,89.0,False,True,False,False,False
+2006,2006020,groups,False,Argentina,1,6,6.0,False,False,False,False,False
+2006,2006020,groups,False,Argentina,1,31,31.0,False,False,False,False,False
+2006,2006020,groups,False,Argentina,1,41,41.0,False,False,False,False,False
+2006,2006020,groups,False,Argentina,1,78,78.0,False,False,False,False,False
+2006,2006020,groups,False,Argentina,1,84,84.0,False,True,False,False,False
+2006,2006020,groups,False,Argentina,1,88,88.0,False,True,False,False,False
+2006,2006021,groups,False,Netherlands,1,23,23.0,False,False,False,False,False
+2006,2006021,groups,False,Netherlands,1,27,27.0,False,False,False,False,False
+2006,2006021,groups,False,Ivory Coast,2,38,38.0,False,False,False,False,False
+2006,2006023,groups,False,Portugal,1,63,63.0,False,False,False,False,False
+2006,2006023,groups,False,Portugal,1,80,80.0,False,True,False,False,True
+2006,2006024,groups,False,Ghana,2,2,2.0,False,False,False,False,False
+2006,2006024,groups,False,Ghana,2,82,82.0,False,True,False,False,False
+2006,2006025,groups,False,Italy,1,22,22.0,False,False,False,False,False
+2006,2006025,groups,False,United States,2,27,27.0,False,False,False,True,False
+2006,2006027,groups,False,Brazil,1,49,49.0,False,False,False,False,False
+2006,2006027,groups,False,Brazil,1,90,90.0,False,True,False,False,False
+2006,2006028,groups,False,France,1,9,9.0,False,False,False,False,False
+2006,2006028,groups,False,South Korea,2,81,81.0,False,True,False,False,False
+2006,2006029,groups,False,Switzerland,2,16,16.0,False,False,False,False,False
+2006,2006029,groups,False,Switzerland,2,88,88.0,False,True,False,False,False
+2006,2006030,groups,False,Ukraine,2,4,4.0,False,False,False,False,False
+2006,2006030,groups,False,Ukraine,2,36,36.0,False,False,False,False,False
+2006,2006030,groups,False,Ukraine,2,46,46.0,False,False,False,False,False
+2006,2006030,groups,False,Ukraine,2,84,84.0,False,True,False,False,False
+2006,2006031,groups,False,Tunisia,2,8,8.0,False,False,False,False,False
+2006,2006031,groups,False,Spain,1,71,71.0,False,False,False,False,False
+2006,2006031,groups,False,Spain,1,76,76.0,False,False,False,False,False
+2006,2006031,groups,False,Spain,1,90,90.01,False,True,True,False,True
+2006,2006032,groups,False,Costa Rica,1,25,25.0,False,False,False,False,False
+2006,2006032,groups,False,Poland,2,33,33.0,False,False,False,False,False
+2006,2006032,groups,False,Poland,2,65,65.0,False,False,False,False,False
+2006,2006033,groups,False,Germany,2,4,4.0,False,False,False,False,False
+2006,2006033,groups,False,Germany,2,44,44.0,False,False,False,False,False
+2006,2006033,groups,False,Germany,2,57,57.0,False,False,False,False,False
+2006,2006034,groups,False,Paraguay,1,25,25.0,False,False,False,True,False
+2006,2006034,groups,False,Paraguay,1,86,86.0,False,True,False,False,False
+2006,2006035,groups,False,England,2,34,34.0,False,False,False,False,False
+2006,2006035,groups,False,Sweden,1,51,51.0,False,False,False,False,False
+2006,2006035,groups,False,England,2,85,85.0,False,True,False,False,False
+2006,2006035,groups,False,Sweden,1,90,90.0,False,True,False,False,False
+2006,2006036,groups,False,Angola,2,60,60.0,False,False,False,False,False
+2006,2006036,groups,False,Iran,1,75,75.0,False,False,False,False,False
+2006,2006037,groups,False,Portugal,1,6,6.0,False,False,False,False,False
+2006,2006037,groups,False,Portugal,1,24,24.0,False,False,False,False,True
+2006,2006037,groups,False,Mexico,2,29,29.0,False,False,False,False,False
+2006,2006038,groups,False,Serbia and Montenegro,2,10,10.0,False,False,False,False,False
+2006,2006038,groups,False,Serbia and Montenegro,2,20,20.0,False,False,False,False,False
+2006,2006038,groups,False,Ivory Coast,1,37,37.0,False,False,False,False,True
+2006,2006038,groups,False,Ivory Coast,1,67,67.0,False,False,False,False,False
+2006,2006038,groups,False,Ivory Coast,1,86,86.0,False,True,False,False,True
+2006,2006040,groups,False,Italy,2,26,26.0,False,False,False,False,False
+2006,2006040,groups,False,Italy,2,87,87.0,False,True,False,False,False
+2006,2006041,groups,False,Ghana,1,22,22.0,False,False,False,False,False
+2006,2006041,groups,False,United States,2,43,43.0,False,False,False,False,False
+2006,2006041,groups,False,Ghana,1,45,45.02,False,False,False,False,True
+2006,2006042,groups,False,Croatia,1,2,2.0,False,False,False,False,False
+2006,2006042,groups,False,Australia,2,38,38.0,False,False,False,False,True
+2006,2006042,groups,False,Croatia,1,56,56.0,False,False,False,False,False
+2006,2006042,groups,False,Australia,2,79,79.0,False,False,False,False,False
+2006,2006043,groups,False,Japan,1,34,34.0,False,False,False,False,False
+2006,2006043,groups,False,Brazil,2,45,45.01,False,False,False,False,False
+2006,2006043,groups,False,Brazil,2,53,53.0,False,False,False,False,False
+2006,2006043,groups,False,Brazil,2,59,59.0,False,False,False,False,False
+2006,2006043,groups,False,Brazil,2,81,81.0,False,True,False,False,False
+2006,2006044,groups,False,Spain,2,36,36.0,False,False,False,False,False
+2006,2006045,groups,False,Ukraine,1,70,70.0,False,False,False,False,True
+2006,2006046,groups,False,Switzerland,1,23,23.0,False,False,False,False,False
+2006,2006046,groups,False,Switzerland,1,77,77.0,False,False,False,False,False
+2006,2006047,groups,False,France,2,55,55.0,False,False,False,False,False
+2006,2006047,groups,False,France,2,61,61.0,False,False,False,False,False
+2006,2006048,knockout,True,Germany,1,4,4.0,False,False,False,False,False
+2006,2006048,knockout,True,Germany,1,12,12.0,False,False,False,False,False
+2006,2006049,knockout,True,Mexico,2,6,6.0,False,False,False,False,False
+2006,2006049,knockout,True,Argentina,1,10,10.0,False,False,False,False,False
+2006,2006049,knockout,True,Argentina,1,98,98.0,True,False,False,False,False
+2006,2006050,knockout,True,England,1,60,60.0,False,False,False,False,False
+2006,2006051,knockout,True,Portugal,1,23,23.0,False,False,False,False,False
+2006,2006052,knockout,True,Italy,1,90,90.05,False,True,True,False,True
+2006,2006054,knockout,True,Brazil,1,5,5.0,False,False,False,False,False
+2006,2006054,knockout,True,Brazil,1,45,45.01,False,False,False,False,False
+2006,2006054,knockout,True,Brazil,1,84,84.0,False,True,False,False,False
+2006,2006055,knockout,True,Spain,1,28,28.0,False,False,False,False,True
+2006,2006055,knockout,True,France,2,41,41.0,False,False,False,False,False
+2006,2006055,knockout,True,France,2,83,83.0,False,True,False,False,False
+2006,2006055,knockout,True,France,2,90,90.02,False,True,True,False,False
+2006,2006056,knockout,True,Argentina,2,49,49.0,False,False,False,False,False
+2006,2006056,knockout,True,Germany,1,80,80.0,False,True,False,False,False
+2006,2006057,knockout,True,Italy,1,6,6.0,False,False,False,False,False
+2006,2006057,knockout,True,Italy,1,59,59.0,False,False,False,False,False
+2006,2006057,knockout,True,Italy,1,69,69.0,False,False,False,False,False
+2006,2006059,knockout,True,France,2,57,57.0,False,False,False,False,False
+2006,2006060,knockout,True,Italy,2,119,119.0,True,False,False,False,False
+2006,2006060,knockout,True,Italy,2,120,120.01,True,False,False,False,False
+2006,2006061,knockout,True,France,2,33,33.0,False,False,False,False,True
+2006,2006062,third_place,False,Germany,1,56,56.0,False,False,False,False,False
+2006,2006062,third_place,False,Germany,1,60,60.0,False,False,False,True,False
+2006,2006062,third_place,False,Germany,1,78,78.0,False,False,False,False,False
+2006,2006062,third_place,False,Portugal,2,88,88.0,False,True,False,False,False
+2006,2006063,knockout,True,France,2,7,7.0,False,False,False,False,True
+2006,2006063,knockout,True,Italy,1,19,19.0,False,False,False,False,False
+2010,2010000,groups,False,South Africa,1,55,55.0,False,False,False,False,False
+2010,2010000,groups,False,Mexico,2,79,79.0,False,False,False,False,False
+2010,2010002,groups,False,South Korea,1,7,7.0,False,False,False,False,False
+2010,2010002,groups,False,South Korea,1,52,52.0,False,False,False,False,False
+2010,2010003,groups,False,Argentina,1,6,6.0,False,False,False,False,False
+2010,2010004,groups,False,England,1,4,4.0,False,False,False,False,False
+2010,2010004,groups,False,United States,2,40,40.0,False,False,False,False,False
+2010,2010005,groups,False,Slovenia,2,79,79.0,False,False,False,False,False
+2010,2010006,groups,False,Ghana,2,85,85.0,False,True,False,False,True
+2010,2010007,groups,False,Germany,1,8,8.0,False,False,False,False,False
+2010,2010007,groups,False,Germany,1,26,26.0,False,False,False,False,False
+2010,2010007,groups,False,Germany,1,68,68.0,False,False,False,False,False
+2010,2010007,groups,False,Germany,1,70,70.0,False,False,False,False,False
+2010,2010008,groups,False,Netherlands,1,46,46.0,False,False,False,True,False
+2010,2010008,groups,False,Netherlands,1,85,85.0,False,True,False,False,False
+2010,2010009,groups,False,Japan,1,39,39.0,False,False,False,False,False
+2010,2010010,groups,False,Paraguay,2,39,39.0,False,False,False,False,False
+2010,2010010,groups,False,Italy,1,63,63.0,False,False,False,False,False
+2010,2010011,groups,False,Slovakia,2,50,50.0,False,False,False,False,False
+2010,2010011,groups,False,New Zealand,1,90,90.03,False,True,True,False,False
+2010,2010013,groups,False,Brazil,1,55,55.0,False,False,False,False,False
+2010,2010013,groups,False,Brazil,1,72,72.0,False,False,False,False,False
+2010,2010013,groups,False,North Korea,2,89,89.0,False,True,False,False,False
+2010,2010014,groups,False,Chile,2,34,34.0,False,False,False,False,False
+2010,2010015,groups,False,Switzerland,2,52,52.0,False,False,False,False,False
+2010,2010016,groups,False,Uruguay,2,24,24.0,False,False,False,False,False
+2010,2010016,groups,False,Uruguay,2,80,80.0,False,True,False,False,True
+2010,2010016,groups,False,Uruguay,2,90,90.05,False,True,True,False,False
+2010,2010017,groups,False,Argentina,1,17,17.0,False,False,False,True,False
+2010,2010017,groups,False,Argentina,1,33,33.0,False,False,False,False,False
+2010,2010017,groups,False,South Korea,2,45,45.01,False,False,False,False,False
+2010,2010017,groups,False,Argentina,1,76,76.0,False,False,False,False,False
+2010,2010017,groups,False,Argentina,1,80,80.0,False,True,False,False,False
+2010,2010018,groups,False,Nigeria,2,16,16.0,False,False,False,False,False
+2010,2010018,groups,False,Greece,1,44,44.0,False,False,False,False,False
+2010,2010018,groups,False,Greece,1,71,71.0,False,False,False,False,False
+2010,2010019,groups,False,Mexico,2,64,64.0,False,False,False,False,False
+2010,2010019,groups,False,Mexico,2,79,79.0,False,False,False,False,True
+2010,2010020,groups,False,Serbia,2,38,38.0,False,False,False,False,False
+2010,2010021,groups,False,Slovenia,1,13,13.0,False,False,False,False,False
+2010,2010021,groups,False,Slovenia,1,42,42.0,False,False,False,False,False
+2010,2010021,groups,False,United States,2,48,48.0,False,False,False,False,False
+2010,2010021,groups,False,United States,2,82,82.0,False,True,False,False,False
+2010,2010023,groups,False,Netherlands,1,53,53.0,False,False,False,False,False
+2010,2010024,groups,False,Australia,2,11,11.0,False,False,False,False,False
+2010,2010024,groups,False,Ghana,1,25,25.0,False,False,False,False,True
+2010,2010025,groups,False,Cameroon,1,10,10.0,False,False,False,False,False
+2010,2010025,groups,False,Denmark,2,33,33.0,False,False,False,False,False
+2010,2010025,groups,False,Denmark,2,61,61.0,False,False,False,False,False
+2010,2010026,groups,False,Paraguay,2,27,27.0,False,False,False,False,False
+2010,2010026,groups,False,Paraguay,2,86,86.0,False,True,False,False,False
+2010,2010027,groups,False,New Zealand,2,7,7.0,False,False,False,False,False
+2010,2010027,groups,False,Italy,1,29,29.0,False,False,False,False,True
+2010,2010028,groups,False,Brazil,1,25,25.0,False,False,False,False,False
+2010,2010028,groups,False,Brazil,1,50,50.0,False,False,False,False,False
+2010,2010028,groups,False,Brazil,1,62,62.0,False,False,False,False,False
+2010,2010028,groups,False,Ivory Coast,2,79,79.0,False,False,False,False,False
+2010,2010029,groups,False,Portugal,1,29,29.0,False,False,False,False,False
+2010,2010029,groups,False,Portugal,1,53,53.0,False,False,False,False,False
+2010,2010029,groups,False,Portugal,1,56,56.0,False,False,False,False,False
+2010,2010029,groups,False,Portugal,1,60,60.0,False,False,False,False,False
+2010,2010029,groups,False,Portugal,1,81,81.0,False,True,False,False,False
+2010,2010029,groups,False,Portugal,1,87,87.0,False,True,False,False,False
+2010,2010029,groups,False,Portugal,1,89,89.0,False,True,False,False,False
+2010,2010030,groups,False,Chile,1,75,75.0,False,False,False,False,False
+2010,2010031,groups,False,Spain,1,17,17.0,False,False,False,False,False
+2010,2010031,groups,False,Spain,1,51,51.0,False,False,False,False,False
+2010,2010032,groups,False,South Africa,2,20,20.0,False,False,False,False,False
+2010,2010032,groups,False,South Africa,2,37,37.0,False,False,False,False,False
+2010,2010032,groups,False,France,1,70,70.0,False,False,False,False,False
+2010,2010033,groups,False,Uruguay,2,43,43.0,False,False,False,False,False
+2010,2010034,groups,False,Argentina,2,77,77.0,False,False,False,False,False
+2010,2010034,groups,False,Argentina,2,89,89.0,False,True,False,False,False
+2010,2010035,groups,False,Nigeria,1,12,12.0,False,False,False,False,False
+2010,2010035,groups,False,South Korea,2,38,38.0,False,False,False,False,False
+2010,2010035,groups,False,South Korea,2,49,49.0,False,False,False,False,False
+2010,2010035,groups,False,Nigeria,1,69,69.0,False,False,False,False,True
+2010,2010036,groups,False,England,2,23,23.0,False,False,False,False,False
+2010,2010037,groups,False,United States,1,90,90.01,False,True,True,False,False
+2010,2010038,groups,False,Australia,1,69,69.0,False,False,False,False,False
+2010,2010038,groups,False,Australia,1,73,73.0,False,False,False,False,False
+2010,2010038,groups,False,Serbia,2,84,84.0,False,True,False,False,False
+2010,2010039,groups,False,Germany,2,60,60.0,False,False,False,False,False
+2010,2010041,groups,False,Slovakia,1,25,25.0,False,False,False,False,False
+2010,2010041,groups,False,Slovakia,1,73,73.0,False,False,False,False,False
+2010,2010041,groups,False,Italy,2,81,81.0,False,True,False,False,False
+2010,2010041,groups,False,Slovakia,1,89,89.0,False,True,False,False,False
+2010,2010041,groups,False,Italy,2,90,90.02,False,True,True,False,False
+2010,2010042,groups,False,Netherlands,2,36,36.0,False,False,False,False,False
+2010,2010042,groups,False,Cameroon,1,65,65.0,False,False,False,False,True
+2010,2010042,groups,False,Netherlands,2,83,83.0,False,True,False,False,False
+2010,2010043,groups,False,Japan,2,17,17.0,False,False,False,False,False
+2010,2010043,groups,False,Japan,2,30,30.0,False,False,False,False,False
+2010,2010043,groups,False,Denmark,1,81,81.0,False,True,False,False,False
+2010,2010043,groups,False,Japan,2,87,87.0,False,True,False,False,False
+2010,2010044,groups,False,Ivory Coast,2,14,14.0,False,False,False,False,False
+2010,2010044,groups,False,Ivory Coast,2,20,20.0,False,False,False,False,False
+2010,2010044,groups,False,Ivory Coast,2,82,82.0,False,True,False,False,False
+2010,2010046,groups,False,Spain,2,24,24.0,False,False,False,False,False
+2010,2010046,groups,False,Spain,2,37,37.0,False,False,False,False,False
+2010,2010046,groups,False,Chile,1,47,47.0,False,False,False,False,False
+2010,2010048,knockout,True,Uruguay,1,8,8.0,False,False,False,False,False
+2010,2010048,knockout,True,South Korea,2,68,68.0,False,False,False,False,False
+2010,2010048,knockout,True,Uruguay,1,80,80.0,False,True,False,False,False
+2010,2010049,knockout,True,Ghana,2,5,5.0,False,False,False,False,False
+2010,2010049,knockout,True,United States,1,62,62.0,False,False,False,False,True
+2010,2010049,knockout,True,Ghana,2,93,93.0,True,False,False,False,False
+2010,2010050,knockout,True,Germany,1,20,20.0,False,False,False,False,False
+2010,2010050,knockout,True,Germany,1,32,32.0,False,False,False,False,False
+2010,2010050,knockout,True,England,2,37,37.0,False,False,False,False,False
+2010,2010050,knockout,True,Germany,1,67,67.0,False,False,False,False,False
+2010,2010050,knockout,True,Germany,1,70,70.0,False,False,False,False,False
+2010,2010051,knockout,True,Argentina,1,26,26.0,False,False,False,False,False
+2010,2010051,knockout,True,Argentina,1,33,33.0,False,False,False,False,False
+2010,2010051,knockout,True,Argentina,1,52,52.0,False,False,False,False,False
+2010,2010051,knockout,True,Mexico,2,71,71.0,False,False,False,False,False
+2010,2010052,knockout,True,Netherlands,1,18,18.0,False,False,False,False,False
+2010,2010052,knockout,True,Netherlands,1,84,84.0,False,True,False,False,False
+2010,2010052,knockout,True,Slovakia,2,90,90.04,False,True,True,False,True
+2010,2010053,knockout,True,Brazil,1,35,35.0,False,False,False,False,False
+2010,2010053,knockout,True,Brazil,1,38,38.0,False,False,False,False,False
+2010,2010053,knockout,True,Brazil,1,59,59.0,False,False,False,False,False
+2010,2010055,knockout,True,Spain,1,63,63.0,False,False,False,False,False
+2010,2010056,knockout,True,Brazil,2,10,10.0,False,False,False,False,False
+2010,2010056,knockout,True,Netherlands,1,53,53.0,False,False,False,False,False
+2010,2010056,knockout,True,Netherlands,1,68,68.0,False,False,False,False,False
+2010,2010057,knockout,True,Ghana,2,45,45.02,False,False,False,False,False
+2010,2010057,knockout,True,Uruguay,1,55,55.0,False,False,False,False,False
+2010,2010058,knockout,True,Germany,2,3,3.0,False,False,False,False,False
+2010,2010058,knockout,True,Germany,2,68,68.0,False,False,False,False,False
+2010,2010058,knockout,True,Germany,2,74,74.0,False,False,False,False,False
+2010,2010058,knockout,True,Germany,2,89,89.0,False,True,False,False,False
+2010,2010059,knockout,True,Spain,2,83,83.0,False,True,False,False,False
+2010,2010060,knockout,True,Netherlands,2,18,18.0,False,False,False,False,False
+2010,2010060,knockout,True,Uruguay,1,41,41.0,False,False,False,False,False
+2010,2010060,knockout,True,Netherlands,2,70,70.0,False,False,False,False,False
+2010,2010060,knockout,True,Netherlands,2,73,73.0,False,False,False,False,False
+2010,2010060,knockout,True,Uruguay,1,90,90.02,False,True,True,False,False
+2010,2010061,knockout,True,Spain,2,73,73.0,False,False,False,False,False
+2010,2010062,third_place,False,Germany,2,19,19.0,False,False,False,False,False
+2010,2010062,third_place,False,Uruguay,1,28,28.0,False,False,False,False,False
+2010,2010062,third_place,False,Uruguay,1,51,51.0,False,False,False,False,False
+2010,2010062,third_place,False,Germany,2,56,56.0,False,False,False,False,False
+2010,2010062,third_place,False,Germany,2,82,82.0,False,True,False,False,False
+2010,2010063,knockout,True,Spain,2,116,116.0,True,False,False,False,False
+2014,2014000,groups,False,Croatia,2,12,12.0,False,False,False,True,False
+2014,2014000,groups,False,Brazil,1,29,29.0,False,False,False,False,False
+2014,2014000,groups,False,Brazil,1,71,71.0,False,False,False,False,True
+2014,2014000,groups,False,Brazil,1,90,90.01,False,True,True,False,False
+2014,2014001,groups,False,Mexico,1,61,61.0,False,False,False,False,False
+2014,2014002,groups,False,Spain,1,27,27.0,False,False,False,False,True
+2014,2014002,groups,False,Netherlands,2,44,44.0,False,False,False,False,False
+2014,2014002,groups,False,Netherlands,2,53,53.0,False,False,False,False,False
+2014,2014002,groups,False,Netherlands,2,64,64.0,False,False,False,False,False
+2014,2014002,groups,False,Netherlands,2,72,72.0,False,False,False,False,False
+2014,2014002,groups,False,Netherlands,2,80,80.0,False,True,False,False,False
+2014,2014003,groups,False,Chile,1,12,12.0,False,False,False,False,False
+2014,2014003,groups,False,Chile,1,14,14.0,False,False,False,False,False
+2014,2014003,groups,False,Australia,2,35,35.0,False,False,False,False,False
+2014,2014003,groups,False,Chile,1,90,90.02,False,True,True,False,False
+2014,2014004,groups,False,Colombia,1,5,5.0,False,False,False,False,False
+2014,2014004,groups,False,Colombia,1,58,58.0,False,False,False,False,False
+2014,2014004,groups,False,Colombia,1,90,90.03,False,True,True,False,False
+2014,2014005,groups,False,Uruguay,1,24,24.0,False,False,False,False,True
+2014,2014005,groups,False,Costa Rica,2,54,54.0,False,False,False,False,False
+2014,2014005,groups,False,Costa Rica,2,57,57.0,False,False,False,False,False
+2014,2014005,groups,False,Costa Rica,2,84,84.0,False,True,False,False,False
+2014,2014006,groups,False,Italy,2,35,35.0,False,False,False,False,False
+2014,2014006,groups,False,England,1,37,37.0,False,False,False,False,False
+2014,2014006,groups,False,Italy,2,50,50.0,False,False,False,False,False
+2014,2014007,groups,False,Japan,2,16,16.0,False,False,False,False,False
+2014,2014007,groups,False,Ivory Coast,1,64,64.0,False,False,False,False,False
+2014,2014007,groups,False,Ivory Coast,1,66,66.0,False,False,False,False,False
+2014,2014008,groups,False,Ecuador,2,22,22.0,False,False,False,False,False
+2014,2014008,groups,False,Switzerland,1,48,48.0,False,False,False,False,False
+2014,2014008,groups,False,Switzerland,1,90,90.03,False,True,True,False,False
+2014,2014009,groups,False,France,1,45,45.0,False,False,False,False,True
+2014,2014009,groups,False,France,1,48,48.0,False,False,False,True,False
+2014,2014009,groups,False,France,1,72,72.0,False,False,False,False,False
+2014,2014010,groups,False,Argentina,1,3,3.0,False,False,False,True,False
+2014,2014010,groups,False,Argentina,1,65,65.0,False,False,False,False,False
+2014,2014010,groups,False,Bosnia and Herzegovina,2,85,85.0,False,True,False,False,False
+2014,2014011,groups,False,Germany,1,12,12.0,False,False,False,False,True
+2014,2014011,groups,False,Germany,1,32,32.0,False,False,False,False,False
+2014,2014011,groups,False,Germany,1,45,45.01,False,False,False,False,False
+2014,2014011,groups,False,Germany,1,78,78.0,False,False,False,False,False
+2014,2014013,groups,False,United States,2,1,1.0,False,False,False,False,False
+2014,2014013,groups,False,Ghana,1,82,82.0,False,True,False,False,False
+2014,2014013,groups,False,United States,2,86,86.0,False,True,False,False,False
+2014,2014014,groups,False,Algeria,2,25,25.0,False,False,False,False,True
+2014,2014014,groups,False,Belgium,1,70,70.0,False,False,False,False,False
+2014,2014014,groups,False,Belgium,1,80,80.0,False,True,False,False,False
+2014,2014016,groups,False,South Korea,2,68,68.0,False,False,False,False,False
+2014,2014016,groups,False,Russia,1,74,74.0,False,False,False,False,False
+2014,2014017,groups,False,Netherlands,2,20,20.0,False,False,False,False,False
+2014,2014017,groups,False,Australia,1,21,21.0,False,False,False,False,False
+2014,2014017,groups,False,Australia,1,54,54.0,False,False,False,False,True
+2014,2014017,groups,False,Netherlands,2,58,58.0,False,False,False,False,False
+2014,2014017,groups,False,Netherlands,2,68,68.0,False,False,False,False,False
+2014,2014018,groups,False,Chile,2,20,20.0,False,False,False,False,False
+2014,2014018,groups,False,Chile,2,43,43.0,False,False,False,False,False
+2014,2014019,groups,False,Croatia,2,11,11.0,False,False,False,False,False
+2014,2014019,groups,False,Croatia,2,48,48.0,False,False,False,False,False
+2014,2014019,groups,False,Croatia,2,61,61.0,False,False,False,False,False
+2014,2014019,groups,False,Croatia,2,73,73.0,False,False,False,False,False
+2014,2014020,groups,False,Colombia,1,64,64.0,False,False,False,False,False
+2014,2014020,groups,False,Colombia,1,70,70.0,False,False,False,False,False
+2014,2014020,groups,False,Ivory Coast,2,73,73.0,False,False,False,False,False
+2014,2014021,groups,False,Uruguay,1,39,39.0,False,False,False,False,False
+2014,2014021,groups,False,England,2,75,75.0,False,False,False,False,False
+2014,2014021,groups,False,Uruguay,1,85,85.0,False,True,False,False,False
+2014,2014023,groups,False,Costa Rica,2,44,44.0,False,False,False,False,False
+2014,2014024,groups,False,France,2,17,17.0,False,False,False,False,False
+2014,2014024,groups,False,France,2,18,18.0,False,False,False,False,False
+2014,2014024,groups,False,France,2,40,40.0,False,False,False,False,False
+2014,2014024,groups,False,France,2,67,67.0,False,False,False,False,False
+2014,2014024,groups,False,France,2,73,73.0,False,False,False,False,False
+2014,2014024,groups,False,Switzerland,1,81,81.0,False,True,False,False,False
+2014,2014024,groups,False,Switzerland,1,87,87.0,False,True,False,False,False
+2014,2014025,groups,False,Honduras,1,31,31.0,False,False,False,False,False
+2014,2014025,groups,False,Ecuador,2,34,34.0,False,False,False,False,False
+2014,2014025,groups,False,Ecuador,2,65,65.0,False,False,False,False,False
+2014,2014026,groups,False,Argentina,1,90,90.01,False,True,True,False,False
+2014,2014027,groups,False,Germany,1,51,51.0,False,False,False,False,False
+2014,2014027,groups,False,Ghana,2,54,54.0,False,False,False,False,False
+2014,2014027,groups,False,Ghana,2,63,63.0,False,False,False,False,False
+2014,2014027,groups,False,Germany,1,71,71.0,False,False,False,False,False
+2014,2014028,groups,False,Nigeria,1,29,29.0,False,False,False,False,False
+2014,2014029,groups,False,Belgium,1,88,88.0,False,True,False,False,False
+2014,2014030,groups,False,Algeria,2,26,26.0,False,False,False,False,False
+2014,2014030,groups,False,Algeria,2,28,28.0,False,False,False,False,False
+2014,2014030,groups,False,Algeria,2,38,38.0,False,False,False,False,False
+2014,2014030,groups,False,South Korea,1,50,50.0,False,False,False,False,False
+2014,2014030,groups,False,Algeria,2,62,62.0,False,False,False,False,False
+2014,2014030,groups,False,South Korea,1,72,72.0,False,False,False,False,False
+2014,2014031,groups,False,Portugal,2,5,5.0,False,False,False,False,False
+2014,2014031,groups,False,United States,1,64,64.0,False,False,False,False,False
+2014,2014031,groups,False,United States,1,81,81.0,False,True,False,False,False
+2014,2014031,groups,False,Portugal,2,90,90.05,False,True,True,False,False
+2014,2014032,groups,False,Spain,2,36,36.0,False,False,False,False,False
+2014,2014032,groups,False,Spain,2,69,69.0,False,False,False,False,False
+2014,2014032,groups,False,Spain,2,82,82.0,False,True,False,False,False
+2014,2014033,groups,False,Netherlands,1,77,77.0,False,False,False,False,False
+2014,2014033,groups,False,Netherlands,1,90,90.02,False,True,True,False,False
+2014,2014034,groups,False,Brazil,2,17,17.0,False,False,False,False,False
+2014,2014034,groups,False,Cameroon,1,26,26.0,False,False,False,False,False
+2014,2014034,groups,False,Brazil,2,35,35.0,False,False,False,False,False
+2014,2014034,groups,False,Brazil,2,49,49.0,False,False,False,False,False
+2014,2014034,groups,False,Brazil,2,84,84.0,False,True,False,False,False
+2014,2014035,groups,False,Mexico,2,72,72.0,False,False,False,False,False
+2014,2014035,groups,False,Mexico,2,75,75.0,False,False,False,False,False
+2014,2014035,groups,False,Mexico,2,82,82.0,False,True,False,False,False
+2014,2014035,groups,False,Croatia,1,87,87.0,False,True,False,False,False
+2014,2014037,groups,False,Uruguay,2,81,81.0,False,True,False,False,False
+2014,2014038,groups,False,Colombia,2,17,17.0,False,False,False,False,True
+2014,2014038,groups,False,Japan,1,45,45.01,False,False,False,False,False
+2014,2014038,groups,False,Colombia,2,55,55.0,False,False,False,False,False
+2014,2014038,groups,False,Colombia,2,82,82.0,False,True,False,False,False
+2014,2014038,groups,False,Colombia,2,90,90.0,False,True,False,False,False
+2014,2014039,groups,False,Greece,1,42,42.0,False,False,False,False,False
+2014,2014039,groups,False,Ivory Coast,2,74,74.0,False,False,False,False,False
+2014,2014039,groups,False,Greece,1,90,90.03,False,True,True,False,True
+2014,2014040,groups,False,Bosnia and Herzegovina,1,23,23.0,False,False,False,False,False
+2014,2014040,groups,False,Bosnia and Herzegovina,1,59,59.0,False,False,False,False,False
+2014,2014040,groups,False,Iran,2,82,82.0,False,True,False,False,False
+2014,2014040,groups,False,Bosnia and Herzegovina,1,83,83.0,False,True,False,False,False
+2014,2014041,groups,False,Argentina,2,3,3.0,False,False,False,False,False
+2014,2014041,groups,False,Nigeria,1,4,4.0,False,False,False,False,False
+2014,2014041,groups,False,Argentina,2,45,45.01,False,False,False,False,False
+2014,2014041,groups,False,Nigeria,1,47,47.0,False,False,False,False,False
+2014,2014041,groups,False,Argentina,2,50,50.0,False,False,False,False,False
+2014,2014042,groups,False,Switzerland,2,6,6.0,False,False,False,False,False
+2014,2014042,groups,False,Switzerland,2,31,31.0,False,False,False,False,False
+2014,2014042,groups,False,Switzerland,2,71,71.0,False,False,False,False,False
+2014,2014044,groups,False,Portugal,1,31,31.0,False,False,False,True,False
+2014,2014044,groups,False,Ghana,2,57,57.0,False,False,False,False,False
+2014,2014044,groups,False,Portugal,1,80,80.0,False,True,False,False,False
+2014,2014045,groups,False,Germany,2,55,55.0,False,False,False,False,False
+2014,2014046,groups,False,Russia,2,6,6.0,False,False,False,False,False
+2014,2014046,groups,False,Algeria,1,60,60.0,False,False,False,False,False
+2014,2014047,groups,False,Belgium,2,78,78.0,False,False,False,False,False
+2014,2014048,knockout,True,Brazil,1,18,18.0,False,False,False,False,False
+2014,2014048,knockout,True,Chile,2,32,32.0,False,False,False,False,False
+2014,2014049,knockout,True,Colombia,1,28,28.0,False,False,False,False,False
+2014,2014049,knockout,True,Colombia,1,50,50.0,False,False,False,False,False
+2014,2014050,knockout,True,Mexico,2,48,48.0,False,False,False,False,False
+2014,2014050,knockout,True,Netherlands,1,88,88.0,False,True,False,False,False
+2014,2014050,knockout,True,Netherlands,1,90,90.04,False,True,True,False,True
+2014,2014051,knockout,True,Costa Rica,1,52,52.0,False,False,False,False,False
+2014,2014051,knockout,True,Greece,2,90,90.01,False,True,True,False,False
+2014,2014052,knockout,True,France,1,79,79.0,False,False,False,False,False
+2014,2014052,knockout,True,France,1,90,90.02,False,True,True,True,False
+2014,2014053,knockout,True,Germany,1,92,92.0,True,False,False,False,False
+2014,2014053,knockout,True,Germany,1,120,120.0,True,False,False,False,False
+2014,2014053,knockout,True,Algeria,2,120,120.01,True,False,False,False,False
+2014,2014054,knockout,True,Argentina,1,118,118.0,True,False,False,False,False
+2014,2014055,knockout,True,Belgium,1,93,93.0,True,False,False,False,False
+2014,2014055,knockout,True,Belgium,1,105,105.0,True,False,False,False,False
+2014,2014055,knockout,True,United States,2,107,107.0,True,False,False,False,False
+2014,2014056,knockout,True,Germany,2,13,13.0,False,False,False,False,False
+2014,2014057,knockout,True,Brazil,1,7,7.0,False,False,False,False,False
+2014,2014057,knockout,True,Brazil,1,69,69.0,False,False,False,False,False
+2014,2014057,knockout,True,Colombia,2,80,80.0,False,True,False,False,True
+2014,2014058,knockout,True,Argentina,1,8,8.0,False,False,False,False,False
+2014,2014060,knockout,True,Germany,2,11,11.0,False,False,False,False,False
+2014,2014060,knockout,True,Germany,2,23,23.0,False,False,False,False,False
+2014,2014060,knockout,True,Germany,2,24,24.0,False,False,False,False,False
+2014,2014060,knockout,True,Germany,2,26,26.0,False,False,False,False,False
+2014,2014060,knockout,True,Germany,2,29,29.0,False,False,False,False,False
+2014,2014060,knockout,True,Germany,2,69,69.0,False,False,False,False,False
+2014,2014060,knockout,True,Germany,2,79,79.0,False,False,False,False,False
+2014,2014060,knockout,True,Brazil,1,90,90.0,False,True,False,False,False
+2014,2014062,third_place,False,Netherlands,2,3,3.0,False,False,False,False,True
+2014,2014062,third_place,False,Netherlands,2,17,17.0,False,False,False,False,False
+2014,2014062,third_place,False,Netherlands,2,90,90.01,False,True,True,False,False
+2014,2014063,knockout,True,Germany,1,113,113.0,True,False,False,False,False
+2018,2018000,groups,False,Russia,1,12,12.0,False,False,False,False,False
+2018,2018000,groups,False,Russia,1,43,43.0,False,False,False,False,False
+2018,2018000,groups,False,Russia,1,71,71.0,False,False,False,False,False
+2018,2018000,groups,False,Russia,1,90,90.01,False,True,True,False,False
+2018,2018000,groups,False,Russia,1,90,90.04,False,True,True,False,False
+2018,2018001,groups,False,Uruguay,2,89,89.0,False,True,False,False,False
+2018,2018002,groups,False,Iran,2,90,90.05,False,True,True,True,False
+2018,2018003,groups,False,Portugal,1,4,4.0,False,False,False,False,True
+2018,2018003,groups,False,Spain,2,24,24.0,False,False,False,False,False
+2018,2018003,groups,False,Portugal,1,44,44.0,False,False,False,False,False
+2018,2018003,groups,False,Spain,2,55,55.0,False,False,False,False,False
+2018,2018003,groups,False,Spain,2,58,58.0,False,False,False,False,False
+2018,2018003,groups,False,Portugal,1,88,88.0,False,True,False,False,False
+2018,2018004,groups,False,France,1,58,58.0,False,False,False,False,True
+2018,2018004,groups,False,Australia,2,62,62.0,False,False,False,False,True
+2018,2018004,groups,False,France,1,81,81.0,False,True,False,True,False
+2018,2018005,groups,False,Argentina,1,19,19.0,False,False,False,False,False
+2018,2018005,groups,False,Iceland,2,23,23.0,False,False,False,False,False
+2018,2018006,groups,False,Denmark,2,59,59.0,False,False,False,False,False
+2018,2018007,groups,False,Croatia,1,32,32.0,False,False,False,True,False
+2018,2018007,groups,False,Croatia,1,71,71.0,False,False,False,False,True
+2018,2018008,groups,False,Serbia,2,56,56.0,False,False,False,False,False
+2018,2018009,groups,False,Mexico,2,35,35.0,False,False,False,False,False
+2018,2018010,groups,False,Brazil,1,20,20.0,False,False,False,False,False
+2018,2018010,groups,False,Switzerland,2,50,50.0,False,False,False,False,False
+2018,2018011,groups,False,Sweden,1,65,65.0,False,False,False,False,True
+2018,2018012,groups,False,Belgium,1,47,47.0,False,False,False,False,False
+2018,2018012,groups,False,Belgium,1,69,69.0,False,False,False,False,False
+2018,2018012,groups,False,Belgium,1,75,75.0,False,False,False,False,False
+2018,2018013,groups,False,England,2,11,11.0,False,False,False,False,False
+2018,2018013,groups,False,Tunisia,1,35,35.0,False,False,False,False,True
+2018,2018013,groups,False,England,2,90,90.01,False,True,True,False,False
+2018,2018014,groups,False,Japan,2,6,6.0,False,False,False,False,True
+2018,2018014,groups,False,Colombia,1,39,39.0,False,False,False,False,False
+2018,2018014,groups,False,Japan,2,73,73.0,False,False,False,False,False
+2018,2018015,groups,False,Senegal,2,37,37.0,False,False,False,True,False
+2018,2018015,groups,False,Senegal,2,60,60.0,False,False,False,False,False
+2018,2018015,groups,False,Poland,1,86,86.0,False,True,False,False,False
+2018,2018016,groups,False,Russia,1,47,47.0,False,False,False,True,False
+2018,2018016,groups,False,Russia,1,59,59.0,False,False,False,False,False
+2018,2018016,groups,False,Russia,1,62,62.0,False,False,False,False,False
+2018,2018016,groups,False,Egypt,2,73,73.0,False,False,False,False,True
+2018,2018017,groups,False,Portugal,1,4,4.0,False,False,False,False,False
+2018,2018018,groups,False,Uruguay,1,23,23.0,False,False,False,False,False
+2018,2018019,groups,False,Spain,2,54,54.0,False,False,False,False,False
+2018,2018020,groups,False,Denmark,1,7,7.0,False,False,False,False,False
+2018,2018020,groups,False,Australia,2,38,38.0,False,False,False,False,True
+2018,2018021,groups,False,France,1,34,34.0,False,False,False,False,False
+2018,2018022,groups,False,Croatia,2,53,53.0,False,False,False,False,False
+2018,2018022,groups,False,Croatia,2,80,80.0,False,True,False,False,False
+2018,2018022,groups,False,Croatia,2,90,90.01,False,True,True,False,False
+2018,2018023,groups,False,Brazil,1,90,90.01,False,True,True,False,False
+2018,2018023,groups,False,Brazil,1,90,90.07,False,True,True,False,False
+2018,2018024,groups,False,Nigeria,1,49,49.0,False,False,False,False,False
+2018,2018024,groups,False,Nigeria,1,75,75.0,False,False,False,False,False
+2018,2018025,groups,False,Serbia,1,5,5.0,False,False,False,False,False
+2018,2018025,groups,False,Switzerland,2,52,52.0,False,False,False,False,False
+2018,2018025,groups,False,Switzerland,2,90,90.0,False,True,False,False,False
+2018,2018026,groups,False,Belgium,1,6,6.0,False,False,False,False,True
+2018,2018026,groups,False,Belgium,1,16,16.0,False,False,False,False,False
+2018,2018026,groups,False,Tunisia,2,18,18.0,False,False,False,False,False
+2018,2018026,groups,False,Belgium,1,45,45.03,False,False,False,False,False
+2018,2018026,groups,False,Belgium,1,51,51.0,False,False,False,False,False
+2018,2018026,groups,False,Belgium,1,90,90.0,False,True,False,False,False
+2018,2018026,groups,False,Tunisia,2,90,90.03,False,True,True,False,False
+2018,2018027,groups,False,Mexico,2,26,26.0,False,False,False,False,True
+2018,2018027,groups,False,Mexico,2,66,66.0,False,False,False,False,False
+2018,2018027,groups,False,South Korea,1,90,90.03,False,True,True,False,False
+2018,2018028,groups,False,Sweden,2,32,32.0,False,False,False,False,False
+2018,2018028,groups,False,Germany,1,48,48.0,False,False,False,False,False
+2018,2018028,groups,False,Germany,1,90,90.05,False,True,True,False,False
+2018,2018029,groups,False,England,1,8,8.0,False,False,False,False,False
+2018,2018029,groups,False,England,1,22,22.0,False,False,False,False,True
+2018,2018029,groups,False,England,1,36,36.0,False,False,False,False,False
+2018,2018029,groups,False,England,1,40,40.0,False,False,False,False,False
+2018,2018029,groups,False,England,1,45,45.01,False,False,False,False,True
+2018,2018029,groups,False,England,1,62,62.0,False,False,False,False,False
+2018,2018029,groups,False,Panama,2,78,78.0,False,False,False,False,False
+2018,2018030,groups,False,Senegal,2,11,11.0,False,False,False,False,False
+2018,2018030,groups,False,Japan,1,34,34.0,False,False,False,False,False
+2018,2018030,groups,False,Senegal,2,71,71.0,False,False,False,False,False
+2018,2018030,groups,False,Japan,1,78,78.0,False,False,False,False,False
+2018,2018031,groups,False,Colombia,2,40,40.0,False,False,False,False,False
+2018,2018031,groups,False,Colombia,2,70,70.0,False,False,False,False,False
+2018,2018031,groups,False,Colombia,2,75,75.0,False,False,False,False,False
+2018,2018032,groups,False,Egypt,2,22,22.0,False,False,False,False,False
+2018,2018032,groups,False,Saudi Arabia,1,45,45.06,False,False,False,False,True
+2018,2018032,groups,False,Saudi Arabia,1,90,90.05,False,True,True,False,False
+2018,2018033,groups,False,Uruguay,1,10,10.0,False,False,False,False,False
+2018,2018033,groups,False,Uruguay,1,23,23.0,False,False,False,True,False
+2018,2018033,groups,False,Uruguay,1,90,90.0,False,True,False,False,False
+2018,2018034,groups,False,Morocco,2,14,14.0,False,False,False,False,False
+2018,2018034,groups,False,Spain,1,19,19.0,False,False,False,False,False
+2018,2018034,groups,False,Morocco,2,81,81.0,False,True,False,False,False
+2018,2018034,groups,False,Spain,1,90,90.01,False,True,True,False,False
+2018,2018035,groups,False,Portugal,2,45,45.0,False,False,False,False,False
+2018,2018035,groups,False,Iran,1,90,90.03,False,True,True,False,True
+2018,2018036,groups,False,Peru,2,18,18.0,False,False,False,False,False
+2018,2018036,groups,False,Peru,2,50,50.0,False,False,False,False,False
+2018,2018038,groups,False,Croatia,2,53,53.0,False,False,False,False,False
+2018,2018038,groups,False,Iceland,1,76,76.0,False,False,False,False,True
+2018,2018038,groups,False,Croatia,2,90,90.0,False,True,False,False,False
+2018,2018039,groups,False,Argentina,2,14,14.0,False,False,False,False,False
+2018,2018039,groups,False,Nigeria,1,51,51.0,False,False,False,False,True
+2018,2018039,groups,False,Argentina,2,86,86.0,False,True,False,False,False
+2018,2018040,groups,False,South Korea,1,90,90.02,False,True,True,False,False
+2018,2018040,groups,False,South Korea,1,90,90.06,False,True,True,False,False
+2018,2018041,groups,False,Sweden,2,50,50.0,False,False,False,False,False
+2018,2018041,groups,False,Sweden,2,62,62.0,False,False,False,False,True
+2018,2018041,groups,False,Sweden,2,74,74.0,False,False,False,True,False
+2018,2018042,groups,False,Brazil,2,36,36.0,False,False,False,False,False
+2018,2018042,groups,False,Brazil,2,68,68.0,False,False,False,False,False
+2018,2018043,groups,False,Switzerland,1,31,31.0,False,False,False,False,False
+2018,2018043,groups,False,Costa Rica,2,56,56.0,False,False,False,False,False
+2018,2018043,groups,False,Switzerland,1,88,88.0,False,True,False,False,False
+2018,2018043,groups,False,Costa Rica,2,90,90.03,False,True,True,True,False
+2018,2018044,groups,False,Poland,2,59,59.0,False,False,False,False,False
+2018,2018045,groups,False,Colombia,2,74,74.0,False,False,False,False,False
+2018,2018046,groups,False,Belgium,2,51,51.0,False,False,False,False,False
+2018,2018047,groups,False,Panama,1,33,33.0,False,False,False,True,False
+2018,2018047,groups,False,Tunisia,2,51,51.0,False,False,False,False,False
+2018,2018047,groups,False,Tunisia,2,66,66.0,False,False,False,False,False
+2018,2018048,knockout,True,France,1,13,13.0,False,False,False,False,True
+2018,2018048,knockout,True,Argentina,2,41,41.0,False,False,False,False,False
+2018,2018048,knockout,True,Argentina,2,48,48.0,False,False,False,False,False
+2018,2018048,knockout,True,France,1,57,57.0,False,False,False,False,False
+2018,2018048,knockout,True,France,1,64,64.0,False,False,False,False,False
+2018,2018048,knockout,True,France,1,68,68.0,False,False,False,False,False
+2018,2018048,knockout,True,Argentina,2,90,90.03,False,True,True,False,False
+2018,2018049,knockout,True,Uruguay,1,7,7.0,False,False,False,False,False
+2018,2018049,knockout,True,Portugal,2,55,55.0,False,False,False,False,False
+2018,2018049,knockout,True,Uruguay,1,62,62.0,False,False,False,False,False
+2018,2018050,knockout,True,Spain,1,12,12.0,False,False,False,True,False
+2018,2018050,knockout,True,Russia,2,41,41.0,False,False,False,False,True
+2018,2018051,knockout,True,Denmark,2,1,1.0,False,False,False,False,False
+2018,2018051,knockout,True,Croatia,1,4,4.0,False,False,False,False,False
+2018,2018052,knockout,True,Brazil,1,51,51.0,False,False,False,False,False
+2018,2018052,knockout,True,Brazil,1,88,88.0,False,True,False,False,False
+2018,2018053,knockout,True,Japan,2,48,48.0,False,False,False,False,False
+2018,2018053,knockout,True,Japan,2,52,52.0,False,False,False,False,False
+2018,2018053,knockout,True,Belgium,1,69,69.0,False,False,False,False,False
+2018,2018053,knockout,True,Belgium,1,74,74.0,False,False,False,False,False
+2018,2018053,knockout,True,Belgium,1,90,90.04,False,True,True,False,False
+2018,2018054,knockout,True,Sweden,1,66,66.0,False,False,False,False,False
+2018,2018055,knockout,True,England,2,57,57.0,False,False,False,False,True
+2018,2018055,knockout,True,Colombia,1,90,90.03,False,True,True,False,False
+2018,2018056,knockout,True,France,2,40,40.0,False,False,False,False,False
+2018,2018056,knockout,True,France,2,61,61.0,False,False,False,False,False
+2018,2018057,knockout,True,Belgium,2,13,13.0,False,False,False,True,False
+2018,2018057,knockout,True,Belgium,2,31,31.0,False,False,False,False,False
+2018,2018057,knockout,True,Brazil,1,76,76.0,False,False,False,False,False
+2018,2018058,knockout,True,England,2,30,30.0,False,False,False,False,False
+2018,2018058,knockout,True,England,2,59,59.0,False,False,False,False,False
+2018,2018059,knockout,True,Russia,1,31,31.0,False,False,False,False,False
+2018,2018059,knockout,True,Croatia,2,39,39.0,False,False,False,False,False
+2018,2018059,knockout,True,Croatia,2,101,101.0,True,False,False,False,False
+2018,2018059,knockout,True,Russia,1,115,115.0,True,False,False,False,False
+2018,2018060,knockout,True,France,1,51,51.0,False,False,False,False,False
+2018,2018061,knockout,True,England,2,5,5.0,False,False,False,False,False
+2018,2018061,knockout,True,Croatia,1,68,68.0,False,False,False,False,False
+2018,2018061,knockout,True,Croatia,1,109,109.0,True,False,False,False,False
+2018,2018062,third_place,False,Belgium,1,4,4.0,False,False,False,False,False
+2018,2018062,third_place,False,Belgium,1,82,82.0,False,True,False,False,False
+2018,2018063,knockout,True,France,1,18,18.0,False,False,False,True,False
+2018,2018063,knockout,True,Croatia,2,28,28.0,False,False,False,False,False
+2018,2018063,knockout,True,France,1,38,38.0,False,False,False,False,True
+2018,2018063,knockout,True,France,1,59,59.0,False,False,False,False,False
+2018,2018063,knockout,True,France,1,65,65.0,False,False,False,False,False
+2018,2018063,knockout,True,Croatia,2,69,69.0,False,False,False,False,False
+2022,2022000,groups,False,Ecuador,2,16,16.0,False,False,False,False,True
+2022,2022000,groups,False,Ecuador,2,31,31.0,False,False,False,False,False
+2022,2022001,groups,False,England,1,35,35.0,False,False,False,False,False
+2022,2022001,groups,False,England,1,43,43.0,False,False,False,False,False
+2022,2022001,groups,False,England,1,45,45.01,False,False,False,False,False
+2022,2022001,groups,False,England,1,62,62.0,False,False,False,False,False
+2022,2022001,groups,False,Iran,2,65,65.0,False,False,False,False,False
+2022,2022001,groups,False,England,1,71,71.0,False,False,False,False,False
+2022,2022001,groups,False,England,1,90,90.0,False,True,False,False,False
+2022,2022001,groups,False,Iran,2,90,90.13,False,True,True,False,True
+2022,2022002,groups,False,Netherlands,2,84,84.0,False,True,False,False,False
+2022,2022002,groups,False,Netherlands,2,90,90.09,False,True,True,False,False
+2022,2022003,groups,False,United States,1,36,36.0,False,False,False,False,False
+2022,2022003,groups,False,Wales,2,82,82.0,False,True,False,False,True
+2022,2022004,groups,False,Argentina,1,10,10.0,False,False,False,False,True
+2022,2022004,groups,False,Saudi Arabia,2,48,48.0,False,False,False,False,False
+2022,2022004,groups,False,Saudi Arabia,2,53,53.0,False,False,False,False,False
+2022,2022007,groups,False,Australia,2,9,9.0,False,False,False,False,False
+2022,2022007,groups,False,France,1,27,27.0,False,False,False,False,False
+2022,2022007,groups,False,France,1,32,32.0,False,False,False,False,False
+2022,2022007,groups,False,France,1,68,68.0,False,False,False,False,False
+2022,2022007,groups,False,France,1,71,71.0,False,False,False,False,False
+2022,2022009,groups,False,Germany,1,33,33.0,False,False,False,False,True
+2022,2022009,groups,False,Japan,2,75,75.0,False,False,False,False,False
+2022,2022009,groups,False,Japan,2,83,83.0,False,True,False,False,False
+2022,2022010,groups,False,Spain,1,11,11.0,False,False,False,False,False
+2022,2022010,groups,False,Spain,1,21,21.0,False,False,False,False,False
+2022,2022010,groups,False,Spain,1,31,31.0,False,False,False,False,True
+2022,2022010,groups,False,Spain,1,54,54.0,False,False,False,False,False
+2022,2022010,groups,False,Spain,1,74,74.0,False,False,False,False,False
+2022,2022010,groups,False,Spain,1,90,90.0,False,True,False,False,False
+2022,2022010,groups,False,Spain,1,90,90.02,False,True,True,False,False
+2022,2022011,groups,False,Belgium,1,44,44.0,False,False,False,False,False
+2022,2022012,groups,False,Switzerland,1,48,48.0,False,False,False,False,False
+2022,2022014,groups,False,Portugal,1,65,65.0,False,False,False,False,True
+2022,2022014,groups,False,Ghana,2,73,73.0,False,False,False,False,False
+2022,2022014,groups,False,Portugal,1,78,78.0,False,False,False,False,False
+2022,2022014,groups,False,Portugal,1,80,80.0,False,True,False,False,False
+2022,2022014,groups,False,Ghana,2,89,89.0,False,True,False,False,False
+2022,2022015,groups,False,Brazil,1,62,62.0,False,False,False,False,False
+2022,2022015,groups,False,Brazil,1,73,73.0,False,False,False,False,False
+2022,2022016,groups,False,Iran,2,90,90.08,False,True,True,False,False
+2022,2022016,groups,False,Iran,2,90,90.11,False,True,True,False,False
+2022,2022017,groups,False,Senegal,2,41,41.0,False,False,False,False,False
+2022,2022017,groups,False,Senegal,2,48,48.0,False,False,False,False,False
+2022,2022017,groups,False,Qatar,1,78,78.0,False,False,False,False,False
+2022,2022017,groups,False,Senegal,2,84,84.0,False,True,False,False,False
+2022,2022018,groups,False,Netherlands,1,6,6.0,False,False,False,False,False
+2022,2022018,groups,False,Ecuador,2,49,49.0,False,False,False,False,False
+2022,2022020,groups,False,Australia,2,23,23.0,False,False,False,False,False
+2022,2022021,groups,False,Poland,1,39,39.0,False,False,False,False,False
+2022,2022021,groups,False,Poland,1,82,82.0,False,True,False,False,False
+2022,2022022,groups,False,France,1,61,61.0,False,False,False,False,False
+2022,2022022,groups,False,Denmark,2,68,68.0,False,False,False,False,False
+2022,2022022,groups,False,France,1,86,86.0,False,True,False,False,False
+2022,2022023,groups,False,Argentina,1,64,64.0,False,False,False,False,False
+2022,2022023,groups,False,Argentina,1,87,87.0,False,True,False,False,False
+2022,2022024,groups,False,Costa Rica,2,81,81.0,False,True,False,False,False
+2022,2022025,groups,False,Morocco,2,73,73.0,False,False,False,False,False
+2022,2022025,groups,False,Morocco,2,90,90.02,False,True,True,False,False
+2022,2022026,groups,False,Canada,2,2,2.0,False,False,False,False,False
+2022,2022026,groups,False,Croatia,1,36,36.0,False,False,False,False,False
+2022,2022026,groups,False,Croatia,1,44,44.0,False,False,False,False,False
+2022,2022026,groups,False,Croatia,1,70,70.0,False,False,False,False,False
+2022,2022026,groups,False,Croatia,1,90,90.04,False,True,True,False,False
+2022,2022027,groups,False,Spain,1,62,62.0,False,False,False,False,False
+2022,2022027,groups,False,Germany,2,83,83.0,False,True,False,False,False
+2022,2022028,groups,False,Cameroon,1,29,29.0,False,False,False,False,False
+2022,2022028,groups,False,Serbia,2,45,45.01,False,False,False,False,False
+2022,2022028,groups,False,Serbia,2,45,45.03,False,False,False,False,False
+2022,2022028,groups,False,Serbia,2,53,53.0,False,False,False,False,False
+2022,2022028,groups,False,Cameroon,1,63,63.0,False,False,False,False,False
+2022,2022028,groups,False,Cameroon,1,66,66.0,False,False,False,False,False
+2022,2022029,groups,False,Ghana,2,24,24.0,False,False,False,False,False
+2022,2022029,groups,False,Ghana,2,34,34.0,False,False,False,False,False
+2022,2022029,groups,False,South Korea,1,58,58.0,False,False,False,False,False
+2022,2022029,groups,False,South Korea,1,61,61.0,False,False,False,False,False
+2022,2022029,groups,False,Ghana,2,68,68.0,False,False,False,False,False
+2022,2022030,groups,False,Brazil,1,83,83.0,False,True,False,False,False
+2022,2022031,groups,False,Portugal,1,54,54.0,False,False,False,False,False
+2022,2022031,groups,False,Portugal,1,90,90.03,False,True,True,False,True
+2022,2022032,groups,False,Senegal,2,44,44.0,False,False,False,False,True
+2022,2022032,groups,False,Ecuador,1,67,67.0,False,False,False,False,False
+2022,2022032,groups,False,Senegal,2,70,70.0,False,False,False,False,False
+2022,2022033,groups,False,Netherlands,1,26,26.0,False,False,False,False,False
+2022,2022033,groups,False,Netherlands,1,49,49.0,False,False,False,False,False
+2022,2022034,groups,False,United States,2,38,38.0,False,False,False,False,False
+2022,2022035,groups,False,England,2,50,50.0,False,False,False,False,False
+2022,2022035,groups,False,England,2,51,51.0,False,False,False,False,False
+2022,2022035,groups,False,England,2,68,68.0,False,False,False,False,False
+2022,2022036,groups,False,Australia,1,60,60.0,False,False,False,False,False
+2022,2022037,groups,False,Tunisia,1,58,58.0,False,False,False,False,False
+2022,2022038,groups,False,Argentina,2,46,46.0,False,False,False,False,False
+2022,2022038,groups,False,Argentina,2,67,67.0,False,False,False,False,False
+2022,2022039,groups,False,Mexico,2,47,47.0,False,False,False,False,False
+2022,2022039,groups,False,Mexico,2,52,52.0,False,False,False,False,False
+2022,2022039,groups,False,Saudi Arabia,1,90,90.05,False,True,True,False,False
+2022,2022040,groups,False,Morocco,2,4,4.0,False,False,False,False,False
+2022,2022040,groups,False,Morocco,2,23,23.0,False,False,False,False,False
+2022,2022040,groups,False,Canada,1,40,40.0,False,False,False,True,False
+2022,2022042,groups,False,Germany,2,10,10.0,False,False,False,False,False
+2022,2022042,groups,False,Costa Rica,1,58,58.0,False,False,False,False,False
+2022,2022042,groups,False,Costa Rica,1,70,70.0,False,False,False,False,False
+2022,2022042,groups,False,Germany,2,73,73.0,False,False,False,False,False
+2022,2022042,groups,False,Germany,2,85,85.0,False,True,False,False,False
+2022,2022042,groups,False,Germany,2,89,89.0,False,True,False,False,False
+2022,2022043,groups,False,Spain,2,11,11.0,False,False,False,False,False
+2022,2022043,groups,False,Japan,1,48,48.0,False,False,False,False,False
+2022,2022043,groups,False,Japan,1,51,51.0,False,False,False,False,False
+2022,2022044,groups,False,Uruguay,2,26,26.0,False,False,False,False,False
+2022,2022044,groups,False,Uruguay,2,32,32.0,False,False,False,False,False
+2022,2022045,groups,False,Portugal,2,5,5.0,False,False,False,False,False
+2022,2022045,groups,False,South Korea,1,27,27.0,False,False,False,False,False
+2022,2022045,groups,False,South Korea,1,90,90.01,False,True,True,False,False
+2022,2022046,groups,False,Cameroon,1,90,90.02,False,True,True,False,False
+2022,2022047,groups,False,Switzerland,2,20,20.0,False,False,False,False,False
+2022,2022047,groups,False,Serbia,1,26,26.0,False,False,False,False,False
+2022,2022047,groups,False,Serbia,1,35,35.0,False,False,False,False,False
+2022,2022047,groups,False,Switzerland,2,44,44.0,False,False,False,False,False
+2022,2022047,groups,False,Switzerland,2,48,48.0,False,False,False,False,False
+2022,2022048,knockout,True,Netherlands,1,10,10.0,False,False,False,False,False
+2022,2022048,knockout,True,Netherlands,1,45,45.01,False,False,False,False,False
+2022,2022048,knockout,True,United States,2,76,76.0,False,False,False,False,False
+2022,2022048,knockout,True,Netherlands,1,81,81.0,False,True,False,False,False
+2022,2022049,knockout,True,Argentina,1,35,35.0,False,False,False,False,False
+2022,2022049,knockout,True,Argentina,1,57,57.0,False,False,False,False,False
+2022,2022049,knockout,True,Australia,2,77,77.0,False,False,False,True,False
+2022,2022050,knockout,True,France,1,44,44.0,False,False,False,False,False
+2022,2022050,knockout,True,France,1,74,74.0,False,False,False,False,False
+2022,2022050,knockout,True,France,1,90,90.01,False,True,True,False,False
+2022,2022050,knockout,True,Poland,2,90,90.09,False,True,True,False,True
+2022,2022051,knockout,True,England,1,38,38.0,False,False,False,False,False
+2022,2022051,knockout,True,England,1,45,45.03,False,False,False,False,False
+2022,2022051,knockout,True,England,1,57,57.0,False,False,False,False,False
+2022,2022052,knockout,True,Japan,1,43,43.0,False,False,False,False,False
+2022,2022052,knockout,True,Croatia,2,55,55.0,False,False,False,False,False
+2022,2022053,knockout,True,Brazil,1,7,7.0,False,False,False,False,False
+2022,2022053,knockout,True,Brazil,1,13,13.0,False,False,False,False,True
+2022,2022053,knockout,True,Brazil,1,29,29.0,False,False,False,False,False
+2022,2022053,knockout,True,Brazil,1,36,36.0,False,False,False,False,False
+2022,2022053,knockout,True,South Korea,2,76,76.0,False,False,False,False,False
+2022,2022055,knockout,True,Portugal,1,17,17.0,False,False,False,False,False
+2022,2022055,knockout,True,Portugal,1,33,33.0,False,False,False,False,False
+2022,2022055,knockout,True,Portugal,1,51,51.0,False,False,False,False,False
+2022,2022055,knockout,True,Portugal,1,55,55.0,False,False,False,False,False
+2022,2022055,knockout,True,Switzerland,2,58,58.0,False,False,False,False,False
+2022,2022055,knockout,True,Portugal,1,67,67.0,False,False,False,False,False
+2022,2022055,knockout,True,Portugal,1,90,90.02,False,True,True,False,False
+2022,2022056,knockout,True,Brazil,2,105,105.01,True,False,False,False,False
+2022,2022056,knockout,True,Croatia,1,117,117.0,True,False,False,False,False
+2022,2022057,knockout,True,Argentina,2,35,35.0,False,False,False,False,False
+2022,2022057,knockout,True,Argentina,2,73,73.0,False,False,False,False,True
+2022,2022057,knockout,True,Netherlands,1,83,83.0,False,True,False,False,False
+2022,2022057,knockout,True,Netherlands,1,90,90.11,False,True,True,False,False
+2022,2022058,knockout,True,Morocco,1,42,42.0,False,False,False,False,False
+2022,2022059,knockout,True,France,2,17,17.0,False,False,False,False,False
+2022,2022059,knockout,True,England,1,54,54.0,False,False,False,False,True
+2022,2022059,knockout,True,France,2,78,78.0,False,False,False,False,False
+2022,2022060,knockout,True,Argentina,1,34,34.0,False,False,False,False,True
+2022,2022060,knockout,True,Argentina,1,39,39.0,False,False,False,False,False
+2022,2022060,knockout,True,Argentina,1,69,69.0,False,False,False,False,False
+2022,2022061,knockout,True,France,1,5,5.0,False,False,False,False,False
+2022,2022061,knockout,True,France,1,79,79.0,False,False,False,False,False
+2022,2022062,third_place,False,Croatia,1,7,7.0,False,False,False,False,False
+2022,2022062,third_place,False,Morocco,2,9,9.0,False,False,False,False,False
+2022,2022062,third_place,False,Croatia,1,42,42.0,False,False,False,False,False
+2022,2022063,knockout,True,Argentina,1,23,23.0,False,False,False,False,True
+2022,2022063,knockout,True,Argentina,1,36,36.0,False,False,False,False,False
+2022,2022063,knockout,True,France,2,80,80.0,False,True,False,False,True
+2022,2022063,knockout,True,France,2,81,81.0,False,True,False,False,False
+2022,2022063,knockout,True,Argentina,1,108,108.0,True,False,False,False,False
+2022,2022063,knockout,True,France,2,118,118.0,True,False,False,False,True
+2026,2026000,groups,False,Mexico,1,9,9.0,False,False,False,False,False
+2026,2026000,groups,False,Mexico,1,67,67.0,False,False,False,False,False
+2026,2026001,groups,False,Czech Republic,2,59,59.0,False,False,False,False,False
+2026,2026001,groups,False,South Korea,1,67,67.0,False,False,False,False,False
+2026,2026001,groups,False,South Korea,1,80,80.0,False,True,False,False,False
+2026,2026002,groups,False,Czech Republic,1,6,6.0,False,False,False,False,False
+2026,2026002,groups,False,South Africa,2,83,83.0,False,True,False,False,True
+2026,2026003,groups,False,Mexico,1,50,50.0,False,False,False,False,False
+2026,2026004,groups,False,Mexico,2,55,55.0,False,False,False,False,False
+2026,2026004,groups,False,Mexico,2,61,61.0,False,False,False,False,False
+2026,2026004,groups,False,Mexico,2,90,90.04,False,True,True,False,False
+2026,2026005,groups,False,South Africa,1,63,63.0,False,False,False,False,False
+2026,2026006,groups,False,Bosnia & Herzegovina,2,21,21.0,False,False,False,False,False
+2026,2026006,groups,False,Canada,1,78,78.0,False,False,False,False,False
+2026,2026007,groups,False,Switzerland,2,17,17.0,False,False,False,False,True
+2026,2026007,groups,False,Qatar,1,90,90.04,False,True,True,True,False
+2026,2026008,groups,False,Switzerland,1,74,74.0,False,False,False,False,False
+2026,2026008,groups,False,Switzerland,1,84,84.0,False,True,False,False,False
+2026,2026008,groups,False,Switzerland,1,90,90.0,False,True,False,False,False
+2026,2026008,groups,False,Bosnia & Herzegovina,2,90,90.03,False,True,True,False,False
+2026,2026008,groups,False,Switzerland,1,90,90.07,False,True,True,False,True
+2026,2026009,groups,False,Canada,1,16,16.0,False,False,False,False,False
+2026,2026009,groups,False,Canada,1,29,29.0,False,False,False,False,False
+2026,2026009,groups,False,Canada,1,45,45.03,False,False,False,False,False
+2026,2026009,groups,False,Canada,1,64,64.0,False,False,False,False,False
+2026,2026009,groups,False,Canada,1,75,75.0,False,False,False,True,False
+2026,2026009,groups,False,Canada,1,90,90.02,False,True,True,False,False
+2026,2026010,groups,False,Switzerland,1,46,46.0,False,False,False,False,False
+2026,2026010,groups,False,Switzerland,1,57,57.0,False,False,False,False,False
+2026,2026010,groups,False,Canada,2,76,76.0,False,False,False,False,False
+2026,2026011,groups,False,Bosnia & Herzegovina,1,29,29.0,False,False,False,False,False
+2026,2026011,groups,False,Bosnia & Herzegovina,1,34,34.0,False,False,False,True,False
+2026,2026011,groups,False,Qatar,2,42,42.0,False,False,False,False,False
+2026,2026011,groups,False,Bosnia & Herzegovina,1,80,80.0,False,True,False,False,False
+2026,2026012,groups,False,Morocco,2,21,21.0,False,False,False,False,False
+2026,2026012,groups,False,Brazil,1,32,32.0,False,False,False,False,False
+2026,2026013,groups,False,Scotland,2,28,28.0,False,False,False,False,False
+2026,2026014,groups,False,Morocco,2,2,2.0,False,False,False,False,False
+2026,2026015,groups,False,Brazil,1,23,23.0,False,False,False,False,False
+2026,2026015,groups,False,Brazil,1,36,36.0,False,False,False,False,False
+2026,2026015,groups,False,Brazil,1,45,45.03,False,False,False,False,False
+2026,2026016,groups,False,Brazil,2,7,7.0,False,False,False,False,False
+2026,2026016,groups,False,Brazil,2,45,45.03,False,False,False,False,False
+2026,2026016,groups,False,Brazil,2,60,60.0,False,False,False,False,False
+2026,2026017,groups,False,Haiti,2,10,10.0,False,False,False,True,False
+2026,2026017,groups,False,Morocco,1,39,39.0,False,False,False,False,False
+2026,2026017,groups,False,Haiti,2,43,43.0,False,False,False,False,False
+2026,2026017,groups,False,Morocco,1,45,45.01,False,False,False,False,False
+2026,2026017,groups,False,Morocco,1,78,78.0,False,False,False,False,False
+2026,2026017,groups,False,Morocco,1,89,89.0,False,True,False,False,False
+2026,2026018,groups,False,USA,1,7,7.0,False,False,False,True,False
+2026,2026018,groups,False,USA,1,31,31.0,False,False,False,False,False
+2026,2026018,groups,False,USA,1,45,45.05,False,False,False,False,False
+2026,2026018,groups,False,Paraguay,2,73,73.0,False,False,False,False,False
+2026,2026018,groups,False,USA,1,90,90.08,False,True,True,False,False
+2026,2026019,groups,False,Australia,1,27,27.0,False,False,False,False,False
+2026,2026019,groups,False,Australia,1,75,75.0,False,False,False,False,False
+2026,2026020,groups,False,USA,1,11,11.0,False,False,False,True,False
+2026,2026020,groups,False,USA,1,43,43.0,False,False,False,False,False
+2026,2026021,groups,False,Paraguay,2,2,2.0,False,False,False,False,False
+2026,2026022,groups,False,USA,2,3,3.0,False,False,False,False,False
+2026,2026022,groups,False,Turkey,1,10,10.0,False,False,False,False,False
+2026,2026022,groups,False,Turkey,1,31,31.0,False,False,False,False,False
+2026,2026022,groups,False,USA,2,49,49.0,False,False,False,False,False
+2026,2026022,groups,False,Turkey,1,90,90.08,False,True,True,False,False
+2026,2026024,groups,False,Germany,1,6,6.0,False,False,False,False,False
+2026,2026024,groups,False,Curaçao,2,21,21.0,False,False,False,False,False
+2026,2026024,groups,False,Germany,1,38,38.0,False,False,False,False,False
+2026,2026024,groups,False,Germany,1,45,45.05,False,False,False,False,True
+2026,2026024,groups,False,Germany,1,47,47.0,False,False,False,False,False
+2026,2026024,groups,False,Germany,1,68,68.0,False,False,False,False,False
+2026,2026024,groups,False,Germany,1,78,78.0,False,False,False,False,False
+2026,2026024,groups,False,Germany,1,88,88.0,False,True,False,False,False
+2026,2026025,groups,False,Ivory Coast,1,90,90.0,False,True,False,False,False
+2026,2026026,groups,False,Ivory Coast,2,30,30.0,False,False,False,False,False
+2026,2026026,groups,False,Germany,1,68,68.0,False,False,False,False,False
+2026,2026026,groups,False,Germany,1,90,90.04,False,True,True,False,False
+2026,2026028,groups,False,Ivory Coast,2,7,7.0,False,False,False,False,False
+2026,2026028,groups,False,Ivory Coast,2,64,64.0,False,False,False,False,False
+2026,2026029,groups,False,Germany,2,2,2.0,False,False,False,False,False
+2026,2026029,groups,False,Ecuador,1,9,9.0,False,False,False,False,False
+2026,2026029,groups,False,Ecuador,1,77,77.0,False,False,False,False,False
+2026,2026030,groups,False,Netherlands,1,51,51.0,False,False,False,False,False
+2026,2026030,groups,False,Japan,2,57,57.0,False,False,False,False,False
+2026,2026030,groups,False,Netherlands,1,64,64.0,False,False,False,False,False
+2026,2026030,groups,False,Japan,2,88,88.0,False,True,False,False,False
+2026,2026031,groups,False,Sweden,1,7,7.0,False,False,False,False,False
+2026,2026031,groups,False,Sweden,1,30,30.0,False,False,False,False,False
+2026,2026031,groups,False,Tunisia,2,43,43.0,False,False,False,False,False
+2026,2026031,groups,False,Sweden,1,59,59.0,False,False,False,False,False
+2026,2026031,groups,False,Sweden,1,84,84.0,False,True,False,False,False
+2026,2026031,groups,False,Sweden,1,90,90.06,False,True,True,False,False
+2026,2026032,groups,False,Netherlands,1,5,5.0,False,False,False,False,False
+2026,2026032,groups,False,Netherlands,1,17,17.0,False,False,False,False,False
+2026,2026032,groups,False,Netherlands,1,47,47.0,False,False,False,False,False
+2026,2026032,groups,False,Netherlands,1,54,54.0,False,False,False,False,False
+2026,2026032,groups,False,Sweden,2,59,59.0,False,False,False,False,False
+2026,2026032,groups,False,Netherlands,1,89,89.0,False,True,False,False,False
+2026,2026033,groups,False,Japan,2,4,4.0,False,False,False,False,False
+2026,2026033,groups,False,Japan,2,31,31.0,False,False,False,False,False
+2026,2026033,groups,False,Japan,2,69,69.0,False,False,False,False,False
+2026,2026033,groups,False,Japan,2,83,83.0,False,True,False,False,False
+2026,2026034,groups,False,Japan,1,56,56.0,False,False,False,False,False
+2026,2026034,groups,False,Sweden,2,62,62.0,False,False,False,False,False
+2026,2026035,groups,False,Netherlands,2,3,3.0,False,False,False,True,False
+2026,2026035,groups,False,Netherlands,2,7,7.0,False,False,False,False,False
+2026,2026035,groups,False,Tunisia,1,54,54.0,False,False,False,False,False
+2026,2026035,groups,False,Netherlands,2,62,62.0,False,False,False,False,False
+2026,2026036,groups,False,Egypt,2,19,19.0,False,False,False,False,False
+2026,2026036,groups,False,Belgium,1,66,66.0,False,False,False,True,False
+2026,2026037,groups,False,New Zealand,2,7,7.0,False,False,False,False,False
+2026,2026037,groups,False,Iran,1,32,32.0,False,False,False,False,False
+2026,2026037,groups,False,New Zealand,2,54,54.0,False,False,False,False,False
+2026,2026037,groups,False,Iran,1,64,64.0,False,False,False,False,False
+2026,2026039,groups,False,New Zealand,1,15,15.0,False,False,False,False,False
+2026,2026039,groups,False,Egypt,2,58,58.0,False,False,False,False,False
+2026,2026039,groups,False,Egypt,2,67,67.0,False,False,False,False,False
+2026,2026039,groups,False,Egypt,2,82,82.0,False,True,False,False,False
+2026,2026040,groups,False,Egypt,1,5,5.0,False,False,False,False,False
+2026,2026040,groups,False,Iran,2,14,14.0,False,False,False,False,False
+2026,2026041,groups,False,Belgium,2,28,28.0,False,False,False,False,False
+2026,2026041,groups,False,Belgium,2,50,50.0,False,False,False,False,False
+2026,2026041,groups,False,Belgium,2,66,66.0,False,False,False,False,False
+2026,2026041,groups,False,New Zealand,1,84,84.0,False,True,False,False,False
+2026,2026041,groups,False,Belgium,2,86,86.0,False,True,False,False,False
+2026,2026041,groups,False,Belgium,2,90,90.04,False,True,True,False,False
+2026,2026043,groups,False,Saudi Arabia,1,41,41.0,False,False,False,False,False
+2026,2026043,groups,False,Uruguay,2,80,80.0,False,True,False,False,False
+2026,2026044,groups,False,Spain,1,10,10.0,False,False,False,False,False
+2026,2026044,groups,False,Spain,1,21,21.0,False,False,False,False,False
+2026,2026044,groups,False,Spain,1,24,24.0,False,False,False,False,False
+2026,2026044,groups,False,Spain,1,49,49.0,False,False,False,True,False
+2026,2026045,groups,False,Cape Verde,2,21,21.0,False,False,False,False,False
+2026,2026045,groups,False,Uruguay,1,44,44.0,False,False,False,False,False
+2026,2026045,groups,False,Uruguay,1,45,45.06,False,False,False,False,False
+2026,2026045,groups,False,Cape Verde,2,61,61.0,False,False,False,False,False
+2026,2026047,groups,False,Spain,2,42,42.0,False,False,False,False,False
+2026,2026048,groups,False,France,1,66,66.0,False,False,False,False,False
+2026,2026048,groups,False,France,1,82,82.0,False,True,False,False,False
+2026,2026048,groups,False,Senegal,2,90,90.05,False,True,True,False,False
+2026,2026048,groups,False,France,1,90,90.06,False,True,True,False,False
+2026,2026049,groups,False,Norway,2,29,29.0,False,False,False,False,False
+2026,2026049,groups,False,Iraq,1,39,39.0,False,False,False,False,False
+2026,2026049,groups,False,Norway,2,43,43.0,False,False,False,False,False
+2026,2026049,groups,False,Norway,2,76,76.0,False,False,False,False,False
+2026,2026049,groups,False,Norway,2,90,90.06,False,True,True,True,False
+2026,2026050,groups,False,France,1,14,14.0,False,False,False,False,False
+2026,2026050,groups,False,France,1,54,54.0,False,False,False,False,False
+2026,2026050,groups,False,France,1,66,66.0,False,False,False,False,False
+2026,2026051,groups,False,Norway,1,43,43.0,False,False,False,False,False
+2026,2026051,groups,False,Norway,1,48,48.0,False,False,False,False,False
+2026,2026051,groups,False,Senegal,2,53,53.0,False,False,False,False,False
+2026,2026051,groups,False,Norway,1,58,58.0,False,False,False,False,False
+2026,2026051,groups,False,Senegal,2,90,90.03,False,True,True,False,False
+2026,2026052,groups,False,France,2,7,7.0,False,False,False,False,False
+2026,2026052,groups,False,France,2,20,20.0,False,False,False,False,False
+2026,2026052,groups,False,Norway,1,21,21.0,False,False,False,False,False
+2026,2026052,groups,False,France,2,32,32.0,False,False,False,False,False
+2026,2026052,groups,False,France,2,90,90.04,False,True,True,False,False
+2026,2026053,groups,False,Senegal,1,4,4.0,False,False,False,False,False
+2026,2026053,groups,False,Senegal,1,56,56.0,False,False,False,False,False
+2026,2026053,groups,False,Senegal,1,59,59.0,False,False,False,False,False
+2026,2026053,groups,False,Senegal,1,71,71.0,False,False,False,False,False
+2026,2026053,groups,False,Senegal,1,82,82.0,False,True,False,False,False
+2026,2026054,groups,False,Argentina,1,17,17.0,False,False,False,False,False
+2026,2026054,groups,False,Argentina,1,60,60.0,False,False,False,False,False
+2026,2026054,groups,False,Argentina,1,76,76.0,False,False,False,False,False
+2026,2026055,groups,False,Austria,1,21,21.0,False,False,False,False,False
+2026,2026055,groups,False,Jordan,2,50,50.0,False,False,False,False,False
+2026,2026055,groups,False,Austria,1,76,76.0,False,False,False,True,False
+2026,2026055,groups,False,Austria,1,90,90.12,False,True,True,False,True
+2026,2026056,groups,False,Argentina,1,38,38.0,False,False,False,False,False
+2026,2026056,groups,False,Argentina,1,90,90.05,False,True,True,False,False
+2026,2026057,groups,False,Jordan,1,36,36.0,False,False,False,False,False
+2026,2026057,groups,False,Algeria,2,69,69.0,False,False,False,False,False
+2026,2026057,groups,False,Algeria,2,82,82.0,False,True,False,False,False
+2026,2026058,groups,False,Austria,2,28,28.0,False,False,False,False,False
+2026,2026058,groups,False,Algeria,1,45,45.0,False,False,False,False,False
+2026,2026058,groups,False,Austria,2,55,55.0,False,False,False,False,False
+2026,2026058,groups,False,Algeria,1,60,60.0,False,False,False,False,False
+2026,2026058,groups,False,Algeria,1,90,90.03,False,True,True,False,False
+2026,2026058,groups,False,Austria,2,90,90.06,False,True,True,False,False
+2026,2026059,groups,False,Argentina,2,19,19.0,False,False,False,False,False
+2026,2026059,groups,False,Argentina,2,31,31.0,False,False,False,False,True
+2026,2026059,groups,False,Jordan,1,55,55.0,False,False,False,False,False
+2026,2026059,groups,False,Argentina,2,80,80.0,False,True,False,False,False
+2026,2026060,groups,False,Portugal,1,6,6.0,False,False,False,False,False
+2026,2026060,groups,False,DR Congo,2,45,45.05,False,False,False,False,False
+2026,2026061,groups,False,Colombia,2,40,40.0,False,False,False,False,False
+2026,2026061,groups,False,Uzbekistan,1,60,60.0,False,False,False,False,False
+2026,2026061,groups,False,Colombia,2,65,65.0,False,False,False,False,False
+2026,2026061,groups,False,Colombia,2,90,90.09,False,True,True,False,False
+2026,2026062,groups,False,Portugal,1,6,6.0,False,False,False,False,False
+2026,2026062,groups,False,Portugal,1,17,17.0,False,False,False,False,False
+2026,2026062,groups,False,Portugal,1,39,39.0,False,False,False,False,False
+2026,2026062,groups,False,Portugal,1,60,60.0,False,False,False,True,False
+2026,2026062,groups,False,Portugal,1,87,87.0,False,True,False,False,False
+2026,2026063,groups,False,Colombia,1,76,76.0,False,False,False,False,False
+2026,2026065,groups,False,Uzbekistan,2,10,10.0,False,False,False,False,False
+2026,2026065,groups,False,DR Congo,1,68,68.0,False,False,False,False,True
+2026,2026065,groups,False,DR Congo,1,78,78.0,False,False,False,False,False
+2026,2026065,groups,False,DR Congo,1,90,90.01,False,True,True,False,False
+2026,2026066,groups,False,England,1,12,12.0,False,False,False,False,True
+2026,2026066,groups,False,Croatia,2,36,36.0,False,False,False,False,False
+2026,2026066,groups,False,England,1,42,42.0,False,False,False,False,False
+2026,2026066,groups,False,Croatia,2,45,45.05,False,False,False,False,False
+2026,2026066,groups,False,England,1,47,47.0,False,False,False,False,False
+2026,2026066,groups,False,England,1,85,85.0,False,True,False,False,False
+2026,2026067,groups,False,Ghana,1,90,90.05,False,True,True,False,False
+2026,2026069,groups,False,Croatia,2,54,54.0,False,False,False,False,False
+2026,2026070,groups,False,England,2,62,62.0,False,False,False,False,False
+2026,2026070,groups,False,England,2,67,67.0,False,False,False,False,False
+2026,2026071,groups,False,Croatia,1,31,31.0,False,False,False,False,False
+2026,2026071,groups,False,Ghana,2,73,73.0,False,False,False,False,False
+2026,2026071,groups,False,Croatia,1,83,83.0,False,True,False,False,False
+2026,2026072,knockout,True,Canada,2,90,90.02,False,True,True,False,False
+2026,2026073,knockout,True,Paraguay,2,42,42.0,False,False,False,False,False
+2026,2026073,knockout,True,Germany,1,54,54.0,False,False,False,False,False
+2026,2026074,knockout,True,Netherlands,1,72,72.0,False,False,False,False,False
+2026,2026074,knockout,True,Morocco,2,90,90.01,False,True,True,False,False
+2026,2026075,knockout,True,Japan,2,29,29.0,False,False,False,False,False
+2026,2026075,knockout,True,Brazil,1,56,56.0,False,False,False,False,False
+2026,2026075,knockout,True,Brazil,1,90,90.05,False,True,True,False,False
+2026,2026076,knockout,True,France,1,45,45.0,False,False,False,False,False
+2026,2026076,knockout,True,France,1,53,53.0,False,False,False,False,False
+2026,2026076,knockout,True,France,1,74,74.0,False,False,False,False,False
+2026,2026077,knockout,True,Norway,2,39,39.0,False,False,False,False,False
+2026,2026077,knockout,True,Ivory Coast,1,74,74.0,False,False,False,False,False
+2026,2026077,knockout,True,Norway,2,86,86.0,False,True,False,False,False
+2026,2026078,knockout,True,Mexico,1,31,31.0,False,False,False,False,False
+2026,2026078,knockout,True,Mexico,1,45,45.01,False,False,False,False,False
+2026,2026079,knockout,True,DR Congo,2,7,7.0,False,False,False,False,False
+2026,2026079,knockout,True,England,1,75,75.0,False,False,False,False,False
+2026,2026079,knockout,True,England,1,86,86.0,False,True,False,False,False
+2026,2026080,knockout,True,USA,1,45,45.0,False,False,False,False,False
+2026,2026080,knockout,True,USA,1,82,82.0,False,True,False,False,False
+2026,2026081,knockout,True,Senegal,2,25,25.0,False,False,False,False,False
+2026,2026081,knockout,True,Senegal,2,51,51.0,False,False,False,False,False
+2026,2026081,knockout,True,Belgium,1,86,86.0,False,True,False,False,False
+2026,2026081,knockout,True,Belgium,1,89,89.0,False,True,False,False,False
+2026,2026081,knockout,True,Belgium,1,120,120.05,True,False,False,False,True
+2026,2026082,knockout,True,Croatia,2,53,53.0,False,False,False,False,False
+2026,2026082,knockout,True,Portugal,1,68,68.0,False,False,False,False,True
+2026,2026082,knockout,True,Portugal,1,90,90.04,False,True,True,False,False
+2026,2026083,knockout,True,Spain,1,36,36.0,False,False,False,False,False
+2026,2026083,knockout,True,Spain,1,66,66.0,False,False,False,False,False
+2026,2026083,knockout,True,Spain,1,89,89.0,False,True,False,False,False
+2026,2026084,knockout,True,Switzerland,1,10,10.0,False,False,False,False,False
+2026,2026084,knockout,True,Switzerland,1,46,46.0,False,False,False,False,False
+2026,2026085,knockout,True,Argentina,1,29,29.0,False,False,False,False,False
+2026,2026085,knockout,True,Cape Verde,2,59,59.0,False,False,False,False,False
+2026,2026085,knockout,True,Argentina,1,92,92.0,True,False,False,False,False
+2026,2026085,knockout,True,Cape Verde,2,103,103.0,True,False,False,False,False
+2026,2026085,knockout,True,Argentina,1,111,111.0,True,False,False,True,False
+2026,2026086,knockout,True,Colombia,1,14,14.0,False,False,False,False,False
+2026,2026087,knockout,True,Egypt,2,13,13.0,False,False,False,False,False
+2026,2026087,knockout,True,Australia,1,55,55.0,False,False,False,True,False
+2026,2026088,knockout,True,France,2,70,70.0,False,False,False,False,True
+2026,2026089,knockout,True,Morocco,2,50,50.0,False,False,False,False,False
+2026,2026089,knockout,True,Morocco,2,82,82.0,False,True,False,False,False
+2026,2026089,knockout,True,Morocco,2,90,90.08,False,True,True,False,False
+2026,2026090,knockout,True,Norway,2,79,79.0,False,False,False,False,False
+2026,2026090,knockout,True,Norway,2,90,90.0,False,True,False,False,False
+2026,2026090,knockout,True,Brazil,1,90,90.1,False,True,True,False,True
+2026,2026091,knockout,True,England,2,36,36.0,False,False,False,False,False
+2026,2026091,knockout,True,England,2,38,38.0,False,False,False,False,False
+2026,2026091,knockout,True,Mexico,1,42,42.0,False,False,False,False,False
+2026,2026091,knockout,True,England,2,60,60.0,False,False,False,False,True
+2026,2026091,knockout,True,Mexico,1,69,69.0,False,False,False,False,True
+2026,2026092,knockout,True,Spain,2,90,90.01,False,True,True,False,False
+2026,2026093,knockout,True,Belgium,2,9,9.0,False,False,False,False,False
+2026,2026093,knockout,True,USA,1,31,31.0,False,False,False,False,False
+2026,2026093,knockout,True,Belgium,2,33,33.0,False,False,False,False,False
+2026,2026093,knockout,True,Belgium,2,57,57.0,False,False,False,False,False
+2026,2026093,knockout,True,Belgium,2,90,90.03,False,True,True,False,False
+2026,2026094,knockout,True,Egypt,2,15,15.0,False,False,False,False,False
+2026,2026094,knockout,True,Egypt,2,67,67.0,False,False,False,False,False
+2026,2026094,knockout,True,Argentina,1,79,79.0,False,False,False,False,False
+2026,2026094,knockout,True,Argentina,1,83,83.0,False,True,False,False,False
+2026,2026094,knockout,True,Argentina,1,90,90.02,False,True,True,False,False
+2026,2026096,knockout,True,France,1,60,60.0,False,False,False,False,False
+2026,2026096,knockout,True,France,1,66,66.0,False,False,False,False,False
+2026,2026097,knockout,True,Spain,1,30,30.0,False,False,False,False,False
+2026,2026097,knockout,True,Belgium,2,41,41.0,False,False,False,False,False
+2026,2026097,knockout,True,Spain,1,88,88.0,False,True,False,False,False
+2026,2026098,knockout,True,Norway,1,36,36.0,False,False,False,False,False
+2026,2026098,knockout,True,England,2,45,45.02,False,False,False,False,False
+2026,2026098,knockout,True,England,2,93,93.0,True,False,False,False,False
+2026,2026099,knockout,True,Argentina,1,10,10.0,False,False,False,False,False
+2026,2026099,knockout,True,Switzerland,2,67,67.0,False,False,False,False,False
+2026,2026099,knockout,True,Argentina,1,112,112.0,True,False,False,False,False
+2026,2026099,knockout,True,Argentina,1,120,120.01,True,False,False,False,False
+2026,2026100,knockout,True,Spain,2,22,22.0,False,False,False,False,True
+2026,2026100,knockout,True,Spain,2,58,58.0,False,False,False,False,False
+2026,2026101,knockout,True,England,1,55,55.0,False,False,False,False,False
+2026,2026101,knockout,True,Argentina,2,86,86.0,False,True,False,False,False
+2026,2026101,knockout,True,Argentina,2,90,90.02,False,True,True,False,False
+2026,2026102,third_place,False,England,2,3,3.0,False,False,False,False,False
+2026,2026102,third_place,False,England,2,18,18.0,False,False,False,False,False
+2026,2026102,third_place,False,England,2,37,37.0,False,False,False,False,False
+2026,2026102,third_place,False,England,2,45,45.01,False,False,False,False,False
+2026,2026102,third_place,False,France,1,48,48.0,False,False,False,False,False
+2026,2026102,third_place,False,France,1,54,54.0,False,False,False,False,False
+2026,2026102,third_place,False,France,1,66,66.0,False,False,False,False,False
+2026,2026102,third_place,False,England,2,87,87.0,False,True,False,False,True
+2026,2026102,third_place,False,France,1,90,90.06,False,True,True,False,False
+2026,2026102,third_place,False,England,2,90,90.08,False,True,True,False,False
+2026,2026103,knockout,True,Spain,1,106,106.0,True,False,False,False,False

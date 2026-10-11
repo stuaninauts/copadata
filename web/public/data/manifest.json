@@ -1,0 +1,285 @@
+{
+  "schema_version": 1,
+  "license": "CC-BY-SA-4.0",
+  "attribution": "Data for 1986-2022 derived from The Fjelstul World Cup Database © 2023 Joshua C. Fjelstul, Ph.D., licensed under CC-BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/), available at https://www.github.com/jfjelstul/worldcup. Modifications: only men's World Cups from 1986, reshaped and aggregated by CopaData (https://github.com/stuaninauts/copadata). Data for 2026 from OpenFootball (https://github.com/openfootball/worldcup.json), public domain (CC0).",
+  "editions": [
+    1986,
+    1990,
+    1994,
+    1998,
+    2002,
+    2006,
+    2010,
+    2014,
+    2018,
+    2022,
+    2026
+  ],
+  "sources": {
+    "openfootball": {
+      "repository": "https://github.com/openfootball/worldcup.json",
+      "commit": "0c4b73b3c1fbb877e8274eb321b1ec4d9220a3a4",
+      "license": "CC0-1.0",
+      "editions": [
+        2026
+      ]
+    },
+    "fjelstul": {
+      "repository": "https://github.com/jfjelstul/worldcup",
+      "commit": "35a8667f518b07469182ae16d35574dd0e7a00fb",
+      "license": "CC-BY-SA-4.0",
+      "editions": [
+        1986,
+        1990,
+        1994,
+        1998,
+        2002,
+        2006,
+        2010,
+        2014,
+        2018,
+        2022
+      ]
+    }
+  },
+  "tables": {
+    "summary": {
+      "description": "Match metrics by scope and stage (groups, knockout).",
+      "files": [
+        "summary.json",
+        "summary.csv"
+      ],
+      "rows": 480,
+      "columns": [
+        "scope_type",
+        "scope",
+        "stage",
+        "metric",
+        "k",
+        "n",
+        "value"
+      ]
+    },
+    "knockout_rounds": {
+      "description": "Match metrics of the knockout by scope and round.",
+      "files": [
+        "knockout_rounds.json",
+        "knockout_rounds.csv"
+      ],
+      "rows": 992,
+      "columns": [
+        "scope_type",
+        "scope",
+        "round",
+        "metric",
+        "k",
+        "n",
+        "value"
+      ]
+    },
+    "group_matchdays": {
+      "description": "Group-stage draws and goals by scope and matchday (1-3).",
+      "files": [
+        "group_matchdays.json",
+        "group_matchdays.csv"
+      ],
+      "rows": 90,
+      "columns": [
+        "scope_type",
+        "scope",
+        "matchday",
+        "metric",
+        "k",
+        "n",
+        "value"
+      ]
+    },
+    "group_zones": {
+      "description": "Team results on group matchdays 2-3 by zone before the match.",
+      "files": [
+        "group_zones.json",
+        "group_zones.csv"
+      ],
+      "rows": 60,
+      "columns": [
+        "scope_type",
+        "scope",
+        "zone_before",
+        "metric",
+        "k",
+        "n",
+        "value"
+      ]
+    },
+    "margins": {
+      "description": "Share of matches by final margin (0, 1, 2, 3+) by scope and stage.",
+      "files": [
+        "margins.json",
+        "margins.csv"
+      ],
+      "rows": 120,
+      "columns": [
+        "scope_type",
+        "scope",
+        "stage",
+        "margin",
+        "k",
+        "n",
+        "value"
+      ]
+    },
+    "goal_bands": {
+      "description": "Share of regulation goals by minute band, by scope and stage.",
+      "files": [
+        "goal_bands.json",
+        "goal_bands.csv"
+      ],
+      "rows": 180,
+      "columns": [
+        "scope_type",
+        "scope",
+        "stage",
+        "band",
+        "k",
+        "n",
+        "value"
+      ]
+    },
+    "stoppage_goals": {
+      "description": "Second-half stoppage-time goals (k) per match (n), by scope.",
+      "files": [
+        "stoppage_goals.json",
+        "stoppage_goals.csv"
+      ],
+      "rows": 15,
+      "columns": [
+        "scope_type",
+        "scope",
+        "k",
+        "n",
+        "value"
+      ]
+    },
+    "single_tests": {
+      "description": "The single externally defined tests (ADR 0002).",
+      "files": [
+        "single_tests.json",
+        "single_tests.csv"
+      ],
+      "rows": 1,
+      "columns": [
+        "id",
+        "metric",
+        "scope",
+        "k",
+        "n",
+        "null_rate",
+        "null_scope",
+        "alternative",
+        "p_value"
+      ]
+    },
+    "matches": {
+      "description": "Full processed table (matches).",
+      "files": [
+        "matches.csv",
+        "matches.parquet"
+      ],
+      "rows": 708,
+      "columns": [
+        "year",
+        "match_id",
+        "num",
+        "date",
+        "venue",
+        "group",
+        "round_raw",
+        "stage",
+        "is_knockout",
+        "team1",
+        "team2",
+        "finished",
+        "goals_team1",
+        "goals_team2",
+        "goals_ft1",
+        "goals_ft2",
+        "has_extra_time",
+        "decided_on_penalties",
+        "pen1",
+        "pen2",
+        "margin",
+        "draw_in_regulation",
+        "total_goals",
+        "winning_goal_min",
+        "winning_goal_in_et",
+        "late_goals_count",
+        "has_late_goal",
+        "et_goals_count",
+        "had_comeback",
+        "last_comeback_min",
+        "lead_changes",
+        "has_survival_goal",
+        "survival_goal_min",
+        "goals_regulation",
+        "margin_ft",
+        "winning_goal_min_90",
+        "decisive_moment_90",
+        "decided_final_quarter"
+      ]
+    },
+    "goals": {
+      "description": "Full processed table (goals).",
+      "files": [
+        "goals.csv",
+        "goals.parquet"
+      ],
+      "rows": 1832,
+      "columns": [
+        "year",
+        "match_id",
+        "stage",
+        "is_knockout",
+        "team",
+        "side",
+        "minute",
+        "order",
+        "extra_time",
+        "late",
+        "stoppage",
+        "own_goal",
+        "penalty"
+      ]
+    },
+    "team_matches": {
+      "description": "Full processed table (team_matches).",
+      "files": [
+        "team_matches.csv",
+        "team_matches.parquet"
+      ],
+      "rows": 1416,
+      "columns": [
+        "year",
+        "match_id",
+        "stage",
+        "is_knockout",
+        "group",
+        "date",
+        "round_raw",
+        "finished",
+        "team",
+        "opponent",
+        "home",
+        "goals_for",
+        "goals_against",
+        "result",
+        "matchday",
+        "is_opener",
+        "points_before",
+        "gd_before",
+        "position_before",
+        "games_left",
+        "zone_before"
+      ]
+    }
+  }
+}
