@@ -28,6 +28,9 @@ MATCHES_PARQUET = PROCESSED / "matches.parquet"
 TEAM_MATCHES_PARQUET = PROCESSED / "team_matches.parquet"
 GOALS_PARQUET = PROCESSED / "goals.parquet"
 
+# Public export read by the web site (ADR 0006/0007). Versioned, licensed CC-BY-SA 4.0.
+EXPORT = ROOT / "web" / "public" / "data"
+
 # Points for a win in the group table: 2 until 1990, 3 from 1994 on.
 THREE_POINTS_FROM = 1994
 
