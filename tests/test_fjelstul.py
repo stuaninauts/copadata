@@ -180,3 +180,17 @@ def test_zone_before_follows_position():
     tm = derive.group_situation(derive.explode(transform.build_matches({"matches": ms}, 2026)))
     md2 = tm[tm.matchday == 2].set_index("team")
     assert md2.zone_before.to_dict() == {"A": "qualification", "C": "qualification", "B": "danger", "D": "danger"}
+
+
+def test_penalty_kicks_get_the_copadata_match_id_and_kick_order():
+    matches = pd.DataFrame([
+        fj_match("M-1990-02", 1990, "Italy", "Argentina", 1, 1, stage="semi-finals", date="1990-07-03"),
+        fj_match("M-1990-01", 1990, "Italy", "Austria", 1, 0, date="1990-06-09"),
+        fj_match("M-1982-01", 1982, "West Germany", "France", 3, 3, stage="semi-finals", date="1982-07-08"),
+    ])
+    kicks = pd.DataFrame({"key_id": [3, 1, 2, 9], "match_id": ["M-1990-02", "M-1990-02", "M-1990-02", "M-1982-01"],
+                          "team_name": ["Italy", "Italy", "Argentina", "France"], "converted": [0, 1, 1, 1]})
+    out = fjelstul.penalty_kicks(kicks, matches)
+    assert out.match_id.tolist() == [1990001] * 3  # second match of 1990 by date; 1982 is before the first year
+    assert out.kick.tolist() == [1, 2, 3] and out.team.tolist() == ["Italy", "Argentina", "Italy"]
+    assert out.converted.tolist() == [True, True, False]

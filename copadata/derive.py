@@ -48,6 +48,9 @@ def explode(matches: pd.DataFrame) -> pd.DataFrame:
                     "goals_for": gf,
                     "goals_against": ga,
                     "result": _result(gf, ga) if p["finished"] else None,
+                    # strength before the match (Elo, ADR 0009); None without the international results
+                    "elo_for": p.get(f"elo{side}"),
+                    "elo_against": p.get(f"elo{other}"),
                 }
             )
     return pd.DataFrame(rows)

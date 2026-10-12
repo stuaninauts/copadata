@@ -340,7 +340,9 @@
         "decided_final_quarter",
         "two_nil_side",
         "two_nil_min",
-        "two_one_min"
+        "two_one_min",
+        "elo1",
+        "elo2"
       ]
     },
     "goals": {
@@ -389,6 +391,8 @@
         "goals_for",
         "goals_against",
         "result",
+        "elo_for",
+        "elo_against",
         "matchday",
         "is_opener",
         "points_before",
