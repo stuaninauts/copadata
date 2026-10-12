@@ -105,6 +105,37 @@ def test_binomial_tests():
     assert aggregate.binomial_two_sided(6, 9) == pytest.approx(2 * 130 / 512)
 
 
+@pytest.mark.parametrize("low, high, agree, low99, expected", [
+    (0.02, 0.20, True, 0.01, "true"),
+    (0.02, 0.20, True, -0.01, "true_borderline"),
+    (0.02, 0.20, False, None, "undecided"),   # halves disagree
+    (-0.10, 0.04, True, None, "myth"),        # whole interval below the 0.05 threshold
+    (-0.10, 0.08, True, None, "undecided"),
+])
+def test_myth_verdict_rule(low, high, agree, low99, expected):
+    assert aggregate.verdict(low, high, agree, threshold=0.05, low99=low99) == expected
+
+
+def test_score_grid_counts_regulation_goals_at_their_base_minute():
+    m = pd.DataFrame({"match_id": [7, 8]})
+    gl = pd.DataFrame({"match_id": [7, 7, 7, 8], "side": [1, 2, 1, 2], "minute": [10, 45, 105, 90],
+                       "extra_time": [False, False, True, False]})
+    grid = aggregate.score_grid(m, gl)
+    assert grid.shape == (2, 2, 90)
+    assert (grid[0, 0, 9], grid[0, 0, 8], grid[1, 0, 44], grid[0, 0, 89]) == (1, 0, 1, 1)  # ET goal ignored
+    assert grid[1, 1, 88] == 0 and grid[1, 1, 89] == 1
+
+
+def test_opener_survival_counts_teams_that_reached_the_knockout():
+    tm = pd.DataFrame({
+        "year": [2026] * 3, "team": ["A", "B", "A"], "stage": ["groups", "groups", "knockout"],
+        "finished": True, "is_opener": [True, True, False], "result": ["L", "W", "W"],
+    })
+    detail, _ = aggregate.opener_survival(tm)
+    assert kn(value(detail, era="48-teams", result="L")) == (1, 1)
+    assert kn(value(detail, era="48-teams", result="W")) == (0, 1)
+
+
 # --- golden: the published findings ------------------------------------------------
 
 needs_data = pytest.mark.skipif(not config.MATCHES_PARQUET.exists(), reason="run the pipeline first")
@@ -225,3 +256,58 @@ def test_golden_group_matchdays_and_zones(core, data):
     assert round(value(z, zone_before="danger", metric="win").value, 2) == 0.35
     assert round(value(z, zone_before="qualification", metric="goals_for").value, 2) == 1.50
     assert round(value(z, zone_before="danger", metric="goals_for").value, 2) == 1.42
+
+
+# --- golden: myths (ADR 0008) ------------------------------------------------------
+
+@pytest.fixture(scope="module")
+def myths(data):
+    return aggregate.myths(data["matches"], data["goals"], data["team_matches"])
+
+
+@needs_data
+def test_golden_myth_two_nil(myths):
+    detail, summary = myths["two_nil"]
+    assert kn(value(detail, case="2-0")) == (13, 261)
+    assert kn(value(detail, case="2-1 after 2-0")) == (12, 74)
+    assert summary["verdict"] == "myth"
+
+
+@needs_data
+def test_golden_myth_leader_sits_back(myths):
+    detail, summary = myths["leader_sits_back"]
+    assert [kn(value(detail, state=s)) for s in ("lead 1-0", "level 0-0", "trail 0-1")] == [
+        (52, 2588), (51, 2896), (43, 2588)]
+    assert summary["verdict"] == "myth"
+
+
+@needs_data
+def test_golden_myth_late_specialists(myths):
+    detail, summary = myths["late_specialists"]
+    assert detail.groupby("direction").size().to_dict() == {"conceded": 48, "scored": 48}
+    outside95 = detail[detail.z.abs() > aggregate.Z95]
+    assert sorted(outside95.team) == ["Austria", "Iran"] and set(outside95.direction) == {"scored"}
+    assert summary["effect"] == 0 and summary["verdict"] == "myth"
+
+
+@needs_data
+def test_golden_myth_opener_loss(myths):
+    detail, summary = myths["opener_loss"]
+    lost = {era: kn(value(detail, era=era, result="L")) for era in ("24-teams", "32-teams", "48-teams")}
+    assert lost == {"24-teams": (9, 26), "32-teams": (11, 84), "48-teams": (6, 15)}
+    assert summary["verdict"] == "true_borderline"
+
+
+@needs_data
+def test_golden_myth_season_outlier(myths):
+    detail, summary = myths["season_outlier"]
+    assert detail.set_index("metric").reading.to_dict() == {
+        "goals_per_match_90": "outside", "big_margin": "edge", "one_goal_margin_90": "outside",
+        "decided_final_quarter": "inside", "stoppage_goals_per_match": "outside"}
+    assert summary["verdict"] == "partly_true"
+
+
+@needs_data
+def test_myths_are_reproducible(data, myths):
+    again = aggregate.myths(data["matches"], data["goals"], data["team_matches"])
+    assert all(again[k][1] == myths[k][1] for k in myths)

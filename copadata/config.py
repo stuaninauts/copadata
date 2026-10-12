@@ -46,3 +46,14 @@ FORMAT_ERAS = (("24-teams", 1986, 1994), ("32-teams", 1998, 2022), ("48-teams", 
 BIG_MARGIN = 3
 # Goal-minute bands in regulation (upper bounds; the last one includes stoppage time).
 GOAL_BANDS = (15, 30, 45, 60, 75, 90)
+
+# Myths (ADR 0008): one effect, one interval and a verdict rule fixed before running.
+# Bootstrap/permutation draws with a fixed seed, so the export is reproducible.
+MYTH_DRAWS = 2000
+MYTH_SEED = 2026
+# A "true" verdict needs the same direction in both halves of the history.
+MYTH_HALVES = ((1986, 2002), (2006, 2026))
+# Smallest effect the claim implies: an interval wholly below it makes the claim a myth.
+MYTH_THRESHOLD = 0.05
+# Teams need this many matches to enter the late-specialist funnel.
+MYTH_MIN_MATCHES = 10
