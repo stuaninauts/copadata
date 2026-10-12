@@ -191,6 +191,26 @@ def two_goal_lead(goals: list["Goal"]) -> tuple[int, int, int | None] | None:
     return (*lead, None) if lead else None
 
 
+def must_score(kicks: list[tuple[str, bool]]) -> list[bool]:
+    """Shootout kicks in order as (team, converted): True where a miss eliminates the kicker at once.
+
+    In the first five rounds: even scoring every kick left after this one would not reach the rival.
+    In sudden death (round 6 on): the second kicker of the round, after the rival scored.
+    """
+    first = kicks[0][0] if kicks else None
+    goals: dict[str, int] = {}
+    taken: dict[str, int] = {}
+    out = []
+    for team, converted in kicks:
+        rival = next((t for t, _ in kicks if t != team), None)
+        a, b = goals.get(team, 0), goals.get(rival, 0)
+        rnd = taken.get(team, 0) + 1
+        out.append(a + (5 - rnd) < b if rnd <= 5 else (team != first and b > a))
+        goals[team] = a + bool(converted)
+        taken[team] = rnd
+    return out
+
+
 def winning_goal_regulation(goals: list["Goal"], ft: list[int]):
     """Game-winner using regulation only and the 90' score (ft). None if level at 90'."""
     if ft[0] == ft[1]:

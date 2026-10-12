@@ -167,8 +167,11 @@ def main() -> pd.DataFrame:
         results.to_parquet(config.INTERNATIONAL_PARQUET, index=False)
         international_goals.to_parquet(config.INTERNATIONAL_GOALS_PARQUET, index=False)
     if history is not None:
-        fjelstul.penalty_kicks(history["penalty_kicks"], history["matches"]).to_parquet(
-            config.PENALTY_KICKS_PARQUET, index=False)
+        kicks = fjelstul.penalty_kicks(history["penalty_kicks"], history["matches"])
+        flags = [pd.Series(metrics.must_score(list(zip(k["team"], k["converted"]))), index=k.index)
+                 for _, k in kicks.groupby("match_id")]
+        kicks["must_score"] = pd.concat(flags).sort_index() if flags else pd.Series(dtype=bool)
+        kicks.to_parquet(config.PENALTY_KICKS_PARQUET, index=False)
 
     df.to_parquet(config.MATCHES_PARQUET, index=False)
     goals.to_parquet(config.GOALS_PARQUET, index=False)

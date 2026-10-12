@@ -301,3 +301,18 @@ def test_build_matches_ids_are_unique_across_editions():
     b = transform.build_matches({"matches": [match()]}, year=2026)
     assert a["match_id"].tolist() == [1990000, 1990001] and a["year"].eq(1990).all()
     assert b["match_id"].tolist() == [2026000]
+
+
+# --- shootout: kicks where a miss eliminates (myth "the kick that must go in", ADR 0008) ----
+
+def test_must_score_in_the_first_five_rounds():
+    # 2022 final: France first. After 3 rounds France 1, Argentina 3: France's 4th kick must go in.
+    kicks = [("FRA", True), ("ARG", True), ("FRA", False), ("ARG", True), ("FRA", False), ("ARG", True),
+             ("FRA", True), ("ARG", True)]
+    assert metrics.must_score(kicks) == [False, False, False, False, False, False, True, False]
+
+
+def test_must_score_in_sudden_death_only_for_the_second_kicker_after_a_goal():
+    five = [("A", True), ("B", True)] * 5
+    kicks = five + [("A", True), ("B", True), ("A", False), ("B", True)]
+    assert metrics.must_score(kicks)[10:] == [False, True, False, False]
