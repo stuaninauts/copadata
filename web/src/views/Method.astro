@@ -1,0 +1,132 @@
+---
+/** Método (ADR 0007, 0010): sources, how a claim becomes a verdict, every claim tested, downloads, corrections. */
+import Base from '../layouts/Base.astro';
+import { getCollection, getEntry } from 'astro:content';
+import { otherLang, sectionPath, verdict, type Lang } from '../i18n/ui';
+import { manifest, value } from '../lib/stats';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const text = (await getEntry('method', lang))!.data;
+const m = manifest();
+const myths = await getCollection('myths');
+const novelties = await getCollection('novelties');
+
+const tested = (await getCollection('tested')).sort((a, b) => a.id.localeCompare(b.id)).map((e) => {
+  const d = e.data;
+  const code = d.myth ? String(value({ table: 'myths', where: { myth: d.myth }, field: 'verdict' }, `tested.${e.id}`)) : d.verdict!;
+  const published = d.myth ? myths.find((x) => x.id === d.myth) : undefined;
+  return {
+    batch: d.batch,
+    claim: d.claim[lang],
+    verdict: verdict(code, lang),
+    href: published
+      ? sectionPath(lang, 'myths', published.data.slug[lang])
+      : d.myth === 'season_outlier' ? sectionPath(lang, 'novelties', novelties.sort((a, b) => a.data.order - b.data.order)[0].data.slug[lang]) : undefined,
+    note: d.note?.[lang],
+  };
+});
+const batches = [...new Set(tested.map((x) => x.batch))].sort();
+const files = Object.entries(m.tables).map(([name, info]) => ({ name, ...info }));
+const sources = Object.entries(m.sources);
+---
+
+<Base lang={lang} title={text.title} section="method" alternate={sectionPath(otherLang(lang), 'method')}>
+  <section class="wrap head">
+    <h1>{text.title}</h1>
+    <p class="lede">{text.lede}</p>
+  </section>
+
+  <section class="wrap block" aria-labelledby="sources">
+    <h2 id="sources">{text.sources.heading}</h2>
+    <ul class="plain">{text.sources.items.map((i) => <li>{i}</li>)}</ul>
+    <ul class="commits mono">{sources.map(([name, s]) => <li><a href={`${s.repository}/tree/${s.commit}`}>{name} @ {s.commit.slice(0, 7)}</a></li>)}</ul>
+  </section>
+
+  <section class="wrap block" aria-labelledby="rule">
+    <h2 id="rule">{text.rule.heading}</h2>
+    {text.rule.paragraphs.map((p) => <p class="para">{p}</p>)}
+    <dl class="verdicts">
+      {text.rule.verdicts.map((v) => {
+        const label = verdict(v.code, lang);
+        return <div><dt><span class={`chip chip-${label.chip}`}>{label.label}</span></dt><dd>{v.text}</dd></div>;
+      })}
+    </dl>
+  </section>
+
+  <section class="wrap block" aria-labelledby="tested">
+    <h2 id="tested">{text.tested.heading}</h2>
+    <p class="para">{text.tested.lede}</p>
+    {batches.map((b) => (
+      <div class="batch">
+        <h3 class="eyebrow">{text.tested.batch} {b}</h3>
+        <ol class="claims">
+          {tested.filter((x) => x.batch === b).map((x) => (
+            <li>
+              <span class={`chip chip-sm chip-${x.verdict.chip}`}>{x.verdict.label}</span>
+              <span class="claim">{x.href ? <a href={x.href}>{x.claim}</a> : x.claim}</span>
+              {x.note && <span class="note">{x.note}</span>}
+            </li>
+          ))}
+        </ol>
+      </div>
+    ))}
+  </section>
+
+  <section id="data" class="wrap block" aria-labelledby="data-h">
+    <h2 id="data-h">{text.data.heading}</h2>
+    <p class="para">{text.data.lede}</p>
+    <ul class="files">
+      {files.map((f) => (
+        <li>
+          <span class="mono name">{f.name}</span>
+          <span class="desc">{f.description} <span class="rows">({f.rows} {text.data.rows})</span></span>
+          <span class="links">{f.files.map((x) => <a href={`/data/${x}`}>{x.split('.').pop()}</a>)}</span>
+        </li>
+      ))}
+    </ul>
+    <p class="attribution">{m.attribution}</p>
+  </section>
+
+  <section class="wrap block" aria-labelledby="corr">
+    <h2 id="corr">{text.corrections.heading}</h2>
+    <ul class="plain">{text.corrections.items.map((i) => <li>{i}</li>)}</ul>
+  </section>
+
+  <section class="wrap block last" aria-labelledby="code">
+    <h2 id="code">{text.code.heading}</h2>
+    <p class="para">{text.code.text} <a href="https://github.com/stuaninauts/copadata">{text.code.link} →</a></p>
+  </section>
+</Base>
+
+<style>
+  .head { padding-top: 56px; padding-bottom: 16px; display: flex; flex-direction: column; gap: 16px; }
+  h1 { font-size: clamp(36px, 5vw, 52px); }
+  .lede { font-size: 19px; color: var(--muted); max-width: 760px; }
+  .block { padding-top: 40px; display: flex; flex-direction: column; gap: 14px; }
+  .block.last { padding-bottom: 72px; }
+  .block h2 { font-size: 28px; border-top: 1px solid var(--line); padding-top: 24px; }
+  .para { max-width: 780px; color: var(--muted); }
+  .plain { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; max-width: 780px; color: var(--muted); }
+  .commits { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 13px; }
+  .verdicts { margin: 0; display: flex; flex-direction: column; gap: 10px; max-width: 780px; }
+  .verdicts div { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: baseline; }
+  .verdicts dt { flex: 0 0 180px; }
+  .verdicts dd { margin: 0; flex: 1 1 300px; color: var(--muted); }
+  .batch { display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
+  .claims { list-style: none; margin: 0; padding: 0; border-bottom: 1px solid var(--line-soft); }
+  .claims li { border-top: 1px solid var(--line-soft); padding: 10px 0; display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: baseline; }
+  .claim { flex: 1 1 320px; }
+  .note { flex: 1 1 100%; padding-left: 156px; font-size: 14px; color: var(--soft); }
+  @media (max-width: 640px) { .note { padding-left: 0; } }
+  .files { list-style: none; margin: 0; padding: 0; border-bottom: 1px solid var(--line-soft); }
+  .files li { border-top: 1px solid var(--line-soft); padding: 10px 0; display: flex; flex-wrap: wrap; gap: 4px 16px; align-items: baseline; font-size: 15px; }
+  .name { flex: 0 0 220px; font-size: 14px; }
+  .desc { flex: 1 1 360px; color: var(--muted); }
+  .rows { color: var(--soft); }
+  .links { display: flex; gap: 12px; font-family: var(--mono); font-size: 14px; }
+  .attribution { font-size: 13px; color: var(--soft); max-width: 780px; }
+</style>

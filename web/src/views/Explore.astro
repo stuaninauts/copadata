@@ -1,0 +1,135 @@
+---
+/** Explorar (ADR 0007): the export's figures by format era and by edition, k of n always shown,
+ *  n < 10 greyed out. Static tables: the browser only shows rows, nothing is computed. */
+import Base from '../layouts/Base.astro';
+import { otherLang, sectionPath, t, type Lang, type UiKey } from '../i18n/ui';
+import { format, rows } from '../lib/stats';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const ERAS = ['24-teams', '32-teams', '48-teams'];
+const STAGES = ['groups', 'knockout'] as const;
+const METRICS: { id: string; fmt: 'pct' | 'dec2'; stages: readonly ('groups' | 'knockout')[] }[] = [
+  { id: 'goals_per_match_90', fmt: 'dec2', stages: STAGES },
+  { id: 'one_goal_margin_90', fmt: 'pct', stages: STAGES },
+  { id: 'big_margin', fmt: 'pct', stages: STAGES },
+  { id: 'draw_90', fmt: 'pct', stages: STAGES },
+  { id: 'decided_final_quarter', fmt: 'pct', stages: STAGES },
+  { id: 'late_goal', fmt: 'pct', stages: STAGES },
+  { id: 'comeback', fmt: 'pct', stages: STAGES },
+  { id: 'extra_time', fmt: 'pct', stages: ['knockout'] },
+  { id: 'penalties', fmt: 'pct', stages: ['knockout'] },
+];
+
+interface Cell { value: string; base: string; small: boolean }
+
+function cell(scopeType: string, scope: string, stage: string, metric: string, fmt: 'pct' | 'dec2'): Cell | undefined {
+  const [r] = rows({ table: 'summary', where: { scope_type: scopeType, scope, stage, metric } });
+  if (!r || r.value === null) return undefined;
+  const n = r.n as number;
+  const base = r.k === null ? `n=${format(n, 'int', lang)}` : `${format(r.k as number, 'int', lang)}/${format(n, 'int', lang)}`;
+  return { value: format(r.value as number, fmt, lang), base, small: n < 10 };
+}
+
+const byEra = METRICS.map((m) => ({
+  label: t(lang, `metric.${m.id}` as UiKey),
+  cells: ERAS.flatMap((era) => STAGES.map((stage) => (m.stages.includes(stage) ? cell('era', era, stage, m.id, m.fmt) : undefined))),
+}));
+
+const EDITION_COLUMNS: { id: string; stage: 'groups' | 'knockout'; fmt: 'pct' | 'dec2' }[] = [
+  { id: 'goals_per_match_90', stage: 'groups', fmt: 'dec2' },
+  { id: 'one_goal_margin_90', stage: 'groups', fmt: 'pct' },
+  { id: 'big_margin', stage: 'groups', fmt: 'pct' },
+  { id: 'decided_final_quarter', stage: 'knockout', fmt: 'pct' },
+  { id: 'extra_time', stage: 'knockout', fmt: 'pct' },
+];
+const editions = [...new Set(rows({ table: 'summary', where: { scope_type: 'edition' } }).map((r) => String(r.scope)))].sort();
+const stoppage = new Map(rows({ table: 'stoppage_goals', where: { scope_type: 'edition' } }).map((r) => [String(r.scope), r]));
+const byEdition = editions.map((year) => {
+  const s = stoppage.get(year)!;
+  return {
+    year,
+    cells: [
+      ...EDITION_COLUMNS.map((c) => cell('edition', year, c.stage, c.id, c.fmt)),
+      { value: format(s.value as number, 'dec2', lang), base: `${format(s.k as number, 'int', lang)}/${format(s.n as number, 'int', lang)}`, small: false },
+    ],
+  };
+});
+const stageLabel = (s: string) => t(lang, s === 'groups' ? 'explore.groups' : 'explore.knockout');
+---
+
+<Base lang={lang} title={t(lang, 'explore.title')} section="explore" alternate={sectionPath(otherLang(lang), 'explore')}>
+  <section class="wrap head">
+    <h1>{t(lang, 'explore.title')}</h1>
+    <p class="lede">{t(lang, 'explore.lede')}</p>
+    <p><a href={`${sectionPath(lang, 'method')}#data`}>{t(lang, 'explore.download')} →</a></p>
+  </section>
+
+  <section class="wrap block" aria-labelledby="by-era">
+    <h2 id="by-era">{t(lang, 'explore.byEra')}</h2>
+    <div class="scroll" tabindex="0" role="region" aria-labelledby="by-era">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col" rowspan="2">{t(lang, 'explore.metric')}</th>
+            {ERAS.map((e) => <th scope="colgroup" colspan="2">{t(lang, `era.${e}` as UiKey)}</th>)}
+          </tr>
+          <tr>{ERAS.flatMap(() => STAGES.map((s) => <th scope="col" class="sub">{stageLabel(s)}</th>))}</tr>
+        </thead>
+        <tbody>
+          {byEra.map((r) => (
+            <tr>
+              <th scope="row">{r.label}</th>
+              {r.cells.map((c) => (c ? <td class:list={{ small: c.small }}><span class="v">{c.value}</span><span class="b">{c.base}</span></td> : <td class="none">·</td>))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="wrap block" aria-labelledby="by-edition">
+    <h2 id="by-edition">{t(lang, 'explore.byEdition')}</h2>
+    <div class="scroll" tabindex="0" role="region" aria-labelledby="by-edition">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">{t(lang, 'explore.edition')}</th>
+            {EDITION_COLUMNS.map((c) => <th scope="col">{t(lang, `metric.${c.id}` as UiKey)} <span class="sub">({stageLabel(c.stage)})</span></th>)}
+            <th scope="col">{t(lang, 'metric.stoppage_goals')}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {byEdition.map((r) => (
+            <tr class:list={{ now: r.year === '2026' }}>
+              <th scope="row" class="mono">{r.year}</th>
+              {r.cells.map((c) => (c ? <td class:list={{ small: c.small }}><span class="v">{c.value}</span><span class="b">{c.base}</span></td> : <td class="none">·</td>))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .head { padding-top: 56px; padding-bottom: 24px; display: flex; flex-direction: column; gap: 16px; }
+  h1 { font-size: clamp(36px, 5vw, 52px); }
+  .lede { font-size: 19px; color: var(--muted); max-width: 760px; }
+  .block { padding-top: 32px; padding-bottom: 24px; display: flex; flex-direction: column; gap: 16px; }
+  .block h2 { font-size: 28px; }
+  .scroll { overflow-x: auto; border: 1px solid var(--line-soft); border-radius: 6px; }
+  table { border-collapse: collapse; width: 100%; min-width: 760px; font-size: 14px; }
+  th, td { padding: 10px 12px; border-bottom: 1px solid var(--line-soft); text-align: right; vertical-align: top; }
+  th[scope='row'], thead th:first-child { text-align: left; }
+  thead th { font-weight: 600; color: var(--ink); background: var(--surface); }
+  .sub { font-weight: 400; color: var(--soft); }
+  td .v { display: block; font-family: var(--mono); font-size: 15px; color: var(--ink); }
+  td .b { display: block; font-family: var(--mono); font-size: 12px; color: var(--soft); }
+  td.small .v, td.small .b { opacity: 0.45; }
+  td.none { color: var(--line); }
+  tr.now th, tr.now td { background: var(--accent-tint); }
+</style>
