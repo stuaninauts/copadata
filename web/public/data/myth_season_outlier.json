@@ -1,0 +1,7 @@
+[
+{"metric": "goals_per_match_90", "stage": "all", "n": 103, "value": 2.815534, "mean_all": 2.496413, "band_low": 2.204, "band_high": 2.796, "percentile": 0.981, "reading": "outside"},
+{"metric": "big_margin", "stage": "groups", "n": 72, "value": 0.25, "mean_all": 0.162791, "band_low": 0.083, "band_high": 0.25, "percentile": 0.974, "reading": "edge"},
+{"metric": "one_goal_margin_90", "stage": "groups", "n": 52, "value": 0.346154, "mean_all": 0.510363, "band_low": 0.385, "band_high": 0.635, "percentile": 0.004, "reading": "outside"},
+{"metric": "decided_final_quarter", "stage": "knockout", "n": 31, "value": 0.387097, "mean_all": 0.270718, "band_low": 0.129, "band_high": 0.419, "percentile": 0.916, "reading": "inside"},
+{"metric": "stoppage_goals_per_match", "stage": "all", "n": 103, "value": 0.31068, "mean_all": 0.156385, "band_low": 0.087, "band_high": 0.223, "percentile": 1.0, "reading": "outside"}
+]

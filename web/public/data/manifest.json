@@ -179,6 +179,119 @@
         "p_value"
       ]
     },
+    "myths": {
+      "description": "Verdict of each published myth, from a rule fixed before running (ADR 0008).",
+      "files": [
+        "myths.json",
+        "myths.csv"
+      ],
+      "rows": 5,
+      "columns": [
+        "myth",
+        "measure",
+        "effect",
+        "ci_low",
+        "ci_high",
+        "threshold",
+        "halves_agree",
+        "verdict"
+      ]
+    },
+    "myth_two_nil": {
+      "description": "Myth '2-0 is the most dangerous score': not won at 90' after the first 2-0 and after the 2-1 that follows, against teams at 1-0 in the same minute.",
+      "files": [
+        "myth_two_nil.json",
+        "myth_two_nil.csv"
+      ],
+      "rows": 2,
+      "columns": [
+        "case",
+        "k",
+        "n",
+        "value",
+        "reference",
+        "effect",
+        "ci_low",
+        "ci_high",
+        "effect_1986_2002",
+        "effect_2006_2026"
+      ]
+    },
+    "myth_leader_sits_back": {
+      "description": "Myth 'the team leading by one sits back': goals per 90 from minute 76 at 1-0, 0-0 and 0-1.",
+      "files": [
+        "myth_leader_sits_back.json",
+        "myth_leader_sits_back.csv"
+      ],
+      "rows": 3,
+      "columns": [
+        "state",
+        "k",
+        "n",
+        "value",
+        "ratio_to_level",
+        "ci_low",
+        "ci_high",
+        "ratio_1986_2002",
+        "ratio_2006_2026"
+      ]
+    },
+    "myth_late_specialists": {
+      "description": "Myth 'some teams are specialists in deciding late': share of each team's goals scored and conceded from minute 76, with funnel limits.",
+      "files": [
+        "myth_late_specialists.json",
+        "myth_late_specialists.csv"
+      ],
+      "rows": 96,
+      "columns": [
+        "direction",
+        "team",
+        "matches",
+        "k",
+        "n",
+        "value",
+        "mean",
+        "z",
+        "low95",
+        "high95",
+        "low998",
+        "high998"
+      ]
+    },
+    "myth_opener_loss": {
+      "description": "Myth 'lose the opener and you are out': share reaching the knockout by era and opener result.",
+      "files": [
+        "myth_opener_loss.json",
+        "myth_opener_loss.csv"
+      ],
+      "rows": 9,
+      "columns": [
+        "era",
+        "result",
+        "k",
+        "n",
+        "value"
+      ]
+    },
+    "myth_season_outlier": {
+      "description": "Myth '2026 was an outlier World Cup': each headline of 2026 against a band of same-size draws from all editions.",
+      "files": [
+        "myth_season_outlier.json",
+        "myth_season_outlier.csv"
+      ],
+      "rows": 5,
+      "columns": [
+        "metric",
+        "stage",
+        "n",
+        "value",
+        "mean_all",
+        "band_low",
+        "band_high",
+        "percentile",
+        "reading"
+      ]
+    },
     "matches": {
       "description": "Full processed table (matches).",
       "files": [

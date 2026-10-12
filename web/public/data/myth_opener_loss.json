@@ -1,0 +1,11 @@
+[
+{"era": "24-teams", "result": "D", "k": 15, "n": 20, "value": 0.75},
+{"era": "24-teams", "result": "L", "k": 9, "n": 26, "value": 0.346154},
+{"era": "24-teams", "result": "W", "k": 24, "n": 26, "value": 0.923077},
+{"era": "32-teams", "result": "D", "k": 32, "n": 56, "value": 0.571429},
+{"era": "32-teams", "result": "L", "k": 11, "n": 84, "value": 0.130952},
+{"era": "32-teams", "result": "W", "k": 69, "n": 84, "value": 0.821429},
+{"era": "48-teams", "result": "D", "k": 13, "n": 18, "value": 0.722222},
+{"era": "48-teams", "result": "L", "k": 6, "n": 15, "value": 0.4},
+{"era": "48-teams", "result": "W", "k": 13, "n": 15, "value": 0.866667}
+]
