@@ -6,8 +6,8 @@ import { otherLang, t, type Lang, type Section } from '../i18n/ui';
 
 interface Props {
   lang: Lang;
-  /** The same page in the other language (ADR 0010: every page exists in both). */
-  alternate: string;
+  /** The same page in the other language (ADR 0010: every page exists in both); none for the 404. */
+  alternate?: string;
   title?: string;
   description?: string;
   section?: Section;
@@ -28,9 +28,13 @@ const hreflang = (l: Lang) => (l === 'pt' ? 'pt-BR' : 'en');
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
-    <link rel="alternate" hreflang={hreflang(lang)} href={canonical} />
-    <link rel="alternate" hreflang={hreflang(other)} href={new URL(alternate, Astro.site)} />
-    <link rel="alternate" hreflang="x-default" href={lang === 'pt' ? canonical : new URL(alternate, Astro.site)} />
+    {alternate && (
+      <>
+        <link rel="alternate" hreflang={hreflang(lang)} href={canonical} />
+        <link rel="alternate" hreflang={hreflang(other)} href={new URL(alternate, Astro.site)} />
+        <link rel="alternate" hreflang="x-default" href={lang === 'pt' ? canonical : new URL(alternate, Astro.site)} />
+      </>
+    )}
     <meta name="color-scheme" content="light dark" />
     <meta name="theme-color" content="#f7f1ef" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#1b1a18" media="(prefers-color-scheme: dark)" />
@@ -41,6 +45,11 @@ const hreflang = (l: Lang) => (l === 'pt' ? 'pt-BR' : 'en');
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:locale" content={lang === 'pt' ? 'pt_BR' : 'en_US'} />
+    <meta property="og:image" content={new URL('/og.jpg', Astro.site)} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={t(lang, 'og.alt')} />
+    <meta name="twitter:card" content="summary_large_image" />
   </head>
   <body>
     <a class="skip" href="#main">{t(lang, 'nav.skip')}</a>

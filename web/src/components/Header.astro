@@ -4,7 +4,7 @@ import { home, otherLang, sectionPath, seriesAnchor, t, type Lang, type Section 
 interface Props {
   lang: Lang;
   section?: Section;
-  alternate: string;
+  alternate?: string;
 }
 
 const { lang, section, alternate } = Astro.props;
@@ -25,9 +25,9 @@ const links: { key: Section; label: string; href: string }[] = [
           <a href={l.href} aria-current={l.key === section ? 'page' : undefined}>{l.label}</a>
         </li>
       ))}
-      <li>
+      {alternate && <li>
         <a class="lang" href={alternate} hreflang={otherLang(lang) === 'pt' ? 'pt-BR' : 'en'} lang={otherLang(lang) === 'pt' ? 'pt-BR' : 'en'} aria-label={t(lang, 'nav.langLabel')}>{t(lang, 'nav.lang')}</a>
-      </li>
+      </li>}
     </ul>
   </nav>
   <slot />

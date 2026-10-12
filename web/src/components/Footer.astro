@@ -11,7 +11,11 @@ const { lang } = Astro.props;
 <footer>
   <div class="wrap row">
     <p>{t(lang, 'footer.source')}</p>
-    <p class="links"><a href="https://github.com/stuaninauts/copadata">{t(lang, 'footer.code')}</a><a href="https://stuaninauts.com">stuaninauts.com</a></p>
+    <p class="links">
+      <a href="https://github.com/stuaninauts/copadata/issues/new">{t(lang, 'footer.suggest')}</a>
+      <a href="https://github.com/stuaninauts/copadata">{t(lang, 'footer.code')}</a>
+      <a href="https://stuaninauts.com">stuaninauts.com</a>
+    </p>
   </div>
 </footer>
 
@@ -19,5 +23,5 @@ const { lang } = Astro.props;
   footer { border-top: 1px solid var(--line-soft); }
   .row { display: flex; flex-wrap: wrap; gap: 12px 40px; justify-content: space-between; padding-top: 28px; padding-bottom: 44px; font-size: 13px; color: var(--soft); }
   .row > p:first-child { max-width: 680px; }
-  .links { display: flex; gap: 20px; }
+  .links { display: flex; flex-wrap: wrap; gap: 8px 20px; }
 </style>
