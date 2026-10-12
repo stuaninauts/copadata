@@ -1,0 +1,39 @@
+---
+import { home, seriesAnchor, t, type Lang, type Section } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  section?: Section;
+}
+
+const { lang, section } = Astro.props;
+// Explorar and the EN version come after the spike (ADR 0010); Método points to the repository for now.
+const links: { key: Section; label: string; href: string }[] = [
+  { key: 'myths', label: t(lang, 'nav.myths'), href: seriesAnchor(lang, 'myths') },
+  { key: 'novelties', label: t(lang, 'nav.novelties'), href: seriesAnchor(lang, 'novelties') },
+  { key: 'method', label: t(lang, 'nav.method'), href: 'https://github.com/stuaninauts/copadata' },
+];
+---
+
+<header>
+  <nav class="wrap top" aria-label={t(lang, 'nav.label')}>
+    <a class="brand" href={home(lang)}>{t(lang, 'site.name')}</a>
+    <ul>
+      {links.map((l) => (
+        <li>
+          <a href={l.href} aria-current={l.key === section ? 'page' : undefined}>{l.label}</a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+  <slot />
+</header>
+
+<style>
+  .top { display: flex; flex-wrap: wrap; gap: 8px 28px; align-items: center; justify-content: space-between; padding-top: 12px; padding-bottom: 12px; }
+  .brand { font-family: var(--serif); font-weight: 600; font-size: 20px; color: var(--ink); text-decoration: none; }
+  ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 8px; font-size: 15px; }
+  li a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 10px; color: var(--muted); text-decoration: none; }
+  li a:hover { color: var(--ink); }
+  li a[aria-current='page'] { color: var(--ink); font-weight: 600; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 8px; }
+</style>
