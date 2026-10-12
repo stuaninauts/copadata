@@ -1,0 +1,16 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "copadata",
+  "compatibility_date": "2026-09-28",
+  // Site 100% estático: sem Worker, só os arquivos de dist/ (ADR 0007).
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  },
+  "routes": [{ "pattern": "copa.stuaninauts.com", "custom_domain": true }],
+  // Evita o site duplicado em *.workers.dev (conteúdo duplicado para buscadores).
+  "workers_dev": false,
+  // Previews dos PRs (Workers Builds roda `wrangler versions upload` fora da main). A URL fica em
+  // *.workers.dev, que a Cloudflare serve com X-Robots-Tag: noindex.
+  "preview_urls": true
+}
