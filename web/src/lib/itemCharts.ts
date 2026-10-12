@@ -1,12 +1,13 @@
 /** The chart of each item, from its export rows (src/lib/charts.ts draws them). */
 import type { CollectionEntry } from 'astro:content';
 import type { Lang } from '../i18n/ui';
-import { editionBars, pairBars } from './charts';
+import { teamName } from '../i18n/teams';
+import { diverging, editionBars, funnel, hBars } from './charts';
 import { fill, format, rows, value } from './stats';
 
 /** The caption line for the dashed mean, when the chart has one. */
 export function meanNote(entry: CollectionEntry<'novelties'>, lang: Lang): string | undefined {
-  const label = entry.data.pt.meanLabel;
+  const label = entry.data[lang].meanLabel;
   return entry.data.chart.mean && label ? fill(label, entry.data.stats, lang, entry.id) : undefined;
 }
 
@@ -21,7 +22,7 @@ export function noveltyChart(entry: CollectionEntry<'novelties'>, lang: Lang, si
     labelled: c.labelled,
     max: c.max,
     format: (v) => format(v, c.format, lang),
-    aria: entry.data.pt.chartAria,
+    aria: entry.data[lang].chartAria,
     mean,
     tone: entry.id === 'ko_final_quarter' ? 'accent' : 'blue',
     ...size,
@@ -34,25 +35,58 @@ export interface Panel {
   svg: string;
 }
 
-/** Myth charts: one panel per case, the case against its same-minute reference. */
+/** Myth charts: explicit bars, the late-goal funnel or the hosts' residuals. */
 export function mythPanels(entry: CollectionEntry<'myths'>, lang: Lang): Panel[] {
-  const page = entry.data.pt.page;
-  if (!page?.parts) throw new Error(`myths.${entry.id}: a page needs "parts" for its chart`);
-  const table = `myth_${entry.id}`;
-  return page.parts.map((p) => {
-    const [row] = rows({ table, where: { case: p.case } });
-    if (!row) throw new Error(`${table}: no case "${p.case}"`);
-    const fmt = (v: number) => format(v, 'pct', lang);
-    return {
-      title: p.title,
-      note: fill(p.note, entry.data.stats, lang, entry.id),
-      svg: pairBars(
-        [
-          { label: p.focus, value: row.value as number, focus: true },
-          { label: p.reference, value: row.reference as number, focus: false },
-        ],
-        { max: 0.32, format: fmt, aria: `${p.focus}: ${fmt(row.value as number)}; ${p.reference}: ${fmt(row.reference as number)}.` },
-      ),
-    };
-  });
+  const c = entry.data.chart;
+  const at = `myths.${entry.id}.chart`;
+  const note = (text: { pt: string; en: string }) => fill(text[lang], entry.data.stats, lang, at);
+  const pct = (v: number) => format(v, 'pct', lang);
+
+  if (c.kind === 'bars') {
+    const tone = String(value(entry.data.verdict, at)) === 'myth' ? 'accent' : 'blue';
+    return c.panels.map((p) => {
+      const data = p.bars.map((b) => ({ label: b.label[lang], value: value(b.ref, at) as number, focus: b.focus }));
+      const fmt = (v: number) => format(v, c.format, lang);
+      return {
+        title: p.title[lang],
+        note: note(p.note),
+        svg: hBars(data, { max: c.max, format: fmt, tone, aria: data.map((d) => `${d.label}: ${fmt(d.value)}`).join('; ') }),
+      };
+    });
+  }
+
+  if (c.kind === 'funnel') {
+    return c.panels.map((p) => {
+      const found = rows({ table: 'myth_late_specialists', where: { direction: p.direction } });
+      const data = found.map((r) => ({
+        label: teamName(String(r.team), lang),
+        n: r.n as number,
+        value: r.value as number,
+        outside: Math.abs(r.z as number) > 1.96,
+        low95: r.low95 as number,
+        high95: r.high95 as number,
+        low998: r.low998 as number,
+        high998: r.high998 as number,
+      }));
+      return {
+        title: p.title[lang],
+        note: note(p.note),
+        svg: funnel(data, {
+          mean: found[0].mean as number,
+          format: pct,
+          xLabel: lang === 'pt' ? 'gols no tempo normal →' : 'regulation goals →',
+          aria: p.title[lang],
+        }),
+      };
+    });
+  }
+
+  const hosts = rows({ table: 'myth_home_advantage' })
+    .map((r) => ({ label: `${r.year} · ${teamName(String(r.team), lang)}`, value: r.residual as number }));
+  const fmt = (v: number) => format(v, 'pp', lang);
+  return [{
+    title: c.panels[0].title[lang],
+    note: note(c.panels[0].note),
+    svg: diverging(hosts, { extent: 0.35, format: fmt, aria: hosts.map((h) => `${h.label}: ${fmt(h.value)}`).join('; ') }),
+  }];
 }

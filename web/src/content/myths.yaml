@@ -17,6 +17,27 @@
     low: { table: myths, where: { myth: two_nil }, field: ci_low, format: pp }
     high: { table: myths, where: { myth: two_nil }, field: ci_high, format: pp }
     threshold: { table: myths, where: { myth: two_nil }, field: threshold, format: pp_abs }
+  chart:
+    kind: bars
+    max: 0.32
+    format: pct
+    panels:
+      - title: { pt: "Depois de abrir 2 a 0", en: "After going 2-0 up" }
+        note: { pt: "{after20} de quem abriu 2 a 0 não venceu.", en: "{after20} of teams that went 2-0 up did not win." }
+        bars:
+          - label: { pt: "Abriu 2 a 0", en: "Went 2-0 up" }
+            ref: { table: myth_two_nil, where: { case: "2-0" }, field: value }
+            focus: true
+          - label: { pt: "Estava 1 a 0, mesmo minuto", en: "1-0 up, same minute" }
+            ref: { table: myth_two_nil, where: { case: "2-0" }, field: reference }
+      - title: { pt: "Depois que o adversário diminuiu para 2 a 1", en: "After the opponent pulled one back to 2-1" }
+        note: { pt: "{after21} de quem viu o 2 a 0 virar 2 a 1 não venceu.", en: "{after21} of teams whose 2-0 became 2-1 did not win." }
+        bars:
+          - label: { pt: "Estava 2 a 1", en: "2-1 up" }
+            ref: { table: myth_two_nil, where: { case: "2-1 after 2-0" }, field: value }
+            focus: true
+          - label: { pt: "Estava 1 a 0, mesmo minuto", en: "1-0 up, same minute" }
+            ref: { table: myth_two_nil, where: { case: "2-1 after 2-0" }, field: reference }
   pt:
     claim: "2 a 0 é o placar mais perigoso."
     big: "{after20}"
@@ -26,17 +47,6 @@
       lede: "Nem quando o adversário diminui. O placar perigoso, se existe um, é o 1 a 0."
       chartTitle: "Quantas vezes quem estava na frente deixou de vencer"
       chartNote: "Cada caso comparado com times que estavam 1 a 0 no mesmo minuto. Copas de 1986 a 2026, resultado aos 90'."
-      parts:
-        - title: "Depois de abrir 2 a 0"
-          note: "{after20} de quem abriu 2 a 0 não venceu."
-          case: "2-0"
-          focus: "Abriu 2 a 0"
-          reference: "Estava 1 a 0, mesmo minuto"
-        - title: "Depois que o adversário diminuiu para 2 a 1"
-          note: "{after21} de quem viu o 2 a 0 virar 2 a 1 não venceu."
-          case: "2-1 after 2-0"
-          focus: "Estava 2 a 1"
-          reference: "Estava 1 a 0, mesmo minuto"
       facts:
         - big: "{after20}"
           text: "dos times que abriram 2 a 0 não venceram. Com 1 a 0 no mesmo minuto, {ref20}."
@@ -53,6 +63,31 @@
           text: "a frase seria verdade se, depois do 2 a 1, deixar de vencer fosse pelo menos {threshold} pontos mais comum que no 1 a 0. A diferença foi de {effect} pontos (intervalo de {low} a {high}). Mito."
         - label: "Lista fechada"
           text: "esta frase faz parte de uma lista testada de uma vez, com a regra definida antes. Todas as frases são publicadas, inclusive as que não deram em nada."
+  en:
+    claim: "2-0 is the most dangerous lead."
+    big: "{after20}"
+    caption: "of teams that went 2-0 up failed to win. Teams 1-0 up at the same minute: {ref20}."
+    page:
+      title: "Teams that go 2-0 up almost never let it slip."
+      lede: "Not even when the opponent pulls one back. If any score is dangerous, it is 1-0."
+      chartTitle: "How often the team in front failed to win"
+      chartNote: "Each case against teams that were 1-0 up at the same minute. World Cups 1986 to 2026, result at 90 minutes."
+      facts:
+        - big: "{after20}"
+          text: "of teams that went 2-0 up did not win. At 1-0 at the same minute, {ref20}."
+        - big: "{after21}"
+          text: "let it slip after it became 2-1. Still fewer than the {ref21} of teams holding a 1-0 lead at the same minute."
+        - big: "{n20}"
+          text: "matches since 1986 where someone went 2-0 up. In {n21} of them, the opponent pulled one back."
+      method:
+        - label: "Base"
+          text: "group and knockout matches of the 1986 to 2026 World Cups, third-place matches excluded: {n20} with a 2-0, {n21} of them followed by a 2-1."
+        - label: "A fair comparison"
+          text: "each case is compared with teams that were 1-0 up at the end of the same minute (in 15-minute bands), because holding a lead depends on how much time is left."
+        - label: "Rule, written before looking at the data"
+          text: "the claim would be true if, after the 2-1, failing to win were at least {threshold} points more common than at 1-0. The difference was {effect} points (interval {low} to {high}). Myth."
+        - label: "Closed list"
+          text: "this claim is part of a list tested in one go, with the rule set in advance. Every claim is published, including the ones that came to nothing."
 
 - id: favorite_knockout
   order: 2
@@ -61,10 +96,81 @@
   stats:
     result: { table: myth_favorite_knockout, where: { stage: knockout }, field: result, format: pct }
     expected: { table: myth_favorite_knockout, where: { stage: knockout }, field: expected, format: pct }
+    gresult: { table: myth_favorite_knockout, where: { stage: groups }, field: result, format: pct }
+    gexpected: { table: myth_favorite_knockout, where: { stage: groups }, field: expected, format: pct }
+    nko: { table: myth_favorite_knockout, where: { stage: knockout }, field: n, format: int }
+    ngroups: { table: myth_favorite_knockout, where: { stage: groups }, field: n, format: int }
+    effect: { table: myths, where: { myth: favorite_knockout }, field: effect, format: pp }
+    low: { table: myths, where: { myth: favorite_knockout }, field: ci_low, format: pp }
+    high: { table: myths, where: { myth: favorite_knockout }, field: ci_high, format: pp }
+    threshold: { table: myths, where: { myth: favorite_knockout }, field: threshold, format: pp_abs }
+  chart:
+    kind: bars
+    max: 0.85
+    format: pct
+    panels:
+      - title: { pt: "No mata-mata", en: "In the knockout" }
+        note: { pt: "O favorito fez {result}; a força previa {expected}.", en: "The favorite got {result}; strength predicted {expected}." }
+        bars:
+          - label: { pt: "O favorito fez", en: "Favorite got" }
+            ref: { table: myth_favorite_knockout, where: { stage: knockout }, field: result }
+            focus: true
+          - label: { pt: "A força previa", en: "Strength predicted" }
+            ref: { table: myth_favorite_knockout, where: { stage: knockout }, field: expected }
+      - title: { pt: "Na fase de grupos", en: "In the group stage" }
+        note: { pt: "O favorito fez {gresult}; a força previa {gexpected}.", en: "The favorite got {gresult}; strength predicted {gexpected}." }
+        bars:
+          - label: { pt: "O favorito fez", en: "Favorite got" }
+            ref: { table: myth_favorite_knockout, where: { stage: groups }, field: result }
+            focus: true
+          - label: { pt: "A força previa", en: "Strength predicted" }
+            ref: { table: myth_favorite_knockout, where: { stage: groups }, field: expected }
   pt:
     claim: "Na Copa, o favorito sofre no mata-mata."
     big: "{result}"
     caption: "de aproveitamento do favorito no mata-mata (empate vale meio), acima dos {expected} que a força previa."
+    page:
+      title: "No mata-mata, o favorito rende mais, não menos."
+      lede: "Comparado com o que a força das seleções previa, o favorito vai melhor nos jogos eliminatórios do que na fase de grupos."
+      chartTitle: "Aproveitamento do favorito contra o que a força previa"
+      chartNote: "Resultado aos 90 minutos: vitória vale 1, empate vale meio. Copas de 1986 a 2026."
+      facts:
+        - big: "{result}"
+          text: "de aproveitamento do favorito no mata-mata. A força previa {expected}."
+        - big: "{gresult}"
+          text: "na fase de grupos, praticamente igual aos {gexpected} previstos."
+        - big: "{nko}"
+          text: "jogos de mata-mata desde 1986, sem a disputa de 3º lugar, contra {ngroups} de grupo."
+      method:
+        - label: "Força"
+          text: "o Elo de cada seleção antes do jogo, calculado a partir de todos os jogos entre seleções desde 1872 (base pública de resultados, domínio público)."
+        - label: "Previsto"
+          text: "o resultado esperado pela diferença de Elo, como se o jogo fosse em campo neutro; favorito é quem tem o Elo maior."
+        - label: "Regra, escrita antes de olhar os dados"
+          text: "a frase seria verdade se o favorito rendesse pelo menos {threshold} pontos menos, frente ao previsto, no mata-mata do que nos grupos. A diferença (grupos menos mata-mata) foi de {effect} pontos, intervalo de {low} a {high}: o favorito rende mais no mata-mata. Mito."
+  en:
+    claim: "At the World Cup, the favorite struggles in the knockout."
+    big: "{result}"
+    caption: "of the points available went to the favorite in the knockout (a draw counts half), above the {expected} its strength predicted."
+    page:
+      title: "In the knockout, the favorite does better, not worse."
+      lede: "Measured against what team strength predicted, favorites do better in knockout matches than in the group stage."
+      chartTitle: "The favorite's results against what strength predicted"
+      chartNote: "Result at 90 minutes: a win counts 1, a draw half. World Cups 1986 to 2026."
+      facts:
+        - big: "{result}"
+          text: "of the points available went to the favorite in the knockout. Strength predicted {expected}."
+        - big: "{gresult}"
+          text: "in the group stage, almost the same as the {gexpected} predicted."
+        - big: "{nko}"
+          text: "knockout matches since 1986, third-place matches excluded, against {ngroups} group matches."
+      method:
+        - label: "Strength"
+          text: "each team's Elo rating before the match, computed from every international match since 1872 (a public-domain results database)."
+        - label: "Predicted"
+          text: "the expected result from the Elo difference, as if on neutral ground; the favorite is the team with the higher Elo."
+        - label: "Rule, written before looking at the data"
+          text: "the claim would be true if, against its prediction, the favorite did at least {threshold} points worse in the knockout than in the group stage. The difference (groups minus knockout) was {effect} points, interval {low} to {high}: the favorite does better in the knockout. Myth."
 
 - id: late_specialists
   order: 3
@@ -73,10 +179,71 @@
   stats:
     outside: { table: myths, where: { myth: late_specialists }, field: effect, format: int }
     teams: { table: myth_late_specialists, where: { direction: scored }, agg: count, format: int }
+    out95: { table: myth_late_specialists, where: { z: { abs_gt: 1.96 } }, agg: count, format: int }
+    mean: { table: myth_late_specialists, where: { direction: scored }, field: mean, agg: max, format: pct }
+    aut_k: { table: myth_late_specialists, where: { direction: scored, team: Austria }, field: k, format: int }
+    aut_n: { table: myth_late_specialists, where: { direction: scored, team: Austria }, field: n, format: int }
+    irn_k: { table: myth_late_specialists, where: { direction: scored, team: Iran }, field: k, format: int }
+    irn_n: { table: myth_late_specialists, where: { direction: scored, team: Iran }, field: n, format: int }
+  chart:
+    kind: funnel
+    panels:
+      - title: { pt: "Gols marcados do 76' em diante", en: "Goals scored from the 76th minute" }
+        note: { pt: "Cada ponto é uma seleção. Linhas tracejadas: limites de 95% e de 99,8% para o seu número de gols.", en: "Each dot is a team. Dashed lines: the 95% and 99.8% limits for its number of goals." }
+        direction: scored
+      - title: { pt: "Gols sofridos do 76' em diante", en: "Goals conceded from the 76th minute" }
+        note: { pt: "Nenhuma seleção sai nem do limite de 95%.", en: "No team is outside even the 95% limit." }
+        direction: conceded
   pt:
     claim: "Tem seleção especialista em decidir no fim."
     big: "{outside} de {teams}"
     caption: "seleções mais frequentes fogem do que o acaso explica, nos gols marcados ou sofridos no fim."
+    page:
+      title: "Nenhuma seleção decide no fim mais do que o acaso explica."
+      lede: "Com poucos gols, qualquer seleção pode parecer especialista. Levando em conta quantos gols cada uma fez, todas cabem no esperado."
+      chartTitle: "Parcela dos gols de cada seleção que saiu no fim"
+      chartNote: "Seleções com pelo menos 10 jogos em Copas, de 1986 a 2026. Em média, {mean} dos gols saem do 76' em diante."
+      facts:
+        - big: "{outside}"
+          text: "seleções fora do limite de 99,8%, nos gols marcados ou sofridos no fim."
+        - big: "{out95}"
+          text: "fora do limite de 95%: Áustria ({aut_k} de {aut_n} gols no fim) e Irã ({irn_k} de {irn_n}). Com tantas seleções, o acaso sozinho põe algumas ali."
+        - big: "{mean}"
+          text: "dos gols de todas elas saem do 76' em diante. É a régua do gráfico."
+      method:
+        - label: "Base"
+          text: "as {teams} seleções com pelo menos 10 jogos em Copas de 1986 a 2026; gols do tempo normal, a favor e contra."
+        - label: "No fim"
+          text: "do 76' até o fim dos acréscimos do 2º tempo; a prorrogação fica fora."
+        - label: "Os limites"
+          text: "a faixa onde cairia uma seleção comum com o mesmo número de gols. Quem tem poucos gols oscila mais, por isso a faixa abre à esquerda."
+        - label: "Regra, escrita antes de olhar os dados"
+          text: "a frase seria verdade se alguma seleção saísse do limite de 99,8%. Nenhuma saiu. Mito."
+  en:
+    claim: "Some teams are specialists in deciding late."
+    big: "{outside} of {teams}"
+    caption: "of the most frequent teams are beyond what chance explains, for late goals scored or conceded."
+    page:
+      title: "No team decides late more than chance explains."
+      lede: "With few goals, any team can look like a specialist. Once each team's number of goals is taken into account, all of them fit the expected range."
+      chartTitle: "Share of each team's goals that came late"
+      chartNote: "Teams with at least 10 World Cup matches, 1986 to 2026. On average, {mean} of goals come from the 76th minute on."
+      facts:
+        - big: "{outside}"
+          text: "teams outside the 99.8% limit, for late goals scored or conceded."
+        - big: "{out95}"
+          text: "outside the 95% limit: Austria ({aut_k} of {aut_n} goals late) and Iran ({irn_k} of {irn_n}). With this many teams, chance alone puts a few there."
+        - big: "{mean}"
+          text: "of all their goals come from the 76th minute on. That is the chart's yardstick."
+      method:
+        - label: "Base"
+          text: "the {teams} teams with at least 10 World Cup matches from 1986 to 2026; regulation goals, scored and conceded."
+        - label: "Late"
+          text: "from the 76th minute to the end of second-half stoppage time; extra time excluded."
+        - label: "The limits"
+          text: "the range an ordinary team with the same number of goals would fall in. Teams with few goals swing more, so the range opens up to the left."
+        - label: "Rule, written before looking at the data"
+          text: "the claim would be true if any team fell outside the 99.8% limit. None did. Myth."
 
 - id: leader_sits_back
   order: 4
@@ -85,10 +252,70 @@
   stats:
     lead: { table: myth_leader_sits_back, where: { state: "lead 1-0" }, field: value, format: dec1 }
     level: { table: myth_leader_sits_back, where: { state: "level 0-0" }, field: value, format: dec1 }
+    trail: { table: myth_leader_sits_back, where: { state: "trail 0-1" }, field: value, format: dec1 }
+    lead_min: { table: myth_leader_sits_back, where: { state: "lead 1-0" }, field: n, format: int }
+    lead_goals: { table: myth_leader_sits_back, where: { state: "lead 1-0" }, field: k, format: int }
+  chart:
+    kind: bars
+    max: 2.6
+    format: dec1
+    panels:
+      - title: { pt: "Gols por 90 minutos, do 76' em diante", en: "Goals per 90 minutes, from the 76th minute" }
+        note: { pt: "Cada barra soma todos os minutos jogados naquela situação, em todos os jogos.", en: "Each bar adds up every minute played in that situation, across all matches." }
+        bars:
+          - label: { pt: "Ganhando 1 a 0", en: "Leading 1-0" }
+            ref: { table: myth_leader_sits_back, where: { state: "lead 1-0" }, field: value }
+            focus: true
+          - label: { pt: "Empatando 0 a 0", en: "Level at 0-0" }
+            ref: { table: myth_leader_sits_back, where: { state: "level 0-0" }, field: value }
+          - label: { pt: "Perdendo 0 a 1", en: "Trailing 0-1" }
+            ref: { table: myth_leader_sits_back, where: { state: "trail 0-1" }, field: value }
   pt:
     claim: "Quem está ganhando por 1 recua."
     big: "{lead} × {level}"
     caption: "gols por 90 minutos, do 76' em diante: quem lidera 1 a 0 contra um time no 0 a 0. Não há sinal de recuo."
+    page:
+      title: "Não há sinal de que quem lidera por 1 gol recue."
+      lede: "No fim do jogo, quem está 1 a 0 marca no mesmo ritmo de um time empatado. E quem perde não passa a marcar mais por estar atrás."
+      chartTitle: "Ritmo de gols no fim do jogo, conforme o placar"
+      chartNote: "Do 76' até o fim dos acréscimos, Copas de 1986 a 2026."
+      facts:
+        - big: "{lead}"
+          text: "gols por 90 minutos de quem lidera 1 a 0 no fim do jogo."
+        - big: "{level}"
+          text: "de um time no 0 a 0: quem lidera não marca menos."
+        - big: "{trail}"
+          text: "de quem perde 0 a 1: estar atrás não faz marcar mais."
+      method:
+        - label: "Base"
+          text: "{lead_min} minutos de times ganhando 1 a 0 do 76' em diante ({lead_goals} gols), e o mesmo para 0 a 0 e 0 a 1, em todos os jogos de grupo e mata-mata de 1986 a 2026."
+        - label: "Regra, escrita antes de olhar os dados"
+          text: "a frase seria verdade se quem lidera marcasse menos que no 0 a 0 e quem perde marcasse mais, os dois fora do acaso. Nenhuma das duas coisas aconteceu. Mito."
+        - label: "Ressalva"
+          text: "quem lidera costuma ser o time mais forte. Controlando pela força das seleções, o favorito que lidera marca um pouco menos que o favorito empatado, mas a diferença é pequena demais para dizer que ele recua."
+  en:
+    claim: "A team leading by one sits back."
+    big: "{lead} × {level}"
+    caption: "goals per 90 minutes from the 76th minute: a team leading 1-0 against a team at 0-0. No sign of sitting back."
+    page:
+      title: "No sign that a team leading by one goal sits back."
+      lede: "Late in the game, a team 1-0 up scores at the same rate as a team that is level. And a team behind does not start scoring more for being behind."
+      chartTitle: "Late scoring rate, by score"
+      chartNote: "From the 76th minute to the end of stoppage time, World Cups 1986 to 2026."
+      facts:
+        - big: "{lead}"
+          text: "goals per 90 minutes for a team leading 1-0 late in the game."
+        - big: "{level}"
+          text: "for a team at 0-0: the leader does not score less."
+        - big: "{trail}"
+          text: "for a team trailing 0-1: being behind does not make it score more."
+      method:
+        - label: "Base"
+          text: "{lead_min} minutes of teams leading 1-0 from the 76th minute ({lead_goals} goals), and the same for 0-0 and 0-1, across all group and knockout matches from 1986 to 2026."
+        - label: "Rule, written before looking at the data"
+          text: "the claim would be true if the leader scored less than at 0-0 and the trailing team scored more, both beyond chance. Neither happened. Myth."
+        - label: "Caveat"
+          text: "the leader is usually the stronger team. Controlling for team strength, a favorite that leads scores a little less than a favorite that is level, but the gap is too small to say it sits back."
 
 - id: home_advantage
   order: 5
@@ -97,10 +324,65 @@
   stats:
     above: { table: myth_home_advantage, where: { residual: { gt: 0 } }, agg: count, format: int }
     hosts: { table: myth_home_advantage, agg: count, format: int }
+    matches: { table: myth_home_advantage, field: n, agg: sum, format: int }
+    effect: { table: myths, where: { myth: home_advantage }, field: effect, format: pp }
+    low: { table: myths, where: { myth: home_advantage }, field: ci_low, format: pp }
+    high: { table: myths, where: { myth: home_advantage }, field: ci_high, format: pp }
+  chart:
+    kind: hosts
+    panels:
+      - title: { pt: "Cada sede contra o que a força previa", en: "Each host against what its strength predicted" }
+        note: { pt: "Pontos de aproveitamento por jogo acima (azul) ou abaixo (cinza) do previsto; empate vale meio.", en: "Points per match above (blue) or below (grey) the prediction, in percentage points; a draw counts half." }
   pt:
     claim: "Jogar em casa ajuda na Copa."
     big: "{above} de {hosts}"
     caption: "sedes renderam acima do que a força previa. Brasil 2014 e Catar 2022 estão entre as exceções."
+    page:
+      title: "As sedes rendem acima do que a força delas previa."
+      lede: "Quase todo país-sede foi além do que o seu nível indicava. A vantagem é parecida com a que o Elo já dá a quem joga em casa."
+      chartTitle: "Aproveitamento das sedes acima ou abaixo do previsto"
+      chartNote: "Resultado aos 90 minutos contra o esperado pela força, como se fosse em campo neutro."
+      facts:
+        - big: "{effect}"
+          text: "pontos de aproveitamento por jogo acima do que a força previa, em média."
+        - big: "{above} de {hosts}"
+          text: "sedes ficaram acima do previsto. Brasil 2014, Catar 2022 e Canadá 2026 ficaram abaixo."
+        - big: "{low} a {high}"
+          text: "o intervalo do efeito: mesmo no pior caso, acima de zero."
+      method:
+        - label: "Base"
+          text: "{hosts} sedes desde 1986 (2002 teve duas e 2026 teve três), {matches} jogos de grupo e mata-mata."
+        - label: "Força"
+          text: "o Elo de cada seleção antes do jogo, calculado a partir de todos os jogos entre seleções desde 1872 (base pública de resultados, domínio público)."
+        - label: "Previsto"
+          text: "o resultado esperado pela diferença de Elo, sem o bônus de mando: como se a sede jogasse em campo neutro."
+        - label: "Regra, escrita antes de olhar os dados"
+          text: "verdade se o intervalo ficasse acima de zero e as duas metades da história (1986-2002 e 2006-2026) apontassem para o mesmo lado. As duas apontam. Verdade."
+  en:
+    claim: "Playing at home helps at the World Cup."
+    big: "{above} of {hosts}"
+    caption: "hosts did better than their strength predicted. Brazil 2014 and Qatar 2022 are among the exceptions."
+    page:
+      title: "Hosts do better than their strength predicted."
+      lede: "Almost every host country went beyond what its level suggested. The edge is close to the one Elo already gives a home side."
+      chartTitle: "Hosts' results above or below the prediction"
+      chartNote: "Result at 90 minutes against the expectation from strength, as if on neutral ground."
+      facts:
+        - big: "{effect}"
+          text: "percentage points per match above what strength predicted, on average."
+        - big: "{above} of {hosts}"
+          text: "hosts finished above the prediction. Brazil 2014, Qatar 2022 and Canada 2026 finished below."
+        - big: "{low} to {high}"
+          text: "the interval of the effect: above zero even in the worst case."
+      method:
+        - label: "Base"
+          text: "{hosts} hosts since 1986 (2002 had two and 2026 had three), {matches} group and knockout matches."
+        - label: "Strength"
+          text: "each team's Elo rating before the match, computed from every international match since 1872 (a public-domain results database)."
+        - label: "Predicted"
+          text: "the expected result from the Elo difference, without the home bonus: as if the host played on neutral ground."
+        - label: "Rule, written before looking at the data"
+          text: "true if the interval sat above zero and both halves of the history (1986-2002 and 2006-2026) pointed the same way. They do. True."
 
 - id: must_score_kick
   order: 6
@@ -109,10 +391,72 @@
   stats:
     must: { table: myth_must_score_kick, where: { must_score: true }, field: value, format: pct }
     other: { table: myth_must_score_kick, where: { must_score: false }, field: value, format: pct }
+    kmust: { table: myth_must_score_kick, where: { must_score: true }, field: k, format: int }
+    nmust: { table: myth_must_score_kick, where: { must_score: true }, field: n, format: int }
+    kother: { table: myth_must_score_kick, where: { must_score: false }, field: k, format: int }
+    nother: { table: myth_must_score_kick, where: { must_score: false }, field: n, format: int }
+    effect: { table: myths, where: { myth: must_score_kick }, field: effect, format: pp_abs }
+    low: { table: myths, where: { myth: must_score_kick }, field: ci_low, format: pp }
+    high: { table: myths, where: { myth: must_score_kick }, field: ci_high, format: pp }
+  chart:
+    kind: bars
+    max: 0.85
+    format: pct
+    panels:
+      - title: { pt: "Conversão nas disputas de pênaltis", en: "Conversion in penalty shootouts" }
+        note: { pt: "{kmust} de {nmust} cobranças decisivas entraram; nas demais, {kother} de {nother}.", en: "{kmust} of {nmust} must-score kicks went in; of the others, {kother} of {nother}." }
+        bars:
+          - label: { pt: "Errar elimina", en: "A miss eliminates" }
+            ref: { table: myth_must_score_kick, where: { must_score: true }, field: value }
+            focus: true
+          - label: { pt: "Demais cobranças", en: "Other kicks" }
+            ref: { table: myth_must_score_kick, where: { must_score: false }, field: value }
   pt:
     claim: "A cobrança que precisa entrar treme."
     big: "{must}"
     caption: "das cobranças em que errar elimina entraram. As demais: {other}."
+    page:
+      title: "Quando errar elimina, a cobrança entra menos."
+      lede: "Nas disputas de pênaltis das Copas, a cobrança decisiva converte bem menos que as outras. A amostra é pequena, por isso o veredito fica no limite."
+      chartTitle: "Quantas cobranças entraram"
+      chartNote: "Disputas de pênaltis das Copas de 1986 a 2022. A base de 2026 não traz cobrança a cobrança."
+      facts:
+        - big: "{must}"
+          text: "das cobranças em que errar elimina entraram ({kmust} de {nmust})."
+        - big: "{other}"
+          text: "das demais cobranças ({kother} de {nother})."
+        - big: "{effect}"
+          text: "pontos de diferença. O intervalo vai de {low} a {high}: a diferença existe, mas pode ser pequena."
+      method:
+        - label: "Base"
+          text: "todas as cobranças de disputa de pênaltis das Copas de 1986 a 2022, em ordem."
+        - label: "Decisiva"
+          text: "errar elimina na hora: nas cinco primeiras rodadas, quando nem convertendo todas as seguintes o time alcançaria o rival; nas alternadas, quando o rival já converteu na rodada."
+        - label: "Regra, escrita antes de olhar os dados"
+          text: "verdade se o intervalo ficasse acima de zero e as duas metades da história concordassem. As duas concordam, mas o intervalo de 99% chega a zero: Verdade, no limite."
+  en:
+    claim: "The kick that must go in trembles."
+    big: "{must}"
+    caption: "of kicks where a miss eliminates went in. Other kicks: {other}."
+    page:
+      title: "When a miss eliminates, the kick goes in less often."
+      lede: "In World Cup penalty shootouts, the must-score kick is converted far less often than the rest. The sample is small, so the verdict is borderline."
+      chartTitle: "How many kicks went in"
+      chartNote: "World Cup penalty shootouts, 1986 to 2022. The 2026 data has no kick-by-kick record."
+      facts:
+        - big: "{must}"
+          text: "of the kicks where a miss eliminates went in ({kmust} of {nmust})."
+        - big: "{other}"
+          text: "of the other kicks ({kother} of {nother})."
+        - big: "{effect}"
+          text: "points apart. The interval runs from {low} to {high}: the gap is real, but it may be small."
+      method:
+        - label: "Base"
+          text: "every penalty shootout kick of the 1986 to 2022 World Cups, in order."
+        - label: "Must-score"
+          text: "a miss eliminates at once: in the first five rounds, when even scoring every remaining kick would not catch the rival; in sudden death, when the rival has already scored in the round."
+        - label: "Rule, written before looking at the data"
+          text: "true if the interval sat above zero and both halves of the history agreed. They agree, but the 99% interval reaches zero: True, borderline."
 
 - id: opener_loss
   order: 7
@@ -121,7 +465,73 @@
   stats:
     l48: { table: myth_opener_loss, where: { era: 48-teams, result: L }, field: value, format: pct }
     l32: { table: myth_opener_loss, where: { era: 32-teams, result: L }, field: value, format: pct }
+    l24: { table: myth_opener_loss, where: { era: 24-teams, result: L }, field: value, format: pct }
+    k48: { table: myth_opener_loss, where: { era: 48-teams, result: L }, field: k, format: int }
+    n48: { table: myth_opener_loss, where: { era: 48-teams, result: L }, field: n, format: int }
+    k32: { table: myth_opener_loss, where: { era: 32-teams, result: L }, field: k, format: int }
+    n32: { table: myth_opener_loss, where: { era: 32-teams, result: L }, field: n, format: int }
+    k24: { table: myth_opener_loss, where: { era: 24-teams, result: L }, field: k, format: int }
+    n24: { table: myth_opener_loss, where: { era: 24-teams, result: L }, field: n, format: int }
+    low: { table: myths, where: { myth: opener_loss }, field: ci_low, format: pp }
+    high: { table: myths, where: { myth: opener_loss }, field: ci_high, format: pp }
+  chart:
+    kind: bars
+    max: 0.5
+    format: pct
+    panels:
+      - title: { pt: "Avançaram depois de perder a estreia", en: "Reached the knockout after losing the opener" }
+        note: { pt: "Com 24 e com 48 seleções, os melhores terceiros colocados também avançam.", en: "With 24 and with 48 teams, the best third-placed teams also go through." }
+        bars:
+          - label: { pt: "24 seleções (1986-94)", en: "24 teams (1986-94)" }
+            ref: { table: myth_opener_loss, where: { era: 24-teams, result: L }, field: value }
+          - label: { pt: "32 seleções (1998-2022)", en: "32 teams (1998-2022)" }
+            ref: { table: myth_opener_loss, where: { era: 32-teams, result: L }, field: value }
+          - label: { pt: "48 seleções (2026)", en: "48 teams (2026)" }
+            ref: { table: myth_opener_loss, where: { era: 48-teams, result: L }, field: value }
+            focus: true
   pt:
     claim: "Com 48 seleções, perder a estreia deixou de ser sentença."
     big: "{l48}"
     caption: "de quem perdeu a estreia em 2026 avançou. Com 32 seleções, eram {l32}."
+    page:
+      title: "Perder a estreia pesa menos quando os terceiros também avançam."
+      lede: "Com 32 seleções, quase todo mundo que perdia a estreia voltava para casa. Com 48, e antes com 24, os melhores terceiros também passam, e a derrota inicial deixa de ser sentença."
+      chartTitle: "Quem perdeu a estreia e ainda avançou"
+      chartNote: "Por formato da Copa, de 1986 a 2026."
+      facts:
+        - big: "{l48}"
+          text: "de quem perdeu a estreia em 2026 avançou ({k48} de {n48})."
+        - big: "{l32}"
+          text: "com 32 seleções, de 1998 a 2022 ({k32} de {n32})."
+        - big: "{l24}"
+          text: "com 24 seleções, que também classificava terceiros, de 1986 a 1994 ({k24} de {n24})."
+      method:
+        - label: "Base"
+          text: "a estreia de cada seleção em cada Copa de 1986 a 2026; avançou quem jogou o mata-mata."
+        - label: "Regra, escrita antes de olhar os dados"
+          text: "verdade se a diferença entre 48 e 32 seleções tivesse intervalo acima de zero. Ficou de {low} a {high} pontos, acima de zero, mas no limite: em 2026 foram só {n48} seleções que perderam a estreia."
+        - label: "Leitura"
+          text: "a pergunta é sobre o formato, por isso a regra das duas metades da história não se aplica."
+  en:
+    claim: "With 48 teams, losing the opener is no longer fatal."
+    big: "{l48}"
+    caption: "of the teams that lost their opener in 2026 went through. With 32 teams, it was {l32}."
+    page:
+      title: "Losing the opener matters less when third-placed teams go through too."
+      lede: "With 32 teams, almost everyone who lost the opener went home. With 48, and earlier with 24, the best third-placed teams also go through, and the opening defeat stops being fatal."
+      chartTitle: "Teams that lost the opener and still went through"
+      chartNote: "By tournament format, 1986 to 2026."
+      facts:
+        - big: "{l48}"
+          text: "of teams that lost their opener in 2026 went through ({k48} of {n48})."
+        - big: "{l32}"
+          text: "with 32 teams, from 1998 to 2022 ({k32} of {n32})."
+        - big: "{l24}"
+          text: "with 24 teams, which also let third-placed teams through, from 1986 to 1994 ({k24} of {n24})."
+      method:
+        - label: "Base"
+          text: "each team's opening match at each World Cup from 1986 to 2026; going through means playing in the knockout."
+        - label: "Rule, written before looking at the data"
+          text: "true if the 48-team minus 32-team difference had an interval above zero. It ran from {low} to {high} points, above zero but borderline: only {n48} teams lost their opener in 2026."
+        - label: "Reading"
+          text: "the question is about the format, so the rule of both halves of the history does not apply."

@@ -58,27 +58,95 @@ export function editionBars(data: EditionBar[], o: {
   });
 }
 
-export interface PairBar {
+export interface HBar {
   label: string;
   value: number;
   focus: boolean;
 }
 
-/** Two horizontal bars: the case against its reference. */
-export function pairBars(data: PairBar[], o: { max: number; aria: string; format: (v: number) => string }): string {
+/** Horizontal bars, the focus ones highlighted: a case against its reference. */
+export function hBars(data: HBar[], o: { max: number; aria: string; format: (v: number) => string; tone?: 'accent' | 'blue' }): string {
   return render({
     width: 640,
-    height: 96,
+    height: 36 * data.length + 24,
     marginLeft: 220,
-    marginRight: 56,
+    marginRight: 64,
     ariaLabel: o.aria,
     x: { domain: [0, o.max], axis: null },
     y: { domain: data.map((d) => d.label), label: null, tickSize: 0, padding: 0.3 },
     marks: [
       Plot.barX(data.filter((d) => !d.focus), { y: 'label', x: 'value', fill: 'currentColor', className: 'bar-ref' }),
-      Plot.barX(data.filter((d) => d.focus), { y: 'label', x: 'value', fill: 'currentColor', className: 'bar-focus tone-accent' }),
+      Plot.barX(data.filter((d) => d.focus), { y: 'label', x: 'value', fill: 'currentColor', className: `bar-focus tone-${o.tone ?? 'accent'}` }),
       Plot.text(data, {
-        y: 'label', x: 'value', dx: 8, textAnchor: 'start', text: (d: PairBar) => o.format(d.value),
+        y: 'label', x: 'value', dx: 8, textAnchor: 'start', text: (d: HBar) => o.format(d.value),
+        fill: 'currentColor', className: 'bar-label',
+      }),
+    ],
+  });
+}
+
+export interface FunnelPoint {
+  label: string;
+  n: number;
+  value: number;
+  outside: boolean;
+  low95: number;
+  high95: number;
+  low998: number;
+  high998: number;
+}
+
+/** Funnel plot: each team's share against its number of goals, with the 95% and 99.8% limits. */
+export function funnel(data: FunnelPoint[], o: { mean: number; aria: string; xLabel: string; format: (v: number) => string }): string {
+  const byN = [...data].sort((a, b) => a.n - b.n);
+  const limit = (key: 'low95' | 'high95' | 'low998' | 'high998', cls: string) =>
+    Plot.line(byN, { x: 'n', y: (d: FunnelPoint) => Math.max(0, Math.min(1, d[key])), curve: 'monotone-x', stroke: 'currentColor', strokeDasharray: cls === 'limit-998' ? '2,4' : '6,4', className: cls });
+  return render({
+    width: 640,
+    height: 320,
+    marginLeft: 44,
+    marginBottom: 40,
+    ariaLabel: o.aria,
+    x: { label: o.xLabel, labelAnchor: 'right', nice: true },
+    y: { domain: [0, 0.7], tickFormat: (v: number) => o.format(v), label: null, ticks: 7 },
+    marks: [
+      Plot.ruleY([o.mean], { stroke: 'currentColor', className: 'rule-mean' }),
+      limit('low95', 'limit-95'),
+      limit('high95', 'limit-95'),
+      limit('low998', 'limit-998'),
+      limit('high998', 'limit-998'),
+      Plot.dot(data.filter((d) => !d.outside), { x: 'n', y: 'value', r: 4, fill: 'currentColor', className: 'dot' }),
+      Plot.dot(data.filter((d) => d.outside), { x: 'n', y: 'value', r: 5, fill: 'currentColor', className: 'dot-focus' }),
+      Plot.text(data.filter((d) => d.outside), { x: 'n', y: 'value', text: 'label', dx: 8, textAnchor: 'start', fill: 'currentColor', className: 'bar-label' }),
+    ],
+  });
+}
+
+export interface Residual {
+  label: string;
+  value: number;
+}
+
+/** Bars around zero: above or below what was expected. */
+export function diverging(data: Residual[], o: { aria: string; format: (v: number) => string; extent: number }): string {
+  return render({
+    width: 640,
+    height: 28 * data.length + 24,
+    marginLeft: 200,
+    marginRight: 56,
+    ariaLabel: o.aria,
+    x: { domain: [-o.extent, o.extent], axis: null },
+    y: { domain: data.map((d) => d.label), label: null, tickSize: 0, padding: 0.25 },
+    marks: [
+      Plot.barX(data.filter((d) => d.value >= 0), { y: 'label', x: 'value', fill: 'currentColor', className: 'bar-focus tone-blue' }),
+      Plot.barX(data.filter((d) => d.value < 0), { y: 'label', x: 'value', fill: 'currentColor', className: 'bar-ref' }),
+      Plot.ruleX([0], { stroke: 'currentColor', className: 'baseline' }),
+      Plot.text(data.filter((d) => d.value >= 0), {
+        y: 'label', x: 'value', dx: 6, textAnchor: 'start', text: (d: Residual) => o.format(d.value),
+        fill: 'currentColor', className: 'bar-label',
+      }),
+      Plot.text(data.filter((d) => d.value < 0), {
+        y: 'label', x: 'value', dx: -6, textAnchor: 'end', text: (d: Residual) => o.format(d.value),
         fill: 'currentColor', className: 'bar-label',
       }),
     ],

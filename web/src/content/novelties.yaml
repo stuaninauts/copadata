@@ -7,9 +7,13 @@
   verdict: { table: myth_season_outlier, where: { metric: one_goal_margin_90 }, field: reading }
   stats:
     v26: { table: summary, where: { scope_type: edition, scope: "2026", stage: groups, metric: one_goal_margin_90 }, field: value, format: pct }
+    k26: { table: summary, where: { scope_type: edition, scope: "2026", stage: groups, metric: one_goal_margin_90 }, field: k, format: int }
+    n26: { table: summary, where: { scope_type: edition, scope: "2026", stage: groups, metric: one_goal_margin_90 }, field: n, format: int }
     min: { table: summary, where: { scope_type: edition, scope: { ne: "2026" }, stage: groups, metric: one_goal_margin_90 }, field: value, agg: min, format: pct }
     max: { table: summary, where: { scope_type: edition, scope: { ne: "2026" }, stage: groups, metric: one_goal_margin_90 }, field: value, agg: max, format: pct }
     big: { table: myth_season_outlier, where: { metric: big_margin }, field: value, format: pct }
+    band_low: { table: myth_season_outlier, where: { metric: one_goal_margin_90 }, field: band_low, format: pct }
+    band_high: { table: myth_season_outlier, where: { metric: one_goal_margin_90 }, field: band_high, format: pct }
   chart:
     rows: { table: summary, where: { scope_type: edition, stage: groups, metric: one_goal_margin_90 } }
     format: pct
@@ -20,6 +24,51 @@
     text: "Nas Copas anteriores, eram de {min} a {max}. As goleadas também bateram recorde ({big} dos jogos), mas essas ficam no limite do que o acaso produz."
     chartCaption: "Jogos de grupo com vencedor decididos por 1 gol, por Copa"
     chartAria: "Jogos de grupo com vencedor decididos por 1 gol, de 1986 a 2026; 2026 é o menor valor da série."
+    page:
+      question: "Pergunta: a fase de grupos de 2026 foi mais desigual?"
+      title: "A fase de grupos mais desigual desde 1986."
+      lede: "Só {v26} dos jogos de grupo com vencedor se decidiram por 1 gol. Nas Copas anteriores, eram de {min} a {max}."
+      chartTitle: "Jogos de grupo com vencedor decididos por 1 gol"
+      chartNote: "Por Copa, de 1986 a 2026."
+      facts:
+        - big: "{v26}"
+          text: "dos jogos de grupo com vencedor em 2026 se decidiram por 1 gol ({k26} de {n26})."
+        - big: "{band_low} a {band_high}"
+          text: "a faixa de Copas sorteadas do histórico. 2026 ficou abaixo dela."
+        - big: "{big}"
+          text: "dos jogos de grupo terminaram em goleada: um recorde, mas no limite do acaso."
+      method:
+        - label: "Base"
+          text: "jogos de grupo com vencedor aos 90 minutos; os empates ficam fora."
+        - label: "A faixa"
+          text: "sorteamos milhares de Copas do mesmo tamanho a partir de todos os jogos de grupo de 1986 a 2026; a faixa reúne 95% delas."
+        - label: "Regra, escrita antes de olhar os dados"
+          text: "fora da faixa é novidade de 2026; dentro, mas na borda, fica no limite do acaso; no meio, é normal."
+  en:
+    title: "The group stage got more lopsided: only {v26} of decided matches were won by one goal."
+    text: "In earlier World Cups it was {min} to {max}. Big wins also hit a record ({big} of matches), but that one sits at the edge of chance."
+    chartCaption: "Decided group matches won by one goal, by World Cup"
+    chartAria: "Decided group matches won by one goal, 1986 to 2026; 2026 is the lowest in the series."
+    page:
+      question: "Question: was the 2026 group stage more lopsided?"
+      title: "The most lopsided group stage since 1986."
+      lede: "Only {v26} of decided group matches were won by one goal. In earlier World Cups it was {min} to {max}."
+      chartTitle: "Decided group matches won by one goal"
+      chartNote: "By World Cup, 1986 to 2026."
+      facts:
+        - big: "{v26}"
+          text: "of decided group matches in 2026 were won by one goal ({k26} of {n26})."
+        - big: "{band_low} to {band_high}"
+          text: "the range of World Cups drawn at random from the history. 2026 fell below it."
+        - big: "{big}"
+          text: "of group matches were big wins: a record, but at the edge of chance."
+      method:
+        - label: "Base"
+          text: "group matches with a winner at 90 minutes; draws are left out."
+        - label: "The range"
+          text: "we drew thousands of same-size World Cups from all group matches of 1986 to 2026; the range holds 95% of them."
+        - label: "Rule, written before looking at the data"
+          text: "outside the range is new in 2026; inside but at the edge is at the edge of chance; in the middle is usual."
 
 - id: stoppage
   order: 2
@@ -27,7 +76,10 @@
   verdict: { table: myth_season_outlier, where: { metric: stoppage_goals_per_match }, field: reading }
   stats:
     v26: { table: stoppage_goals, where: { scope_type: edition, scope: "2026" }, field: value, format: dec2 }
+    k26: { table: stoppage_goals, where: { scope_type: edition, scope: "2026" }, field: k, format: int }
+    n26: { table: stoppage_goals, where: { scope_type: edition, scope: "2026" }, field: n, format: int }
     hist: { table: stoppage_goals, where: { scope_type: history }, field: value, format: dec2 }
+    band_high: { table: myth_season_outlier, where: { metric: stoppage_goals_per_match }, field: band_high, format: dec2 }
   chart:
     rows: { table: stoppage_goals, where: { scope_type: edition } }
     format: dec2
@@ -38,6 +90,51 @@
     text: "Em 2026 saíram {v26} gols nos acréscimos do 2º tempo por jogo, contra {hist} em 1986-2022. Parte do \"fim dramático\" é só jogo mais longo."
     chartCaption: "Gols nos acréscimos do 2º tempo por jogo, por Copa"
     chartAria: "Gols nos acréscimos do 2º tempo por jogo, de 1986 a 2026; 2026 tem o maior valor."
+    page:
+      question: "Pergunta: 2026 teve mais gols nos acréscimos?"
+      title: "Mais tempo de acréscimo, mais gols depois dos 90."
+      lede: "Em 2026 saíram {v26} gols nos acréscimos do 2º tempo por jogo, contra {hist} em 1986-2022. Parte do \"fim dramático\" é só jogo mais longo."
+      chartTitle: "Gols nos acréscimos do 2º tempo por jogo"
+      chartNote: "Por Copa, de 1986 a 2026."
+      facts:
+        - big: "{v26}"
+          text: "gols nos acréscimos do 2º tempo por jogo em 2026 ({k26} gols em {n26} jogos)."
+        - big: "{hist}"
+          text: "na média de 1986 a 2022."
+        - big: "{band_high}"
+          text: "o topo da faixa de Copas sorteadas do histórico. 2026 passou dele."
+      method:
+        - label: "Definição"
+          text: "gol nos acréscimos do 2º tempo é o anotado como 90+ no tempo normal; a prorrogação fica fora."
+        - label: "Ressalva"
+          text: "as Copas antigas podem ter registrado gols de acréscimo como 90' (em 1986 não há nenhum 90+), o que subestima os anos 80 e 90. Parte do aumento pode ser de registro, não de jogo."
+        - label: "Regra, escrita antes de olhar os dados"
+          text: "sorteamos milhares de Copas do mesmo tamanho a partir de todos os jogos de 1986 a 2026; fora da faixa de 95% é novidade de 2026."
+  en:
+    title: "Stoppage time grew, and so did goals after the 90th minute."
+    text: "In 2026 there were {v26} second-half stoppage-time goals per match, against {hist} in 1986-2022. Part of the \"dramatic finish\" is just longer games."
+    chartCaption: "Second-half stoppage-time goals per match, by World Cup"
+    chartAria: "Second-half stoppage-time goals per match, 1986 to 2026; 2026 is the highest."
+    page:
+      question: "Question: did 2026 have more stoppage-time goals?"
+      title: "More stoppage time, more goals after the 90th minute."
+      lede: "In 2026 there were {v26} second-half stoppage-time goals per match, against {hist} in 1986-2022. Part of the \"dramatic finish\" is just longer games."
+      chartTitle: "Second-half stoppage-time goals per match"
+      chartNote: "By World Cup, 1986 to 2026."
+      facts:
+        - big: "{v26}"
+          text: "second-half stoppage-time goals per match in 2026 ({k26} goals in {n26} matches)."
+        - big: "{hist}"
+          text: "on average from 1986 to 2022."
+        - big: "{band_high}"
+          text: "the top of the range of World Cups drawn at random from the history. 2026 went past it."
+      method:
+        - label: "Definition"
+          text: "a second-half stoppage-time goal is one recorded as 90+ in regulation; extra time is left out."
+        - label: "Caveat"
+          text: "older World Cups may have recorded stoppage-time goals as 90' (1986 has no 90+ at all), which understates the 80s and 90s. Part of the rise may be in the record, not in the game."
+        - label: "Rule, written before looking at the data"
+          text: "we drew thousands of same-size World Cups from all matches of 1986 to 2026; outside the 95% range is new in 2026."
 
 - id: ko_final_quarter
   order: 3
@@ -89,3 +186,31 @@
           text: "decidido nos últimos 15 minutos: o gol da vitória, ou o empate que levou à prorrogação, saiu entre 76' e o fim dos acréscimos. Disputa de 3º lugar fora."
         - label: "Correção em 11/10/2026"
           text: "um gol da semifinal Inglaterra × Argentina estava registrado como 92' (era 90+2). Com a correção, 2026 passou de 11 para {k26} jogos."
+  en:
+    title: "{v26} of knockout matches were decided in the last 15 minutes."
+    text: "It felt like a lot, but two 1990s World Cups reached {maxold}, and the figure fits the usual variation between tournaments. The excess came from the new round, the round of 32."
+    chartCaption: "Knockout matches decided in the last 15 minutes, by World Cup"
+    chartAria: "Knockout matches decided in the last 15 minutes, 1986 to 2026; 2026 sits below 1990 and 1994."
+    meanLabel: "Dashed line: 1986-2022 average, {hist}."
+    page:
+      question: "Question: was the 2026 knockout decided late more often than usual?"
+      title: "Dramatic, but not unprecedented."
+      lede: "{v26} of the 2026 knockout matches were decided in the last 15 minutes. That is a lot, but two 1990s World Cups went further."
+      chartTitle: "Knockout matches decided in the last 15 minutes"
+      chartNote: "By World Cup, 1986 to 2026."
+      facts:
+        - big: "{maxold}"
+          text: "in 1990 and in 1994, the highest marks. 2026 sits just below."
+        - big: "{r32}"
+          text: "in the round of 32, the new round of the 48-team World Cup ({k32} of {n32} matches). That is where the excess came from."
+        - big: "{hist}"
+          text: "on average from 1986 to 2022 ({khist} of {nhist} matches)."
+      method:
+        - label: "The numbers"
+          text: "2026: {k26} of {n26} matches. 1986-2022: {khist} of {nhist}. Each older World Cup has 15 knockout matches, so the comparison is against the ten pooled."
+        - label: "The test"
+          text: "if the true rate were the historical one, a World Cup like this would show up by chance with probability {p}. Unusual, but within chance. It is the only test for this question, set before looking at the data."
+        - label: "The definition"
+          text: "decided in the last 15 minutes: the winning goal, or the equalizer that forced extra time, came between the 76th minute and the end of stoppage time. Third-place match excluded."
+        - label: "Correction on 2026-10-11"
+          text: "a goal in the England × Argentina semi-final was recorded as 92' (it was 90+2). With the fix, 2026 went from 11 to {k26} matches."

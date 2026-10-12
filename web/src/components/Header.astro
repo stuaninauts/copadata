@@ -1,17 +1,18 @@
 ---
-import { home, seriesAnchor, t, type Lang, type Section } from '../i18n/ui';
+import { home, otherLang, sectionPath, seriesAnchor, t, type Lang, type Section } from '../i18n/ui';
 
 interface Props {
   lang: Lang;
   section?: Section;
+  alternate: string;
 }
 
-const { lang, section } = Astro.props;
-// Explorar and the EN version come after the spike (ADR 0010); Método points to the repository for now.
+const { lang, section, alternate } = Astro.props;
 const links: { key: Section; label: string; href: string }[] = [
   { key: 'myths', label: t(lang, 'nav.myths'), href: seriesAnchor(lang, 'myths') },
   { key: 'novelties', label: t(lang, 'nav.novelties'), href: seriesAnchor(lang, 'novelties') },
-  { key: 'method', label: t(lang, 'nav.method'), href: 'https://github.com/stuaninauts/copadata' },
+  { key: 'explore', label: t(lang, 'nav.explore'), href: sectionPath(lang, 'explore') },
+  { key: 'method', label: t(lang, 'nav.method'), href: sectionPath(lang, 'method') },
 ];
 ---
 
@@ -24,6 +25,9 @@ const links: { key: Section; label: string; href: string }[] = [
           <a href={l.href} aria-current={l.key === section ? 'page' : undefined}>{l.label}</a>
         </li>
       ))}
+      <li>
+        <a class="lang" href={alternate} hreflang={otherLang(lang) === 'pt' ? 'pt-BR' : 'en'} lang={otherLang(lang) === 'pt' ? 'pt-BR' : 'en'} aria-label={t(lang, 'nav.langLabel')}>{t(lang, 'nav.lang')}</a>
+      </li>
     </ul>
   </nav>
   <slot />
@@ -36,4 +40,5 @@ const links: { key: Section; label: string; href: string }[] = [
   li a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 10px; color: var(--muted); text-decoration: none; }
   li a:hover { color: var(--ink); }
   li a[aria-current='page'] { color: var(--ink); font-weight: 600; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 8px; }
+  .lang { border: 1px solid var(--line); border-radius: 4px; margin-left: 6px; font-family: var(--mono); font-size: 13px; }
 </style>
