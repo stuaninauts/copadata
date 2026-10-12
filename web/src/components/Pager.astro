@@ -1,0 +1,69 @@
+---
+import { t, type Lang } from '../i18n/ui';
+import type { Item } from '../lib/series';
+
+interface Card {
+  kicker: string;
+  title: string;
+  href: string;
+}
+
+interface Props {
+  lang: Lang;
+  label: string;
+  back: Card;
+  forward: Card;
+  listTitle: string;
+  items: Item[];
+  current: string;
+}
+
+const { lang, label, back, forward, listTitle, items, current } = Astro.props;
+---
+
+<nav class="wrap pager" aria-label={label}>
+  <div class="cards">
+    <a class="card" href={back.href}>
+      <span class="kicker">{back.kicker}</span>
+      <span class="title">{back.title}</span>
+    </a>
+    <a class="card next" href={forward.href}>
+      <span class="kicker">{forward.kicker}</span>
+      <span class="title">{forward.title}</span>
+    </a>
+  </div>
+  <div class="list">
+    <h2 class="eyebrow">{listTitle}</h2>
+    <ol>
+      {items.map((i) => (
+        <li>
+          <a href={i.href} class:list={['row', { here: i.id === current }]} aria-current={i.id === current ? 'page' : undefined}>
+            <span class="mono n">{i.n}</span>
+            <span class={`chip chip-sm chip-${i.verdict.chip}`}>{i.verdict.label}</span>
+            <span class="what">{i.title}</span>
+            {i.id === current && <span class="mark">{t(lang, 'pager.here')}</span>}
+          </a>
+        </li>
+      ))}
+    </ol>
+  </div>
+</nav>
+
+<style>
+  .pager { display: flex; flex-direction: column; gap: 40px; padding-top: 48px; padding-bottom: 72px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+  .card { min-height: 96px; border: 1px solid var(--line); border-radius: 6px; padding: 20px 24px; display: flex; flex-direction: column; gap: 6px; text-decoration: none; color: var(--ink); }
+  .card.next { background: var(--ink); border-color: var(--ink); color: var(--bg); align-items: flex-end; text-align: right; }
+  .kicker { font-size: 14px; color: var(--soft); }
+  .card.next .kicker { color: var(--line); }
+  .title { font-family: var(--serif); font-size: 20px; font-weight: 600; line-height: 1.3; }
+  .list { display: flex; flex-direction: column; gap: 12px; }
+  .list h2 { font-family: var(--sans); }
+  ol { list-style: none; margin: 0; padding: 0; border-bottom: 1px solid var(--line-soft); }
+  li { border-top: 1px solid var(--line-soft); }
+  .row { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; min-height: 52px; padding: 6px 12px; text-decoration: none; color: var(--ink); }
+  .row.here { background: var(--accent-tint); font-weight: 600; }
+  .n { font-size: 14px; color: var(--soft); min-width: 20px; }
+  .what { flex: 1 1 260px; font-size: 16px; }
+  .mark { font-size: 13px; font-weight: 600; color: var(--accent-ink); }
+</style>

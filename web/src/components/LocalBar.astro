@@ -1,0 +1,45 @@
+---
+import { t, type Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  crumbs: { label: string; href?: string }[];
+  position: string;
+  prev?: string;
+  next?: string;
+}
+
+const { lang, crumbs, position, prev, next } = Astro.props;
+---
+
+<div class="bar">
+  <div class="wrap row">
+    <nav aria-label={t(lang, 'crumbs.label')}>
+      <ol>
+        {crumbs.map((c, i) => (
+          <>
+            {i > 0 && <li aria-hidden="true">/</li>}
+            <li aria-current={c.href ? undefined : 'page'}>{c.href ? <a href={c.href}>{c.label}</a> : c.label}</li>
+          </>
+        ))}
+      </ol>
+    </nav>
+    <div class="steps">
+      <span class="mono pos">{position}</span>
+      {prev ? <a class="step" href={prev}>‹ {t(lang, 'pager.prev')}</a> : <span class="step off" aria-disabled="true">‹ {t(lang, 'pager.prev')}</span>}
+      {next ? <a class="step" href={next}>{t(lang, 'pager.next')} ›</a> : <span class="step off" aria-disabled="true">{t(lang, 'pager.next')} ›</span>}
+    </div>
+  </div>
+</div>
+
+<style>
+  .bar { border-top: 1px solid var(--line-soft); border-bottom: 1px solid var(--line-soft); background: var(--surface); }
+  .row { display: flex; flex-wrap: wrap; gap: 6px 24px; align-items: center; justify-content: space-between; padding-top: 6px; padding-bottom: 6px; font-size: 14px; }
+  ol { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; color: var(--soft); }
+  ol a { color: var(--muted); }
+  li[aria-current='page'] { color: var(--ink); font-weight: 500; }
+  .steps { display: flex; align-items: center; gap: 8px; }
+  .pos { color: var(--muted); margin-right: 6px; }
+  .step { display: inline-flex; align-items: center; min-height: 40px; padding: 0 12px; border: 1px solid var(--ink); border-radius: 4px; color: var(--ink); text-decoration: none; font-weight: 500; }
+  .step.off { border-color: var(--line-soft); color: var(--soft); font-weight: 400; }
+</style>

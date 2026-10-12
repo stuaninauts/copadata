@@ -1,0 +1,142 @@
+---
+/** One page of a series (ADR 0010): verdict, chart, three numbers, the method folded, navigation. */
+import Base from '../layouts/Base.astro';
+import LocalBar from '../components/LocalBar.astro';
+import Pager from '../components/Pager.astro';
+import type { CollectionEntry } from 'astro:content';
+import { home, seriesAnchor, t, verdict, type Lang } from '../i18n/ui';
+import { neighbours, series, type SeriesName } from '../lib/series';
+import { meanNote, mythPanels, noveltyChart, type Panel } from '../lib/itemCharts';
+import { fill, value } from '../lib/stats';
+
+type Props =
+  | { lang: Lang; series: 'myths'; entry: CollectionEntry<'myths'> }
+  | { lang: Lang; series: 'novelties'; entry: CollectionEntry<'novelties'> };
+
+const { lang, series: name, entry } = Astro.props as Props;
+const page = entry.data.pt.page!;
+const where = `${name}.${entry.id}`;
+const f = (text: string) => fill(text, entry.data.stats, lang, where);
+
+const items = await series(name, lang);
+const me = items.find((i) => i.id === entry.id)!;
+const nb = neighbours(items, entry.id);
+const other: SeriesName = name === 'myths' ? 'novelties' : 'myths';
+const otherFirst = (await series(other, lang))[0];
+const seriesLabel = t(lang, name === 'myths' ? 'series.myths' : 'series.novelties');
+const position = name === 'myths'
+  ? `${t(lang, 'pos.myth')} ${nb.index + 1} ${t(lang, 'pos.of')} ${nb.total}`
+  : `${nb.index + 1} ${t(lang, 'pos.of')} ${nb.total}`;
+const v = verdict(String(value(entry.data.verdict, `${where}.verdict`)), lang);
+
+const panels: Panel[] = name === 'myths'
+  ? mythPanels(entry as CollectionEntry<'myths'>, lang)
+  : [{
+      title: page.chartTitle,
+      note: [page.chartNote, meanNote(entry as CollectionEntry<'novelties'>, lang)].filter(Boolean).join(' '),
+      svg: noveltyChart(entry as CollectionEntry<'novelties'>, lang, { width: 1000, height: 340 }),
+    }];
+
+const back = nb.prev
+  ? { kicker: `← ${t(lang, 'pager.prev')} · ${nb.index} ${t(lang, 'pos.of')} ${nb.total}`, title: nb.prev.title, href: nb.prev.href }
+  : { kicker: `← ${t(lang, 'pager.back')}`, title: name === 'myths' ? t(lang, 'pager.allMyths') : seriesLabel, href: seriesAnchor(lang, name) };
+const forward = nb.next
+  ? { kicker: `${t(lang, 'pager.next')} · ${nb.index + 2} ${t(lang, 'pos.of')} ${nb.total} →`, title: nb.next.title, href: nb.next.href }
+  : { kicker: `${t(lang, 'pager.nextSection')} →`, title: t(lang, other === 'myths' ? 'series.myths' : 'series.novelties'), href: otherFirst.href };
+const heading = name === 'myths' ? `${t(lang, 'item.claim')}: “${me.title}”` : page.question ?? me.title;
+---
+
+<Base lang={lang} title={page.title} section={name}>
+  <LocalBar
+    slot="localbar"
+    lang={lang}
+    crumbs={[{ label: t(lang, 'crumbs.home'), href: home(lang) }, { label: seriesLabel, href: seriesAnchor(lang, name) }, { label: me.title }]}
+    position={position}
+    prev={nb.prev?.href}
+    next={nb.next?.href}
+  />
+
+  <section class="wrap head">
+    <p class="ask">{heading}</p>
+    <h1>{f(page.title)}</h1>
+    <p class="lede">{f(page.lede)}</p>
+    <p class="verdict"><span>{t(lang, 'item.verdict')}</span><span class={`chip chip-lg chip-${v.chip}`}>{v.label}</span></p>
+  </section>
+
+  <section class="wrap">
+    <figure class="panel">
+      {name === 'myths' && <figcaption class="fig-title"><span>{page.chartTitle}</span><span class="note">{page.chartNote}</span></figcaption>}
+      {panels.map((p) => (
+        <div class="part">
+          {name === 'myths'
+            ? <p class="part-title">{p.title}</p>
+            : <figcaption class="fig-title"><span>{p.title}</span><span class="note">{p.note}</span></figcaption>}
+          <Fragment set:html={p.svg} />
+          {name === 'myths' && <p class="note">{p.note}</p>}
+        </div>
+      ))}
+    </figure>
+  </section>
+
+  <section class="wrap meaning" aria-labelledby="oq">
+    <h2 id="oq">{t(lang, 'item.meaning')}</h2>
+    <div class="facts">
+      {page.facts.map((x) => (
+        <div class="fact">
+          <span class={`mono num tone-${v.chip === 'myth' ? 'accent' : 'ink'}`}>{f(x.big)}</span>
+          <span>{f(x.text)}</span>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="wrap">
+    <details class="how">
+      <summary>{t(lang, 'item.how')}</summary>
+      <dl>
+        {page.method.map((x) => (
+          <div><dt>{x.label}</dt><dd>{f(x.text)}</dd></div>
+        ))}
+      </dl>
+      <p><a href="https://github.com/stuaninauts/copadata">{t(lang, 'item.code')}</a></p>
+    </details>
+  </section>
+
+  <Pager
+    lang={lang}
+    label={t(lang, 'pager.label')}
+    back={back}
+    forward={forward}
+    listTitle={name === 'myths' ? t(lang, 'series.mythsList') : seriesLabel}
+    items={items}
+    current={entry.id}
+  />
+</Base>
+
+<style>
+  .head { padding-top: 48px; padding-bottom: 40px; display: flex; flex-direction: column; gap: 20px; }
+  .ask { font-size: 17px; color: var(--soft); }
+  h1 { font-size: clamp(36px, 5.5vw, 60px); line-height: 1.06; max-width: 900px; letter-spacing: -0.015em; }
+  .lede { font-size: 21px; line-height: 1.55; color: var(--muted); max-width: 740px; }
+  .verdict { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; font-size: 15px; color: var(--soft); }
+  .panel { background: var(--surface); border-radius: 6px; padding: 32px; display: flex; flex-direction: column; gap: 28px; }
+  .fig-title { display: flex; flex-direction: column; gap: 6px; }
+  .fig-title > span:first-child { font-family: var(--serif); font-size: 24px; font-weight: 600; color: var(--ink); }
+  .note { font-size: 15px; color: var(--soft); }
+  .part { display: flex; flex-direction: column; gap: 10px; }
+  .part-title { font-weight: 600; }
+  .meaning { padding-top: 48px; padding-bottom: 24px; display: flex; flex-direction: column; gap: 24px; }
+  .meaning h2 { font-size: 32px; }
+  .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 32px; }
+  .fact { display: flex; flex-direction: column; gap: 8px; color: var(--muted); }
+  .num { font-size: 44px; font-weight: 500; line-height: 1.1; }
+  .tone-accent { color: var(--accent-ink); }
+  .tone-ink { color: var(--ink); }
+  .how { margin-top: 32px; border-top: 1px solid var(--line-soft); border-bottom: 1px solid var(--line-soft); padding: 18px 0; }
+  .how summary { font-size: 17px; font-weight: 500; }
+  dl { margin: 14px 0 0; display: flex; flex-direction: column; gap: 10px; max-width: 780px; font-size: 15px; color: var(--muted); }
+  dt { display: inline; font-weight: 600; color: var(--ink); }
+  dt::after { content: ': '; }
+  dd { display: inline; margin: 0; }
+  .how p { margin-top: 14px; font-size: 14px; }
+</style>

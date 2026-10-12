@@ -1,0 +1,130 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { sectionPath, t, verdict, type Lang } from '../i18n/ui';
+import { series } from '../lib/series';
+import { meanNote, noveltyChart } from '../lib/itemCharts';
+import { fill, interpolate, manifest, value } from '../lib/stats';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const m = manifest();
+const myths = (await getCollection('myths')).sort((a, b) => a.data.order - b.data.order);
+const mythItems = await series('myths', lang);
+const novelties = (await getCollection('novelties')).sort((a, b) => a.data.order - b.data.order);
+const mythCount = mythItems.filter((i) => i.verdict.chip === 'myth').length;
+const counts = {
+  editions: m.editions.length,
+  first: m.editions[0],
+  last: m.editions[m.editions.length - 1],
+  matches: m.tables.matches.rows.toLocaleString(lang === 'pt' ? 'pt-BR' : 'en-US'),
+  total: mythItems.length,
+  myths: mythCount,
+};
+const rowsOfMyths = myths.map((e, i) => ({
+  ...mythItems[i],
+  big: fill(e.data.pt.big, e.data.stats, lang, `myths.${e.id}.big`),
+  caption: fill(e.data.pt.caption, e.data.stats, lang, `myths.${e.id}.caption`),
+}));
+const blocks = novelties.map((e) => ({
+  id: e.id,
+  verdict: verdict(String(value(e.data.verdict, `novelties.${e.id}.verdict`)), lang),
+  title: fill(e.data.pt.title, e.data.stats, lang, `novelties.${e.id}.title`),
+  text: fill(e.data.pt.text, e.data.stats, lang, `novelties.${e.id}.text`),
+  caption: [e.data.pt.chartCaption, meanNote(e, lang)].filter(Boolean).join('. '),
+  svg: noveltyChart(e, lang),
+  href: e.data.pt.page ? sectionPath(lang, 'novelties', e.data.slug[lang]) : undefined,
+}));
+---
+
+<Base lang={lang}>
+  <section class="wrap hero">
+    <p class="kicker">{interpolate(t(lang, 'home.eyebrow'), counts)}</p>
+    <h1>{interpolate(t(lang, 'home.title'), counts)}</h1>
+    <p class="lede">{interpolate(t(lang, 'home.lede'), counts)}</p>
+  </section>
+
+  <section id="mitos" class="wrap myths" aria-labelledby="mitos-h">
+    <h2 id="mitos-h" class="eyebrow">{t(lang, 'home.mythsHeading')}</h2>
+    <ol class="rows">
+      {rowsOfMyths.map((r) => (
+        <li class="row">
+          <div class="v"><span class={`chip chip-${r.verdict.chip}`}>{r.verdict.label}</span></div>
+          <h3 class="claim">“{r.title}”</h3>
+          <div class="answer">
+            <span class={`big mono tone-${r.verdict.chip === 'myth' ? 'accent' : 'blue'}`}>{r.big}</span>
+            <span class="cap">{r.caption}{r.hasPage && <> <a href={r.href}>{t(lang, 'home.see')} →</a></>}</span>
+          </div>
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <section id="novidades" class="wrap nov-head" aria-labelledby="nov-h">
+    <h2 id="nov-h">{t(lang, 'home.noveltiesTitle')}</h2>
+    <p>{t(lang, 'home.noveltiesLede')}</p>
+  </section>
+
+  {blocks.map((b) => (
+    <section id={b.id} class="wrap block" aria-labelledby={`${b.id}-h`}>
+      <div class="copy">
+        <span class={`chip chip-${b.verdict.chip}`}>{b.verdict.label}</span>
+        <h2 id={`${b.id}-h`}>{b.title}</h2>
+        <p>{b.text}</p>
+        {b.href && <a class="more" href={b.href}>{t(lang, 'home.fullAnalysis')} →</a>}
+      </div>
+      <figure>
+        <figcaption>{b.caption}</figcaption>
+        <Fragment set:html={b.svg} />
+      </figure>
+    </section>
+  ))}
+
+  <section class="wrap closing">
+    <div class="inner">
+      <div>
+        <h2>{interpolate(t(lang, 'home.closing'), counts)}</h2>
+        <p>{t(lang, 'home.closingText')}</p>
+      </div>
+      <a class="cta" href={mythItems[0].href}>{t(lang, 'home.closingCta')}</a>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero { padding-top: 72px; padding-bottom: 48px; display: flex; flex-direction: column; gap: 22px; }
+  .kicker { font-size: 15px; color: var(--soft); }
+  h1 { font-size: clamp(40px, 6vw, 64px); line-height: 1.05; max-width: 940px; letter-spacing: -0.015em; }
+  .lede { font-size: 21px; line-height: 1.55; color: var(--muted); max-width: 740px; }
+  .myths { padding-bottom: 40px; display: flex; flex-direction: column; gap: 20px; }
+  .rows { list-style: none; margin: 0; padding: 0; border-bottom: 1px solid var(--line); }
+  .row { border-top: 1px solid var(--line); padding: 24px 0; display: flex; flex-wrap: wrap; gap: 12px 32px; align-items: center; }
+  .v { flex: 0 0 170px; }
+  .claim { flex: 1 1 340px; font-size: 24px; line-height: 1.25; }
+  .answer { flex: 1 1 360px; display: flex; gap: 18px; align-items: baseline; }
+  .big { flex: 0 0 auto; min-width: 104px; font-size: 32px; font-weight: 500; line-height: 1.1; }
+  .tone-accent { color: var(--accent-ink); }
+  .tone-blue { color: var(--blue-ink); }
+  .cap { font-size: 15px; line-height: 1.5; color: var(--muted); }
+  .cap a { font-weight: 500; white-space: nowrap; }
+  .nov-head { padding-top: 56px; }
+  .nov-head > * { max-width: 760px; }
+  .nov-head h2 { border-top: 2px solid var(--ink); padding-top: 28px; max-width: none; font-size: 36px; margin-bottom: 10px; }
+  .nov-head p { color: var(--muted); }
+  .block { padding-top: 48px; padding-bottom: 24px; display: flex; flex-wrap: wrap; gap: 32px 56px; align-items: center; }
+  .copy { flex: 1 1 340px; display: flex; flex-direction: column; gap: 16px; align-items: flex-start; }
+  .copy h2 { font-size: 32px; }
+  .copy p { color: var(--muted); }
+  .more { font-weight: 500; }
+  .block figure { flex: 1 1 520px; display: flex; flex-direction: column; gap: 10px; }
+  figcaption { font-size: 14px; color: var(--soft); }
+  .closing { padding-top: 72px; padding-bottom: 80px; }
+  .inner { border-top: 2px solid var(--ink); padding-top: 28px; display: flex; flex-wrap: wrap; gap: 24px 48px; align-items: flex-end; justify-content: space-between; }
+  .inner > div { flex: 1 1 420px; display: flex; flex-direction: column; gap: 10px; }
+  .inner h2 { font-size: 28px; }
+  .inner p { color: var(--muted); }
+  .cta { display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; background: var(--ink); color: var(--bg); border-radius: 4px; text-decoration: none; font-weight: 500; }
+</style>
