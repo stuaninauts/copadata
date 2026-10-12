@@ -11,7 +11,7 @@ Decidimos medir a força pelo **Elo pré-jogo**, calculado por nós:
   - G pelo saldo: 1 até 1 gol, 1,5 com 2, (11 + saldo)/8 com 3 ou mais;
   - jogo decidido nos pênaltis conta como empate; toda seleção começa com 1500.
 - **Onde vive:** `copadata/elo.py` é o único lugar que define força, como o `metrics.py` para as métricas de jogo ([ADR 0003](./0003-pipeline-modulos-notebooks-so-analisam.md)). O adaptador `copadata/international.py` lê a base, calcula o Elo e o leva para as tabelas processadas: `elo1`/`elo2` em `matches`, `elo_for`/`elo_against` em `team_matches`, e as tabelas `international` e `international_goals`.
-- **Nomes:** uma seleção tem um nome só entre as fontes (`config.TEAM_NAMES`: "USA" no OpenFootball vira "United States", como no Fjelstul). Para buscar o Elo, os nomes históricos apontam para a federação sucessora na base nova (`config.ELO_NAMES`: Alemanha Ocidental → Alemanha, União Soviética → Rússia, Sérvia e Montenegro → Sérvia). Todo jogo de Copa precisa achar seu par na base nova; se algum não achar, o pipeline para com erro, como no adaptador do Fjelstul.
+- **Nomes:** uma seleção tem um nome só entre as fontes (`config.TEAM_NAMES`: "USA" no OpenFootball vira "United States", como no Fjelstul). Para buscar o Elo, os nomes históricos apontam para a federação sucessora na base nova (`config.ELO_NAMES`: Alemanha Ocidental → Alemanha, União Soviética → Rússia, Sérvia e Montenegro → Sérvia; e, a partir de 1992, Iugoslávia → Sérvia, porque a base nova chama assim a RF Iugoslávia). Todo jogo de Copa precisa achar seu par na base nova; se algum não achar, o pipeline para com erro, como no adaptador do Fjelstul.
 - **Pênaltis cobrança a cobrança:** a tabela `penalty_kicks` do Fjelstul (mesma licença e atribuição do [ADR 0005](./0005-fonte-historica-fjelstul.md)) entra no download e vira a tabela processada `penalty_kicks`, com o `match_id` do CopaData. Não existe para 2026.
 
 ## Considered Options
@@ -26,4 +26,4 @@ Decidimos medir a força pelo **Elo pré-jogo**, calculado por nós:
 - A base nova é CC0: não acrescenta exigência de licença ao export, que segue CC-BY-SA por causa do Fjelstul.
 - O Elo depende da ordem e da completude da base. Jogos que faltarem nela (amistosos obscuros) mexem pouco no rating de quem chega a uma Copa.
 - Mudar o commit da base nova, ou um parâmetro do Elo, muda os números que dependem de força. O teste golden e o `export --check` acusam.
-- Seleções que deixaram de existir (Iugoslávia, Tchecoslováquia) mantêm o nome que têm na base nova; só as três da lista acima precisam de tradução.
+- Seleções que deixaram de existir mantêm o nome que têm na base nova; só as da lista acima precisam de tradução.
