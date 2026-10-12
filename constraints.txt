@@ -1,0 +1,7 @@
+# Exact versions for CI (pip install -c constraints.txt). The export is checked byte for byte and the
+# myths' intervals come from seeded NumPy draws (ADR 0008), so CI must run the versions that wrote it.
+numpy==2.2.6
+pandas==2.2.3
+pyarrow==17.0.0
+requests==2.32.3
+pytest==8.3.5
