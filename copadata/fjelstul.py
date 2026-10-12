@@ -77,17 +77,43 @@ def _match(m, goals: pd.DataFrame) -> dict:
     }
 
 
-def to_editions(matches: pd.DataFrame, goals: pd.DataFrame,
-                first_year: int = config.FIRST_HISTORICAL_YEAR) -> dict[int, dict]:
-    """Men's World Cups from `first_year` on, as {year: {"matches": [...]}} in OpenFootball shape."""
+def _men(matches: pd.DataFrame, first_year: int) -> pd.DataFrame:
+    """Men's World Cups from `first_year` to the edition before SEASON, in the order the editions use."""
     men = matches[matches.tournament_name.str.contains("Men's", regex=False)].copy()
     men["year"] = men.tournament_id.str[3:].astype(int)
     men = men[(men.year >= first_year) & (men.year < config.SEASON)]
+    return men.sort_values(["match_date", "match_id"])
+
+
+def to_editions(matches: pd.DataFrame, goals: pd.DataFrame,
+                first_year: int = config.FIRST_HISTORICAL_YEAR) -> dict[int, dict]:
+    """Men's World Cups from `first_year` on, as {year: {"matches": [...]}} in OpenFootball shape."""
     by_match = dict(tuple(goals.groupby("match_id")))
     empty = goals.iloc[0:0]
 
     editions = {}
-    for year, ed in men.sort_values(["match_date", "match_id"]).groupby("year"):
+    for year, ed in _men(matches, first_year).groupby("year"):
         editions[int(year)] = {"matches": [_match(m, by_match.get(m.match_id, empty))
                                            for m in ed.itertuples()]}
     return editions
+
+
+def match_ids(matches: pd.DataFrame, first_year: int = config.FIRST_HISTORICAL_YEAR) -> dict[str, int]:
+    """Fjelstul match_id -> CopaData match_id (year * 1000 + position in the edition, as in transform)."""
+    return {m.match_id: int(m.year) * 1000 + i
+            for _, ed in _men(matches, first_year).groupby("year")
+            for i, m in enumerate(ed.itertuples())}
+
+
+def penalty_kicks(kicks: pd.DataFrame, matches: pd.DataFrame,
+                  first_year: int = config.FIRST_HISTORICAL_YEAR) -> pd.DataFrame:
+    """Shootout kicks of the men's World Cups from `first_year` on: one row per kick, in kick order."""
+    ids = match_ids(matches, first_year)
+    k = kicks[kicks.match_id.isin(ids)].sort_values("key_id")
+    return pd.DataFrame({
+        "year": k.match_id.map(ids) // 1000,
+        "match_id": k.match_id.map(ids),
+        "kick": k.groupby("match_id").cumcount() + 1,
+        "team": k.team_name,
+        "converted": k.converted.astype(bool),
+    }).reset_index(drop=True)

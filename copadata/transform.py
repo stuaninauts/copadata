@@ -8,7 +8,7 @@ from __future__ import annotations
 
 import pandas as pd
 
-from copadata import config, fjelstul, ingest, metrics
+from copadata import config, fjelstul, ingest, international, metrics
 
 _KNOCKOUT = {"Round of 32", "Round of 16", "Quarter-final", "Semi-final", "Final"}
 _THIRD_PLACE = {"Match for third place"}
@@ -139,10 +139,9 @@ def build_goals(data: dict, year: int = config.SEASON) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
-def load_editions() -> dict[int, dict]:
+def load_editions(history: dict[str, pd.DataFrame] | None) -> dict[int, dict]:
     """Every edition available in data/raw/, keyed by year."""
     editions = {config.SEASON: ingest.load()}
-    history = ingest.load_history()
     if history is None:
         print("[transform] WARNING: no Fjelstul CSVs in data/raw/fjelstul/; processing 2026 only "
               "(run the pipeline without --offline to download them)")
@@ -152,10 +151,25 @@ def load_editions() -> dict[int, dict]:
 
 
 def main() -> pd.DataFrame:
-    editions = load_editions()
+    history = ingest.load_history()
+    editions = load_editions(history)
     df = pd.concat([build_matches(d, y) for y, d in editions.items()], ignore_index=True)
     goals = pd.concat([build_goals(d, y) for y, d in editions.items()], ignore_index=True)
     config.PROCESSED.mkdir(parents=True, exist_ok=True)
+
+    raw = ingest.load_international()
+    if raw is None:
+        print("[transform] WARNING: no international results in data/raw/international/; matches go without "
+              "Elo (run the pipeline without --offline to download them)")
+    else:
+        results, international_goals = international.build(raw)
+        df = international.add_elo(df, results)
+        results.to_parquet(config.INTERNATIONAL_PARQUET, index=False)
+        international_goals.to_parquet(config.INTERNATIONAL_GOALS_PARQUET, index=False)
+    if history is not None:
+        fjelstul.penalty_kicks(history["penalty_kicks"], history["matches"]).to_parquet(
+            config.PENALTY_KICKS_PARQUET, index=False)
+
     df.to_parquet(config.MATCHES_PARQUET, index=False)
     goals.to_parquet(config.GOALS_PARQUET, index=False)
     print(
