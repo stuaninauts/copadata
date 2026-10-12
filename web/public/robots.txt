@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://copa.stuaninauts.com/sitemap-index.xml
