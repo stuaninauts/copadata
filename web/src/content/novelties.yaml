@@ -1,0 +1,91 @@
+# O que 2026 teve de diferente: as manchetes da auditoria de 2026 (season_outlier, ADR 0008).
+# Números só por referência ao export. Conteúdo sob CC-BY-SA 4.0 (REUSE.toml).
+
+- id: one_goal
+  order: 1
+  slug: { pt: fase-de-grupos-mais-desigual, en: lopsided-group-stage }
+  verdict: { table: myth_season_outlier, where: { metric: one_goal_margin_90 }, field: reading }
+  stats:
+    v26: { table: summary, where: { scope_type: edition, scope: "2026", stage: groups, metric: one_goal_margin_90 }, field: value, format: pct }
+    min: { table: summary, where: { scope_type: edition, scope: { ne: "2026" }, stage: groups, metric: one_goal_margin_90 }, field: value, agg: min, format: pct }
+    max: { table: summary, where: { scope_type: edition, scope: { ne: "2026" }, stage: groups, metric: one_goal_margin_90 }, field: value, agg: max, format: pct }
+    big: { table: myth_season_outlier, where: { metric: big_margin }, field: value, format: pct }
+  chart:
+    rows: { table: summary, where: { scope_type: edition, stage: groups, metric: one_goal_margin_90 } }
+    format: pct
+    max: 0.7
+    labelled: ["2006", "2010", "2018"]
+  pt:
+    title: "A fase de grupos ficou mais desigual: só {v26} dos jogos com vencedor se decidiram por 1 gol."
+    text: "Nas Copas anteriores, eram de {min} a {max}. As goleadas também bateram recorde ({big} dos jogos), mas essas ficam no limite do que o acaso produz."
+    chartCaption: "Jogos de grupo com vencedor decididos por 1 gol, por Copa"
+    chartAria: "Jogos de grupo com vencedor decididos por 1 gol, de 1986 a 2026; 2026 é o menor valor da série."
+
+- id: stoppage
+  order: 2
+  slug: { pt: acrescimos, en: stoppage-time }
+  verdict: { table: myth_season_outlier, where: { metric: stoppage_goals_per_match }, field: reading }
+  stats:
+    v26: { table: stoppage_goals, where: { scope_type: edition, scope: "2026" }, field: value, format: dec2 }
+    hist: { table: stoppage_goals, where: { scope_type: history }, field: value, format: dec2 }
+  chart:
+    rows: { table: stoppage_goals, where: { scope_type: edition } }
+    format: dec2
+    max: 0.4
+    labelled: ["1998", "2018"]
+  pt:
+    title: "Os acréscimos cresceram, e os gols depois dos 90 também."
+    text: "Em 2026 saíram {v26} gols nos acréscimos do 2º tempo por jogo, contra {hist} em 1986-2022. Parte do \"fim dramático\" é só jogo mais longo."
+    chartCaption: "Gols nos acréscimos do 2º tempo por jogo, por Copa"
+    chartAria: "Gols nos acréscimos do 2º tempo por jogo, de 1986 a 2026; 2026 tem o maior valor."
+
+- id: ko_final_quarter
+  order: 3
+  slug: { pt: mata-mata-decidido-no-fim, en: knockout-decided-late }
+  verdict: { table: myth_season_outlier, where: { metric: decided_final_quarter }, field: reading }
+  stats:
+    v26: { table: summary, where: { scope_type: edition, scope: "2026", stage: knockout, metric: decided_final_quarter }, field: value, format: pct }
+    k26: { table: summary, where: { scope_type: edition, scope: "2026", stage: knockout, metric: decided_final_quarter }, field: k, format: int }
+    n26: { table: summary, where: { scope_type: edition, scope: "2026", stage: knockout, metric: decided_final_quarter }, field: n, format: int }
+    hist: { table: summary, where: { scope_type: history, stage: knockout, metric: decided_final_quarter }, field: value, format: pct }
+    khist: { table: summary, where: { scope_type: history, stage: knockout, metric: decided_final_quarter }, field: k, format: int }
+    nhist: { table: summary, where: { scope_type: history, stage: knockout, metric: decided_final_quarter }, field: n, format: int }
+    maxold: { table: summary, where: { scope_type: edition, scope: { ne: "2026" }, stage: knockout, metric: decided_final_quarter }, field: value, agg: max, format: pct }
+    r32: { table: knockout_rounds, where: { scope_type: edition, scope: "2026", round: "Round of 32", metric: decided_final_quarter }, field: value, format: pct }
+    k32: { table: knockout_rounds, where: { scope_type: edition, scope: "2026", round: "Round of 32", metric: decided_final_quarter }, field: k, format: int }
+    n32: { table: knockout_rounds, where: { scope_type: edition, scope: "2026", round: "Round of 32", metric: decided_final_quarter }, field: n, format: int }
+    p: { table: single_tests, where: { id: knockout_final_quarter_vs_history }, field: p_value, format: p }
+  chart:
+    rows: { table: summary, where: { scope_type: edition, stage: knockout, metric: decided_final_quarter } }
+    format: pct
+    max: 0.5
+    labelled: ["1990", "1994"]
+    mean: { table: summary, where: { scope_type: history, stage: knockout, metric: decided_final_quarter }, field: value }
+  pt:
+    title: "{v26} dos jogos do mata-mata se decidiram nos últimos 15 minutos."
+    text: "Pareceu muito, mas duas Copas dos anos 90 chegaram a {maxold}, e o número cabe na variação normal entre Copas. O excesso veio da rodada nova, os 16-avos."
+    chartCaption: "Mata-mata decidido nos últimos 15 minutos, por Copa"
+    chartAria: "Jogos de mata-mata decididos nos últimos 15 minutos, de 1986 a 2026; 2026 fica abaixo de 1990 e 1994."
+    meanLabel: "Linha tracejada: média de 1986 a 2022, {hist}."
+    page:
+      question: "Pergunta: o mata-mata de 2026 se decidiu no fim mais que o normal?"
+      title: "Dramático, mas não inédito."
+      lede: "{v26} dos jogos do mata-mata de 2026 se decidiram nos últimos 15 minutos. É muito, mas duas Copas dos anos 90 foram além."
+      chartTitle: "Jogos de mata-mata decididos nos últimos 15 minutos"
+      chartNote: "Por Copa, de 1986 a 2026."
+      facts:
+        - big: "{maxold}"
+          text: "em 1990 e em 1994, as maiores marcas. 2026 fica logo abaixo."
+        - big: "{r32}"
+          text: "nos 16-avos, a rodada nova da Copa de 48 seleções ({k32} de {n32} jogos). Foi dali que veio o excesso."
+        - big: "{hist}"
+          text: "na média de 1986 a 2022 ({khist} de {nhist} jogos)."
+      method:
+        - label: "Os números"
+          text: "2026: {k26} de {n26} jogos. 1986-2022: {khist} de {nhist}. Cada Copa antiga tem 15 jogos de mata-mata, por isso a comparação é contra as dez somadas."
+        - label: "O teste"
+          text: "se a taxa real fosse a histórica, uma Copa assim apareceria por acaso com probabilidade {p}. Incomum, mas dentro do acaso. É o único teste desta pergunta, definido antes de olhar o dado."
+        - label: "A definição"
+          text: "decidido nos últimos 15 minutos: o gol da vitória, ou o empate que levou à prorrogação, saiu entre 76' e o fim dos acréscimos. Disputa de 3º lugar fora."
+        - label: "Correção em 11/10/2026"
+          text: "um gol da semifinal Inglaterra × Argentina estava registrado como 92' (era 90+2). Com a correção, 2026 passou de 11 para {k26} jogos."

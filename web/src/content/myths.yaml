@@ -1,0 +1,127 @@
+# Mitos publicados (ADR 0008), na ordem da série (ADR 0010): primeiro os mitos, depois as verdades.
+# Números só por referência ao export ({nome} no texto -> stats.nome); referência quebrada quebra o build.
+# Conteúdo sob CC-BY-SA 4.0 (REUSE.toml).
+
+- id: two_nil
+  order: 1
+  slug: { pt: 2-a-0, en: two-nil }
+  verdict: { table: myths, where: { myth: two_nil }, field: verdict }
+  stats:
+    after20: { table: myth_two_nil, where: { case: "2-0" }, field: value, format: pct }
+    ref20: { table: myth_two_nil, where: { case: "2-0" }, field: reference, format: pct }
+    n20: { table: myth_two_nil, where: { case: "2-0" }, field: n, format: int }
+    after21: { table: myth_two_nil, where: { case: "2-1 after 2-0" }, field: value, format: pct }
+    ref21: { table: myth_two_nil, where: { case: "2-1 after 2-0" }, field: reference, format: pct }
+    n21: { table: myth_two_nil, where: { case: "2-1 after 2-0" }, field: n, format: int }
+    effect: { table: myths, where: { myth: two_nil }, field: effect, format: pp }
+    low: { table: myths, where: { myth: two_nil }, field: ci_low, format: pp }
+    high: { table: myths, where: { myth: two_nil }, field: ci_high, format: pp }
+    threshold: { table: myths, where: { myth: two_nil }, field: threshold, format: pp_abs }
+  pt:
+    claim: "2 a 0 é o placar mais perigoso."
+    big: "{after20}"
+    caption: "de quem abriu 2 a 0 deixou de vencer. Quem estava 1 a 0 no mesmo minuto: {ref20}."
+    page:
+      title: "Quem abre 2 a 0 quase nunca deixa escapar."
+      lede: "Nem quando o adversário diminui. O placar perigoso, se existe um, é o 1 a 0."
+      chartTitle: "Quantas vezes quem estava na frente deixou de vencer"
+      chartNote: "Cada caso comparado com times que estavam 1 a 0 no mesmo minuto. Copas de 1986 a 2026, resultado aos 90'."
+      parts:
+        - title: "Depois de abrir 2 a 0"
+          note: "{after20} de quem abriu 2 a 0 não venceu."
+          case: "2-0"
+          focus: "Abriu 2 a 0"
+          reference: "Estava 1 a 0, mesmo minuto"
+        - title: "Depois que o adversário diminuiu para 2 a 1"
+          note: "{after21} de quem viu o 2 a 0 virar 2 a 1 não venceu."
+          case: "2-1 after 2-0"
+          focus: "Estava 2 a 1"
+          reference: "Estava 1 a 0, mesmo minuto"
+      facts:
+        - big: "{after20}"
+          text: "dos times que abriram 2 a 0 não venceram. Com 1 a 0 no mesmo minuto, {ref20}."
+        - big: "{after21}"
+          text: "deixaram escapar depois do 2 a 1. Ainda menos que os {ref21} de quem segura um 1 a 0 no mesmo minuto."
+        - big: "{n20}"
+          text: "jogos desde 1986 em que alguém abriu 2 a 0. Em {n21} deles, o adversário diminuiu."
+      method:
+        - label: "Base"
+          text: "jogos de grupo e mata-mata das Copas de 1986 a 2026, sem a disputa de 3º lugar: {n20} com um 2 a 0, {n21} deles com o 2 a 1 logo depois."
+        - label: "Comparação justa"
+          text: "cada caso é comparado com times que estavam 1 a 0 ao fim do mesmo minuto (em faixas de 15 minutos), porque segurar uma vantagem depende de quanto jogo ainda falta."
+        - label: "Regra, escrita antes de olhar os dados"
+          text: "a frase seria verdade se, depois do 2 a 1, deixar de vencer fosse pelo menos {threshold} pontos mais comum que no 1 a 0. A diferença foi de {effect} pontos (intervalo de {low} a {high}). Mito."
+        - label: "Lista fechada"
+          text: "esta frase faz parte de uma lista testada de uma vez, com a regra definida antes. Todas as frases são publicadas, inclusive as que não deram em nada."
+
+- id: favorite_knockout
+  order: 2
+  slug: { pt: favorito-no-mata-mata, en: favorite-in-the-knockout }
+  verdict: { table: myths, where: { myth: favorite_knockout }, field: verdict }
+  stats:
+    result: { table: myth_favorite_knockout, where: { stage: knockout }, field: result, format: pct }
+    expected: { table: myth_favorite_knockout, where: { stage: knockout }, field: expected, format: pct }
+  pt:
+    claim: "Na Copa, o favorito sofre no mata-mata."
+    big: "{result}"
+    caption: "de aproveitamento do favorito no mata-mata (empate vale meio), acima dos {expected} que a força previa."
+
+- id: late_specialists
+  order: 3
+  slug: { pt: especialista-no-fim, en: late-specialists }
+  verdict: { table: myths, where: { myth: late_specialists }, field: verdict }
+  stats:
+    outside: { table: myths, where: { myth: late_specialists }, field: effect, format: int }
+    teams: { table: myth_late_specialists, where: { direction: scored }, agg: count, format: int }
+  pt:
+    claim: "Tem seleção especialista em decidir no fim."
+    big: "{outside} de {teams}"
+    caption: "seleções mais frequentes fogem do que o acaso explica, nos gols marcados ou sofridos no fim."
+
+- id: leader_sits_back
+  order: 4
+  slug: { pt: quem-lidera-recua, en: leader-sits-back }
+  verdict: { table: myths, where: { myth: leader_sits_back }, field: verdict }
+  stats:
+    lead: { table: myth_leader_sits_back, where: { state: "lead 1-0" }, field: value, format: dec1 }
+    level: { table: myth_leader_sits_back, where: { state: "level 0-0" }, field: value, format: dec1 }
+  pt:
+    claim: "Quem está ganhando por 1 recua."
+    big: "{lead} × {level}"
+    caption: "gols por 90 minutos, do 76' em diante: quem lidera 1 a 0 contra um time no 0 a 0. Não há sinal de recuo."
+
+- id: home_advantage
+  order: 5
+  slug: { pt: jogar-em-casa, en: home-advantage }
+  verdict: { table: myths, where: { myth: home_advantage }, field: verdict }
+  stats:
+    above: { table: myth_home_advantage, where: { residual: { gt: 0 } }, agg: count, format: int }
+    hosts: { table: myth_home_advantage, agg: count, format: int }
+  pt:
+    claim: "Jogar em casa ajuda na Copa."
+    big: "{above} de {hosts}"
+    caption: "sedes renderam acima do que a força previa. Brasil 2014 e Catar 2022 estão entre as exceções."
+
+- id: must_score_kick
+  order: 6
+  slug: { pt: cobranca-decisiva, en: must-score-kick }
+  verdict: { table: myths, where: { myth: must_score_kick }, field: verdict }
+  stats:
+    must: { table: myth_must_score_kick, where: { must_score: true }, field: value, format: pct }
+    other: { table: myth_must_score_kick, where: { must_score: false }, field: value, format: pct }
+  pt:
+    claim: "A cobrança que precisa entrar treme."
+    big: "{must}"
+    caption: "das cobranças em que errar elimina entraram. As demais: {other}."
+
+- id: opener_loss
+  order: 7
+  slug: { pt: perder-a-estreia, en: losing-the-opener }
+  verdict: { table: myths, where: { myth: opener_loss }, field: verdict }
+  stats:
+    l48: { table: myth_opener_loss, where: { era: 48-teams, result: L }, field: value, format: pct }
+    l32: { table: myth_opener_loss, where: { era: 32-teams, result: L }, field: value, format: pct }
+  pt:
+    claim: "Com 48 seleções, perder a estreia deixou de ser sentença."
+    big: "{l48}"
+    caption: "de quem perdeu a estreia em 2026 avançou. Com 32 seleções, eram {l32}."
