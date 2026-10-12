@@ -18,3 +18,8 @@ IGNORE_prompts.md
 CLAUDE.local.md
 .claude/settings.local.json
 .claude/worktrees/
+
+# web site (Astro): dependencies and build output
+web/node_modules/
+web/dist/
+web/.astro/
