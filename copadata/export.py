@@ -31,7 +31,8 @@ ATTRIBUTION = (
     "licensed under CC-BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/), available at "
     "https://www.github.com/jfjelstul/worldcup. Modifications: only men's World Cups from 1986, reshaped and "
     "aggregated by CopaData (https://github.com/stuaninauts/copadata). Data for 2026 from OpenFootball "
-    "(https://github.com/openfootball/worldcup.json), public domain (CC0)."
+    "(https://github.com/openfootball/worldcup.json), public domain (CC0). Team strength (Elo) computed from "
+    "the international results of https://github.com/martj42/international_results, public domain (CC0)."
 )
 
 README = f"""# CopaData: public data
@@ -211,6 +212,9 @@ def write(data: dict[str, pd.DataFrame], out: Path) -> list[Path]:
             "fjelstul": {"repository": "https://github.com/jfjelstul/worldcup",
                          "commit": config.FJELSTUL_COMMIT, "license": "CC-BY-SA-4.0",
                          "editions": [y for y in years if y < config.SEASON]},
+            # pre-match Elo (ADR 0009): every international match since 1872
+            "international": {"repository": "https://github.com/martj42/international_results",
+                              "commit": config.INTERNATIONAL_COMMIT, "license": "CC0-1.0"},
         },
         "tables": manifest_tables,
     }

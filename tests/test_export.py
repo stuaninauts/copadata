@@ -48,6 +48,7 @@ def test_writes_every_table_with_manifest_and_readme(data, tmp_path):
     assert files | {"manifest.json", "README.md"} == {p.name for p in tmp_path.iterdir()}
     assert manifest["license"] == "CC-BY-SA-4.0" and manifest["editions"] == [1990, 2026]
     assert manifest["sources"]["fjelstul"]["editions"] == [1990]
+    assert manifest["sources"]["international"]["license"] == "CC0-1.0"
     assert "Fjelstul" in (tmp_path / "README.md").read_text()
 
 
