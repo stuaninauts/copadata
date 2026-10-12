@@ -168,6 +168,29 @@ def survival_goal(goals: list["Goal"], is_knockout: bool, ft: list[int]):
 FINAL_QUARTER_MIN = 76  # "final quarter" of the match = 76'-90' (includes stoppage)
 
 
+def is_final_quarter_goal(g: "Goal") -> bool:
+    """Regulation goal in the final quarter (76'-90', stoppage included). Extra time doesn't count."""
+    return not g.extra_time and g.minute >= FINAL_QUARTER_MIN
+
+
+def two_goal_lead(goals: list["Goal"]) -> tuple[int, int, int | None] | None:
+    """Regulation only. The first time a side leads exactly 2-0: (side, minute, minute of the 2-1
+    that follows or None). The 2-1 can only be the next goal: if the leader scores first it is 3-0.
+    None if no side ever led 2-0.
+    """
+    s = {1: 0, 2: 0}
+    lead = None
+    for g in goals:
+        if g.extra_time:
+            break
+        s[g.side] += 1
+        if lead is not None:
+            return (*lead, g.minute) if g.side != lead[0] else (*lead, None)
+        if sorted(s.values()) == [0, 2]:
+            lead = (g.side, g.minute)
+    return (*lead, None) if lead else None
+
+
 def winning_goal_regulation(goals: list["Goal"], ft: list[int]):
     """Game-winner using regulation only and the 90' score (ft). None if level at 90'."""
     if ft[0] == ft[1]:

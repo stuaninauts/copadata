@@ -60,6 +60,7 @@ def build_matches(data: dict, year: int = config.SEASON) -> pd.DataFrame:
             sg = metrics.survival_goal(goals, stage == "knockout", ft)
             wgr = metrics.winning_goal_regulation(goals, ft)
             dm = metrics.decisive_moment_regulation(goals, ft, stage == "knockout")
+            two = metrics.two_goal_lead(goals)
             row.update(
                 {
                     "goals_team1": s1,
@@ -91,6 +92,10 @@ def build_matches(data: dict, year: int = config.SEASON) -> pd.DataFrame:
                     "winning_goal_min_90": wgr.minute if wgr else None,
                     "decisive_moment_90": dm.minute if dm else None,
                     "decided_final_quarter": (dm.minute >= metrics.FINAL_QUARTER_MIN) if dm else False,
+                    # first 2-0 in regulation and the 2-1 right after it, if any
+                    "two_nil_side": two[0] if two else None,
+                    "two_nil_min": two[1] if two else None,
+                    "two_one_min": two[2] if two else None,
                 }
             )
         rows.append(row)
@@ -121,6 +126,7 @@ def build_goals(data: dict, year: int = config.SEASON) -> pd.DataFrame:
                     "extra_time": g.extra_time,
                     "late": metrics.is_late_goal(g),
                     "stoppage": metrics.is_stoppage_goal(g),
+                    "final_quarter": metrics.is_final_quarter_goal(g),
                     "own_goal": g.own_goal,
                     "penalty": g.penalty,
                 }

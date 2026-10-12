@@ -213,6 +213,29 @@ def test_decisive_moment_regulation():
     assert metrics.decisive_moment_regulation(goals_of(group_draw), group_draw["score"]["ft"], False) is None
 
 
+def test_is_final_quarter_goal():
+    m = match(goals1=[g("75"), g("76"), g("90+3"), g("105")], goals2=[g("45+2")], et=[3, 1])
+    assert [metrics.is_final_quarter_goal(x) for x in goals_of(m)] == [False, False, True, True, False]
+
+
+# --- two-goal lead (myth "2-0 is the most dangerous score", ADR 0008) ----------------
+
+@pytest.mark.parametrize(
+    "goals1, goals2, expected",
+    [
+        ([g("10"), g("30")], [g("50")], (1, 30, 50)),           # 2-0, then 2-1
+        ([g("10"), g("30"), g("40")], [g("50")], (1, 30, None)),  # 3-0 first: no 2-1 after the 2-0
+        ([g("10")], [g("20"), g("45+1")], None),                 # 1-1 then 1-2: never 2-0
+        ([], [g("20"), g("60")], (2, 60, None)),                 # 0-2, no reply
+        ([g("10")], [g("20")], None),                            # no 2-0 at all
+        ([g("100")], [g("20"), g("30")], (2, 30, None)),         # extra-time goal is not the 2-1
+    ],
+)
+def test_two_goal_lead(goals1, goals2, expected):
+    m = match(goals1=goals1, goals2=goals2, et=[1, 2] if any(x["minute"] == "100" for x in goals1) else None)
+    assert metrics.two_goal_lead(goals_of(m)) == expected
+
+
 # --- integration: one row per match in transform.build_matches ---------------------
 
 def _rows(*ms):
@@ -248,6 +271,12 @@ def test_build_matches_final_quarter_boundary():
         match(round_="Matchday 1", group="Group A"),  # 0-0
     )
     assert df["decided_final_quarter"].tolist() == [False, True, False]
+
+
+def test_build_matches_two_goal_lead_columns():
+    df = _rows(match(goals1=[g("10"), g("30")], goals2=[g("50")]), match(goals1=[g("10")]))
+    assert (df.two_nil_side[0], df.two_nil_min[0], df.two_one_min[0]) == (1, 30, 50)
+    assert pd.isna(df.two_nil_side[1]) and pd.isna(df.two_one_min[1])
 
 
 def test_build_matches_unfinished_match_has_no_metrics():
