@@ -31,11 +31,29 @@ Doze afirmações, só com os dados já processados. Recorte: grupos e mata-mata
 | 7 | Gol chama gol | Mito | não: depende de explicar a pausa da nova saída de bola |
 | 8 | No mata-mata os times jogam pelo empate | Mito, no limite | não: mensagem ambígua |
 | 9 | 2026 foi uma Copa fora da curva | Verdade em parte | **sim**, como auditoria das manchetes da Home (`season_outlier`) |
-| 10 | O futebol ficou mais travado | Mito | em espera: só entra junto com a "montanha-russa", se a leva 2 confirmar |
+| 10 | O futebol ficou mais travado | Mito | não: dependia da "montanha-russa", que a leva 2 confirmou mas não foi para o site |
 | 11 | Tem seleção especialista em decidir no fim | Mito | **sim** (`late_specialists`) |
 | 12 | Perdeu a estreia, está fora (e o formato de 48 aliviou) | Verdade, no limite | **sim** (`opener_loss`) |
 
 As que não vão para o site aparecem na página de método com o veredito e o motivo. Os números das cinco publicadas vêm do export; as demais foram rodadas num notebook de trabalho e ficam registradas aqui pelo veredito.
+
+## Leva 2 (2026-10-12)
+
+Onze afirmações que dependem da força das seleções (Elo, [ADR 0009](./0009-forca-das-selecoes-elo.md)), de jogos fora das Copas e das cobranças de pênalti. Duas regras novas, escritas antes de rodar: afirmação de "não tem efeito" é **Verdade** se o intervalo cabe em ±5 p.p. e **Mito** se exclui zero; afirmação de tendência compara 2006-2026 com 1986-2005 e é **Verdade** se o intervalo fica acima de zero.
+
+| # | Afirmação | Veredito | No site |
+|---|---|---|---|
+| 1 | Pênalti é loteria | Não dá para dizer | não |
+| 2 | Quem bate primeiro na disputa leva vantagem | Não dá para dizer | não |
+| 3 | Na Copa, o favorito sofre mais no mata-mata | Mito (o favorito rende mais no mata-mata) | **sim** (`favorite_knockout`) |
+| 4 | A Copa ficou mais imprevisível | Não dá para dizer | não |
+| 5 | As goleadas de 2026 vêm das seleções fracas | Verdade, no limite | não: a força explica pouco do salto; entra como ressalva da auditoria de 2026 |
+| 6 | Camisa pesa | Não dá para dizer | não |
+| 7 | Jogar em casa ajuda na Copa | Verdade | **sim** (`home_advantage`) |
+| 8 | Quem está ganhando por 1 recua (controlando força) | Mito | não; revisa a leitura do mito 6 da leva 1: o "líder marca mais" era efeito de força, então o texto diz só que não há evidência de que recue |
+| 9 | O futebol de seleções ficou mais montanha-russa | Verdade (efeito pequeno, dado fora das Copas) | não |
+| 10 | A cobrança que precisa entrar treme | Verdade, no limite | **sim** (`must_score_kick`) |
+| 11 | Descanso decide o mata-mata | Não dá para dizer | não |
 
 ## Considered Options
 
