@@ -609,23 +609,23 @@ year,match_id,num,date,venue,group,round_raw,stage,is_knockout,team1,team2,finis
 2026,2026003,,2026-06-18,Guadalajara (Zapopan),Group A,Matchday 8,groups,False,Mexico,South Korea,True,1,0,1,0,False,False,,,1,False,1,50.0,False,0,False,0,False,,1,False,,1,1,50.0,50.0,False,,,
 2026,2026004,,2026-06-24,Mexico City,Group A,Matchday 14,groups,False,Czech Republic,Mexico,True,0,3,0,3,False,False,,,3,False,3,55.0,False,1,True,0,False,,1,False,,3,3,55.0,55.0,False,2.0,61.0,
 2026,2026005,,2026-06-24,Monterrey (Guadalupe),Group A,Matchday 14,groups,False,South Africa,South Korea,True,1,0,1,0,False,False,,,1,False,1,63.0,False,0,False,0,False,,1,False,,1,1,63.0,63.0,False,,,
-2026,2026006,,2026-06-12,Toronto,Group B,Matchday 2,groups,False,Canada,Bosnia & Herzegovina,True,1,1,1,1,False,False,,,0,True,2,,,0,False,0,False,,1,False,,2,0,,,False,,,
+2026,2026006,,2026-06-12,Toronto,Group B,Matchday 2,groups,False,Canada,Bosnia and Herzegovina,True,1,1,1,1,False,False,,,0,True,2,,,0,False,0,False,,1,False,,2,0,,,False,,,
 2026,2026007,,2026-06-13,San Francisco Bay Area (Santa Clara),Group B,Matchday 3,groups,False,Qatar,Switzerland,True,1,1,1,1,False,False,,,0,True,2,,,1,True,0,False,,1,False,,2,0,,,False,,,
-2026,2026008,,2026-06-18,Los Angeles (Inglewood),Group B,Matchday 8,groups,False,Switzerland,Bosnia & Herzegovina,True,4,1,4,1,False,False,,,3,False,5,84.0,False,4,True,0,False,,1,False,,5,3,84.0,84.0,True,1.0,84.0,
+2026,2026008,,2026-06-18,Los Angeles (Inglewood),Group B,Matchday 8,groups,False,Switzerland,Bosnia and Herzegovina,True,4,1,4,1,False,False,,,3,False,5,84.0,False,4,True,0,False,,1,False,,5,3,84.0,84.0,True,1.0,84.0,
 2026,2026009,,2026-06-18,Vancouver,Group B,Matchday 8,groups,False,Canada,Qatar,True,6,0,6,0,False,False,,,6,False,6,16.0,False,1,True,0,False,,1,False,,6,6,16.0,16.0,False,1.0,29.0,
 2026,2026010,,2026-06-24,Vancouver,Group B,Matchday 14,groups,False,Switzerland,Canada,True,2,1,2,1,False,False,,,1,False,3,57.0,False,0,False,0,False,,1,False,,3,1,57.0,57.0,False,1.0,57.0,76.0
-2026,2026011,,2026-06-24,Seattle,Group B,Matchday 14,groups,False,Bosnia & Herzegovina,Qatar,True,3,1,3,1,False,False,,,2,False,4,34.0,False,1,True,0,False,,1,False,,4,2,34.0,34.0,False,1.0,34.0,42.0
+2026,2026011,,2026-06-24,Seattle,Group B,Matchday 14,groups,False,Bosnia and Herzegovina,Qatar,True,3,1,3,1,False,False,,,2,False,4,34.0,False,1,True,0,False,,1,False,,4,2,34.0,34.0,False,1.0,34.0,42.0
 2026,2026012,,2026-06-13,New York/New Jersey (East Rutherford),Group C,Matchday 3,groups,False,Brazil,Morocco,True,1,1,1,1,False,False,,,0,True,2,,,0,False,0,False,,1,False,,2,0,,,False,,,
 2026,2026013,,2026-06-13,Boston (Foxborough),Group C,Matchday 3,groups,False,Haiti,Scotland,True,0,1,0,1,False,False,,,1,False,1,28.0,False,0,False,0,False,,1,False,,1,1,28.0,28.0,False,,,
 2026,2026014,,2026-06-19,Boston (Foxborough),Group C,Matchday 9,groups,False,Scotland,Morocco,True,0,1,0,1,False,False,,,1,False,1,2.0,False,0,False,0,False,,1,False,,1,1,2.0,2.0,False,,,
 2026,2026015,,2026-06-19,Philadelphia,Group C,Matchday 9,groups,False,Brazil,Haiti,True,3,0,3,0,False,False,,,3,False,3,23.0,False,0,False,0,False,,1,False,,3,3,23.0,23.0,False,1.0,36.0,
 2026,2026016,,2026-06-24,Miami (Miami Gardens),Group C,Matchday 14,groups,False,Scotland,Brazil,True,0,3,0,3,False,False,,,3,False,3,7.0,False,0,False,0,False,,1,False,,3,3,7.0,7.0,False,2.0,45.0,
 2026,2026017,,2026-06-24,Atlanta,Group C,Matchday 14,groups,False,Morocco,Haiti,True,4,2,4,2,False,False,,,2,False,6,78.0,False,1,True,0,True,78.0,2,False,,6,2,78.0,78.0,True,,,
-2026,2026018,,2026-06-12,Los Angeles (Inglewood),Group D,Matchday 2,groups,False,USA,Paraguay,True,4,1,4,1,False,False,,,3,False,5,31.0,False,1,True,0,False,,1,False,,5,3,31.0,31.0,False,1.0,31.0,
+2026,2026018,,2026-06-12,Los Angeles (Inglewood),Group D,Matchday 2,groups,False,United States,Paraguay,True,4,1,4,1,False,False,,,3,False,5,31.0,False,1,True,0,False,,1,False,,5,3,31.0,31.0,False,1.0,31.0,
 2026,2026019,,2026-06-13,Vancouver,Group D,Matchday 3,groups,False,Australia,Turkey,True,2,0,2,0,False,False,,,2,False,2,27.0,False,0,False,0,False,,1,False,,2,2,27.0,27.0,False,1.0,75.0,
-2026,2026020,,2026-06-19,Seattle,Group D,Matchday 9,groups,False,USA,Australia,True,2,0,2,0,False,False,,,2,False,2,11.0,False,0,False,0,False,,1,False,,2,2,11.0,11.0,False,1.0,43.0,
+2026,2026020,,2026-06-19,Seattle,Group D,Matchday 9,groups,False,United States,Australia,True,2,0,2,0,False,False,,,2,False,2,11.0,False,0,False,0,False,,1,False,,2,2,11.0,11.0,False,1.0,43.0,
 2026,2026021,,2026-06-19,San Francisco Bay Area (Santa Clara),Group D,Matchday 9,groups,False,Turkey,Paraguay,True,0,1,0,1,False,False,,,1,False,1,2.0,False,0,False,0,False,,1,False,,1,1,2.0,2.0,False,,,
-2026,2026022,,2026-06-25,Los Angeles (Inglewood),Group D,Matchday 15,groups,False,Turkey,USA,True,3,2,3,2,False,False,,,1,False,5,90.0,False,1,True,0,True,90.0,2,False,,5,1,90.0,90.0,True,,,
+2026,2026022,,2026-06-25,Los Angeles (Inglewood),Group D,Matchday 15,groups,False,Turkey,United States,True,3,2,3,2,False,False,,,1,False,5,90.0,False,1,True,0,True,90.0,2,False,,5,1,90.0,90.0,True,,,
 2026,2026023,,2026-06-25,San Francisco Bay Area (Santa Clara),Group D,Matchday 15,groups,False,Paraguay,Australia,True,0,0,0,0,False,False,,,0,True,0,,,0,False,0,False,,0,False,,0,0,,,False,,,
 2026,2026024,,2026-06-14,Houston,Group E,Matchday 4,groups,False,Germany,Curaçao,True,7,1,7,1,False,False,,,6,False,8,38.0,False,1,True,0,False,,1,False,,8,6,38.0,38.0,False,,,
 2026,2026025,,2026-06-14,Philadelphia,Group E,Matchday 4,groups,False,Ivory Coast,Ecuador,True,1,0,1,0,False,False,,,1,False,1,90.0,False,1,True,0,False,,1,False,,1,1,90.0,90.0,True,,,
@@ -683,7 +683,7 @@ year,match_id,num,date,venue,group,round_raw,stage,is_knockout,team1,team2,finis
 2026,2026077,78.0,2026-06-30,Dallas (Arlington),,Round of 32,knockout,True,Ivory Coast,Norway,True,1,2,1,2,False,False,,,1,False,3,86.0,False,1,True,0,False,,1,False,,3,1,86.0,86.0,True,,,
 2026,2026078,79.0,2026-06-30,Mexico City,,Round of 32,knockout,True,Mexico,Ecuador,True,2,0,2,0,False,False,,,2,False,2,31.0,False,0,False,0,False,,1,False,,2,2,31.0,31.0,False,1.0,45.0,
 2026,2026079,80.0,2026-07-01,Atlanta,,Round of 32,knockout,True,England,DR Congo,True,2,1,2,1,False,False,,,1,False,3,86.0,False,1,True,0,True,86.0,2,False,,3,1,86.0,86.0,True,,,
-2026,2026080,81.0,2026-07-01,San Francisco Bay Area (Santa Clara),,Round of 32,knockout,True,USA,Bosnia & Herzegovina,True,2,0,2,0,False,False,,,2,False,2,45.0,False,1,True,0,False,,1,False,,2,2,45.0,45.0,False,1.0,82.0,
+2026,2026080,81.0,2026-07-01,San Francisco Bay Area (Santa Clara),,Round of 32,knockout,True,United States,Bosnia and Herzegovina,True,2,0,2,0,False,False,,,2,False,2,45.0,False,1,True,0,False,,1,False,,2,2,45.0,45.0,False,1.0,82.0,
 2026,2026081,82.0,2026-07-01,Seattle,,Round of 32,knockout,True,Belgium,Senegal,True,3,2,2,2,True,False,,,1,True,5,120.0,True,2,True,1,True,120.0,2,True,89.0,4,0,,89.0,True,2.0,51.0,86.0
 2026,2026082,83.0,2026-07-02,Toronto,,Round of 32,knockout,True,Portugal,Croatia,True,2,1,2,1,False,False,,,1,False,3,90.0,False,1,True,0,True,90.0,2,False,,3,1,90.0,90.0,True,,,
 2026,2026083,84.0,2026-07-02,Los Angeles (Inglewood),,Round of 32,knockout,True,Spain,Austria,True,3,0,3,0,False,False,,,3,False,3,36.0,False,1,True,0,False,,1,False,,3,3,36.0,36.0,False,1.0,66.0,
@@ -696,7 +696,7 @@ year,match_id,num,date,venue,group,round_raw,stage,is_knockout,team1,team2,finis
 2026,2026090,91.0,2026-07-05,New York/New Jersey (East Rutherford),,Round of 16,knockout,True,Brazil,Norway,True,1,2,1,2,False,False,,,1,False,3,90.0,False,2,True,0,False,,1,False,,3,1,90.0,90.0,True,2.0,90.0,90.0
 2026,2026091,92.0,2026-07-05,Mexico City,,Round of 16,knockout,True,Mexico,England,True,2,3,2,3,False,False,,,1,False,5,60.0,False,0,False,0,False,,1,False,,5,1,60.0,60.0,False,2.0,38.0,42.0
 2026,2026092,93.0,2026-07-06,Dallas (Arlington),,Round of 16,knockout,True,Portugal,Spain,True,0,1,0,1,False,False,,,1,False,1,90.0,False,1,True,0,False,,1,False,,1,1,90.0,90.0,True,,,
-2026,2026093,94.0,2026-07-06,Seattle,,Round of 16,knockout,True,USA,Belgium,True,1,4,1,4,False,False,,,3,False,5,33.0,False,1,True,0,False,,1,False,,5,3,33.0,33.0,False,,,
+2026,2026093,94.0,2026-07-06,Seattle,,Round of 16,knockout,True,United States,Belgium,True,1,4,1,4,False,False,,,3,False,5,33.0,False,1,True,0,False,,1,False,,5,3,33.0,33.0,False,,,
 2026,2026094,95.0,2026-07-07,Atlanta,,Round of 16,knockout,True,Argentina,Egypt,True,3,2,3,2,False,False,,,1,False,5,90.0,False,2,True,0,True,90.0,2,False,,5,1,90.0,90.0,True,2.0,67.0,79.0
 2026,2026095,96.0,2026-07-07,Vancouver,,Round of 16,knockout,True,Switzerland,Colombia,True,0,0,0,0,True,True,4.0,3.0,0,True,0,,,0,False,0,False,,0,False,,0,0,,,False,,,
 2026,2026096,97.0,2026-07-09,Boston (Foxborough),,Quarter-final,knockout,True,France,Morocco,True,2,0,2,0,False,False,,,2,False,2,60.0,False,0,False,0,False,,1,False,,2,2,60.0,60.0,False,1.0,66.0,

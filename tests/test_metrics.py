@@ -288,6 +288,14 @@ def test_build_matches_unfinished_match_has_no_metrics():
 
 
 
+def test_team_names_are_the_same_across_sources():
+    m = match(goals1=[g("10")])
+    m["team1"], m["team2"] = "USA", "Bosnia & Herzegovina"
+    df = transform.build_matches({"matches": [m]})
+    goals = transform.build_goals({"matches": [m]})
+    assert (df.team1[0], df.team2[0], goals.team[0]) == ("United States", "Bosnia and Herzegovina", "United States")
+
+
 def test_build_matches_ids_are_unique_across_editions():
     a = transform.build_matches({"matches": [match(), match()]}, year=1990)
     b = transform.build_matches({"matches": [match()]}, year=2026)
