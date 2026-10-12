@@ -24,6 +24,11 @@ def classify_stage(m: dict) -> str:
     return "other"
 
 
+def team_name(name: str) -> str:
+    """The same team keeps one name across sources ("USA" in OpenFootball is "United States")."""
+    return config.TEAM_NAMES.get(name, name)
+
+
 def match_id(year: int, index: int) -> int:
     """Unique across editions, so no join can mix World Cups: 2026, 7th match -> 2026006."""
     return year * 1000 + index
@@ -45,8 +50,8 @@ def build_matches(data: dict, year: int = config.SEASON) -> pd.DataFrame:
             "round_raw": m.get("round"),
             "stage": stage,
             "is_knockout": stage == "knockout",
-            "team1": m["team1"],
-            "team2": m["team2"],
+            "team1": team_name(m["team1"]),
+            "team2": team_name(m["team2"]),
             "finished": finished,
         }
         if finished:
@@ -119,7 +124,7 @@ def build_goals(data: dict, year: int = config.SEASON) -> pd.DataFrame:
                     "match_id": match_id(year, i),
                     "stage": stage,
                     "is_knockout": stage == "knockout",
-                    "team": m[f"team{g.side}"],
+                    "team": team_name(m[f"team{g.side}"]),
                     "side": g.side,
                     "minute": g.minute,
                     "order": g.order,

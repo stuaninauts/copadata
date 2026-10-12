@@ -1219,18 +1219,18 @@ year,match_id,stage,is_knockout,group,date,round_raw,finished,team,opponent,home
 2026,2026004,groups,False,Group A,2026-06-24,Matchday 14,True,Mexico,Czech Republic,False,3,0,W,3,False,6,3,1,0,qualification
 2026,2026005,groups,False,Group A,2026-06-24,Matchday 14,True,South Africa,South Korea,True,1,0,W,3,False,1,-2,4,0,danger
 2026,2026005,groups,False,Group A,2026-06-24,Matchday 14,True,South Korea,South Africa,False,0,1,L,3,False,3,0,2,0,qualification
-2026,2026006,groups,False,Group B,2026-06-12,Matchday 2,True,Canada,Bosnia & Herzegovina,True,1,1,D,1,True,0,0,2,2,qualification
-2026,2026006,groups,False,Group B,2026-06-12,Matchday 2,True,Bosnia & Herzegovina,Canada,False,1,1,D,1,True,0,0,1,2,qualification
+2026,2026006,groups,False,Group B,2026-06-12,Matchday 2,True,Canada,Bosnia and Herzegovina,True,1,1,D,1,True,0,0,2,2,qualification
+2026,2026006,groups,False,Group B,2026-06-12,Matchday 2,True,Bosnia and Herzegovina,Canada,False,1,1,D,1,True,0,0,1,2,qualification
 2026,2026007,groups,False,Group B,2026-06-13,Matchday 3,True,Qatar,Switzerland,True,1,1,D,1,True,0,0,3,2,danger
 2026,2026007,groups,False,Group B,2026-06-13,Matchday 3,True,Switzerland,Qatar,False,1,1,D,1,True,0,0,4,2,danger
-2026,2026008,groups,False,Group B,2026-06-18,Matchday 8,True,Switzerland,Bosnia & Herzegovina,True,4,1,W,2,False,1,0,4,1,danger
-2026,2026008,groups,False,Group B,2026-06-18,Matchday 8,True,Bosnia & Herzegovina,Switzerland,False,1,4,L,2,False,1,0,1,1,qualification
+2026,2026008,groups,False,Group B,2026-06-18,Matchday 8,True,Switzerland,Bosnia and Herzegovina,True,4,1,W,2,False,1,0,4,1,danger
+2026,2026008,groups,False,Group B,2026-06-18,Matchday 8,True,Bosnia and Herzegovina,Switzerland,False,1,4,L,2,False,1,0,1,1,qualification
 2026,2026009,groups,False,Group B,2026-06-18,Matchday 8,True,Canada,Qatar,True,6,0,W,2,False,1,0,2,1,qualification
 2026,2026009,groups,False,Group B,2026-06-18,Matchday 8,True,Qatar,Canada,False,0,6,L,2,False,1,0,3,1,danger
 2026,2026010,groups,False,Group B,2026-06-24,Matchday 14,True,Switzerland,Canada,True,2,1,W,3,False,4,3,2,0,qualification
 2026,2026010,groups,False,Group B,2026-06-24,Matchday 14,True,Canada,Switzerland,False,1,2,L,3,False,4,6,1,0,qualification
-2026,2026011,groups,False,Group B,2026-06-24,Matchday 14,True,Bosnia & Herzegovina,Qatar,True,3,1,W,3,False,1,-3,3,0,danger
-2026,2026011,groups,False,Group B,2026-06-24,Matchday 14,True,Qatar,Bosnia & Herzegovina,False,1,3,L,3,False,1,-6,4,0,danger
+2026,2026011,groups,False,Group B,2026-06-24,Matchday 14,True,Bosnia and Herzegovina,Qatar,True,3,1,W,3,False,1,-3,3,0,danger
+2026,2026011,groups,False,Group B,2026-06-24,Matchday 14,True,Qatar,Bosnia and Herzegovina,False,1,3,L,3,False,1,-6,4,0,danger
 2026,2026012,groups,False,Group C,2026-06-13,Matchday 3,True,Brazil,Morocco,True,1,1,D,1,True,0,0,1,2,qualification
 2026,2026012,groups,False,Group C,2026-06-13,Matchday 3,True,Morocco,Brazil,False,1,1,D,1,True,0,0,3,2,danger
 2026,2026013,groups,False,Group C,2026-06-13,Matchday 3,True,Haiti,Scotland,True,0,1,L,1,True,0,0,2,2,qualification
@@ -1243,16 +1243,16 @@ year,match_id,stage,is_knockout,group,date,round_raw,finished,team,opponent,home
 2026,2026016,groups,False,Group C,2026-06-24,Matchday 14,True,Brazil,Scotland,False,3,0,W,3,False,4,3,1,0,qualification
 2026,2026017,groups,False,Group C,2026-06-24,Matchday 14,True,Morocco,Haiti,True,4,2,W,3,False,4,1,2,0,qualification
 2026,2026017,groups,False,Group C,2026-06-24,Matchday 14,True,Haiti,Morocco,False,2,4,L,3,False,0,-4,4,0,danger
-2026,2026018,groups,False,Group D,2026-06-12,Matchday 2,True,USA,Paraguay,True,4,1,W,1,True,0,0,4,2,danger
-2026,2026018,groups,False,Group D,2026-06-12,Matchday 2,True,Paraguay,USA,False,1,4,L,1,True,0,0,2,2,qualification
+2026,2026018,groups,False,Group D,2026-06-12,Matchday 2,True,United States,Paraguay,True,4,1,W,1,True,0,0,4,2,danger
+2026,2026018,groups,False,Group D,2026-06-12,Matchday 2,True,Paraguay,United States,False,1,4,L,1,True,0,0,2,2,qualification
 2026,2026019,groups,False,Group D,2026-06-13,Matchday 3,True,Australia,Turkey,True,2,0,W,1,True,0,0,2,2,qualification
 2026,2026019,groups,False,Group D,2026-06-13,Matchday 3,True,Turkey,Australia,False,0,2,L,1,True,0,0,3,2,danger
-2026,2026020,groups,False,Group D,2026-06-19,Matchday 9,True,USA,Australia,True,2,0,W,2,False,3,3,1,1,qualification
-2026,2026020,groups,False,Group D,2026-06-19,Matchday 9,True,Australia,USA,False,0,2,L,2,False,3,2,2,1,qualification
+2026,2026020,groups,False,Group D,2026-06-19,Matchday 9,True,United States,Australia,True,2,0,W,2,False,3,3,1,1,qualification
+2026,2026020,groups,False,Group D,2026-06-19,Matchday 9,True,Australia,United States,False,0,2,L,2,False,3,2,2,1,qualification
 2026,2026021,groups,False,Group D,2026-06-19,Matchday 9,True,Turkey,Paraguay,True,0,1,L,2,False,0,-2,3,1,danger
 2026,2026021,groups,False,Group D,2026-06-19,Matchday 9,True,Paraguay,Turkey,False,1,0,W,2,False,0,-3,4,1,danger
-2026,2026022,groups,False,Group D,2026-06-25,Matchday 15,True,Turkey,USA,True,3,2,W,3,False,0,-3,4,0,danger
-2026,2026022,groups,False,Group D,2026-06-25,Matchday 15,True,USA,Turkey,False,2,3,L,3,False,6,5,1,0,qualification
+2026,2026022,groups,False,Group D,2026-06-25,Matchday 15,True,Turkey,United States,True,3,2,W,3,False,0,-3,4,0,danger
+2026,2026022,groups,False,Group D,2026-06-25,Matchday 15,True,United States,Turkey,False,2,3,L,3,False,6,5,1,0,qualification
 2026,2026023,groups,False,Group D,2026-06-25,Matchday 15,True,Paraguay,Australia,True,0,0,D,3,False,3,-2,3,0,danger
 2026,2026023,groups,False,Group D,2026-06-25,Matchday 15,True,Australia,Paraguay,False,0,0,D,3,False,3,0,2,0,qualification
 2026,2026024,groups,False,Group E,2026-06-14,Matchday 4,True,Germany,Curaçao,True,7,1,W,1,True,0,0,3,2,danger
@@ -1367,8 +1367,8 @@ year,match_id,stage,is_knockout,group,date,round_raw,finished,team,opponent,home
 2026,2026078,knockout,True,,2026-06-30,Round of 32,True,Ecuador,Mexico,False,0,2,L,,,,,,,
 2026,2026079,knockout,True,,2026-07-01,Round of 32,True,England,DR Congo,True,2,1,W,,,,,,,
 2026,2026079,knockout,True,,2026-07-01,Round of 32,True,DR Congo,England,False,1,2,L,,,,,,,
-2026,2026080,knockout,True,,2026-07-01,Round of 32,True,USA,Bosnia & Herzegovina,True,2,0,W,,,,,,,
-2026,2026080,knockout,True,,2026-07-01,Round of 32,True,Bosnia & Herzegovina,USA,False,0,2,L,,,,,,,
+2026,2026080,knockout,True,,2026-07-01,Round of 32,True,United States,Bosnia and Herzegovina,True,2,0,W,,,,,,,
+2026,2026080,knockout,True,,2026-07-01,Round of 32,True,Bosnia and Herzegovina,United States,False,0,2,L,,,,,,,
 2026,2026081,knockout,True,,2026-07-01,Round of 32,True,Belgium,Senegal,True,3,2,W,,,,,,,
 2026,2026081,knockout,True,,2026-07-01,Round of 32,True,Senegal,Belgium,False,2,3,L,,,,,,,
 2026,2026082,knockout,True,,2026-07-02,Round of 32,True,Portugal,Croatia,True,2,1,W,,,,,,,
@@ -1393,8 +1393,8 @@ year,match_id,stage,is_knockout,group,date,round_raw,finished,team,opponent,home
 2026,2026091,knockout,True,,2026-07-05,Round of 16,True,England,Mexico,False,3,2,W,,,,,,,
 2026,2026092,knockout,True,,2026-07-06,Round of 16,True,Portugal,Spain,True,0,1,L,,,,,,,
 2026,2026092,knockout,True,,2026-07-06,Round of 16,True,Spain,Portugal,False,1,0,W,,,,,,,
-2026,2026093,knockout,True,,2026-07-06,Round of 16,True,USA,Belgium,True,1,4,L,,,,,,,
-2026,2026093,knockout,True,,2026-07-06,Round of 16,True,Belgium,USA,False,4,1,W,,,,,,,
+2026,2026093,knockout,True,,2026-07-06,Round of 16,True,United States,Belgium,True,1,4,L,,,,,,,
+2026,2026093,knockout,True,,2026-07-06,Round of 16,True,Belgium,United States,False,4,1,W,,,,,,,
 2026,2026094,knockout,True,,2026-07-07,Round of 16,True,Argentina,Egypt,True,3,2,W,,,,,,,
 2026,2026094,knockout,True,,2026-07-07,Round of 16,True,Egypt,Argentina,False,2,3,L,,,,,,,
 2026,2026095,knockout,True,,2026-07-07,Round of 16,True,Switzerland,Colombia,True,0,0,D,,,,,,,
