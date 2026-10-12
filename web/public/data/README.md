@@ -11,4 +11,4 @@ derived data under the same license.
 
 ## Attribution
 
-Data for 1986-2022 derived from The Fjelstul World Cup Database © 2023 Joshua C. Fjelstul, Ph.D., licensed under CC-BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/), available at https://www.github.com/jfjelstul/worldcup. Modifications: only men's World Cups from 1986, reshaped and aggregated by CopaData (https://github.com/stuaninauts/copadata). Data for 2026 from OpenFootball (https://github.com/openfootball/worldcup.json), public domain (CC0).
+Data for 1986-2022 derived from The Fjelstul World Cup Database © 2023 Joshua C. Fjelstul, Ph.D., licensed under CC-BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/), available at https://www.github.com/jfjelstul/worldcup. Modifications: only men's World Cups from 1986, reshaped and aggregated by CopaData (https://github.com/stuaninauts/copadata). Data for 2026 from OpenFootball (https://github.com/openfootball/worldcup.json), public domain (CC0). Team strength (Elo) computed from the international results of https://github.com/martj42/international_results, public domain (CC0).
