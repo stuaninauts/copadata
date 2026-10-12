@@ -2,6 +2,7 @@
 
 - 2026: the OpenFootball World Cup JSON (~40KB), pinned to a commit (ADR 0006). No key, no quota.
 - 1986-2022: the Fjelstul World Cup Database CSVs, pinned to a commit (see ADR 0005).
+- Team strength: the international results since 1872 (CC0), pinned to a commit (ADR 0009).
 """
 from __future__ import annotations
 
@@ -49,6 +50,27 @@ def load_history() -> dict[str, pd.DataFrame] | None:
     return {name: pd.read_csv(p) for name, p in paths.items()}
 
 
+def download_international() -> None:
+    """Download the pinned international results CSVs into data/raw/international/."""
+    config.INTERNATIONAL_RAW.mkdir(parents=True, exist_ok=True)
+    for name in config.INTERNATIONAL_TABLES:
+        url = config.INTERNATIONAL_URL.format(commit=config.INTERNATIONAL_COMMIT, name=name)
+        resp = requests.get(url, timeout=60)
+        resp.raise_for_status()
+        path = config.INTERNATIONAL_RAW / f"{name}.csv"
+        path.write_bytes(resp.content)
+        print(f"[ingest] downloaded: international {name} @ {config.INTERNATIONAL_COMMIT[:7]} -> {path}")
+
+
+def load_international() -> dict[str, pd.DataFrame] | None:
+    """Read the international results CSVs already downloaded, or None if they aren't there yet."""
+    paths = {name: config.INTERNATIONAL_RAW / f"{name}.csv" for name in config.INTERNATIONAL_TABLES}
+    if not all(p.exists() for p in paths.values()):
+        return None
+    return {name: pd.read_csv(p) for name, p in paths.items()}
+
+
 if __name__ == "__main__":
     download()
     download_history()
+    download_international()

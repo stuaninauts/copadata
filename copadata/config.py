@@ -19,20 +19,47 @@ RAW_JSON = RAW / f"worldcup-{SEASON}.json"
 # Pinned to a commit so a re-run always reads the same data.
 FJELSTUL_COMMIT = "35a8667f518b07469182ae16d35574dd0e7a00fb"
 FJELSTUL_URL = "https://raw.githubusercontent.com/jfjelstul/worldcup/{commit}/data-csv/{name}.csv"
-FJELSTUL_TABLES = ("matches", "goals")
+FJELSTUL_TABLES = ("matches", "goals", "penalty_kicks")
 FJELSTUL_RAW = RAW / "fjelstul"
 # First edition with the modern shape: group stage, then knockout from the round of 16.
 FIRST_HISTORICAL_YEAR = 1986
 
+# International results since 1872 (martj42/international_results, CC0): team strength by Elo
+# (ADR 0009). Pinned to a commit so a re-run always reads the same data.
+INTERNATIONAL_COMMIT = "d5bd6de012c87e2f325de602ae77fe2f9ab61ef3"
+INTERNATIONAL_URL = "https://raw.githubusercontent.com/martj42/international_results/{commit}/{name}.csv"
+INTERNATIONAL_TABLES = ("results", "shootouts", "goalscorers")
+INTERNATIONAL_RAW = RAW / "international"
+
 MATCHES_PARQUET = PROCESSED / "matches.parquet"
 TEAM_MATCHES_PARQUET = PROCESSED / "team_matches.parquet"
 GOALS_PARQUET = PROCESSED / "goals.parquet"
+PENALTY_KICKS_PARQUET = PROCESSED / "penalty_kicks.parquet"
+INTERNATIONAL_PARQUET = PROCESSED / "international.parquet"
+INTERNATIONAL_GOALS_PARQUET = PROCESSED / "international_goals.parquet"
 
 # Public export read by the web site (ADR 0006/0007). Versioned, licensed CC-BY-SA 4.0.
 EXPORT = ROOT / "web" / "public" / "data"
 
 # One name per team across sources: OpenFootball spelling -> Fjelstul spelling.
 TEAM_NAMES = {"USA": "United States", "Bosnia & Herzegovina": "Bosnia and Herzegovina"}
+# Historical names -> the successor federation's name in the international results (Elo lookup).
+ELO_NAMES = {"West Germany": "Germany", "Soviet Union": "Russia", "Serbia and Montenegro": "Serbia"}
+# ... and names that changed meaning: FR Yugoslavia (1992 on) is "Serbia" there; 1990's Yugoslavia is not.
+ELO_NAMES_SINCE = {"Yugoslavia": (1992, "Serbia")}
+
+# World Football Elo (eloratings.net method, ADR 0009): starting rating, home advantage, and K
+# by match weight. Tournaments not listed weigh ELO_K_OTHER.
+ELO_START = 1500
+ELO_HOME = 100
+ELO_K_WORLD_CUP = 60
+ELO_K_CONTINENTAL = 50
+ELO_K_QUALIFIER = 40
+ELO_K_OTHER = 30
+ELO_K_FRIENDLY = 20
+ELO_CONTINENTAL = ("UEFA Euro", "Copa América", "African Cup of Nations", "AFC Asian Cup", "Gold Cup",
+                   "CONCACAF Championship", "Oceania Nations Cup", "Confederations Cup")
+ELO_NATIONS_LEAGUES = ("UEFA Nations League", "CONCACAF Nations League")
 
 # Points for a win in the group table: 2 until 1990, 3 from 1994 on.
 THREE_POINTS_FROM = 1994
