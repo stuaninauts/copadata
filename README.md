@@ -28,7 +28,7 @@ Contributing: branches `<type>/<description>` off `main`, PRs merged by rebase, 
 git config core.hooksPath .githooks
 ```
 
-The pipeline is **idempotent**: both sources are pinned to a commit, so every run gives the same tables.
+The pipeline is **idempotent**: every source is pinned to a commit, so every run gives the same tables.
 
 ## Outputs (`data/processed/`)
 
@@ -36,9 +36,12 @@ Every file carries a `year` column (one World Cup per value); `match_id` is uniq
 
 | File | Grain | Contents |
 |---|---|---|
-| `matches.parquet` | 1 row/match | score, stage, margin, extra time / penalties, time & decision metrics |
-| `team_matches.parquet` | 2 rows/match | each team's perspective + group situation (matchday, points/position/zone before the match) |
+| `matches.parquet` | 1 row/match | score, stage, margin, extra time / penalties, time & decision metrics, pre-match Elo |
+| `team_matches.parquet` | 2 rows/match | each team's perspective + group situation (matchday, points/position/zone before the match) + Elo |
 | `goals.parquet` | 1 row/goal | minute, extra time, late goal, stoppage-time goal, final-quarter goal, own goal, penalty |
+| `penalty_kicks.parquet` | 1 row/kick | shootout kicks of 1986-2022, in order (none for 2026) |
+| `international.parquet` | 1 row/match | every international match since 1872 with pre-match Elo, weight and shootout |
+| `international_goals.parquet` | 1 row/goal | goals of those matches with minute |
 
 ## Public data export (`web/public/data/`)
 
@@ -73,6 +76,7 @@ Metric definitions are concentrated in `copadata/metrics.py`; the aggregates beh
 |---|---|---|
 | 2026 | [OpenFootball `worldcup.json`](https://github.com/openfootball/worldcup.json), pinned commit in `copadata/config.py` | Public domain (CC0) |
 | 1986-2022 | [Fjelstul World Cup Database](https://github.com/jfjelstul/worldcup), pinned commit in `copadata/config.py` | [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode) |
+| Elo (1872-2026) | [International football results](https://github.com/martj42/international_results), pinned commit in `copadata/config.py`; ratings computed in `copadata/elo.py` ([ADR 0009](docs/adr/0009-forca-das-selecoes-elo.md)) | Public domain (CC0) |
 
 Both are downloaded at run time into `data/raw/`; the raw files are not redistributed by this repository.
 Why two sources: [ADR 0005](docs/adr/0005-fonte-historica-fjelstul.md).
