@@ -224,7 +224,10 @@
         "margin_ft",
         "winning_goal_min_90",
         "decisive_moment_90",
-        "decided_final_quarter"
+        "decided_final_quarter",
+        "two_nil_side",
+        "two_nil_min",
+        "two_one_min"
       ]
     },
     "goals": {
@@ -246,6 +249,7 @@
         "extra_time",
         "late",
         "stoppage",
+        "final_quarter",
         "own_goal",
         "penalty"
       ]
