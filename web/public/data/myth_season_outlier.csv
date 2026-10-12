@@ -1,0 +1,6 @@
+metric,stage,n,value,mean_all,band_low,band_high,percentile,reading
+goals_per_match_90,all,103,2.815534,2.496413,2.204,2.796,0.981,outside
+big_margin,groups,72,0.25,0.162791,0.083,0.25,0.974,edge
+one_goal_margin_90,groups,52,0.346154,0.510363,0.385,0.635,0.004,outside
+decided_final_quarter,knockout,31,0.387097,0.270718,0.129,0.419,0.916,inside
+stoppage_goals_per_match,all,103,0.31068,0.156385,0.087,0.223,1.0,outside

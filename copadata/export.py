@@ -106,7 +106,31 @@ def tables(data: dict[str, pd.DataFrame]) -> dict[str, tuple[str, pd.DataFrame]]
                            _by_scope(lambda gl, mt, by: aggregate.stoppage_goals_per_match(gl, mt, by),
                                      [g, m], [])),
         "single_tests": ("The single externally defined tests (ADR 0002).", single_tests(core)),
+        **myth_tables(data),
     }
+
+
+MYTHS = {
+    "two_nil": "Myth '2-0 is the most dangerous score': not won at 90' after the first 2-0 and after the 2-1 "
+               "that follows, against teams at 1-0 in the same minute.",
+    "leader_sits_back": "Myth 'the team leading by one sits back': goals per 90 from minute 76 at 1-0, 0-0 and 0-1.",
+    "late_specialists": "Myth 'some teams are specialists in deciding late': share of each team's goals scored and "
+                        "conceded from minute 76, with funnel limits.",
+    "opener_loss": "Myth 'lose the opener and you are out': share reaching the knockout by era and opener result.",
+    "season_outlier": "Myth '2026 was an outlier World Cup': each headline of 2026 against a band of same-size "
+                      "draws from all editions.",
+}
+
+
+def myth_tables(data: dict[str, pd.DataFrame]) -> dict[str, tuple[str, pd.DataFrame]]:
+    """The verdicts (one row per myth) and one detail table per myth (ADR 0008)."""
+    found = aggregate.myths(data["matches"], data["goals"], data["team_matches"])
+    assert set(found) == set(MYTHS), "every published myth needs a description"
+    out = {"myths": ("Verdict of each published myth, from a rule fixed before running (ADR 0008).",
+                     pd.DataFrame([summary for _, summary in found.values()]))}
+    for name, (detail, _) in found.items():
+        out[f"myth_{name}"] = (MYTHS[name], detail)
+    return out
 
 
 def single_tests(core: pd.DataFrame) -> pd.DataFrame:

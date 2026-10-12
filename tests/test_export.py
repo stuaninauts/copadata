@@ -97,3 +97,11 @@ def test_export_is_deterministic(data, tmp_path):
 @pytest.mark.skipif(not config.MATCHES_PARQUET.exists(), reason="run the pipeline first")
 def test_committed_export_is_up_to_date():
     assert export.check(export.load(), config.EXPORT) == [], "run `python -m copadata.export`"
+
+
+def test_myths_table_has_one_verdict_per_published_myth(data, tmp_path):
+    export.write(data, tmp_path)
+    rows = json.loads((tmp_path / "myths.json").read_text())
+    assert [r["myth"] for r in rows] == list(export.MYTHS)
+    assert {r["verdict"] for r in rows} <= {"true", "true_borderline", "partly_true", "undecided", "myth"}
+    assert all((tmp_path / f"myth_{name}.json").exists() for name in export.MYTHS)

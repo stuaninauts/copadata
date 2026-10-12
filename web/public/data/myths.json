@@ -1,0 +1,7 @@
+[
+{"myth": "two_nil", "measure": "not won after the 2-1, minus 1-0 at the same minute", "effect": -0.062631, "ci_low": -0.15, "ci_high": 0.041, "threshold": 0.05, "halves_agree": true, "verdict": "myth"},
+{"myth": "leader_sits_back", "measure": "1 - (leader at 1-0 / team at 0-0), goals per 90 from minute 76", "effect": -0.140952, "ci_low": -0.664, "ci_high": 0.208, "threshold": null, "halves_agree": false, "verdict": "myth"},
+{"myth": "late_specialists", "measure": "teams outside the 99.8% funnel limit (scored or conceded)", "effect": 0.0, "ci_low": null, "ci_high": null, "threshold": null, "halves_agree": null, "verdict": "myth"},
+{"myth": "opener_loss", "measure": "reached the knockout after losing the opener, 48 minus 32 teams", "effect": 0.269048, "ci_low": 0.014, "ci_high": 0.529, "threshold": 0.05, "halves_agree": null, "verdict": "true_borderline"},
+{"myth": "season_outlier", "measure": "headlines of 2026 outside the band of all editions", "effect": 3.0, "ci_low": null, "ci_high": null, "threshold": null, "halves_agree": null, "verdict": "partly_true"}
+]
