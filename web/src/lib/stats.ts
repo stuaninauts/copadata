@@ -9,14 +9,14 @@ import type { Lang } from '../i18n/ui';
 
 type Value = string | number | boolean | null;
 type Row = Record<string, Value>;
-type Condition = Value | { ne?: Value; gt?: number };
+type Condition = Value | { ne?: Value; gt?: number; lt?: number; abs_gt?: number };
 
 export interface Ref {
   table: string;
   where?: Record<string, Condition>;
   field?: string;
-  /** one (default): exactly one row; count: number of rows; min / max: over `field`. */
-  agg?: 'one' | 'count' | 'min' | 'max';
+  /** one (default): exactly one row; count: number of rows; min / max / sum: over `field`. */
+  agg?: 'one' | 'count' | 'min' | 'max' | 'sum';
   format?: Format;
 }
 
@@ -37,6 +37,8 @@ function matches(row: Row, where: Record<string, Condition> = {}): boolean {
     if (cond !== null && typeof cond === 'object') {
       if ('ne' in cond) return v !== cond.ne;
       if ('gt' in cond) return typeof v === 'number' && v > (cond.gt as number);
+      if ('lt' in cond) return typeof v === 'number' && v < (cond.lt as number);
+      if ('abs_gt' in cond) return typeof v === 'number' && Math.abs(v) > (cond.abs_gt as number);
     }
     return v === cond;
   });
@@ -59,6 +61,7 @@ export function value(ref: Ref, where = ''): Value {
     return found[0][field];
   }
   const nums = found.map((r) => r[field] as number);
+  if (agg === 'sum') return nums.reduce((a, b) => a + b, 0);
   return agg === 'min' ? Math.min(...nums) : Math.max(...nums);
 }
 
@@ -90,7 +93,9 @@ export function fill(text: string, stats: Record<string, Ref>, lang: Lang, where
 
 interface Manifest {
   editions: number[];
-  tables: Record<string, { rows: number }>;
+  attribution: string;
+  sources: Record<string, { repository: string; commit: string; license: string }>;
+  tables: Record<string, { description: string; files: string[]; rows: number }>;
 }
 
 /** The export's manifest: editions covered and table sizes. */

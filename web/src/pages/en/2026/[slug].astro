@@ -1,0 +1,13 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Item from '../../../views/Item.astro';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('novelties');
+  return entries.map((entry) => ({ params: { slug: entry.data.slug.en }, props: { entry } }));
+}
+
+const { entry } = Astro.props as { entry: CollectionEntry<'novelties'> };
+---
+
+<Item lang="en" series="novelties" entry={entry} />

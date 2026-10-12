@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
-import { sectionPath, t, verdict, type Lang } from '../i18n/ui';
+import { anchorId, home, otherLang, sectionPath, t, verdict, type Lang } from '../i18n/ui';
 import { series } from '../lib/series';
 import { meanNote, noveltyChart } from '../lib/itemCharts';
 import { fill, interpolate, manifest, value } from '../lib/stats';
@@ -26,28 +26,28 @@ const counts = {
 };
 const rowsOfMyths = myths.map((e, i) => ({
   ...mythItems[i],
-  big: fill(e.data.pt.big, e.data.stats, lang, `myths.${e.id}.big`),
-  caption: fill(e.data.pt.caption, e.data.stats, lang, `myths.${e.id}.caption`),
+  big: fill(e.data[lang].big, e.data.stats, lang, `myths.${e.id}.big`),
+  caption: fill(e.data[lang].caption, e.data.stats, lang, `myths.${e.id}.caption`),
 }));
 const blocks = novelties.map((e) => ({
   id: e.id,
   verdict: verdict(String(value(e.data.verdict, `novelties.${e.id}.verdict`)), lang),
-  title: fill(e.data.pt.title, e.data.stats, lang, `novelties.${e.id}.title`),
-  text: fill(e.data.pt.text, e.data.stats, lang, `novelties.${e.id}.text`),
-  caption: [e.data.pt.chartCaption, meanNote(e, lang)].filter(Boolean).join('. '),
+  title: fill(e.data[lang].title, e.data.stats, lang, `novelties.${e.id}.title`),
+  text: fill(e.data[lang].text, e.data.stats, lang, `novelties.${e.id}.text`),
+  caption: [e.data[lang].chartCaption, meanNote(e, lang)].filter(Boolean).join('. '),
   svg: noveltyChart(e, lang),
-  href: e.data.pt.page ? sectionPath(lang, 'novelties', e.data.slug[lang]) : undefined,
+  href: sectionPath(lang, 'novelties', e.data.slug[lang]),
 }));
 ---
 
-<Base lang={lang}>
+<Base lang={lang} alternate={home(otherLang(lang))}>
   <section class="wrap hero">
     <p class="kicker">{interpolate(t(lang, 'home.eyebrow'), counts)}</p>
     <h1>{interpolate(t(lang, 'home.title'), counts)}</h1>
     <p class="lede">{interpolate(t(lang, 'home.lede'), counts)}</p>
   </section>
 
-  <section id="mitos" class="wrap myths" aria-labelledby="mitos-h">
+  <section id={anchorId(lang, 'myths')} class="wrap myths" aria-labelledby="mitos-h">
     <h2 id="mitos-h" class="eyebrow">{t(lang, 'home.mythsHeading')}</h2>
     <ol class="rows">
       {rowsOfMyths.map((r) => (
@@ -56,14 +56,14 @@ const blocks = novelties.map((e) => ({
           <h3 class="claim">“{r.title}”</h3>
           <div class="answer">
             <span class={`big mono tone-${r.verdict.chip === 'myth' ? 'accent' : 'blue'}`}>{r.big}</span>
-            <span class="cap">{r.caption}{r.hasPage && <> <a href={r.href}>{t(lang, 'home.see')} →</a></>}</span>
+            <span class="cap">{r.caption} <a href={r.href}>{t(lang, 'home.see')} →</a></span>
           </div>
         </li>
       ))}
     </ol>
   </section>
 
-  <section id="novidades" class="wrap nov-head" aria-labelledby="nov-h">
+  <section id={anchorId(lang, 'novelties')} class="wrap nov-head" aria-labelledby="nov-h">
     <h2 id="nov-h">{t(lang, 'home.noveltiesTitle')}</h2>
     <p>{t(lang, 'home.noveltiesLede')}</p>
   </section>
@@ -74,7 +74,7 @@ const blocks = novelties.map((e) => ({
         <span class={`chip chip-${b.verdict.chip}`}>{b.verdict.label}</span>
         <h2 id={`${b.id}-h`}>{b.title}</h2>
         <p>{b.text}</p>
-        {b.href && <a class="more" href={b.href}>{t(lang, 'home.fullAnalysis')} →</a>}
+        <a class="more" href={b.href}>{t(lang, 'home.fullAnalysis')} →</a>
       </div>
       <figure>
         <figcaption>{b.caption}</figcaption>
@@ -89,7 +89,7 @@ const blocks = novelties.map((e) => ({
         <h2>{interpolate(t(lang, 'home.closing'), counts)}</h2>
         <p>{t(lang, 'home.closingText')}</p>
       </div>
-      <a class="cta" href={mythItems[0].href}>{t(lang, 'home.closingCta')}</a>
+      <a class="cta" href={sectionPath(lang, 'method')}>{t(lang, 'home.closingCta')}</a>
     </div>
   </section>
 </Base>

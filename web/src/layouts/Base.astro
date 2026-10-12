@@ -2,28 +2,35 @@
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { t, type Lang, type Section } from '../i18n/ui';
+import { otherLang, t, type Lang, type Section } from '../i18n/ui';
 
 interface Props {
   lang: Lang;
+  /** The same page in the other language (ADR 0010: every page exists in both). */
+  alternate: string;
   title?: string;
   description?: string;
   section?: Section;
 }
 
-const { lang, title, description = t(lang, 'site.description'), section } = Astro.props;
+const { lang, alternate, title, description = t(lang, 'site.description'), section } = Astro.props;
 const fullTitle = title ? `${title} · CopaData` : 'CopaData';
 const canonical = new URL(Astro.url.pathname, Astro.site);
+const other = otherLang(lang);
+const hreflang = (l: Lang) => (l === 'pt' ? 'pt-BR' : 'en');
 ---
 
 <!doctype html>
-<html lang={lang === 'pt' ? 'pt-BR' : 'en'}>
+<html lang={hreflang(lang)}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang={hreflang(lang)} href={canonical} />
+    <link rel="alternate" hreflang={hreflang(other)} href={new URL(alternate, Astro.site)} />
+    <link rel="alternate" hreflang="x-default" href={lang === 'pt' ? canonical : new URL(alternate, Astro.site)} />
     <meta name="color-scheme" content="light dark" />
     <meta name="theme-color" content="#f7f1ef" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#1b1a18" media="(prefers-color-scheme: dark)" />
@@ -33,10 +40,11 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={lang === 'pt' ? 'pt_BR' : 'en_US'} />
   </head>
   <body>
     <a class="skip" href="#main">{t(lang, 'nav.skip')}</a>
-    <Header lang={lang} section={section}><slot name="localbar" /></Header>
+    <Header lang={lang} section={section} alternate={alternate}><slot name="localbar" /></Header>
     <main id="main">
       <slot />
     </main>

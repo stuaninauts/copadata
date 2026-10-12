@@ -84,3 +84,7 @@ svg.chart .bar-focus.tone-blue { color: var(--blue); }
 svg.chart .bar-label { color: var(--muted); font-size: 13px; }
 svg.chart .rule-mean, svg.chart .baseline { color: var(--soft); }
 figure { margin: 0; }
+svg.chart .dot { color: var(--bar-ref); }
+svg.chart .dot-focus { color: var(--accent); }
+svg.chart .limit-95, svg.chart .limit-998 { color: var(--soft); }
+svg.chart [aria-label='x-axis label'], svg.chart [aria-label='y-axis tick label'], svg.chart [aria-label='x-axis tick label'] { color: var(--soft); }

@@ -4,7 +4,7 @@ import Base from '../layouts/Base.astro';
 import LocalBar from '../components/LocalBar.astro';
 import Pager from '../components/Pager.astro';
 import type { CollectionEntry } from 'astro:content';
-import { home, seriesAnchor, t, verdict, type Lang } from '../i18n/ui';
+import { home, otherLang, sectionPath, seriesAnchor, t, verdict, type Lang } from '../i18n/ui';
 import { neighbours, series, type SeriesName } from '../lib/series';
 import { meanNote, mythPanels, noveltyChart, type Panel } from '../lib/itemCharts';
 import { fill, value } from '../lib/stats';
@@ -14,7 +14,7 @@ type Props =
   | { lang: Lang; series: 'novelties'; entry: CollectionEntry<'novelties'> };
 
 const { lang, series: name, entry } = Astro.props as Props;
-const page = entry.data.pt.page!;
+const page = entry.data[lang].page;
 const where = `${name}.${entry.id}`;
 const f = (text: string) => fill(text, entry.data.stats, lang, where);
 
@@ -33,7 +33,7 @@ const panels: Panel[] = name === 'myths'
   ? mythPanels(entry as CollectionEntry<'myths'>, lang)
   : [{
       title: page.chartTitle,
-      note: [page.chartNote, meanNote(entry as CollectionEntry<'novelties'>, lang)].filter(Boolean).join(' '),
+      note: [f(page.chartNote), meanNote(entry as CollectionEntry<'novelties'>, lang)].filter(Boolean).join(' '),
       svg: noveltyChart(entry as CollectionEntry<'novelties'>, lang, { width: 1000, height: 340 }),
     }];
 
@@ -46,7 +46,7 @@ const forward = nb.next
 const heading = name === 'myths' ? `${t(lang, 'item.claim')}: “${me.title}”` : page.question ?? me.title;
 ---
 
-<Base lang={lang} title={page.title} section={name}>
+<Base lang={lang} title={f(page.title)} section={name} alternate={sectionPath(otherLang(lang), name, entry.data.slug[otherLang(lang)])}>
   <LocalBar
     slot="localbar"
     lang={lang}
@@ -65,7 +65,7 @@ const heading = name === 'myths' ? `${t(lang, 'item.claim')}: “${me.title}”`
 
   <section class="wrap">
     <figure class="panel">
-      {name === 'myths' && <figcaption class="fig-title"><span>{page.chartTitle}</span><span class="note">{page.chartNote}</span></figcaption>}
+      {name === 'myths' && <figcaption class="fig-title"><span>{page.chartTitle}</span><span class="note">{f(page.chartNote)}</span></figcaption>}
       {panels.map((p) => (
         <div class="part">
           {name === 'myths'
