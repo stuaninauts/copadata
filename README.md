@@ -72,7 +72,7 @@ Metric definitions are concentrated in `copadata/metrics.py`; the aggregates beh
 
 ## Web site (`web/`)
 
-Static Astro site for `copa.stuaninauts.com` (not deployed yet). It reads the export at build time: page texts live in
+Static Astro site for `copa.stuaninauts.com`. It reads the export at build time: page texts live in
 `web/src/content/` and cite numbers by reference to the export, so a number that does not exist breaks the build.
 Charts are SVG drawn by Observable Plot during the build; no script runs in the browser.
 
@@ -82,6 +82,11 @@ npm install
 npm run check && npm run build   # type check, then build (the CSP only exists in the build)
 npm run preview                  # serve dist/ locally
 ```
+
+Deploy: Cloudflare Workers Builds builds `web/` and publishes it on every merge to `main` (`web/wrangler.jsonc`:
+static assets only, custom domain, no `*.workers.dev`); pull requests get a preview URL. CI (`.github/workflows/ci.yml`)
+runs the pipeline, the tests, `export --check`, the site build and `reuse lint` on every pull request. Python versions
+in CI are pinned in `constraints.txt`, because the export is checked byte for byte.
 
 ## Data sources
 

@@ -7,6 +7,8 @@ Engine de análise da Copa do Mundo (2026 + histórico) sobre dados públicos, s
 - `python -m copadata.export`: regrava o export público em `web/public/data/` (`--check` só confere se está em dia).
 - `python -m pytest`: testes. Rodar depois de mexer em `copadata/`.
 - Site (`web/`, Node da `web/.node-version`): `npm run check && npm run build`; `npm run preview` serve o `dist/`. A CSP só existe no build: valide nele, nunca só no `dev`.
+- Deploy do site é automático no merge na `main` (Cloudflare Workers Builds, `web/wrangler.jsonc`). Nunca `wrangler deploy` manual.
+- CI (`.github/workflows/ci.yml`): pipeline, `pytest`, `export --check`, build do site e `reuse lint`. Versões do Python fixas em `constraints.txt`: mudou uma delas, regenere o export no mesmo PR.
 
 ## Convenções
 - Código, nomes de colunas e docstrings em **inglês**; documentação (`docs/adr/`) em **português**.
