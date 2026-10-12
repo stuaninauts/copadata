@@ -6,6 +6,7 @@ Engine de análise da Copa do Mundo (2026 + histórico) sobre dados públicos, s
 - `python -m copadata.pipeline`: baixa e reprocessa (`--offline` reprocessa o snapshot já baixado).
 - `python -m copadata.export`: regrava o export público em `web/public/data/` (`--check` só confere se está em dia).
 - `python -m pytest`: testes. Rodar depois de mexer em `copadata/`.
+- Site (`web/`, Node da `web/.node-version`): `npm run check && npm run build`; `npm run preview` serve o `dist/`. A CSP só existe no build: valide nele, nunca só no `dev`.
 
 ## Convenções
 - Código, nomes de colunas e docstrings em **inglês**; documentação (`docs/adr/`) em **português**.
@@ -18,6 +19,7 @@ Engine de análise da Copa do Mundo (2026 + histórico) sobre dados públicos, s
 - Os parquets têm **todas as edições** (coluna `year`, 1986-2026): análise de uma Copa só precisa filtrar `year`.
 - Força das seleções é o Elo de `copadata/elo.py` (ADR 0009), calculado da base CC0 de resultados internacionais; nenhum outro lugar define força. Nome de seleção é um só entre as fontes (`config.TEAM_NAMES`).
 - Dados de 1986-2022 vêm do Fjelstul (CC-BY-SA 4.0, ADR 0005): gráfico ou post que os use leva "Fonte: Fjelstul World Cup Database (CC-BY-SA 4.0)". Dado derivado dele só é versionado em `web/public/data/`, que é CC-BY-SA (`REUSE.toml`).
+- Site (ADR 0007, 0010): textos em `web/src/content/*.yaml`, números só por referência ao export (`{nome}` + `stats`), nunca digitados; nenhuma taxa calculada em JavaScript. Sem estilo ou script inline (CSP estrita): cor e tamanho por classe CSS; o `<style>` que o Plot gera é removido em `web/src/lib/charts.ts`.
 - O export (`web/public/data/`) é commitado e gerado só por `copadata/export.py`, nunca editado à mão. Mudou métrica ou agregado: rode `python -m copadata.export` e commite junto; `tests/test_export.py` falha se ele estiver desatualizado.
 
 ## Git (GitHub Flow)

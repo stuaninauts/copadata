@@ -64,11 +64,24 @@ copadata/   ingest · fjelstul (historical adapter) · transform · derive · me
 tests/      metric definitions, aggregates (incl. golden findings), historical adapter and git hooks
 docs/adr/   architecture decision records (PT)
 data/       raw/ (raw snapshot)   ·   processed/ (parquets)
-web/        public/data/ (versioned export, CC-BY-SA 4.0)
+web/        Astro site (ADR 0007, 0010) · public/data/ (versioned export, CC-BY-SA 4.0)
 ```
 
 Metric definitions are concentrated in `copadata/metrics.py`; the aggregates behind the findings
 (rates and means by edition, era, stage, with `k` and `n`) in `copadata/aggregate.py`.
+
+## Web site (`web/`)
+
+Static Astro site for `copa.stuaninauts.com` (not deployed yet). It reads the export at build time: page texts live in
+`web/src/content/` and cite numbers by reference to the export, so a number that does not exist breaks the build.
+Charts are SVG drawn by Observable Plot during the build; no script runs in the browser.
+
+```bash
+cd web
+npm install
+npm run check && npm run build   # type check, then build (the CSP only exists in the build)
+npm run preview                  # serve dist/ locally
+```
 
 ## Data sources
 
