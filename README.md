@@ -39,7 +39,7 @@ Every file carries a `year` column (one World Cup per value); `match_id` is uniq
 | `matches.parquet` | 1 row/match | score, stage, margin, extra time / penalties, time & decision metrics, pre-match Elo |
 | `team_matches.parquet` | 2 rows/match | each team's perspective + group situation (matchday, points/position/zone before the match) + Elo |
 | `goals.parquet` | 1 row/goal | minute, extra time, late goal, stoppage-time goal, final-quarter goal, own goal, penalty |
-| `penalty_kicks.parquet` | 1 row/kick | shootout kicks of 1986-2022, in order (none for 2026) |
+| `penalty_kicks.parquet` | 1 row/kick | shootout kicks of 1986-2022, in order, and whether a miss eliminates (none for 2026) |
 | `international.parquet` | 1 row/match | every international match since 1872 with pre-match Elo, weight and shootout |
 | `international_goals.parquet` | 1 row/goal | goals of those matches with minute |
 
