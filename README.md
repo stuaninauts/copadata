@@ -38,7 +38,7 @@ Every file carries a `year` column (one World Cup per value); `match_id` is uniq
 |---|---|---|
 | `matches.parquet` | 1 row/match | score, stage, margin, extra time / penalties, time & decision metrics |
 | `team_matches.parquet` | 2 rows/match | each team's perspective + group situation (matchday, points/position/zone before the match) |
-| `goals.parquet` | 1 row/goal | minute, extra time, late goal, stoppage-time goal, own goal, penalty |
+| `goals.parquet` | 1 row/goal | minute, extra time, late goal, stoppage-time goal, final-quarter goal, own goal, penalty |
 
 ## Public data export (`web/public/data/`)
 
@@ -49,6 +49,9 @@ python -m copadata.export --check  # fail if the committed export is out of date
 
 The export is versioned and is what the web site reads: aggregate tables by edition, era and the pooled
 1986-2022 history, every rate with `k` and `n`; tables, columns and source commits in `manifest.json`.
+It also carries the **myths** (`myths.json` and one `myth_*` table each): a closed list of popular claims
+tested against the data, each with one effect, one interval and a verdict from a rule fixed before running
+([ADR 0008](docs/adr/0008-mitos-lista-fechada.md)).
 It is derived from the Fjelstul data, so it is licensed **CC-BY-SA 4.0** (attribution in its `README.md`).
 
 ## Structure
