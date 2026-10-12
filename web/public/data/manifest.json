@@ -185,7 +185,7 @@
         "myths.json",
         "myths.csv"
       ],
-      "rows": 5,
+      "rows": 8,
       "columns": [
         "myth",
         "measure",
@@ -290,6 +290,51 @@
         "band_high",
         "percentile",
         "reading"
+      ]
+    },
+    "myth_home_advantage": {
+      "description": "Myth 'playing at home helps at the World Cup': hosts' result at 90' against the neutral Elo expectation, by edition and host.",
+      "files": [
+        "myth_home_advantage.json",
+        "myth_home_advantage.csv"
+      ],
+      "rows": 14,
+      "columns": [
+        "year",
+        "team",
+        "n",
+        "result",
+        "expected",
+        "residual"
+      ]
+    },
+    "myth_favorite_knockout": {
+      "description": "Myth 'the favorite suffers more in the knockout': favorite's result at 90' against its Elo expectation, groups and knockout.",
+      "files": [
+        "myth_favorite_knockout.json",
+        "myth_favorite_knockout.csv"
+      ],
+      "rows": 2,
+      "columns": [
+        "stage",
+        "n",
+        "result",
+        "expected",
+        "residual"
+      ]
+    },
+    "myth_must_score_kick": {
+      "description": "Myth 'the kick that must go in trembles': shootout conversion when a miss eliminates, against the other kicks (1986-2022).",
+      "files": [
+        "myth_must_score_kick.json",
+        "myth_must_score_kick.csv"
+      ],
+      "rows": 2,
+      "columns": [
+        "must_score",
+        "k",
+        "n",
+        "value"
       ]
     },
     "matches": {

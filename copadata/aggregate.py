@@ -15,7 +15,7 @@ from math import comb
 import numpy as np
 import pandas as pd
 
-from copadata import config
+from copadata import config, elo
 
 
 def era(year: int) -> str:
@@ -202,6 +202,8 @@ def _rng() -> np.random.Generator:
 
 def _with_resamples(rng: np.random.Generator, n: int) -> np.ndarray:
     """Weights over n units: row 0 is the data itself, then one row per bootstrap resample."""
+    if n == 0:
+        return np.ones((config.MYTH_DRAWS + 1, 0))
     draws = rng.multinomial(n, np.full(n, 1 / n), size=config.MYTH_DRAWS).astype(float)
     return np.vstack([np.ones(n), draws])
 
@@ -443,7 +445,105 @@ def season_outlier(matches: pd.DataFrame, goals: pd.DataFrame, year: int = confi
                             float(outside), None, None, None, None, result)
 
 
-def myths(matches: pd.DataFrame, goals: pd.DataFrame, team_matches: pd.DataFrame) -> dict[str, tuple[pd.DataFrame, dict]]:
+def _result_90(matches: pd.DataFrame) -> np.ndarray:
+    """Team 1's result at 90': 1 win, 0.5 draw, 0 loss."""
+    return np.select([matches["goals_ft1"] > matches["goals_ft2"], matches["goals_ft1"] == matches["goals_ft2"]],
+                     [1.0, 0.5], 0.0)
+
+
+def _grouped_means(values: np.ndarray, groups: np.ndarray) -> np.ndarray:
+    """Mean of `values`, then one bootstrap mean per resample of whole groups (e.g. matches)."""
+    codes, uniq = pd.factorize(groups)
+    sums = np.bincount(codes, weights=values)
+    counts = np.bincount(codes)
+    w = _with_resamples(_rng(), len(uniq))
+    return (w @ sums) / (w @ counts)
+
+
+def _standard(myth: str, measure: str, samples: np.ndarray, halves: list[float]) -> dict:
+    """Summary under the standard rule: samples[0] is the effect, the rest its bootstrap."""
+    effect = float(samples[0])
+    low, high = _interval(samples[1:])
+    agree = all(np.sign(h) == np.sign(effect) for h in halves)
+    return _summary(myth, measure, effect, low, high, config.MYTH_THRESHOLD, agree,
+                    verdict(low, high, agree, low99=_interval(samples[1:], 99)[0]))
+
+
+def home_advantage(matches: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
+    """Myth "playing at home helps at the World Cup".
+
+    Hosts' matches: result at 90' minus the Elo expectation WITHOUT home advantage (neutral ground).
+    Bootstrap by match. For reference, Elo gives the home side 100 points, worth about +0.14.
+    """
+    core = _core(matches)
+    r1 = _result_90(core)
+    e1 = elo.expected(core["elo1"] - core["elo2"]).to_numpy()
+    parts = []
+    for side in (1, 2):
+        host = np.array([t in config.HOSTS.get(y, ()) for t, y in zip(core[f"team{side}"], core["year"])], dtype=bool)
+        result, expect = (r1, e1) if side == 1 else (1 - r1, 1 - e1)
+        parts.append(pd.DataFrame({"year": core["year"][host], "team": core[f"team{side}"][host],
+                                   "match_id": core["match_id"][host], "result": result[host],
+                                   "expected": expect[host]}))
+    rows = pd.concat(parts, ignore_index=True).assign(residual=lambda d: d["result"] - d["expected"])
+    detail = (rows.groupby(["year", "team"])
+              .agg(n=("result", "size"), result=("result", "mean"), expected=("expected", "mean"),
+                   residual=("residual", "mean")).reset_index())
+    samples = _grouped_means(rows["residual"].to_numpy(), rows["match_id"].to_numpy())
+    halves = [rows.loc[h, "residual"].mean() for h in _halves(rows["year"].to_numpy())]
+    return detail, _standard("home_advantage", "hosts' result at 90' minus the neutral Elo expectation",
+                             samples, halves)
+
+
+def favorite_in_knockout(matches: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
+    """Myth "the favorite suffers more in the knockout".
+
+    Favorite (higher Elo) result at 90' minus its Elo expectation, in the group stage and in the
+    knockout. Effect = group residual minus knockout residual (> 0: the favorite does worse in the
+    knockout). Bootstrap by match.
+    """
+    core = _core(matches)
+    r1 = _result_90(core)
+    e1 = elo.expected(core["elo1"] - core["elo2"]).to_numpy()
+    fav1 = (core["elo1"] >= core["elo2"]).to_numpy()
+    result, expect = np.where(fav1, r1, 1 - r1), np.where(fav1, e1, 1 - e1)
+    ko = core["is_knockout"].to_numpy()
+    detail = pd.DataFrame([{"stage": stage, "n": int(mask.sum()), "result": result[mask].mean(),
+                            "expected": expect[mask].mean(), "residual": (result - expect)[mask].mean()}
+                           for stage, mask in (("groups", ~ko), ("knockout", ko))])
+    residual = result - expect
+    w = _with_resamples(_rng(), len(core))
+    samples = (w[:, ~ko] @ residual[~ko]) / w[:, ~ko].sum(1) - (w[:, ko] @ residual[ko]) / w[:, ko].sum(1)
+    halves = [residual[h & ~ko].mean() - residual[h & ko].mean() for h in _halves(core["year"].to_numpy())]
+    return detail, _standard("favorite_knockout", "favorite's residual in groups minus in the knockout",
+                             samples, halves)
+
+
+def must_score_kicks(penalty_kicks: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
+    """Myth "the kick that must go in trembles".
+
+    Shootout conversion when a miss eliminates the kicker at once (metrics.must_score) against the
+    other kicks. Effect = other minus must-score. Bootstrap by shootout.
+    """
+    k = penalty_kicks
+    must = k["must_score"].to_numpy(bool)
+    scored = k["converted"].to_numpy(float)
+    detail = pd.DataFrame([{"must_score": flag, "k": int(scored[mask].sum()), "n": int(mask.sum()),
+                            "value": scored[mask].mean()} for flag, mask in ((True, must), (False, ~must))])
+    codes, uniq = pd.factorize(k["match_id"])
+    sums = {flag: (np.bincount(codes, weights=scored * mask, minlength=len(uniq)),
+                   np.bincount(codes, weights=mask.astype(float), minlength=len(uniq)))
+            for flag, mask in ((True, must), (False, ~must))}
+    w = _with_resamples(_rng(), len(uniq))
+    rate = {flag: (w @ s) / (w @ n) for flag, (s, n) in sums.items()}
+    years = k["year"].to_numpy()
+    halves = [scored[h & ~must].mean() - scored[h & must].mean() for h in _halves(years)]
+    return detail, _standard("must_score_kick", "conversion of other kicks minus must-score kicks",
+                             rate[False] - rate[True], halves)
+
+
+def myths(matches: pd.DataFrame, goals: pd.DataFrame, team_matches: pd.DataFrame,
+          penalty_kicks: pd.DataFrame) -> dict[str, tuple[pd.DataFrame, dict]]:
     """The myths published on the site (ADR 0008): id -> (detail table, summary row).
 
     A slice with no cases (e.g. an era missing from a small dataset) gives NaN, exported as null.
@@ -456,4 +556,7 @@ def myths(matches: pd.DataFrame, goals: pd.DataFrame, team_matches: pd.DataFrame
             "late_specialists": late_specialists(matches, goals, team_matches),
             "opener_loss": opener_survival(team_matches),
             "season_outlier": season_outlier(matches, goals),
+            "home_advantage": home_advantage(matches),
+            "favorite_knockout": favorite_in_knockout(matches),
+            "must_score_kick": must_score_kicks(penalty_kicks),
         }
