@@ -84,4 +84,35 @@ const novelties = defineCollection({
   }),
 });
 
-export const collections = { myths, novelties };
+// Every claim tested, in both batches (ADR 0008): published ones take their verdict from the export.
+const tested = defineCollection({
+  loader: file('src/content/tested.yaml'),
+  schema: z.object({
+    batch: z.number().int(),
+    claim: both,
+    myth: z.string().optional(),
+    verdict: z.string().optional(),
+    note: both.optional(),
+  }).refine((d) => Boolean(d.myth) !== Boolean(d.verdict), 'either myth or verdict'),
+});
+
+// The method page, one entry per language.
+const method = defineCollection({
+  loader: file('src/content/method.yaml'),
+  schema: z.object({
+    title: z.string(),
+    lede: z.string(),
+    sources: z.object({ heading: z.string(), items: z.array(z.string()) }),
+    rule: z.object({
+      heading: z.string(),
+      paragraphs: z.array(z.string()),
+      verdicts: z.array(z.object({ code: z.string(), text: z.string() })),
+    }),
+    tested: z.object({ heading: z.string(), lede: z.string(), batch: z.string() }),
+    data: z.object({ heading: z.string(), lede: z.string(), file: z.string(), rows: z.string() }),
+    corrections: z.object({ heading: z.string(), items: z.array(z.string()) }),
+    code: z.object({ heading: z.string(), text: z.string(), link: z.string() }),
+  }),
+});
+
+export const collections = { myths, novelties, tested, method };

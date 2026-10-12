@@ -1,0 +1,79 @@
+# Texto da página de Método, por idioma. Conteúdo sob CC-BY-SA 4.0 (REUSE.toml).
+
+- id: pt
+  title: "Como chegamos aos números"
+  lede: "Tudo aqui sai de dados públicos, por um código aberto, com a regra de cada veredito escrita antes de olhar o resultado."
+  sources:
+    heading: "De onde vêm os dados"
+    items:
+      - "Copas de 1986 a 2022: Fjelstul World Cup Database (CC-BY-SA 4.0)."
+      - "Copa de 2026: OpenFootball (domínio público)."
+      - "Força das seleções: o Elo antes de cada jogo, calculado a partir de todos os jogos entre seleções desde 1872 (base pública de resultados, domínio público)."
+      - "Cada fonte é baixada de uma versão fixa, então os mesmos dados geram sempre os mesmos números."
+  rule:
+    heading: "Como uma frase vira veredito"
+    paragraphs:
+      - "As frases são testadas em levas. A lista de cada leva, a medida de cada frase e o tamanho de efeito que ela precisaria ter são escritos antes de rodar. Toda frase da lista é publicada abaixo, inclusive as que não deram em nada."
+      - "Cada frase tem um efeito e um intervalo de 95%, obtido reamostrando jogos. Quando a pergunta é \"isso foge do acaso?\", a referência é uma faixa de Copas sorteadas a partir do histórico."
+    verdicts:
+      - { code: "true", text: "o intervalo fica acima de zero e as duas metades da história (1986-2002 e 2006-2026) apontam para o mesmo lado." }
+      - { code: true_borderline, text: "como Verdade, mas o intervalo de 99% chega a zero." }
+      - { code: myth, text: "o intervalo inteiro fica abaixo do menor efeito que a frase implica." }
+      - { code: undecided, text: "nem uma coisa nem outra: os dados não bastam." }
+  tested:
+    heading: "Todas as frases testadas"
+    lede: "Duas levas, de 12 e de 11 frases. As que estão no site levam ao texto; as demais trazem o motivo de terem ficado de fora."
+    batch: "Leva"
+  data:
+    heading: "Baixar os dados"
+    lede: "As tabelas que o site usa, prontas para baixar. Cada taxa traz quantos casos a sustentam (k de n)."
+    file: "Tabela"
+    rows: "linhas"
+  corrections:
+    heading: "Correções"
+    items:
+      - "11/10/2026: um gol da semifinal Inglaterra × Argentina estava registrado como 92' (era 90+2). Os números do mata-mata de 2026 foram corrigidos."
+      - "12/10/2026: os Estados Unidos e a Bósnia apareciam com dois nomes, conforme a fonte. Agora têm um só."
+  code:
+    heading: "Código e decisões"
+    text: "O código, os testes e os registros de cada decisão estão no repositório."
+    link: "Ver no GitHub"
+
+- id: en
+  title: "How we get the numbers"
+  lede: "Everything here comes from public data, through open code, with the rule for each verdict written before looking at the result."
+  sources:
+    heading: "Where the data comes from"
+    items:
+      - "World Cups 1986 to 2022: Fjelstul World Cup Database (CC-BY-SA 4.0)."
+      - "2026 World Cup: OpenFootball (public domain)."
+      - "Team strength: each team's Elo rating before every match, computed from every international match since 1872 (a public-domain results database)."
+      - "Each source is downloaded from a fixed version, so the same data always gives the same numbers."
+  rule:
+    heading: "How a claim becomes a verdict"
+    paragraphs:
+      - "Claims are tested in batches. Each batch's list, the measure for each claim and the effect size it would need are written before running. Every claim on the list is published below, including the ones that came to nothing."
+      - "Each claim gets one effect and a 95% interval, from resampling matches. When the question is \"is this beyond chance?\", the reference is a range of World Cups drawn at random from the history."
+    verdicts:
+      - { code: "true", text: "the interval sits above zero and both halves of the history (1986-2002 and 2006-2026) point the same way." }
+      - { code: true_borderline, text: "as True, but the 99% interval reaches zero." }
+      - { code: myth, text: "the whole interval sits below the smallest effect the claim implies." }
+      - { code: undecided, text: "neither: the data is not enough." }
+  tested:
+    heading: "Every claim tested"
+    lede: "Two batches, of 12 and 11 claims. Those on the site link to their page; the rest say why they were left out."
+    batch: "Batch"
+  data:
+    heading: "Download the data"
+    lede: "The tables the site uses, ready to download. Every rate carries how many cases back it up (k of n)."
+    file: "Table"
+    rows: "rows"
+  corrections:
+    heading: "Corrections"
+    items:
+      - "2026-10-11: a goal in the England × Argentina semi-final was recorded as 92' (it was 90+2). The 2026 knockout figures were corrected."
+      - "2026-10-12: the United States and Bosnia appeared under two names, depending on the source. They now have one."
+  code:
+    heading: "Code and decisions"
+    text: "The code, the tests and the record of each decision are in the repository."
+    link: "See on GitHub"
