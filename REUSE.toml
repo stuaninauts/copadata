@@ -13,3 +13,10 @@ path = "web/public/data/**"
 precedence = "override"
 SPDX-FileCopyrightText = ["2023 Joshua C. Fjelstul", "2026 Eduardo Stuani"]
 SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+# Site content (texts that cite the export): CC-BY-SA 4.0 like the rest of the subdomain's content (ADR 0007, 0010).
+[[annotations]]
+path = "web/src/content/**"
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Eduardo Stuani"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
