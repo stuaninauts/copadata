@@ -1,0 +1,4 @@
+[
+{"stage": "groups", "n": 516, "result": 0.687984, "expected": 0.685289, "residual": 0.002696},
+{"stage": "knockout", "n": 181, "result": 0.696133, "expected": 0.65044, "residual": 0.045693}
+]

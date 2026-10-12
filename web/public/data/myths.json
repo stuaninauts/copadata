@@ -3,5 +3,8 @@
 {"myth": "leader_sits_back", "measure": "1 - (leader at 1-0 / team at 0-0), goals per 90 from minute 76", "effect": -0.140952, "ci_low": -0.664, "ci_high": 0.208, "threshold": null, "halves_agree": false, "verdict": "myth"},
 {"myth": "late_specialists", "measure": "teams outside the 99.8% funnel limit (scored or conceded)", "effect": 0.0, "ci_low": null, "ci_high": null, "threshold": null, "halves_agree": null, "verdict": "myth"},
 {"myth": "opener_loss", "measure": "reached the knockout after losing the opener, 48 minus 32 teams", "effect": 0.269048, "ci_low": 0.014, "ci_high": 0.529, "threshold": 0.05, "halves_agree": null, "verdict": "true_borderline"},
-{"myth": "season_outlier", "measure": "headlines of 2026 outside the band of all editions", "effect": 3.0, "ci_low": null, "ci_high": null, "threshold": null, "halves_agree": null, "verdict": "partly_true"}
+{"myth": "season_outlier", "measure": "headlines of 2026 outside the band of all editions", "effect": 3.0, "ci_low": null, "ci_high": null, "threshold": null, "halves_agree": null, "verdict": "partly_true"},
+{"myth": "home_advantage", "measure": "hosts' result at 90' minus the neutral Elo expectation", "effect": 0.121044, "ci_low": 0.039, "ci_high": 0.198, "threshold": 0.05, "halves_agree": true, "verdict": "true"},
+{"myth": "favorite_knockout", "measure": "favorite's residual in groups minus in the knockout", "effect": -0.042997, "ci_low": -0.102, "ci_high": 0.016, "threshold": 0.05, "halves_agree": true, "verdict": "myth"},
+{"myth": "must_score_kick", "measure": "conversion of other kicks minus must-score kicks", "effect": 0.128205, "ci_low": 0.011, "ci_high": 0.275, "threshold": 0.05, "halves_agree": true, "verdict": "true_borderline"}
 ]

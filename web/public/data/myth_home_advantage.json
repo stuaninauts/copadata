@@ -1,0 +1,16 @@
+[
+{"year": 1986, "team": "Mexico", "n": 5, "result": 0.8, "expected": 0.605306, "residual": 0.194694},
+{"year": 1990, "team": "Italy", "n": 6, "result": 0.916667, "expected": 0.710249, "residual": 0.206418},
+{"year": 1994, "team": "United States", "n": 4, "result": 0.375, "expected": 0.213105, "residual": 0.161895},
+{"year": 1998, "team": "France", "n": 7, "result": 0.857143, "expected": 0.658406, "residual": 0.198737},
+{"year": 2002, "team": "Japan", "n": 4, "result": 0.625, "expected": 0.623435, "residual": 0.001565},
+{"year": 2002, "team": "South Korea", "n": 6, "result": 0.583333, "expected": 0.379221, "residual": 0.204112},
+{"year": 2006, "team": "Germany", "n": 6, "result": 0.833333, "expected": 0.60446, "residual": 0.228874},
+{"year": 2010, "team": "South Africa", "n": 3, "result": 0.5, "expected": 0.223884, "residual": 0.276116},
+{"year": 2014, "team": "Brazil", "n": 6, "result": 0.666667, "expected": 0.744693, "residual": -0.078027},
+{"year": 2018, "team": "Russia", "n": 5, "result": 0.6, "expected": 0.347838, "residual": 0.252162},
+{"year": 2022, "team": "Qatar", "n": 3, "result": 0.0, "expected": 0.279763, "residual": -0.279763},
+{"year": 2026, "team": "Canada", "n": 5, "result": 0.5, "expected": 0.607413, "residual": -0.107413},
+{"year": 2026, "team": "Mexico", "n": 5, "result": 0.8, "expected": 0.640076, "residual": 0.159924},
+{"year": 2026, "team": "United States", "n": 5, "result": 0.6, "expected": 0.485208, "residual": 0.114792}
+]

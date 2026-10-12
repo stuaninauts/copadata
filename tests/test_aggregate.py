@@ -126,6 +126,14 @@ def test_score_grid_counts_regulation_goals_at_their_base_minute():
     assert grid[1, 1, 88] == 0 and grid[1, 1, 89] == 1
 
 
+def test_home_advantage_uses_the_neutral_elo_expectation():
+    m = matches(year=[1990, 1990], match_id=[1, 2], stage=["groups", "groups"], team1=["Italy", "Spain"],
+                team2=["Austria", "Italy"], goals_ft1=[1, 0], goals_ft2=[0, 0], elo1=[1600, 1600], elo2=[1600, 1600])
+    detail, summary = aggregate.home_advantage(m)
+    assert detail.n.tolist() == [2]
+    assert summary["effect"] == pytest.approx(0.25)  # (1 - 0.5) and (0.5 - 0.5) over two matches
+
+
 def test_opener_survival_counts_teams_that_reached_the_knockout():
     tm = pd.DataFrame({
         "year": [2026] * 3, "team": ["A", "B", "A"], "stage": ["groups", "groups", "knockout"],
@@ -145,7 +153,7 @@ needs_data = pytest.mark.skipif(not config.MATCHES_PARQUET.exists(), reason="run
 def data():
     return {name: pd.read_parquet(path) for name, path in [
         ("matches", config.MATCHES_PARQUET), ("goals", config.GOALS_PARQUET),
-        ("team_matches", config.TEAM_MATCHES_PARQUET)]}
+        ("team_matches", config.TEAM_MATCHES_PARQUET), ("penalty_kicks", config.PENALTY_KICKS_PARQUET)]}
 
 
 @pytest.fixture(scope="module")
@@ -262,7 +270,7 @@ def test_golden_group_matchdays_and_zones(core, data):
 
 @pytest.fixture(scope="module")
 def myths(data):
-    return aggregate.myths(data["matches"], data["goals"], data["team_matches"])
+    return aggregate.myths(data["matches"], data["goals"], data["team_matches"], data["penalty_kicks"])
 
 
 @needs_data
@@ -309,5 +317,28 @@ def test_golden_myth_season_outlier(myths):
 
 @needs_data
 def test_myths_are_reproducible(data, myths):
-    again = aggregate.myths(data["matches"], data["goals"], data["team_matches"])
+    again = aggregate.myths(data["matches"], data["goals"], data["team_matches"], data["penalty_kicks"])
     assert all(again[k][1] == myths[k][1] for k in myths)
+
+
+@needs_data
+def test_golden_myth_home_advantage(myths):
+    detail, summary = myths["home_advantage"]
+    assert detail.n.sum() == 70 and len(detail) == 14  # 2002 and 2026 have more than one host
+    assert summary["effect"] == pytest.approx(0.121, abs=1e-3)
+    assert summary["verdict"] == "true"
+
+
+@needs_data
+def test_golden_myth_favorite_knockout(myths):
+    detail, summary = myths["favorite_knockout"]
+    assert detail.set_index("stage").n.to_dict() == {"groups": 516, "knockout": 181}
+    assert summary["effect"] < 0 and summary["verdict"] == "myth"  # the favorite does better, not worse
+
+
+@needs_data
+def test_golden_myth_must_score_kick(myths):
+    detail, summary = myths["must_score_kick"]
+    assert kn(value(detail, must_score=True)) == (28, 48)
+    assert kn(value(detail, must_score=False)) == (185, 260)
+    assert summary["verdict"] == "true_borderline"

@@ -33,7 +33,12 @@ def data():
     eds = {1990: edition(1990), 2026: edition(2026)}
     matches = pd.concat([transform.build_matches(d, y) for y, d in eds.items()], ignore_index=True)
     goals = pd.concat([transform.build_goals(d, y) for y, d in eds.items()], ignore_index=True)
-    return {"matches": matches, "goals": goals, "team_matches": derive.group_situation(derive.explode(matches))}
+    matches = matches.assign(elo1=1800.0, elo2=1700.0)
+    kicks = pd.DataFrame({"year": 2026, "match_id": matches.match_id.iloc[-1], "kick": [1, 2, 3, 4],
+                          "team": ["A", "D", "A", "D"], "converted": [True, False, True, True],
+                          "must_score": [False, False, False, False]})
+    return {"matches": matches, "goals": goals, "team_matches": derive.group_situation(derive.explode(matches)),
+            "penalty_kicks": kicks}
 
 
 def test_writes_every_table_with_manifest_and_readme(data, tmp_path):

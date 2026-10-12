@@ -85,5 +85,9 @@ MYTH_SEED = 2026
 MYTH_HALVES = ((1986, 2002), (2006, 2026))
 # Smallest effect the claim implies: an interval wholly below it makes the claim a myth.
 MYTH_THRESHOLD = 0.05
+# Host countries per edition, for the home-advantage myth.
+HOSTS = {1986: ("Mexico",), 1990: ("Italy",), 1994: ("United States",), 1998: ("France",),
+         2002: ("South Korea", "Japan"), 2006: ("Germany",), 2010: ("South Africa",), 2014: ("Brazil",),
+         2018: ("Russia",), 2022: ("Qatar",), 2026: ("United States", "Mexico", "Canada")}
 # Teams need this many matches to enter the late-specialist funnel.
 MYTH_MIN_MATCHES = 10

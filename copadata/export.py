@@ -58,6 +58,7 @@ def load() -> dict[str, pd.DataFrame]:
         "matches": pd.read_parquet(config.MATCHES_PARQUET),
         "goals": pd.read_parquet(config.GOALS_PARQUET),
         "team_matches": pd.read_parquet(config.TEAM_MATCHES_PARQUET),
+        "penalty_kicks": pd.read_parquet(config.PENALTY_KICKS_PARQUET),
     }
 
 
@@ -119,12 +120,18 @@ MYTHS = {
     "opener_loss": "Myth 'lose the opener and you are out': share reaching the knockout by era and opener result.",
     "season_outlier": "Myth '2026 was an outlier World Cup': each headline of 2026 against a band of same-size "
                       "draws from all editions.",
+    "home_advantage": "Myth 'playing at home helps at the World Cup': hosts' result at 90' against the neutral "
+                      "Elo expectation, by edition and host.",
+    "favorite_knockout": "Myth 'the favorite suffers more in the knockout': favorite's result at 90' against its "
+                         "Elo expectation, groups and knockout.",
+    "must_score_kick": "Myth 'the kick that must go in trembles': shootout conversion when a miss eliminates, "
+                       "against the other kicks (1986-2022).",
 }
 
 
 def myth_tables(data: dict[str, pd.DataFrame]) -> dict[str, tuple[str, pd.DataFrame]]:
     """The verdicts (one row per myth) and one detail table per myth (ADR 0008)."""
-    found = aggregate.myths(data["matches"], data["goals"], data["team_matches"])
+    found = aggregate.myths(data["matches"], data["goals"], data["team_matches"], data["penalty_kicks"])
     assert set(found) == set(MYTHS), "every published myth needs a description"
     out = {"myths": ("Verdict of each published myth, from a rule fixed before running (ADR 0008).",
                      pd.DataFrame([summary for _, summary in found.values()]))}
