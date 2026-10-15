@@ -18,8 +18,11 @@ export default defineConfig({
   integrations: [sitemap({ filter: (page) => !page.endsWith('/404/') })],
   // CSP estrita (ADR 0007): script-src e style-src saem com hashes no build. Nada inline sem hash,
   // por isso os SVGs do Plot chegam sem o <style> próprio (src/lib/charts.ts).
+  // A única origem externa é o script do Web Analytics da Cloudflare (sem cookies), que a borda injeta
+  // na página; as métricas voltam para o próprio domínio (/cdn-cgi/rum), então connect-src fica 'self'.
   security: {
     csp: {
+      scriptDirective: { resources: ["'self'", 'https://static.cloudflareinsights.com'] },
       directives: [
         "default-src 'self'",
         "img-src 'self' data:",
